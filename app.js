@@ -220,13 +220,6 @@ function renderTafs() {
 
     const tafs =
         weatherData.tafs;
-
-    document.getElementById(
-        "kndz-taf"
-    ).innerText =
-        tafs.KNDZ?.raw_taf ||
-        "TAF unavailable";
-
     document.getElementById(
         "knse-taf"
     ).innerText =
