@@ -65,16 +65,52 @@
       "ceiling_ft_agl": null,
       "ceiling_display": "No BKN/OVC ceiling reported",
       "wind_display": "VRB @ 5 kt",
-      "altimeter_display": "30.02 inHg",
-      "observation_time": 1787248200
-    }
-  },
-  "tafs": {
-    "KNSE": {
-      "raw_taf": "TAF KNSE 201500Z 2015/2115 VRB05KT 9999 SCT030 SCT150 SCT250 QNH3000INS BECMG 2017/2019 18008KT 9999 VCSH SCT040 BKN120 BKN250 QNH2994INS TEMPO 2020/2101 VRB20G35KT 4800 TSRA SCT020 BKN035CB BKN060 FM210200 23006KT 9999 FEW050 SCT120 SCT200 QNH2996INS FM211000 VRB05KT 9999 FEW025 SCT060 SCT120 BKN250 QNH2997INS TEMPO 2112/2114 8000 -SHRA BR SCT015 SCT035 BKN120 TX34/2020Z TN24/2110Z FN20071"
+      "altimeter_display": "29.96 inHg",
+      "observation_time": 1787262600
+    },
+    "KMOB": {
+      "raw_metar": "METAR KMOB 202156Z 25004KT 1 3/4SM +TSRA BR BKN007CB OVC032 24/24 A3004 RMK AO2 PK WND 09041/2057 SLP167 FRQ LTGICCG ALQDS TS ALQDS MOV SE P0180 T02440239 $",
+      "flight_category": "IFR",
+      "visibility_sm": 1.75,
+      "visibility_display": "1.75 SM",
+      "ceiling_ft_agl": 700.0,
+      "ceiling_display": "700 ft AGL",
+      "wind_display": "250\u00b0 @ 4 kt",
+      "altimeter_display": "30.04 inHg",
+      "observation_time": 1787262960
     },
     "KNDZ": {
-      "raw_taf": "TAF unavailable"
+      "raw_metar": "METAR KNDZ 202056Z VRB06KT 10SM TS FEW022 SCT045CB BKN070 BKN150 22/21 A2998 RMK AO2 RAE42 SLP140 FRQ LTGICCG VC SW-NW TS SW-NW MOV S T1 SET P0001 60054 T02220206 58014 $",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": 7000.0,
+      "ceiling_display": "7,000 ft AGL",
+      "wind_display": "VRB @ 6 kt",
+      "altimeter_display": "29.98 inHg",
+      "observation_time": 1787259360
+    },
+    "KPNS": {
+      "raw_metar": "METAR KPNS 202153Z 22007KT 10SM CLR 22/20 A2997 RMK AO2 LTG DSNT ALQDS RAE03 TSE10B18E33 SLP149 P0000 T02170200 $",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "220\u00b0 @ 7 kt",
+      "altimeter_display": "29.97 inHg",
+      "observation_time": 1787262780
+    },
+    "KTLH": {
+      "raw_metar": "METAR KTLH 202153Z 25006KT 10SM SCT040CB BKN100 27/23 A2996 RMK AO2 LTG DSNT E AND SW AND W RAE27 SLP145 CB NE AND E AND OHD-S-SW AND NW MOV S P0000 T02720228",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": 10000.0,
+      "ceiling_display": "10,000 ft AGL",
+      "wind_display": "250\u00b0 @ 6 kt",
+      "altimeter_display": "29.96 inHg",
+      "observation_time": 1787262780
     }
   },
   "kndz_convective_sigmet": {

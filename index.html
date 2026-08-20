@@ -21,8 +21,47 @@
     </p>
 </header>
 
+<!-- ========================= -->
+<!-- MAIN TABS -->
+<!-- ========================= -->
+
+<nav class="tab-nav">
+
+    <button
+        class="tab-button active"
+        data-tab="flight-planning"
+    >
+        🚁 Flight Planning
+    </button>
+
+    <button
+        class="tab-button"
+        data-tab="feedback"
+    >
+        💡 Feedback
+    </button>
+
+    <button
+        class="tab-button"
+        data-tab="buy-patch"
+    >
+        ▦ Buy a Patch
+    </button>
+
+</nav>
+
 
 <main>
+
+<!-- ========================= -->
+<!-- FLIGHT PLANNING TAB -->
+<!-- ========================= -->
+
+<div
+    id="flight-planning"
+    class="tab-content active"
+>
+
     <!-- ========================= -->
     <!-- DEPARTURE WEATHER -->
     <!-- ========================= -->
@@ -214,7 +253,6 @@
             Select a destination to view current weather.
         </p>
 
-
         <div
             class="destinations"
             id="destinations">
@@ -241,7 +279,6 @@
 
         <div id="selected-airport">
         </div>
-
     </section>
 
 
@@ -506,7 +543,7 @@
             </button>
         </div>
 
-        </section>
+    </section>
 
     <!-- ========================= -->
     <!-- ATC LOFI -->
@@ -547,9 +584,28 @@
             <span>〰</span>
             <span>♫</span>
         </div>
-
     </section>
 
+    <!-- DATA STATUS -->
+    <section
+        class="status-card"
+        id="status-card">
+
+        <span id="data-status">
+            Loading weather data...
+        </span>
+
+    </section>
+</div>
+
+
+<!-- ========================= -->
+<!-- FEEDBACK TAB -->
+<!-- ========================= -->
+<div
+        id="feedback"
+        class="tab-content"
+>
     <!-- ========================= -->
     <!-- FEEDBACK -->
     <!-- ========================= -->
@@ -584,20 +640,20 @@
                 </button>
             </a>
         </div>
-
     </section>
 
-    <!-- DATA STATUS -->
+</div>
 
-    <section
-        class="status-card"
-        id="status-card">
+<!-- ========================= -->
+<!-- BUY PATCH TAB -->
+<!-- ========================= -->
+<div
+    id="buy-patch"
+    class="tab-content active"
+>
 
-        <span id="data-status">
-            Loading weather data...
-        </span>
+</div>
 
-    </section>
 
 </main>
 
@@ -621,7 +677,6 @@
     </p>
 
 </footer>
-
 
 <script src="app.js"></script>
 
