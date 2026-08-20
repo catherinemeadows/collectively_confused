@@ -1,38 +1,76 @@
 {
-  "generated_at": "2026-08-18T00:00:00+00:00",
+  "generated_at": "2026-08-20T14:42:17.100634+00:00",
   "departure": "KNDZ",
   "airports": {
-    "KNDZ": {
-      "raw_metar": "Weather has not updated yet.",
-      "flight_category": "UNKNOWN",
-      "wind_display": "---",
-      "visibility_display": "---",
-      "ceiling_display": "---",
-      "altimeter_display": "---"
-    },
-    "KPNS": {
-      "raw_metar": "Weather has not updated yet.",
-      "flight_category": "UNKNOWN"
-    },
     "KMOB": {
-      "raw_metar": "Weather has not updated yet.",
-      "flight_category": "UNKNOWN"
+      "raw_metar": "METAR KMOB 201356Z 30007KT 10SM FEW018 FEW029 FEW048 29/24 A3005 RMK AO2 SLP172 T02890244",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "300\u00b0 @ 7 kt",
+      "altimeter_display": "30.05 inHg",
+      "observation_time": 1787234160
     },
-    "KHSA": {
-      "raw_metar": "Weather has not updated yet.",
-      "flight_category": "UNKNOWN"
+    "KNDZ": {
+      "raw_metar": "METAR KNDZ 201356Z VRB03KT 10SM FEW025 FEW150 SCT250 28/26 A3004 RMK AO2 SLP157 T02830256 $",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "VRB @ 3 kt",
+      "altimeter_display": "30.04 inHg",
+      "observation_time": 1787234160
     },
     "KTLH": {
-      "raw_metar": "Weather has not updated yet.",
-      "flight_category": "UNKNOWN"
+      "raw_metar": "METAR KTLH 201353Z 32007KT 10SM FEW030 SCT110 27/22 A3005 RMK AO2 SLP175 T02720222",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "320\u00b0 @ 7 kt",
+      "altimeter_display": "30.05 inHg",
+      "observation_time": 1787233980
     },
     "KDHN": {
-      "raw_metar": "Weather has not updated yet.",
-      "flight_category": "UNKNOWN"
+      "raw_metar": "METAR KDHN 201353Z VRB03KT 10SM CLR 27/23 A3008 RMK AO1 SLP181 T02720233",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "VRB @ 3 kt",
+      "altimeter_display": "30.08 inHg",
+      "observation_time": 1787233980
+    },
+    "KPNS": {
+      "raw_metar": "METAR KPNS 201353Z 30007KT 10SM CLR 29/25 A3003 RMK AO2 SLP171 T02890250",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "300\u00b0 @ 7 kt",
+      "altimeter_display": "30.03 inHg",
+      "observation_time": 1787233980
+    },
+    "KHSA": {
+      "raw_metar": "METAR KHSA 201350Z VRB05KT 10SM CLR 30/25 A3004",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "VRB @ 5 kt",
+      "altimeter_display": "30.04 inHg",
+      "observation_time": 1787233800
     }
   },
   "kndz_convective_sigmet": {
-    "status": "UNKNOWN",
+    "status": "CLEAR",
     "matches": []
   }
 }
