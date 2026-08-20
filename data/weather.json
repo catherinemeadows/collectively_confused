@@ -1,64 +1,64 @@
 {
-  "generated_at": "2026-08-20T18:47:52.598393+00:00",
+  "generated_at": "2026-08-20T19:19:50.252465+00:00",
   "departure": "KNDZ",
   "airports": {
     "KNDZ": {
-      "raw_metar": "SPECI KNDZ 201840Z VRB04KT 10SM TS FEW028 SCT042CB BKN070 32/26 A3001 RMK AO2 TSB37 OCNL LTGICCG OHD TS OHD MOV S T1 SET T03220261 $ ",
-      "flight_category": "VFR",
-      "visibility_sm": 10.0,
-      "visibility_display": "10+ SM",
-      "ceiling_ft_agl": 7000.0,
-      "ceiling_display": "7,000 ft AGL",
-      "wind_display": "VRB @ 4 kt",
-      "altimeter_display": "30.01 inHg",
-      "observation_time": 1787251200
+      "raw_metar": "SPECI KNDZ 201904Z 06027G41KT 1SM -TSRA SCT023 SCT035CB BKN050 27/22 A3002 RMK AO2 PK WND 05041/1904 RAB03 FRQ LTGICCG OHD TS OHD MOV S T1 SET P0010 T02720217 $ ",
+      "flight_category": "IFR",
+      "visibility_sm": 1.0,
+      "visibility_display": "1 SM",
+      "ceiling_ft_agl": 5000.0,
+      "ceiling_display": "5,000 ft AGL",
+      "wind_display": "060\u00b0 @ 27 kt G41",
+      "altimeter_display": "30.02 inHg",
+      "observation_time": 1787252640
     },
     "KMOB": {
-      "raw_metar": "METAR KMOB 201756Z 30005KT 10SM FEW017 SCT039 33/24 A3004 RMK AO2 SLP167 T03280239 10344 20250 58002 $",
+      "raw_metar": "METAR KMOB 201856Z 30005KT 10SM FEW017 BKN041 35/24 A3001 RMK AO2 SLP159 T03500239 $",
       "flight_category": "VFR",
       "visibility_sm": 10.0,
       "visibility_display": "10+ SM",
-      "ceiling_ft_agl": null,
-      "ceiling_display": "No BKN/OVC ceiling reported",
+      "ceiling_ft_agl": 4100.0,
+      "ceiling_display": "4,100 ft AGL",
       "wind_display": "300\u00b0 @ 5 kt",
-      "altimeter_display": "30.04 inHg",
-      "observation_time": 1787248560
-    },
-    "KDHN": {
-      "raw_metar": "METAR KDHN 201753Z 10SM SCT038 33/24 A3005 RMK AO1 SLP170 T03330239 10339 20228 58010",
-      "flight_category": "VFR",
-      "visibility_sm": 10.0,
-      "visibility_display": "10+ SM",
-      "ceiling_ft_agl": null,
-      "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "---",
-      "altimeter_display": "30.05 inHg",
-      "observation_time": 1787248380
+      "altimeter_display": "30.01 inHg",
+      "observation_time": 1787252160
     },
     "KPNS": {
-      "raw_metar": "METAR KPNS 201753Z 17006KT 10SM FEW060 32/26 A3002 RMK AO2 SLP168 T03170261 10317 20256 58002",
+      "raw_metar": "METAR KPNS 201853Z 19015G20KT 10SM FEW043 SCT070 31/26 A3001 RMK AO2 LTG DSNT NE AND E SLP163 T03060256",
       "flight_category": "VFR",
       "visibility_sm": 10.0,
       "visibility_display": "10+ SM",
       "ceiling_ft_agl": null,
       "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "170\u00b0 @ 6 kt",
-      "altimeter_display": "30.02 inHg",
-      "observation_time": 1787248380
+      "wind_display": "190\u00b0 @ 15 kt G20",
+      "altimeter_display": "30.01 inHg",
+      "observation_time": 1787251980
+    },
+    "KDHN": {
+      "raw_metar": "METAR KDHN 201853Z VRB04KT 10SM CLR 34/23 A3003 RMK AO1 SLP162 T03440233",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "VRB @ 4 kt",
+      "altimeter_display": "30.03 inHg",
+      "observation_time": 1787251980
     },
     "KTLH": {
-      "raw_metar": "METAR KTLH 201753Z 06003KT 10SM SCT040 34/23 A3002 RMK AO2 SLP164 T03390228 10339 20222 58012",
+      "raw_metar": "METAR KTLH 201853Z 15006KT 10SM SCT040 SCT110 34/23 A3001 RMK AO2 SLP159 T03440233",
       "flight_category": "VFR",
       "visibility_sm": 10.0,
       "visibility_display": "10+ SM",
       "ceiling_ft_agl": null,
       "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "060\u00b0 @ 3 kt",
-      "altimeter_display": "30.02 inHg",
-      "observation_time": 1787248380
+      "wind_display": "150\u00b0 @ 6 kt",
+      "altimeter_display": "30.01 inHg",
+      "observation_time": 1787251980
     },
     "KHSA": {
-      "raw_metar": "METAR KHSA 201750Z VRB05KT 10SM SCT050 35/22 A3002",
+      "raw_metar": "METAR KHSA 201850Z COR VRB05KT 10SM SCT050 35/22 A3002",
       "flight_category": "VFR",
       "visibility_sm": 10.0,
       "visibility_display": "10+ SM",
@@ -66,14 +66,14 @@
       "ceiling_display": "No BKN/OVC ceiling reported",
       "wind_display": "VRB @ 5 kt",
       "altimeter_display": "30.02 inHg",
-      "observation_time": 1787248200
+      "observation_time": 1787251800
     }
   },
   "kndz_convective_sigmet": {
     "status": "INSIDE",
     "matches": [
       {
-        "label": "WSUS31 KKCI 201755\nSIGE \nCONVECTIVE SIGMET 71E\nVALID UNTIL 1955Z\nFL AL AND FL AL MS CSTL WTRS\nFROM 30NNW CEW-40WSW TLH-120SSE CEW-150ESE LEV-90E LEV-30NNW CEW\nAREA TS MOV LTL. TOPS TO FL450.\n\nOUTLOOK VALID 201955-202355\nFROM 30SSW CLE-ETX-50E ECG-40ESE SAV-100SSE MIA-90WSW EYW-100WSW\nPIE-200ESE LEV-"
+        "label": "WSUS31 KKCI 201855\nSIGE \nCONVECTIVE SIGMET 82E\nVALID UNTIL 2055Z\nFL AL MS LA AND FL AL MS CSTL WTRS\nFROM 60E MEI-40SSW TLH-140SSW CEW-80E LEV-30NE MCB-60E MEI\nAREA TS MOV LTL. TOPS ABV FL450.\n\nOUTLOOK VALID 202055-210055\nFROM 30SSW CLE-ETX-50E ECG-40ESE SAV-100SSE MIA-90WSW EYW-100WSW\nPIE-200ESE LEV"
       }
     ]
   }
