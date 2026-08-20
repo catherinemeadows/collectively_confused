@@ -103,6 +103,8 @@ async function loadWeather() {
 
         renderDeparture();
 
+        renderTafs();
+
         renderDestinations();
 
         renderSelectedAirport();
@@ -176,6 +178,24 @@ function renderDeparture() {
         wx.flight_category
     );
 
+}
+
+function renderTafs() {
+
+    const tafs =
+        weatherData.tafs;
+
+    document.getElementById(
+        "kndz-taf"
+    ).innerText =
+        tafs.KNDZ?.raw_taf ||
+        "TAF unavailable";
+
+    document.getElementById(
+        "knse-taf"
+    ).innerText =
+        tafs.KNSE?.raw_taf ||
+        "TAF unavailable";
 }
 
 
