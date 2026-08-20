@@ -20,6 +20,12 @@ KNDZ_LAT = 30.7044
 KNDZ_LON = -87.0230
 
 METAR_URL = "https://aviationweather.gov/api/data/metar"
+TAF_URL = "https://aviationweather.gov/api/data/taf"
+
+TAF_AIRPORTS = [
+    "KNDZ",
+    "KNSE",
+]
 SIGMET_URL = "https://aviationweather.gov/api/data/airsigmet"
 
 HEADERS = {
@@ -326,6 +332,40 @@ def fetch_metars():
                 "wind_display": "---",
                 "altimeter_display": "---",
                 "observation_time": None,
+            }
+
+    return result
+
+def fetch_tafs():
+    response = get_with_retries(
+        TAF_URL,
+        params={
+            "ids": ",".join(TAF_AIRPORTS),
+            "format": "json",
+        },
+    )
+
+    response.raise_for_status()
+
+    tafs = response.json()
+
+    result = {}
+
+    for taf in tafs:
+        station = get_station_id(taf)
+
+        if station in TAF_AIRPORTS:
+            result[station] = {
+                "raw_taf": taf.get(
+                    "rawTAF",
+                    "TAF unavailable"
+                )
+            }
+
+    for airport in TAF_AIRPORTS:
+        if airport not in result:
+            result[airport] = {
+                "raw_taf": "TAF unavailable"
             }
 
     return result
