@@ -635,6 +635,27 @@ def main():
             sigmet,
     }
 
+    tafs = fetch_tafs()
+
+    data = {
+    "generated_at":
+        datetime.now(
+            timezone.utc
+        ).isoformat(),
+
+    "departure":
+        "KNDZ",
+
+    "airports":
+        airports,
+
+    "tafs":
+        tafs,
+
+    "kndz_convective_sigmet":
+        sigmet,
+}
+
     os.makedirs(
         "data",
         exist_ok=True,
