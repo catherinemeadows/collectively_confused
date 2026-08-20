@@ -4,47 +4,379 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>My Website</title>
+    <title>Cat & Em's Flight Forecast</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            text-align: center;
-            padding-top: 150px;
-        }
-
-        h1 {
-            font-size: 48px;
-            color: #222;
-        }
-
-        p {
-            font-size: 20px;
-            color: #555;
-        }
-
-        button {
-            padding: 12px 24px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>🚁 My Website Works!</h1>
+<header>
+    <div class="mascot">🚁</div>
 
-    <p>This page is being hosted through GitHub Pages.</p>
+    <h1>Cat & Em's Flight Forecast</h1>
 
-    <button onclick="testButton()">Test Button</button>
+    <p class="tagline">
+        
+    </p>
+</header>
 
-    <script>
-        function testButton() {
-            alert("Everything is working!");
-        }
-    </script>
+
+<main>
+
+    <!-- ========================= -->
+    <!-- DEPARTURE WEATHER -->
+    <!-- ========================= -->
+
+    <section class="card hero-card">
+
+        <div class="airport-header">
+
+            <div>
+                <span class="eyebrow">DEPARTURE</span>
+                <h2>KNDZ</h2>
+                <p>Whiting Field NAS South</p>
+            </div>
+
+            <div
+                id="kndz-category"
+                class="category unknown">
+                ---
+            </div>
+
+        </div>
+
+
+        <div class="metar-section">
+
+            <span class="label">
+                CURRENT METAR
+            </span>
+
+            <div
+                class="metar"
+                id="kndz-metar">
+                Loading weather...
+            </div>
+
+        </div>
+
+
+        <div class="weather-grid">
+
+            <div class="weather-box">
+                <span class="weather-label">
+                    WIND
+                </span>
+
+                <span
+                    class="weather-value"
+                    id="kndz-wind">
+                    ---
+                </span>
+            </div>
+
+
+            <div class="weather-box">
+                <span class="weather-label">
+                    VISIBILITY
+                </span>
+
+                <span
+                    class="weather-value"
+                    id="kndz-vis">
+                    ---
+                </span>
+            </div>
+
+
+            <div class="weather-box">
+                <span class="weather-label">
+                    CEILING
+                </span>
+
+                <span
+                    class="weather-value"
+                    id="kndz-ceiling">
+                    ---
+                </span>
+            </div>
+
+
+            <div class="weather-box">
+                <span class="weather-label">
+                    ALTIMETER
+                </span>
+
+                <span
+                    class="weather-value"
+                    id="kndz-altimeter">
+                    ---
+                </span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ========================= -->
+    <!-- CONVECTIVE SIGMET -->
+    <!-- ========================= -->
+
+    <section
+        class="card sigmet-card checking"
+        id="sigmet-card">
+
+        <div class="sigmet-icon">
+            ⚡
+        </div>
+
+        <div>
+
+            <span class="eyebrow">
+                CONVECTIVE SIGMET
+            </span>
+
+            <h2 id="sigmet-title">
+                Checking KNDZ...
+            </h2>
+
+            <p id="sigmet-description">
+                Looking for active convective SIGMETs containing KNDZ.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ========================= -->
+    <!-- DESTINATION SELECTOR -->
+    <!-- ========================= -->
+
+    <section class="card">
+
+        <span class="eyebrow">
+            PICK YOUR ADVENTURE
+        </span>
+
+        <h2>
+            🚁 Where are we flying?
+        </h2>
+
+        <p class="section-description">
+            Select a destination to view current weather.
+        </p>
+
+
+        <div
+            class="destinations"
+            id="destinations">
+        </div>
+
+    </section>
+
+
+
+    <!-- ========================= -->
+    <!-- SELECTED ROUTE -->
+    <!-- ========================= -->
+
+    <section
+        class="card route-card"
+        id="route-card">
+
+        <span class="eyebrow">
+            TODAY'S QUEST
+        </span>
+
+        <h2 id="route-title">
+            KNDZ → KPNS
+        </h2>
+
+        <div id="selected-airport">
+        </div>
+
+    </section>
+
+
+
+    <!-- ========================= -->
+    <!-- FUN FACT -->
+    <!-- ========================= -->
+
+    <section class="card fact-card">
+
+        <div class="fact-icon">
+            🧠
+        </div>
+
+        <div>
+
+            <span class="eyebrow">
+                STAY CURIOUS
+            </span>
+
+            <p
+                class="fact"
+                id="aviation-fact">
+            </p>
+
+            <button onclick="showNewFact()">
+                Teach Me Something Else
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ========================= -->
+    <!-- WEATHER LEGEND -->
+    <!-- ========================= -->
+
+    <section class="card">
+
+        <span class="eyebrow">
+            FLIGHT CATEGORY CHEAT SHEET
+        </span>
+
+        <h2>
+            What do the colors mean?
+        </h2>
+
+
+        <div class="legend-grid">
+
+            <div class="legend vfr">
+                <strong>VFR</strong>
+                <span>
+                    &gt; 3000 ft ceiling<br>
+                    and &gt; 5 SM
+                </span>
+            </div>
+
+
+            <div class="legend mvfr">
+                <strong>MVFR</strong>
+                <span>
+                    1000–3000 ft<br>
+                    and/or 3–5 SM
+                </span>
+            </div>
+
+
+            <div class="legend ifr">
+                <strong>IFR</strong>
+                <span>
+                    500–&lt;1000 ft<br>
+                    and/or 1–&lt;3 SM
+                </span>
+            </div>
+
+
+            <div class="legend lifr">
+                <strong>LIFR</strong>
+                <span>
+                    &lt;500 ft<br>
+                    and/or &lt;1 SM
+                </span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- ATC LOFI -->
+    <!-- ========================= -->
+
+    <section class="card lofi-card">
+
+        <div class="lofi-icon">
+            🎧
+        </div>
+
+        <div class="lofi-content">
+
+            <span class="eyebrow">
+                STUDY JUICE
+            </span>
+
+            <h2>
+                Chill out with some ATC Lofi
+            </h2>
+
+            <!-- <p>
+                Tune in, lock in, and let the radio chatter
+                provide the vibes while you study.
+            </p> -->
+
+            <a
+                href="https://youtu.be/EuAt5sqX82k?is=4YRSwDPhtJGCND71"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="lofi-button">
+
+                🎧 Tune In & Study
+
+            </a>
+
+        </div>
+
+        <div class="lofi-radio">
+            <span>♫</span>
+            <span>〰</span>
+            <span>♫</span>
+            <span>〰</span>
+            <span>♫</span>
+        </div>
+
+    </section>
+
+    <!-- DATA STATUS -->
+
+    <section
+        class="status-card"
+        id="status-card">
+
+        <span id="data-status">
+            Loading weather data...
+        </span>
+
+    </section>
+
+</main>
+
+
+
+<footer>
+
+    <div class="footer-helicopter">
+        🚁
+    </div>
+
+    <p>
+        Weather data supplied by NOAA Aviation Weather Center.
+    </p>
+
+    <p>
+        <strong>
+            Supplemental training and planning aid only.
+        </strong>
+        Verify official weather, NOTAMs, applicable publications,
+        and required flight-planning sources before flight.
+    </p>
+
+</footer>
+
+
+<script src="app.js"></script>
 
 </body>
 </html>
