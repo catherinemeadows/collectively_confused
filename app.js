@@ -21,7 +21,10 @@ const airportNames = {
         "Tallahassee International",
 
     KDHN:
-        "Dothan Regional"
+        "Dothan Regional",
+    
+    KCEW:
+        "Bob Sikes Airport",
 
 };
 
@@ -32,7 +35,8 @@ const destinations = [
     "KMOB",
     "KHSA",
     "KTLH",
-    "KDHN"
+    "KDHN",
+    "KCEW",
 
 ];
 
@@ -180,93 +184,189 @@ function renderDeparture() {
 
 
 
+// function renderDestinations() {
+
+//     const container =
+//         document.getElementById(
+//             "destinations"
+//         );
+
+
+//     container.innerHTML = "";
+
+
+//     destinations.forEach(
+//         airport => {
+
+//             const wx =
+//                 weatherData.airports[
+//                     airport
+//                 ];
+
+
+//             const button =
+//                 document.createElement(
+//                     "button"
+//                 );
+
+
+//             button.className =
+//                 "destination";
+
+
+//             if (
+//                 airport ===
+//                 selectedDestination
+//             ) {
+
+//                 button.classList.add(
+//                     "active"
+//                 );
+
+//             }
+
+
+//             const category =
+//                 wx.flight_category ||
+//                 "UNKNOWN";
+
+
+//             button.innerHTML = `
+
+//                 <span class="destination-code">
+//                     ${airport}
+//                 </span>
+
+//                 <span class="destination-name">
+//                     ${airportNames[airport]}
+//                 </span>
+
+//                 <span
+//                     class="
+//                         mini-category
+//                         ${categoryClass(category)}
+//                     ">
+//                     ${category}
+//                 </span>
+
+//             `;
+
+
+//             button.onclick =
+//                 () => {
+
+//                     selectedDestination =
+//                         airport;
+
+//                     renderDestinations();
+
+//                     renderSelectedAirport();
+
+//                 };
+
+
+//             container.appendChild(
+//                 button
+//             );
+
+//         }
+//     );
+
+// }
+
 function renderDestinations() {
 
     const container =
-        document.getElementById(
-            "destinations"
-        );
+        document.getElementById("destinations");
 
+    if (!container || !weatherData) {
+        return;
+    }
 
     container.innerHTML = "";
 
 
-    destinations.forEach(
-        airport => {
+    destinations.forEach(airport => {
 
-            const wx =
-                weatherData.airports[
-                    airport
-                ];
+        const wx =
+            weatherData.airports[airport];
 
 
-            const button =
-                document.createElement(
-                    "button"
-                );
+        const button =
+            document.createElement("button");
 
 
-            button.className =
-                "destination";
+        // Important: prevent any strange
+        // form/button behavior
+        button.type = "button";
+
+        button.className = "destination";
+
+        button.dataset.airport = airport;
 
 
-            if (
-                airport ===
-                selectedDestination
-            ) {
+        if (airport === selectedDestination) {
 
-                button.classList.add(
-                    "active"
-                );
-
-            }
-
-
-            const category =
-                wx.flight_category ||
-                "UNKNOWN";
-
-
-            button.innerHTML = `
-
-                <span class="destination-code">
-                    ${airport}
-                </span>
-
-                <span class="destination-name">
-                    ${airportNames[airport]}
-                </span>
-
-                <span
-                    class="
-                        mini-category
-                        ${categoryClass(category)}
-                    ">
-                    ${category}
-                </span>
-
-            `;
-
-
-            button.onclick =
-                () => {
-
-                    selectedDestination =
-                        airport;
-
-                    renderDestinations();
-
-                    renderSelectedAirport();
-
-                };
-
-
-            container.appendChild(
-                button
-            );
+            button.classList.add("active");
 
         }
-    );
+
+
+        const category =
+            wx?.flight_category || "UNKNOWN";
+
+
+        button.innerHTML = `
+
+            <span class="destination-code">
+                ${airport}
+            </span>
+
+            <span class="destination-name">
+                ${airportNames[airport]}
+            </span>
+
+            <span
+                class="
+                    mini-category
+                    ${categoryClass(category)}
+                ">
+                ${category}
+            </span>
+
+        `;
+
+
+        button.addEventListener(
+            "click",
+            function(event) {
+
+                event.preventDefault();
+
+                event.stopPropagation();
+
+
+                selectedDestination =
+                    airport;
+
+
+                console.log(
+                    "Selected destination:",
+                    selectedDestination
+                );
+
+
+                renderDestinations();
+
+                renderSelectedAirport();
+
+            }
+        );
+
+
+        container.appendChild(button);
+
+    });
 
 }
 
@@ -617,7 +717,6 @@ function setCategoryElement(
 }
 
 
-
 function showNewFact() {
 
     const index =
@@ -633,6 +732,71 @@ function showNewFact() {
         aviationFacts[index];
 
 }
+
+/* =================================
+   MAIN WEBSITE TABS
+================================= */
+
+document
+    .querySelectorAll(".tab-button")
+    .forEach(button => {
+
+        button.addEventListener(
+            "click",
+            function(event) {
+
+                event.preventDefault();
+
+
+                const selectedTab =
+                    this.dataset.tab;
+
+
+                document
+                    .querySelectorAll(".tab-button")
+                    .forEach(btn => {
+
+                        btn.classList.remove(
+                            "active"
+                        );
+
+                    });
+
+
+                document
+                    .querySelectorAll(".tab-content")
+                    .forEach(content => {
+
+                        content.classList.remove(
+                            "active"
+                        );
+
+                    });
+
+
+                this.classList.add(
+                    "active"
+                );
+
+
+                const target =
+                    document.getElementById(
+                        selectedTab
+                    );
+
+
+                if (target) {
+
+                    target.classList.add(
+                        "active"
+                    );
+
+                }
+
+            }
+        );
+
+    });
 
 
 showNewFact();

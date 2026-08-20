@@ -990,5 +990,174 @@ section.card.lofi-card .lofi-radio {
 
 }
 
+/* =================================
+   MAIN NAVIGATION TABS
+================================= */
 
+.tab-nav {
+    max-width: 1100px;
+
+    margin:
+        -18px auto
+        10px;
+
+    padding:
+        0 20px;
+
+    display: flex;
+
+    gap: 8px;
+
+    position: relative;
+
+    z-index: 10;
+}
+
+
+.tab-button {
+    flex: 1;
+
+    border: none;
+
+    background: #dceaf1;
+
+    color: #315267;
+
+    padding:
+        15px 20px;
+
+    border-radius:
+        14px 14px 6px 6px;
+
+    font-size: 16px;
+
+    font-weight: 800;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 5px 15px
+        rgba(31, 67, 88, 0.08);
+
+    transition:
+        background 0.15s ease,
+        color 0.15s ease,
+        transform 0.15s ease;
+}
+
+
+.tab-button:hover {
+    background: #c9e1ed;
+
+    transform:
+        translateY(-2px);
+}
+
+
+.tab-button.active {
+    background: white;
+
+    color: #173f5c;
+
+    border-top:
+        4px solid #1d668c;
+}
+
+
+/* Tab content hidden by default */
+
+.tab-content {
+    display: none;
+}
+
+
+/* Show selected tab */
+
+.tab-content.active {
+    display: block;
+} 
+
+
+/* Feedback tab doesn't need
+   flight planning status spacing */
+
+#feedback {
+    padding-top: 10px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .tab-nav {
+        padding:
+            0 12px;
+    }
+
+    .tab-button {
+        padding:
+            13px 8px;
+
+        font-size: 14px;
+    }
+
+}
+
+/* =================================
+   DESTINATION BUTTONS
+================================= */
+
+.destination {
+    color: #1d668c;
+
+    cursor: pointer;
+
+    position: relative;
+
+    z-index: 1;
+}
+
+
+.destination-code {
+    color: #1d668c;
+
+    pointer-events: none;
+}
+
+
+.destination-name {
+    color: #1d668c;
+
+    pointer-events: none;
+}
+
+
+.destination .mini-category {
+    pointer-events: none;
+}
+
+
+/* Selected destination */
+
+.destination.active {
+    outline: 3px solid #1d668c;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 6px 16px
+        rgba(31, 67, 88, .15);
+}
+
+
+/* Keep your hover behavior */
+
+.destination:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 6px 16px
+        rgba(31, 67, 88, .13);
+}
 
