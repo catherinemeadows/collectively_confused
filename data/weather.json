@@ -1,7 +1,18 @@
 {
-  "generated_at": "2026-08-20T18:00:33.462767+00:00",
+  "generated_at": "2026-08-20T18:47:52.598393+00:00",
   "departure": "KNDZ",
   "airports": {
+    "KNDZ": {
+      "raw_metar": "SPECI KNDZ 201840Z VRB04KT 10SM TS FEW028 SCT042CB BKN070 32/26 A3001 RMK AO2 TSB37 OCNL LTGICCG OHD TS OHD MOV S T1 SET T03220261 $ ",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": 7000.0,
+      "ceiling_display": "7,000 ft AGL",
+      "wind_display": "VRB @ 4 kt",
+      "altimeter_display": "30.01 inHg",
+      "observation_time": 1787251200
+    },
     "KMOB": {
       "raw_metar": "METAR KMOB 201756Z 30005KT 10SM FEW017 SCT039 33/24 A3004 RMK AO2 SLP167 T03280239 10344 20250 58002 $",
       "flight_category": "VFR",
@@ -11,17 +22,6 @@
       "ceiling_display": "No BKN/OVC ceiling reported",
       "wind_display": "300\u00b0 @ 5 kt",
       "altimeter_display": "30.04 inHg",
-      "observation_time": 1787248560
-    },
-    "KNDZ": {
-      "raw_metar": "METAR KNDZ 201756Z 27003KT 10SM SCT030 SCT060 BKN150 BKN250 32/25 A3002 RMK AO2 SLP151 T2 SET T03220250 10328 20228 58002 $",
-      "flight_category": "VFR",
-      "visibility_sm": 10.0,
-      "visibility_display": "10+ SM",
-      "ceiling_ft_agl": 15000.0,
-      "ceiling_display": "15,000 ft AGL",
-      "wind_display": "270\u00b0 @ 3 kt",
-      "altimeter_display": "30.02 inHg",
       "observation_time": 1787248560
     },
     "KDHN": {
@@ -58,15 +58,15 @@
       "observation_time": 1787248380
     },
     "KHSA": {
-      "raw_metar": "METAR KHSA 201650Z 26004KT 10SM CLR 33/23 A3004",
+      "raw_metar": "METAR KHSA 201750Z VRB05KT 10SM SCT050 35/22 A3002",
       "flight_category": "VFR",
       "visibility_sm": 10.0,
       "visibility_display": "10+ SM",
       "ceiling_ft_agl": null,
       "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "260\u00b0 @ 4 kt",
-      "altimeter_display": "30.04 inHg",
-      "observation_time": 1787244600
+      "wind_display": "VRB @ 5 kt",
+      "altimeter_display": "30.02 inHg",
+      "observation_time": 1787248200
     }
   },
   "kndz_convective_sigmet": {
