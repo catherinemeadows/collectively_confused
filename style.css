@@ -823,3 +823,165 @@ section.card.lofi-card .lofi-radio {
     }
 
 }
+
+/* =================================
+   FEEDBACK
+================================= */
+
+.feedback-card {
+    display: flex;
+    gap: 22px;
+    align-items: flex-start;
+
+    border-top:
+        6px solid #1d668c;
+}
+
+
+.feedback-icon {
+    width: 65px;
+    height: 65px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    font-size: 36px;
+
+    background: #e9f6fc;
+
+    border-radius: 50%;
+}
+
+
+.feedback-content {
+    width: 100%;
+}
+
+
+.feedback-content h2 {
+    margin: 5px 0 8px;
+
+    font-size: 28px;
+}
+
+
+.feedback-intro {
+    color: #637985;
+
+    line-height: 1.5;
+
+    margin-bottom: 22px;
+}
+
+
+.feedback-field {
+    margin-bottom: 16px;
+}
+
+
+.feedback-field label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-size: 13px;
+
+    font-weight: 750;
+
+    color: #29495e;
+}
+
+
+.optional {
+    font-weight: normal;
+    opacity: .55;
+}
+
+
+.feedback-field input,
+.feedback-field select,
+.feedback-field textarea {
+
+    width: 100%;
+
+    padding: 12px 14px;
+
+    border:
+        1px solid #ccdce5;
+
+    border-radius: 10px;
+
+    background: #f8fbfc;
+
+    color: #18354a;
+
+    font-family: inherit;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition:
+        border .15s,
+        box-shadow .15s;
+}
+
+
+.feedback-field textarea {
+    resize: vertical;
+
+    min-height: 120px;
+}
+
+
+.feedback-field input:focus,
+.feedback-field select:focus,
+.feedback-field textarea:focus {
+
+    border-color: #1d668c;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(29, 102, 140, .10);
+}
+
+
+.feedback-button {
+    background: #173f5c !important;
+
+    color: white !important;
+
+    padding: 12px 20px;
+
+    border-radius: 10px;
+
+    font-weight: 800;
+
+    font-size: 15px;
+
+    cursor: pointer;
+}
+
+
+.feedback-button:hover {
+    background: #225f87 !important;
+
+    transform: translateY(-1px);
+}
+
+
+@media (max-width: 600px) {
+
+    .feedback-card {
+        display: block;
+    }
+
+    .feedback-icon {
+        margin-bottom: 15px;
+    }
+
+}
+
