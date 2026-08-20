@@ -21,6 +21,12 @@ KNDZ_LAT = 30.7044
 KNDZ_LON = -87.0230
 
 METAR_URL = "https://aviationweather.gov/api/data/metar"
+TAF_URL = "https://aviationweather.gov/api/data/taf"
+
+TAF_AIRPORTS = [
+    "KNDZ",
+    "KNSE",
+]
 SIGMET_URL = "https://aviationweather.gov/api/data/airsigmet"
 
 HEADERS = {
@@ -331,6 +337,40 @@ def fetch_metars():
 
     return result
 
+def fetch_tafs():
+    response = get_with_retries(
+        TAF_URL,
+        params={
+            "ids": ",".join(TAF_AIRPORTS),
+            "format": "json",
+        },
+    )
+
+    response.raise_for_status()
+
+    tafs = response.json()
+
+    result = {}
+
+    for taf in tafs:
+        station = get_station_id(taf)
+
+        if station in TAF_AIRPORTS:
+            result[station] = {
+                "raw_taf": taf.get(
+                    "rawTAF",
+                    "TAF unavailable"
+                )
+            }
+
+    for airport in TAF_AIRPORTS:
+        if airport not in result:
+            result[airport] = {
+                "raw_taf": "TAF unavailable"
+            }
+
+    return result
+
 
 def point_in_ring(lon, lat, ring):
     inside = False
@@ -595,6 +635,27 @@ def main():
         "kndz_convective_sigmet":
             sigmet,
     }
+
+    tafs = fetch_tafs()
+
+    data = {
+    "generated_at":
+        datetime.now(
+            timezone.utc
+        ).isoformat(),
+
+    "departure":
+        "KNDZ",
+
+    "airports":
+        airports,
+
+    "tafs":
+        tafs,
+
+    "kndz_convective_sigmet":
+        sigmet,
+}
 
     os.makedirs(
         "data",
