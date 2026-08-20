@@ -306,14 +306,19 @@ main {
 
     cursor: pointer;
 
+    color: #1d668c;
+
     transition:
         transform .15s,
         box-shadow .15s;
 }
 
+
 .destination:hover {
     transform:
         translateY(-3px);
+    
+    color:#f8f9fa;
 
     box-shadow:
         0 6px 16px
@@ -984,4 +989,6 @@ section.card.lofi-card .lofi-radio {
     }
 
 }
+
+
 
