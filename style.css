@@ -669,3 +669,157 @@ section.card.lofi-card .lofi-radio {
         display: none;
     }
 }
+
+/* =================================
+   HELPFUL LINKS
+================================= */
+
+.helpful-links-card {
+    border-top: 6px solid #1d668c;
+}
+
+
+.helpful-links-card h2 {
+    margin: 5px 0 5px;
+    font-size: 28px;
+}
+
+
+.helpful-links-card .section-description {
+    margin-top: 5px;
+    color: #637985;
+}
+
+
+/* Grid */
+
+.helpful-links-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(280px, 1fr)
+        );
+
+    gap: 12px;
+
+    margin-top: 22px;
+}
+
+
+/* Individual Link */
+
+.helpful-link {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    padding: 16px;
+
+    background: #f5f9fb;
+
+    border:
+        1px solid
+        rgba(29, 102, 140, 0.10);
+
+    border-radius: 14px;
+
+    text-decoration: none;
+
+    color: #18354a;
+
+    transition:
+        transform 0.15s ease,
+        box-shadow 0.15s ease,
+        background 0.15s ease;
+}
+
+
+.helpful-link:hover {
+    transform: translateY(-3px);
+
+    background: #edf7fc;
+
+    box-shadow:
+        0 7px 18px
+        rgba(31, 67, 88, 0.13);
+}
+
+
+/* Icons */
+
+.helpful-link-icon {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    background: white;
+
+    border-radius: 12px;
+
+    font-size: 27px;
+
+    box-shadow:
+        0 3px 8px
+        rgba(31, 67, 88, 0.08);
+}
+
+
+/* Text */
+
+.helpful-link h3 {
+    margin: 0 0 4px;
+
+    font-size: 17px;
+
+    color: #18354a;
+}
+
+
+.helpful-link p {
+    margin: 0;
+
+    font-size: 13px;
+
+    color: #71808c;
+
+    line-height: 1.4;
+}
+
+
+/* Arrow */
+
+.link-arrow {
+    margin-left: auto;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    color: #1d668c;
+
+    transition:
+        transform 0.15s ease;
+}
+
+
+.helpful-link:hover .link-arrow {
+    transform: translateX(4px);
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .helpful-links-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
