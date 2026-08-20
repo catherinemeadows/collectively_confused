@@ -1186,3 +1186,105 @@ section.card.lofi-card .lofi-radio {
         rgba(31, 67, 88, .13);
 }
 
+/* =================================
+   PATCHES
+================================= */
+
+.patch-card {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+
+    padding: 25px;
+
+    overflow: hidden;
+
+    border-top: 6px solid #1d668c;
+}
+
+
+.patch-image-container {
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.patch-image {
+    width: 170px;
+    height: 170px;
+
+    object-fit: contain;
+
+    transition:
+        transform 0.25s ease;
+}
+
+
+.patch-card:hover .patch-image {
+    transform:
+        rotate(-3deg)
+        scale(1.05);
+}
+
+
+.patch-content {
+    flex: 1;
+}
+
+
+.patch-content h2 {
+    margin: 5px 0 8px;
+
+    font-size: 28px;
+
+    color: #173f5c;
+}
+
+
+.patch-content p {
+    margin: 0 0 16px;
+
+    color: #637985;
+
+    line-height: 1.5;
+}
+
+
+.coming-soon-badge {
+    display: inline-block;
+
+    padding: 8px 13px;
+
+    background: #e9f6fc;
+
+    color: #1d668c;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.7px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .patch-card {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .patch-image {
+        width: 150px;
+        height: 150px;
+    }
+
+}
