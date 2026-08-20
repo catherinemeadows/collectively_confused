@@ -39,7 +39,7 @@ const destinations = [
 
 const aviationFacts = [
 
-    "🚁 Effective translational lift occurs as the rotor system moves into relatively undisturbed air, increasing rotor efficiency.",
+    "🚁 Effective translational lift occurs as the rotor system moves into relatively undisturbed air, increasing rotor efficiency. The flow of air through the rotor disk is more horizontal, which reduces induced velocity and induced drag.",
 
     "🌡️ A decreasing temperature–dew point spread generally indicates increasing relative humidity and a greater potential for clouds or fog.",
 
@@ -55,19 +55,17 @@ const aviationFacts = [
 
     "📡 A METAR describes observed weather conditions at or near an aerodrome. A TAF is a forecast.",
 
-    "⚡ Convective SIGMETs identify significant convective weather and should get your attention regardless of aircraft category.",
-
     "🚁 Rotor blades experience dissymmetry of lift in forward flight because the advancing blade sees a higher relative velocity than the retreating blade.",
 
     "🛩️ Pressure altitude is the altitude indicated when the altimeter is set to 29.92 inHg.",
 
     "🌫️ Radiation fog commonly favors clear skies, light winds, and enough low-level moisture for the surface temperature to cool toward the dew point.",
 
-    "🚁 Translating tendency is the lateral tendency caused by tail rotor thrust in a single-main-rotor helicopter.",
+    "🚁 Tail rotor thrust counters the torque effect but also results in a drift-called translating tendency.",
 
-    "🧠 The atmosphere doesn't care how badly you want to fly. Always have an escape plan.",
+    "🚁 The FAA Helicopter Flying Handbook notes that high humidity can produce roughly a 3 to 4% performance reduction compared with dry air at the same altitude and temperature.",
 
-    "🛬 A stabilized approach is much easier to salvage before it becomes an unstabilized landing.",
+    "🌊 Water can be your windsock. FAA helicopter guidance includes visual wind estimates from water: increasing ripples, waves, whitecaps, and spray can help indicate wind strength when you're operating away from a weather station.",
 
     "🌬️ Gusty surface winds often indicate mechanical turbulence when strong winds interact with buildings, trees, and terrain."
 
