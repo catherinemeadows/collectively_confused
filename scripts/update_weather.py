@@ -2,6 +2,7 @@ import json
 import os
 import re
 from datetime import datetime, timezone
+import time
 
 import requests
 
@@ -289,14 +290,12 @@ def process_observation(observation):
 
 
 def fetch_metars():
-    response = requests.get(
+    response = get_with_retries(
         METAR_URL,
         params={
             "ids": ",".join(AIRPORTS),
             "format": "json",
         },
-        headers=HEADERS,
-        timeout=30,
     )
 
     response.raise_for_status()
@@ -460,13 +459,19 @@ def sigmet_label(feature):
 
 def fetch_kndz_convective_sigmet():
     try:
-        response = requests.get(
+        # response = requests.get(
+        #     SIGMET_URL,
+        #     params={
+        #         "format": "geojson",
+        #     },
+        #     headers=HEADERS,
+        #     timeout=30,
+        # )
+        response = get_with_retries(
             SIGMET_URL,
             params={
                 "format": "geojson",
             },
-            headers=HEADERS,
-            timeout=30,
         )
 
         if response.status_code == 204:
@@ -610,6 +615,86 @@ def main():
     print(
         "Weather data written "
         "to data/weather.json"
+    )
+
+def get_with_retries(
+    url,
+    params=None,
+    attempts=4
+):
+    """
+    Retry temporary Aviation Weather
+    Center server failures.
+    """
+
+    for attempt in range(1, attempts + 1):
+
+        try:
+
+            response = requests.get(
+                url,
+                params=params,
+                headers=HEADERS,
+                timeout=45,
+            )
+
+
+            if response.status_code in [
+                502,
+                503,
+                504
+            ]:
+
+                print(
+                    f"AWC temporary error "
+                    f"{response.status_code}. "
+                    f"Attempt {attempt}/{attempts}"
+                )
+
+
+                if attempt < attempts:
+
+                    wait_seconds = (
+                        attempt * 10
+                    )
+
+                    print(
+                        f"Waiting "
+                        f"{wait_seconds} seconds..."
+                    )
+
+                    time.sleep(
+                        wait_seconds
+                    )
+
+                    continue
+
+
+            response.raise_for_status()
+
+            return response
+
+
+        except requests.RequestException as error:
+
+            print(
+                f"Request failed on "
+                f"attempt {attempt}/{attempts}: "
+                f"{error}"
+            )
+
+
+            if attempt == attempts:
+                raise
+
+
+            time.sleep(
+                attempt * 10
+            )
+
+
+    raise RuntimeError(
+        "Aviation Weather request failed."
     )
 
 
