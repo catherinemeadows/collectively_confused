@@ -69,6 +69,38 @@ const aviationFacts = [
 
     "🌬️ Gusty surface winds often indicate mechanical turbulence when strong winds interact with buildings, trees, and terrain."
 
+    "🌬️ Density altitude matters! Hot, humid, and high conditions reduce helicopter performance because the air is less dense."
+
+    "☀️ A helicopter may have plenty of power on a cool morning but struggle on a hot afternoon because increased density altitude reduces available power and increases power required."
+   
+    "🌫️ Haze can make distant objects appear farther away or less distinct, which can make judging distance and terrain more difficult during training flights."
+
+    "🚁 Translational lift occurs when a helicopter gains enough forward airspeed to fly into cleaner, more horizontal airflow, making the rotor system more efficient."
+
+    "🌡️ The temperature/dew-point spread is important for aviation weather. When the two get very close, the potential for fog or low clouds increases"
+
+    "💨 Vortex ring state is more likely with high power, low airspeed, and a high rate of descent—conditions that allow the rotor to become immersed in its own vortices."
+
+    "🔄 Autorotation works because the upward flow of air through the rotor during the descent keeps the blades rotating after a loss of engine power."
+
+    "⚖️ The retreating blade has a lower relative airspeed than the advancing blade, so helicopters have aerodynamic limits that airplanes don't encounter in the same way."
+
+    "🛩️ Dissymmetry of lift occurs because the advancing blade initially produces more lift than the retreating blade. Blade flapping helps equalize the lift across the rotor disk."
+
+    "💧 Humidity also affects density altitude. Moist air is actually less dense than dry air, so high humidity can slightly reduce aircraft performance."
+
+    "⛰️ High elevation + high temperature + high humidity can create a significant density-altitude problem, especially for helicopters operating near their performance limits."
+
+    "☀️ A dark-colored or paved surface can create localized heating, producing thermals and turbulence that can affect low-level helicopter operations."
+
+    "⛈️ A thunderstorm can produce dangerous winds well outside the visible rain shaft, so simply avoiding the precipitation core doesn't necessarily eliminate the hazard."
+
+    "🌫️ A small temperature/dew-point spread can be an early clue for fog or low clouds, especially when winds are light."
+
+    "🌊 Water, sand, grass, and other surfaces can change the effectiveness of ground effect, so the actual environment matters when evaluating hover performance."
+
+    "🌀 Retreating blade stall can occur at high airspeeds when the retreating blade doesn't have enough relative airflow to produce the required lift."
+
 ];
 
 
