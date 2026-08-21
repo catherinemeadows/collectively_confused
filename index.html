@@ -6,6 +6,15 @@
 
     <title>Cat & Emily's Flight Forecast</title>
 
+    <!-- <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/> -->
+
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    
+    >
+
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -157,40 +166,6 @@
 
     </section>
 
-        <!-- ========================= -->
-    <!-- TAFs -->
-    <!-- ========================= -->
-
-    <!-- <section class="card taf-card">
-
-        <span class="eyebrow">
-            TERMINAL AERODROME FORECASTS
-        </span>
-
-        <h2>
-            ✈️ TAFs
-        </h2>
-
-        <div class="taf-grid">
-
-            <div class="taf-box">
-
-                <span class="weather-label">
-                    KNSE
-                </span>
-
-                <div
-                    class="taf"
-                    id="knse-taf">
-                    Loading TAF...
-                </div>
-
-            </div>
-
-        </div>
-
-    </section> -->
-
     <section class="card taf-card">
 
         <span class="eyebrow">
@@ -226,27 +201,46 @@
     <!-- CONVECTIVE SIGMET -->
     <!-- ========================= -->
     <section
-        class="card sigmet-card checking"
-        id="sigmet-card">
+        class="card sigmet-card"
+        id="sigmet-card"
+    >
 
-        <div class="sigmet-icon">
-            ⚡
+        <div class="sigmet-heading">
+
+            <div class="sigmet-icon">
+                ⚡
+            </div>
+
+            <div>
+                <span class="eyebrow">
+                    CONVECTIVE SIGMET
+                </span>
+
+                <h2 id="sigmet-title">
+                    Checking convective weather...
+                </h2>
+
+                <p id="sigmet-description">
+                    Loading latest SIGMET information.
+                </p>
+            </div>
+
         </div>
 
-        <div>
 
-            <span class="eyebrow">
-                CONVECTIVE SIGMET
-            </span>
+        <!-- MAP -->
 
-            <h2 id="sigmet-title">
-                Checking KNDZ...
-            </h2>
+        <div
+            id="sigmet-map"
+            class="sigmet-map">
+        </div>
 
-            <p id="sigmet-description">
-                Looking for active convective SIGMETs containing KNDZ.
-            </p>
 
+        <!-- READABLE DETAILS -->
+
+        <div
+            id="sigmet-details"
+            class="sigmet-details">
         </div>
 
     </section>
@@ -728,8 +722,24 @@
     </p>
 
 </footer>
+<!-- 
+<link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+/>
+<script src="app.js"></script> -->
 
+<!-- Leaflet JavaScript -->
+<script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin="">
+</script>
+
+<!-- Hovey JavaScript -->
 <script src="app.js"></script>
+
+</body>
 
 </body>
 </html>

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-20T23:59:43.512786+00:00",
+  "generated_at": "2026-08-21T00:53:57.259815+00:00",
   "departure": "KNDZ",
   "airports": {
     "KCEW": {
@@ -25,26 +25,26 @@
       "observation_time": 1787269980
     },
     "KHSA": {
-      "raw_metar": "METAR KHSA 202250Z 20008KT 10SM VCTS CLR 34/25 A2997",
+      "raw_metar": "METAR KHSA 210050Z 00000KT 10SM CLR 30/23 A2998",
       "flight_category": "VFR",
       "visibility_sm": 10.0,
       "visibility_display": "10+ SM",
       "ceiling_ft_agl": null,
       "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "200\u00b0 @ 8 kt",
-      "altimeter_display": "29.97 inHg",
-      "observation_time": 1787266200
+      "wind_display": "Calm",
+      "altimeter_display": "29.98 inHg",
+      "observation_time": 1787273400
     },
     "KMOB": {
-      "raw_metar": "METAR KMOB 202256Z 14009KT 7SM TS SCT025CB BKN048 BKN100 23/22 A3004 RMK AO2 RAE52 SLP169 FRQ LTGICCG ALQDS TS ALQDS MOV SE P0017 T02330222",
+      "raw_metar": "SPECI KMOB 210049Z 33003KT 7SM FEW003 23/23 A3000 RMK AO2 RAB01E48 P0001 T02280228",
       "flight_category": "VFR",
       "visibility_sm": 7.0,
       "visibility_display": "7 SM",
-      "ceiling_ft_agl": 4800.0,
-      "ceiling_display": "4,800 ft AGL",
-      "wind_display": "140\u00b0 @ 9 kt",
-      "altimeter_display": "30.04 inHg",
-      "observation_time": 1787266560
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "330\u00b0 @ 3 kt",
+      "altimeter_display": "30.00 inHg",
+      "observation_time": 1787273340
     },
     "KNDZ": {
       "raw_metar": "METAR KNDZ 202356Z 29003KT 10SM SCT042 SCT130 BKN220 23/22 A3000 RMK AO2 RAB20E48 SLP145 T1 SET P0000 60054 T02280222 10328 20217 53006 $",
@@ -92,7 +92,55 @@
     "status": "INSIDE",
     "matches": [
       {
-        "label": "WSUS31 KKCI 202355\nSIGE \nCONVECTIVE SIGMET 19E\nVALID UNTIL 0155Z\nFL AL MS LA AND CSTL WTRS\nFROM 30NNE MEI-10SSW MGM-60SE CEW-10NNW HRV-50WSW MHZ-30NNE MEI\nAREA SEV TS MOV LTL. TOPS ABV FL450.\nHAIL TO 1 IN...WIND GUSTS TO 50KT POSS.\n\nOUTLOOK VALID 210155-210555\nFROM BDL-ACK-150SE SIE-130E CRG-110SSE "
+        "label": "WSUS31 KKCI 202355\nSIGE \nCONVECTIVE SIGMET 19E\nVALID UNTIL 0155Z\nFL AL MS LA AND CSTL WTRS\nFROM 30NNE MEI-10SSW MGM-60SE CEW-10NNW HRV-50WSW MHZ-30NNE MEI\nAREA SEV TS MOV LTL. TOPS ABV FL450.\nHAIL TO 1 IN...WIND GUSTS TO 50KT POSS.\n\nOUTLOOK VALID 210155-210555\nFROM BDL-ACK-150SE SIE-130E CRG-110SSE ",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -88.571,
+                32.845
+              ],
+              [
+                -86.397,
+                32.062
+              ],
+              [
+                -85.865,
+                30.122
+              ],
+              [
+                -90.075,
+                30.008
+              ],
+              [
+                -91.011,
+                32.107
+              ],
+              [
+                -88.571,
+                32.845
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "icaoId": "KKCI",
+          "airSigmetType": "SIGMET",
+          "alphaChar": "E",
+          "hazard": "CONVECTIVE",
+          "seriesId": "19E",
+          "validTimeFrom": "2026-08-20T23:55:00.000Z",
+          "validTimeTo": "2026-08-21T00:54:59.000Z",
+          "severity": 5,
+          "altitudeHi1": 45000,
+          "altitudeHi2": 60000,
+          "altitudeLow1": null,
+          "altitudeLow2": null,
+          "movementDir": null,
+          "movementSpd": null,
+          "rawAirSigmet": "WSUS31 KKCI 202355\nSIGE \nCONVECTIVE SIGMET 19E\nVALID UNTIL 0155Z\nFL AL MS LA AND CSTL WTRS\nFROM 30NNE MEI-10SSW MGM-60SE CEW-10NNW HRV-50WSW MHZ-30NNE MEI\nAREA SEV TS MOV LTL. TOPS ABV FL450.\nHAIL TO 1 IN...WIND GUSTS TO 50KT POSS.\n\nOUTLOOK VALID 210155-210555\nFROM BDL-ACK-150SE SIE-130E CRG-110SSE MIA-80WSW EYW-100WSW\nPIE-200ESE LEV-30WNW BWG-EKN-BDL\nREF WW 604 605.\nWST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM\nPREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS."
+        }
       }
     ]
   }

@@ -2,6 +2,8 @@ let weatherData = null;
 
 let selectedDestination = "KPNS";
 
+let sigmetMap = null;
+let sigmetLayer = null;
 
 const airportNames = {
 
@@ -1451,7 +1453,7 @@ function renderSelectedAirport() {
 function renderSigmet() {
 
     const sigmet =
-        weatherData.kndz_convective_sigmet;
+        weatherData?.kndz_convective_sigmet;
 
 
     const card =
@@ -1478,6 +1480,18 @@ function renderSigmet() {
         "checking",
         "unknown-sigmet"
     );
+
+    if (!sigmet) {
+
+        title.innerText =
+            "SIGMET data unavailable";
+
+        description.innerText =
+            "Unable to check convective weather.";
+
+        return;
+
+    }
 
 
     if (
@@ -1555,6 +1569,9 @@ function renderSigmet() {
             "Unable to determine current SIGMET status.";
 
     }
+
+    renderSigmetMap();
+    renderSigmetDetails();
 
 }
 
@@ -1731,6 +1748,298 @@ document
         );
 
     });
+
+function renderSigmetMap() {
+
+    const mapElement =
+        document.getElementById(
+            "sigmet-map"
+        );
+
+    if (!mapElement) {
+        return;
+    }
+
+
+    /*
+       Approximate KNDZ location
+    */
+
+    const kndz = [
+        30.7044,
+        -87.0230
+    ];
+
+
+    /*
+       Create map only once.
+    */
+
+    if (!sigmetMap) {
+
+        sigmetMap = L.map(
+            "sigmet-map"
+        ).setView(
+            kndz,
+            7
+        );
+
+
+        L.tileLayer(
+            "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+            {
+                attribution:
+                    "&copy; OpenStreetMap contributors"
+            }
+        ).addTo(
+            sigmetMap
+        );
+
+
+        /*
+           KNDZ marker
+        */
+
+        L.marker(
+            kndz
+        )
+        .addTo(
+            sigmetMap
+        )
+        .bindPopup(
+            "<strong>KNDZ</strong><br>Departure"
+        );
+
+    }
+
+
+    /*
+       Remove previous SIGMET polygon.
+    */
+
+    if (sigmetLayer) {
+
+        sigmetMap.removeLayer(
+            sigmetLayer
+        );
+
+        sigmetLayer = null;
+
+    }
+
+
+    const sigmet =
+        weatherData
+            ?.kndz_convective_sigmet;
+
+
+    if (
+        !sigmet?.matches ||
+        sigmet.matches.length === 0
+    ) {
+
+        sigmetMap.setView(
+            kndz,
+            7
+        );
+
+        return;
+
+    }
+
+
+    /*
+       Build GeoJSON FeatureCollection
+       from every matching polygon.
+    */
+
+    const features =
+        sigmet.matches
+            .filter(
+                match =>
+                    match.geometry
+            )
+            .map(
+                match => ({
+
+                    type:
+                        "Feature",
+
+                    geometry:
+                        match.geometry,
+
+                    properties:
+                        match.properties || {}
+
+                })
+            );
+
+
+    if (!features.length) {
+        return;
+    }
+
+
+    const geojson = {
+
+        type:
+            "FeatureCollection",
+
+        features:
+            features
+
+    };
+
+    console.log(
+        JSON.stringify(
+            geojson,
+            null,
+            2
+        )
+    );
+
+    sigmetLayer =
+        L.geoJSON(
+            geojson,
+            {
+
+                style: {
+
+                    color:
+                        "#c62828",
+
+                    weight:
+                        3,
+
+                    fillColor:
+                        "#ef5350",
+
+                    fillOpacity:
+                        0.25
+
+                }
+
+            }
+        )
+        .addTo(
+            sigmetMap
+        );
+
+
+    /*
+       Automatically zoom so the
+       whole SIGMET is visible.
+    */
+
+    const bounds =
+        sigmetLayer
+            .getBounds();
+
+
+    if (bounds.isValid()) {
+
+        sigmetMap.fitBounds(
+            bounds,
+            {
+                padding:
+                    [25, 25]
+            }
+        );
+
+    }
+
+}
+
+function renderSigmetDetails() {
+
+    const container =
+        document.getElementById(
+            "sigmet-details"
+        );
+
+
+    const sigmet =
+        weatherData
+            ?.kndz_convective_sigmet;
+
+
+    if (!container) {
+        return;
+    }
+
+
+    if (
+        !sigmet?.matches?.length
+    ) {
+
+        container.innerHTML = `
+
+            <div class="sigmet-detail">
+
+                <span class="sigmet-detail-label">
+                    STATUS
+                </span>
+
+                <span class="sigmet-detail-value">
+                    No active Convective SIGMET
+                    containing KNDZ
+                </span>
+
+            </div>
+
+        `;
+
+        return;
+    }
+
+
+    const match =
+        sigmet.matches[0];
+
+
+    container.innerHTML = `
+
+        <div class="sigmet-detail">
+
+            <span class="sigmet-detail-label">
+                STATUS
+            </span>
+
+            <span class="sigmet-detail-value">
+                ⚠️ Active Convective SIGMET
+            </span>
+
+        </div>
+
+
+        <div class="sigmet-detail">
+
+            <span class="sigmet-detail-label">
+                AIRPORT
+            </span>
+
+            <span class="sigmet-detail-value">
+                KNDZ
+            </span>
+
+        </div>
+
+
+        <div class="sigmet-detail">
+
+            <span class="sigmet-detail-label">
+                HAZARD
+            </span>
+
+            <span class="sigmet-detail-value">
+                ⛈️ Convective weather
+            </span>
+
+        </div>
+
+    `;
+
+}
 
 
 showNewFact();

@@ -500,14 +500,6 @@ def sigmet_label(feature):
 
 def fetch_kndz_convective_sigmet():
     try:
-        # response = requests.get(
-        #     SIGMET_URL,
-        #     params={
-        #         "format": "geojson",
-        #     },
-        #     headers=HEADERS,
-        #     timeout=30,
-        # )
         response = get_with_retries(
             SIGMET_URL,
             params={
@@ -543,12 +535,27 @@ def fetch_kndz_convective_sigmet():
                 KNDZ_LAT,
                 feature.get("geometry"),
             ):
+                # matches.append(
+                #     {
+                #         "label":
+                #             sigmet_label(
+                #                 feature
+                #             )
+                #     }
+                # )
+                # properties = feature.get(
+                #     "properties",
+                #     {}
+                # )
+
                 matches.append(
                     {
-                        "label":
-                            sigmet_label(
-                                feature
-                            )
+                        "label": sigmet_label(feature),
+
+                        "geometry": feature.get("geometry"),
+
+                        "properties": feature.get("properties",
+                        {})
                     }
                 )
 
