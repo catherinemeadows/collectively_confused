@@ -1,7 +1,18 @@
 {
-  "generated_at": "2026-08-21T13:03:59.927897+00:00",
+  "generated_at": "2026-08-21T13:52:22.749328+00:00",
   "departure": "KNDZ",
   "airports": {
+    "KCEW": {
+      "raw_metar": "SPECI KCEW 211342Z AUTO 00000KT 10SM SCT011 26/23 A3008 RMK AO2 T02560233 $",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "Calm",
+      "altimeter_display": "30.08 inHg",
+      "observation_time": 1787319720
+    },
     "KDHN": {
       "raw_metar": "METAR KDHN 211253Z 00000KT 10SM CLR 25/22 A3009 RMK AO1 SLP184 T02500222",
       "flight_category": "VFR",
@@ -36,15 +47,15 @@
       "observation_time": 1787316960
     },
     "KNDZ": {
-      "raw_metar": "METAR KNDZ 211256Z 00000KT 10SM FEW040 SCT250 25/23 A3005 RMK AO2 SLP162 T02500228 $",
+      "raw_metar": "SPECI KNDZ 211337Z 06004KT 10SM FEW009 FEW040 SCT250 26/23 A3006 RMK AO2 T02610233 $ ",
       "flight_category": "VFR",
       "visibility_sm": 10.0,
       "visibility_display": "10+ SM",
       "ceiling_ft_agl": null,
       "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "Calm",
-      "altimeter_display": "30.05 inHg",
-      "observation_time": 1787316960
+      "wind_display": "060\u00b0 @ 4 kt",
+      "altimeter_display": "30.06 inHg",
+      "observation_time": 1787319420
     },
     "KPNS": {
       "raw_metar": "METAR KPNS 211253Z 00000KT 10SM CLR 26/24 A3004 RMK AO2 SLP173 T02610244",
@@ -66,17 +77,6 @@
       "ceiling_display": "No BKN/OVC ceiling reported",
       "wind_display": "Calm",
       "altimeter_display": "30.06 inHg",
-      "observation_time": 1787316780
-    },
-    "KCEW": {
-      "raw_metar": "METAR KCEW 211253Z AUTO 11003KT 10SM CLR 23/22 A3008 RMK AO2 SLP184 T02330222 $",
-      "flight_category": "VFR",
-      "visibility_sm": 10.0,
-      "visibility_display": "10+ SM",
-      "ceiling_ft_agl": null,
-      "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "110\u00b0 @ 3 kt",
-      "altimeter_display": "30.08 inHg",
       "observation_time": 1787316780
     }
   },
