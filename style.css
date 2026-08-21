@@ -1288,3 +1288,98 @@ section.card.lofi-card .lofi-radio {
     }
 
 }
+
+/* =================================
+   PATCH IMAGE
+================================= */
+
+.patch-image-container {
+    width: 180px;
+    height: 180px;
+
+    flex: 0 0 180px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+.patch-image-container img.patch-image {
+    display: block;
+
+    width: 160px !important;
+    height: 160px !important;
+
+    max-width: 160px !important;
+    max-height: 160px !important;
+
+    object-fit: contain;
+
+    flex: none;
+}
+
+/* =================================
+   READABLE TAF
+================================= */
+
+.taf {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+.taf-period {
+
+    padding: 16px;
+
+    background: #f5f9fb;
+
+    border-left:
+        5px solid #1d668c;
+
+    border-radius: 10px;
+}
+
+
+.taf-time {
+
+    color: #1d668c;
+
+    font-size: 15px;
+
+    font-weight: 850;
+
+    margin-bottom: 8px;
+}
+
+
+.taf-summary {
+
+    color: #29495e;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+.taf-code {
+
+    display: inline-block;
+
+    margin-top: 7px;
+
+    color: #71808c;
+
+    font-family:
+        "SFMono-Regular",
+        Consolas,
+        monospace;
+
+    font-size: 12px;
+
+    opacity: .8;
+}

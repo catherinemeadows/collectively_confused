@@ -216,15 +216,904 @@ function renderDeparture() {
 
 }
 
+// function renderTafs() {
+
+//     const tafs =
+//         weatherData.tafs;
+//     document.getElementById(
+//         "knse-taf"
+//     ).innerText =
+//         tafs.KNSE?.raw_taf ||
+//         "TAF unavailable";
+// }
+
 function renderTafs() {
 
-    const tafs =
-        weatherData.tafs;
-    document.getElementById(
-        "knse-taf"
-    ).innerText =
-        tafs.KNSE?.raw_taf ||
-        "TAF unavailable";
+    const tafElement =
+        document.getElementById("knse-taf");
+
+    if (!tafElement) {
+        return;
+    }
+
+    const rawTaf =
+        weatherData?.tafs?.KNSE?.raw_taf;
+
+    if (!rawTaf) {
+
+        tafElement.innerHTML =
+            `<p>TAF unavailable</p>`;
+
+        return;
+    }
+
+
+    try {
+
+        const periods =
+            parseTafPeriods(rawTaf);
+
+
+        if (!periods.length) {
+
+            tafElement.innerHTML =
+                `<div class="taf-raw">${rawTaf}</div>`;
+
+            return;
+        }
+
+
+        tafElement.innerHTML =
+            periods.map(period => {
+
+                return `
+                    <div class="taf-period">
+
+                        <div class="taf-time">
+                            ${period.time}
+                        </div>
+
+                        <div class="taf-summary">
+                            ${formatTafConditions(
+                                period.conditions
+                            )}
+                        </div>
+
+                    </div>
+                `;
+
+            }).join("");
+
+
+    } catch (error) {
+
+        console.error(
+            "TAF parsing error:",
+            error
+        );
+
+        tafElement.innerText =
+            rawTaf;
+
+    }
+
+}
+
+function parseTafPeriods(rawTaf) {
+
+    // Clean up whitespace
+    const taf =
+        rawTaf
+            .replace(/\s+/g, " ")
+            .trim();
+
+
+    /*
+       Find the overall validity period.
+
+       Example:
+       2012/2118
+
+       = valid from the 20th at 1200Z
+         until the 21st at 1800Z
+    */
+
+    const validityMatch =
+        taf.match(
+            /\b(\d{2})(\d{2})\/(\d{2})(\d{2})\b/
+        );
+
+
+    if (!validityMatch) {
+        return [];
+    }
+
+
+    const startDay =
+        Number(validityMatch[1]);
+
+    const startHour =
+        Number(validityMatch[2]);
+
+    const endDay =
+        Number(validityMatch[3]);
+
+    const endHour =
+        Number(validityMatch[4]);
+
+
+    const startDate =
+        makeTafDate(
+            startDay,
+            startHour,
+            0
+        );
+
+
+    const tafEndDate =
+        makeTafDate(
+            endDay,
+            endHour,
+            0,
+            startDate
+        );
+
+
+    /*
+       Everything after the validity
+       group begins the forecast.
+    */
+
+    const validityIndex =
+        taf.indexOf(
+            validityMatch[0]
+        );
+
+
+    const forecastText =
+        taf.substring(
+            validityIndex +
+            validityMatch[0].length
+        ).trim();
+
+
+    /*
+       Split at:
+
+       FM201800
+       TEMPO 2020/2024
+       BECMG 2021/2023
+    */
+
+    const changeRegex =
+        /\b(FM\d{6}|TEMPO\s+\d{4}\/\d{4}|BECMG\s+\d{4}\/\d{4})\b/g;
+
+
+    const changes = [];
+
+    let match;
+
+
+    while (
+        (
+            match =
+                changeRegex.exec(
+                    forecastText
+                )
+        ) !== null
+    ) {
+
+        changes.push({
+
+            marker:
+                match[0],
+
+            index:
+                match.index
+
+        });
+
+    }
+
+
+    const periods = [];
+
+
+    /*
+       Initial prevailing forecast
+    */
+
+    const firstChangeIndex =
+        changes.length
+            ? changes[0].index
+            : forecastText.length;
+
+
+    const initialConditions =
+        forecastText
+            .substring(
+                0,
+                firstChangeIndex
+            )
+            .trim();
+
+
+    if (initialConditions) {
+
+        const firstEnd =
+            changes.length
+                ? getChangeStartDate(
+                    changes[0].marker,
+                    startDate
+                )
+                : tafEndDate;
+
+
+        periods.push({
+
+            type:
+                "PREVAILING",
+
+            start:
+                startDate,
+
+            end:
+                firstEnd,
+
+            conditions:
+                initialConditions
+
+        });
+
+    }
+
+
+    /*
+       Process FM / TEMPO / BECMG
+    */
+
+    changes.forEach(
+        (change, index) => {
+
+            const next =
+                changes[
+                    index + 1
+                ];
+
+
+            const conditionStart =
+                change.index +
+                change.marker.length;
+
+
+            const conditionEnd =
+                next
+                    ? next.index
+                    : forecastText.length;
+
+
+            const conditions =
+                forecastText
+                    .substring(
+                        conditionStart,
+                        conditionEnd
+                    )
+                    .trim();
+
+
+            if (
+                change.marker
+                    .startsWith("FM")
+            ) {
+
+                const start =
+                    getChangeStartDate(
+                        change.marker,
+                        startDate
+                    );
+
+
+                const end =
+                    next
+                        ? getChangeStartDate(
+                            next.marker,
+                            start
+                        )
+                        : tafEndDate;
+
+
+                periods.push({
+
+                    type:
+                        "FM",
+
+                    start:
+                        start,
+
+                    end:
+                        end,
+
+                    conditions:
+                        conditions
+
+                });
+
+            }
+
+
+            else if (
+                change.marker
+                    .startsWith("TEMPO")
+            ) {
+
+                const range =
+                    getRangeDates(
+                        change.marker,
+                        startDate
+                    );
+
+
+                periods.push({
+
+                    type:
+                        "TEMPO",
+
+                    start:
+                        range.start,
+
+                    end:
+                        range.end,
+
+                    conditions:
+                        conditions
+
+                });
+
+            }
+
+
+            else if (
+                change.marker
+                    .startsWith("BECMG")
+            ) {
+
+                const range =
+                    getRangeDates(
+                        change.marker,
+                        startDate
+                    );
+
+
+                periods.push({
+
+                    type:
+                        "BECMG",
+
+                    start:
+                        range.start,
+
+                    end:
+                        range.end,
+
+                    conditions:
+                        conditions
+
+                });
+
+            }
+
+        }
+    );
+
+
+    return periods.map(
+        period => {
+
+            return {
+
+                ...period,
+
+                time:
+                    formatTafTimeRange(
+                        period.start,
+                        period.end,
+                        period.type
+                    )
+
+            };
+
+        }
+    );
+
+}
+
+
+const TAF_TIME_ZONE =
+    "America/Chicago";
+
+
+function makeTafDate(
+    day,
+    hour,
+    minute = 0,
+    referenceDate = new Date()
+) {
+
+    /*
+       Start with current UTC
+       month/year.
+    */
+
+    let year =
+        referenceDate.getUTCFullYear();
+
+    let month =
+        referenceDate.getUTCMonth();
+
+
+    /*
+       Handle TAFs that cross
+       into another month.
+    */
+
+    const referenceDay =
+        referenceDate.getUTCDate();
+
+
+    if (
+        day < referenceDay - 15
+    ) {
+
+        month += 1;
+
+    }
+
+
+    else if (
+        day > referenceDay + 15
+    ) {
+
+        month -= 1;
+
+    }
+
+
+    return new Date(
+        Date.UTC(
+            year,
+            month,
+            day,
+            hour,
+            minute
+        )
+    );
+
+}
+
+function getChangeStartDate(
+    marker,
+    referenceDate
+) {
+
+    /*
+       FMDDHHMM
+       Example:
+       FM201800
+    */
+
+    if (
+        marker.startsWith("FM")
+    ) {
+
+        const match =
+            marker.match(
+                /FM(\d{2})(\d{2})(\d{2})/
+            );
+
+
+        if (!match) {
+            return referenceDate;
+        }
+
+
+        return makeTafDate(
+            Number(match[1]),
+            Number(match[2]),
+            Number(match[3]),
+            referenceDate
+        );
+
+    }
+
+
+    /*
+       TEMPO DDHH/DDHH
+       or BECMG DDHH/DDHH
+    */
+
+    const match =
+        marker.match(
+            /(\d{2})(\d{2})\/(\d{2})(\d{2})/
+        );
+
+
+    if (!match) {
+        return referenceDate;
+    }
+
+
+    return makeTafDate(
+        Number(match[1]),
+        Number(match[2]),
+        0,
+        referenceDate
+    );
+
+}
+
+function getRangeDates(
+    marker,
+    referenceDate
+) {
+
+    const match =
+        marker.match(
+            /(\d{2})(\d{2})\/(\d{2})(\d{2})/
+        );
+
+
+    if (!match) {
+
+        return {
+
+            start:
+                referenceDate,
+
+            end:
+                referenceDate
+
+        };
+
+    }
+
+
+    const start =
+        makeTafDate(
+            Number(match[1]),
+            Number(match[2]),
+            0,
+            referenceDate
+        );
+
+
+    const end =
+        makeTafDate(
+            Number(match[3]),
+            Number(match[4]),
+            0,
+            start
+        );
+
+
+    return {
+        start,
+        end
+    };
+
+}
+
+function formatLocalTime(date) {
+
+    return new Intl.DateTimeFormat(
+        "en-US",
+        {
+            timeZone:
+                TAF_TIME_ZONE,
+
+            hour:
+                "numeric",
+
+            minute:
+                "2-digit",
+
+            timeZoneName:
+                "short"
+        }
+    ).format(date);
+
+}
+
+function formatLocalDay(date) {
+
+    return new Intl.DateTimeFormat(
+        "en-US",
+        {
+            timeZone:
+                TAF_TIME_ZONE,
+
+            weekday:
+                "short"
+        }
+    ).format(date);
+
+}
+
+function formatTafTimeRange(
+    start,
+    end,
+    type
+) {
+
+    const startDay =
+        formatLocalDay(start);
+
+    const endDay =
+        formatLocalDay(end);
+
+
+    let label =
+        `${formatLocalTime(start)} – ` +
+        `${formatLocalTime(end)}`;
+
+
+    if (
+        startDay !== endDay
+    ) {
+
+        label =
+            `${startDay} ${formatLocalTime(start)} – ` +
+            `${endDay} ${formatLocalTime(end)}`;
+
+    }
+
+
+    if (type === "TEMPO") {
+
+        return (
+            `⚠️ TEMPORARY: ${label}`
+        );
+
+    }
+
+
+    if (type === "BECMG") {
+
+        return (
+            `🔄 BECOMING: ${label}`
+        );
+
+    }
+
+
+    return label;
+
+}
+
+function formatTafConditions(
+    conditions
+) {
+
+    const parts = [];
+
+
+    /*
+       WIND
+
+       Example:
+       18012G20KT
+    */
+
+    const wind =
+        conditions.match(
+            /\b(\d{3}|VRB)(\d{2,3})(G\d{2,3})?KT\b/
+        );
+
+
+    if (wind) {
+
+        const direction =
+            wind[1] === "VRB"
+                ? "Variable"
+                : `${wind[1]}°`;
+
+
+        let windText =
+            `💨 ${direction} @ ${Number(wind[2])} kt`;
+
+
+        if (wind[3]) {
+
+            windText +=
+                ` gusting ${Number(
+                    wind[3].substring(1)
+                )} kt`;
+
+        }
+
+
+        parts.push(
+            windText
+        );
+
+    }
+
+
+    /*
+       VISIBILITY
+    */
+
+    const visibility =
+        conditions.match(
+            /\b(P?\d+(?:\/\d+)?|P6)SM\b/
+        );
+
+
+    if (visibility) {
+
+        let value =
+            visibility[1];
+
+
+        if (value === "P6") {
+
+            value =
+                "greater than 6";
+
+        }
+
+
+        parts.push(
+            `👁️ Visibility: ${value} SM`
+        );
+
+    }
+
+
+    /*
+       CLOUDS
+    */
+
+    const cloudRegex =
+        /\b(FEW|SCT|BKN|OVC)(\d{3})\b/g;
+
+
+    const clouds = [];
+
+    let cloudMatch;
+
+
+    while (
+        (
+            cloudMatch =
+                cloudRegex.exec(
+                    conditions
+                )
+        ) !== null
+    ) {
+
+        const amount =
+            cloudMatch[1];
+
+
+        const height =
+            Number(
+                cloudMatch[2]
+            ) * 100;
+
+
+        clouds.push(
+            `${amount} ${height.toLocaleString()} ft`
+        );
+
+    }
+
+
+    if (clouds.length) {
+
+        parts.push(
+            `☁️ ${clouds.join(", ")}`
+        );
+
+    }
+
+
+    /*
+       WEATHER
+
+       Keep common TAF codes recognizable
+       but give pilots a plain-English cue.
+    */
+
+    const weather = [];
+
+
+    if (
+        /\bTSRA\b/.test(
+            conditions
+        )
+    ) {
+
+        weather.push(
+            "⛈️ Thunderstorms with rain"
+        );
+
+    }
+
+
+    else if (
+        /\bRA\b/.test(
+            conditions
+        )
+    ) {
+
+        weather.push(
+            "🌧️ Rain"
+        );
+
+    }
+
+
+    if (
+        /\bBR\b/.test(
+            conditions
+        )
+    ) {
+
+        weather.push(
+            "🌫️ Mist"
+        );
+
+    }
+
+
+    if (
+        /\bFG\b/.test(
+            conditions
+        )
+    ) {
+
+        weather.push(
+            "🌫️ Fog"
+        );
+
+    }
+
+
+    if (
+        /\bHZ\b/.test(
+            conditions
+        )
+    ) {
+
+        weather.push(
+            "🌫️ Haze"
+        );
+
+    }
+
+
+    parts.push(
+        ...weather
+    );
+
+
+    /*
+       If there is something we
+       didn't decode, retain the
+       original aviation shorthand.
+    */
+
+    parts.push(
+        `<span class="taf-code">
+            ${conditions}
+        </span>`
+    );
+
+
+    return parts.join(
+        "<br>"
+    );
+
 }
 
 
