@@ -2,8 +2,11 @@ let weatherData = null;
 
 let selectedDestination = "KPNS";
 
+let routeLayer = null;
+
 let sigmetMap = null;
 let sigmetLayer = null;
+let destinationMarker = null;
 
 const airportNames = {
 
@@ -41,6 +44,45 @@ const destinations = [
     "KCEW",
 
 ];
+
+const airportCoordinates = {
+
+    KNDZ: {
+        lat: 30.7044,
+        lon: -87.0230
+    },
+
+    KPNS: {
+        lat: 30.4734,
+        lon: -87.1866
+    },
+
+    KCEW: {
+        lat: 30.7788,
+        lon: -86.5221
+    },
+
+    KMOB: {
+        lat: 30.6914,
+        lon: -88.2428
+    },
+
+    KHSA: {
+        lat: 30.3678,
+        lon: -89.4546
+    },
+
+    KTLH: {
+        lat: 30.3965,
+        lon: -84.3503
+    },
+
+    KDHN: {
+        lat: 31.3213,
+        lon: -85.4496
+    }
+
+};
 
 
 const aviationFacts = [
@@ -166,8 +208,6 @@ async function loadWeather() {
 
 }
 
-
-
 function renderDeparture() {
 
     const wx =
@@ -217,17 +257,6 @@ function renderDeparture() {
     );
 
 }
-
-// function renderTafs() {
-
-//     const tafs =
-//         weatherData.tafs;
-//     document.getElementById(
-//         "knse-taf"
-//     ).innerText =
-//         tafs.KNSE?.raw_taf ||
-//         "TAF unavailable";
-// }
 
 function renderTafs() {
 
@@ -1118,98 +1147,6 @@ function formatTafConditions(
 
 }
 
-
-
-// function renderDestinations() {
-
-//     const container =
-//         document.getElementById(
-//             "destinations"
-//         );
-
-
-//     container.innerHTML = "";
-
-
-//     destinations.forEach(
-//         airport => {
-
-//             const wx =
-//                 weatherData.airports[
-//                     airport
-//                 ];
-
-
-//             const button =
-//                 document.createElement(
-//                     "button"
-//                 );
-
-
-//             button.className =
-//                 "destination";
-
-
-//             if (
-//                 airport ===
-//                 selectedDestination
-//             ) {
-
-//                 button.classList.add(
-//                     "active"
-//                 );
-
-//             }
-
-
-//             const category =
-//                 wx.flight_category ||
-//                 "UNKNOWN";
-
-
-//             button.innerHTML = `
-
-//                 <span class="destination-code">
-//                     ${airport}
-//                 </span>
-
-//                 <span class="destination-name">
-//                     ${airportNames[airport]}
-//                 </span>
-
-//                 <span
-//                     class="
-//                         mini-category
-//                         ${categoryClass(category)}
-//                     ">
-//                     ${category}
-//                 </span>
-
-//             `;
-
-
-//             button.onclick =
-//                 () => {
-
-//                     selectedDestination =
-//                         airport;
-
-//                     renderDestinations();
-
-//                     renderSelectedAirport();
-
-//                 };
-
-
-//             container.appendChild(
-//                 button
-//             );
-
-//         }
-//     );
-
-// }
-
 function renderDestinations() {
 
     const container =
@@ -1282,19 +1219,30 @@ function renderDestinations() {
                 event.stopPropagation();
 
 
+                // selectedDestination =
+                //     airport;
+
+
+                // console.log(
+                //     "Selected destination:",
+                //     selectedDestination
+                // );
+
+
+                // renderDestinations();
+
+                // renderSelectedAirport();
+
                 selectedDestination =
                     airport;
-
-
-                console.log(
-                    "Selected destination:",
-                    selectedDestination
-                );
-
 
                 renderDestinations();
 
                 renderSelectedAirport();
+
+                renderSigmetDetails();
+
+                renderSigmetMap();
 
             }
         );
@@ -1305,8 +1253,6 @@ function renderDestinations() {
     });
 
 }
-
-
 
 function renderSelectedAirport() {
 
@@ -1448,8 +1394,6 @@ function renderSelectedAirport() {
 
 }
 
-
-
 function renderSigmet() {
 
     const sigmet =
@@ -1575,8 +1519,6 @@ function renderSigmet() {
 
 }
 
-
-
 function renderUpdateStatus() {
 
     const status =
@@ -1631,8 +1573,6 @@ function renderUpdateStatus() {
 
 }
 
-
-
 function categoryClass(
     category
 ) {
@@ -1646,8 +1586,6 @@ function categoryClass(
         .toLowerCase();
 
 }
-
-
 
 function setCategoryElement(
     element,
@@ -1666,7 +1604,6 @@ function setCategoryElement(
         );
 
 }
-
 
 function showNewFact() {
 
@@ -1737,17 +1674,19 @@ document
 
 
                 if (target) {
-
                     target.classList.add(
                         "active"
                     );
-
+                }
+                if (selectedTab === "flight-planning") {
+                    refreshSigmetMap();
                 }
 
             }
         );
 
     });
+
 
 function renderSigmetMap() {
 
@@ -1761,28 +1700,25 @@ function renderSigmetMap() {
     }
 
 
-    /*
-       Approximate KNDZ location
-    */
-
     const kndz = [
-        30.7044,
-        -87.0230
+        airportCoordinates.KNDZ.lat,
+        airportCoordinates.KNDZ.lon
     ];
 
 
     /*
-       Create map only once.
+       Create map only once
     */
 
     if (!sigmetMap) {
 
-        sigmetMap = L.map(
-            "sigmet-map"
-        ).setView(
-            kndz,
-            7
-        );
+        sigmetMap =
+            L.map(
+                "sigmet-map"
+            ).setView(
+                kndz,
+                7
+            );
 
 
         L.tileLayer(
@@ -1797,7 +1733,7 @@ function renderSigmetMap() {
 
 
         /*
-           KNDZ marker
+           Permanent KNDZ marker
         */
 
         L.marker(
@@ -1814,7 +1750,37 @@ function renderSigmetMap() {
 
 
     /*
-       Remove previous SIGMET polygon.
+       Remove old route
+    */
+
+    if (routeLayer) {
+
+        sigmetMap.removeLayer(
+            routeLayer
+        );
+
+        routeLayer = null;
+
+    }
+
+
+    /*
+       Remove old destination marker
+    */
+
+    if (destinationMarker) {
+
+        sigmetMap.removeLayer(
+            destinationMarker
+        );
+
+        destinationMarker = null;
+
+    }
+
+
+    /*
+       Remove old SIGMET polygons
     */
 
     if (sigmetLayer) {
@@ -1828,113 +1794,257 @@ function renderSigmetMap() {
     }
 
 
+    /*
+       Get destination
+    */
+
+    const destination =
+        airportCoordinates[
+            selectedDestination
+        ];
+
+
+    /*
+       Draw route and destination
+    */
+
+    if (destination) {
+
+        routeLayer =
+            L.polyline(
+                [
+                    [
+                        airportCoordinates.KNDZ.lat,
+                        airportCoordinates.KNDZ.lon
+                    ],
+
+                    [
+                        destination.lat,
+                        destination.lon
+                    ]
+                ],
+                {
+                    color:
+                        "#1d668c",
+
+                    weight:
+                        4,
+
+                    dashArray:
+                        "8 6"
+                }
+            )
+            .addTo(
+                sigmetMap
+            );
+
+
+        destinationMarker =
+            L.marker(
+                [
+                    destination.lat,
+                    destination.lon
+                ]
+            )
+            .addTo(
+                sigmetMap
+            )
+            .bindPopup(
+                `<strong>
+                    ${selectedDestination}
+                </strong>
+                <br>
+                Destination`
+            );
+
+    }
+
+
+    /*
+       Get SIGMET data
+    */
+
     const sigmet =
         weatherData
             ?.kndz_convective_sigmet;
 
 
-    if (
-        !sigmet?.matches ||
-        sigmet.matches.length === 0
-    ) {
+    /*
+       IMPORTANT:
+       Draw ALL active SIGMETs,
+       not only SIGMETs containing KNDZ
+    */
 
-        sigmetMap.setView(
-            kndz,
-            7
-        );
+    const sigmetsToDraw =
+        sigmet?.active_sigmets
+        ||
+        sigmet?.matches
+        ||
+        [];
 
-        return;
 
-    }
+    console.log(
+        "SIGMETs to draw:",
+        sigmetsToDraw
+    );
 
 
     /*
-       Build GeoJSON FeatureCollection
-       from every matching polygon.
+       Build GeoJSON features
     */
 
     const features =
-        sigmet.matches
+        sigmetsToDraw
             .filter(
-                match =>
-                    match.geometry
+                item =>
+                    item.geometry
             )
             .map(
-                match => ({
+                item => ({
 
                     type:
                         "Feature",
 
                     geometry:
-                        match.geometry,
+                        item.geometry,
 
                     properties:
-                        match.properties || {}
+                        item.properties || {}
 
                 })
             );
 
 
-    if (!features.length) {
-        return;
-    }
-
-
-    const geojson = {
-
-        type:
-            "FeatureCollection",
-
-        features:
-            features
-
-    };
-
     console.log(
-        JSON.stringify(
-            geojson,
-            null,
-            2
-        )
+        "SIGMET GeoJSON features:",
+        features
     );
-
-    sigmetLayer =
-        L.geoJSON(
-            geojson,
-            {
-
-                style: {
-
-                    color:
-                        "#c62828",
-
-                    weight:
-                        3,
-
-                    fillColor:
-                        "#ef5350",
-
-                    fillOpacity:
-                        0.25
-
-                }
-
-            }
-        )
-        .addTo(
-            sigmetMap
-        );
 
 
     /*
-       Automatically zoom so the
-       whole SIGMET is visible.
+       Draw SIGMET polygons
+    */
+
+    if (features.length > 0) {
+
+        const geojson = {
+
+            type:
+                "FeatureCollection",
+
+            features:
+                features
+
+        };
+
+
+        sigmetLayer =
+            L.geoJSON(
+                geojson,
+                {
+
+                    style: {
+
+                        color:
+                            "#c62828",
+
+                        weight:
+                            3,
+
+                        fillColor:
+                            "#ef5350",
+
+                        fillOpacity:
+                            0.25
+
+                    },
+
+
+                    onEachFeature:
+                        function(
+                            feature,
+                            layer
+                        ) {
+
+                            const properties =
+                                feature.properties
+                                || {};
+
+
+                            const label =
+                                properties.rawAirSigmet
+                                ||
+                                properties.rawSigmet
+                                ||
+                                properties.rawText
+                                ||
+                                properties.name
+                                ||
+                                "Convective SIGMET";
+
+
+                            layer.bindPopup(
+                                `<strong>
+                                    ⚡ Convective SIGMET
+                                </strong>
+                                <br><br>
+                                ${label}`
+                            );
+
+                        }
+
+                }
+            )
+            .addTo(
+                sigmetMap
+            );
+
+    }
+
+
+    /*
+       Build bounds from:
+       KNDZ + destination + SIGMETs
     */
 
     const bounds =
-        sigmetLayer
-            .getBounds();
+        L.latLngBounds();
 
+
+    bounds.extend(
+        kndz
+    );
+
+
+    if (destination) {
+
+        bounds.extend(
+            [
+                destination.lat,
+                destination.lon
+            ]
+        );
+
+    }
+
+
+    if (
+        sigmetLayer &&
+        sigmetLayer
+            .getBounds()
+            .isValid()
+    ) {
+
+        bounds.extend(
+            sigmetLayer.getBounds()
+        );
+
+    }
+
+
+    /*
+       Fit everything on screen
+    */
 
     if (bounds.isValid()) {
 
@@ -1942,13 +2052,405 @@ function renderSigmetMap() {
             bounds,
             {
                 padding:
-                    [25, 25]
+                    [25, 25],
+
+                maxZoom:
+                    8
             }
         );
 
     }
 
+
+    /*
+       Important for tabs/mobile
+    */
+
+    refreshSigmetMap();
+
 }
+
+// function renderSigmetMap() {
+
+//     const mapElement =
+//         document.getElementById(
+//             "sigmet-map"
+//         );
+
+//     if (!mapElement) {
+//         return;
+//     }
+
+//     const kndz = [
+//         30.7044,
+//         -87.0230
+//     ];
+
+
+//     /*
+//        Create map only once.
+//     */
+//     if (!sigmetMap) {
+//         sigmetMap = L.map(
+//             "sigmet-map"
+//         ).setView(
+//             kndz,
+//             7
+//         );
+
+//         L.tileLayer(
+//             "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+//             {
+//                 attribution:
+//                     "&copy; OpenStreetMap contributors"
+//             }
+//         ).addTo(
+//             sigmetMap
+//         );
+
+//         /*
+//            KNDZ marker
+//         */
+//         L.marker(
+//             kndz
+//         )
+//         .addTo(
+//             sigmetMap
+//         )
+//         .bindPopup(
+//             "<strong>KNDZ</strong><br>Departure"
+//         );
+//     }
+
+//     if (routeLayer) {
+//         sigmetMap.removeLayer(
+//             routeLayer
+//         );
+
+//     }
+
+//     if (destinationMarker) {
+//         sigmetMap.removeLayer(
+//             destinationMarker
+//         );
+
+//         destinationMarker = null;
+//     }
+
+//     const destination =
+//         airportCoordinates[
+//             selectedDestination
+//     ];
+
+//     if (destination) {
+//         routeLayer =
+//             L.polyline(
+//             [
+//                 [
+//                     airportCoordinates.KNDZ.lat,
+//                     airportCoordinates.KNDZ.lon
+//                 ],
+
+//                 [
+//                     destination.lat,
+//                     destination.lon
+//                 ]
+//             ],
+
+//             {
+//                 color: "#1d668c",
+//                 weight: 4,
+//                 dashArray: "8 6"
+//             }
+//             ).addTo(
+//                 sigmetMap
+//             );
+
+//             destinationMarker =
+//             L.marker(
+//                 [
+//                     destination.lat,
+//                     destination.lon
+//                 ]
+//             )
+//             .addTo(
+//                 sigmetMap
+//             )
+//             .bindPopup(
+//                 `<strong>${selectedDestination}</strong>
+//                 <br>
+//                 Destination`
+//             );
+//         }
+
+//     /*
+//        Remove previous SIGMET polygon.
+//     */
+//     if (sigmetLayer) {
+//         sigmetMap.removeLayer(
+//             sigmetLayer
+//         );
+
+//         sigmetLayer = null;
+//     }
+
+//     const sigmet =
+//         weatherData
+//             ?.kndz_convective_sigmet;
+
+
+//     if (
+//         !sigmet?.matches ||
+//         sigmet.matches.length === 0
+//     ) {
+//         sigmetMap.setView(
+//             kndz,
+//             7
+//         );
+
+//         return;
+//     }
+
+//     /*
+//        Build GeoJSON FeatureCollection
+//        from every matching polygon.
+//     */
+
+//     const features =
+//         sigmet.matches
+//             .filter(
+//                 match =>
+//                     match.geometry
+//             )
+//             .map(
+//                 match => ({
+
+//                     type:
+//                         "Feature",
+
+//                     geometry:
+//                         match.geometry,
+
+//                     properties:
+//                         match.properties || {}
+
+//                 })
+//             );
+
+
+//     if (!features.length) {
+//         return;
+//     }
+
+
+//     const geojson = {
+
+//         type:
+//             "FeatureCollection",
+
+//         features:
+//             features
+
+//     };
+
+//     console.log(
+//         JSON.stringify(
+//             geojson,
+//             null,
+//             2
+//         )
+//     );
+
+//     sigmetLayer =
+//         L.geoJSON(
+//             geojson,
+//             {
+
+//                 style: {
+
+//                     color:
+//                         "#c62828",
+
+//                     weight:
+//                         3,
+
+//                     fillColor:
+//                         "#ef5350",
+
+//                     fillOpacity:
+//                         0.25
+
+//                 }
+
+//             }
+//         )
+//         .addTo(
+//             sigmetMap
+//         );
+
+
+//     /*
+//        Automatically zoom so the
+//        whole SIGMET is visible.
+//     */
+
+//     const bounds =
+//         sigmetLayer
+//             .getBounds();
+
+
+//     if (bounds.isValid()) {
+
+//         sigmetMap.fitBounds(
+//             bounds,
+//             {
+//                 padding:
+//                     [25, 25]
+//             }
+//         );
+
+//     }
+
+//     // const bounds =
+//     // L.latLngBounds();
+
+//     // bounds.extend([
+//     //     airportCoordinates.KNDZ.lat,
+//     //     airportCoordinates.KNDZ.lon
+//     // ]);
+
+
+//     // const destination =
+//     //     airportCoordinates[
+//     //         selectedDestination
+//     //     ];
+
+
+//     // if (destination) {
+
+//     //     bounds.extend([
+//     //         destination.lat,
+//     //         destination.lon
+//     //     ]);
+
+//     // }
+
+
+//     // if (
+//     //     sigmetLayer &&
+//     //     sigmetLayer.getBounds().isValid()
+//     // ) {
+
+//     //     bounds.extend(
+//     //         sigmetLayer.getBounds()
+//     //     );
+
+//     // }
+
+
+//     // sigmetMap.fitBounds(
+//     //     bounds,
+//     //     {
+//     //         padding: [25, 25],
+
+//     //         maxZoom: 8
+//     //     }
+//     // );
+
+//     refreshSigmetMap();
+
+// }
+
+// function renderSigmetDetails() {
+
+//     const container =
+//         document.getElementById(
+//             "sigmet-details"
+//         );
+
+
+//     const sigmet =
+//         weatherData
+//             ?.kndz_convective_sigmet;
+
+
+//     if (!container) {
+//         return;
+//     }
+
+
+//     if (
+//         !sigmet?.matches?.length
+//     ) {
+
+//         container.innerHTML = `
+
+//             <div class="sigmet-detail">
+
+//                 <span class="sigmet-detail-label">
+//                     STATUS
+//                 </span>
+
+//                 <span class="sigmet-detail-value">
+//                     No active Convective SIGMET
+//                     containing KNDZ
+//                 </span>
+
+//             </div>
+
+//         `;
+
+//         return;
+//     }
+
+
+//     const match =
+//         sigmet.matches[0];
+
+
+//     container.innerHTML = `
+
+//         <div class="sigmet-detail">
+
+//             <span class="sigmet-detail-label">
+//                 STATUS
+//             </span>
+
+//             <span class="sigmet-detail-value">
+//                 ⚠️ Active Convective SIGMET
+//             </span>
+
+//         </div>
+
+
+//         <div class="sigmet-detail">
+
+//             <span class="sigmet-detail-label">
+//                 AIRPORT
+//             </span>
+
+//             <span class="sigmet-detail-value">
+//                 KNDZ
+//             </span>
+
+//         </div>
+
+
+//         <div class="sigmet-detail">
+
+//             <span class="sigmet-detail-label">
+//                 HAZARD
+//             </span>
+
+//             <span class="sigmet-detail-value">
+//                 ⛈️ Convective weather
+//             </span>
+
+//         </div>
+
+//     `;
+
+// }
 
 function renderSigmetDetails() {
 
@@ -1958,31 +2460,30 @@ function renderSigmetDetails() {
         );
 
 
-    const sigmet =
-        weatherData
-            ?.kndz_convective_sigmet;
-
-
     if (!container) {
         return;
     }
 
 
-    if (
-        !sigmet?.matches?.length
-    ) {
+    const sigmetData =
+        weatherData
+            ?.kndz_convective_sigmet;
+
+
+    if (!sigmetData) {
 
         container.innerHTML = `
 
             <div class="sigmet-detail">
 
-                <span class="sigmet-detail-label">
+                <span
+                    class="sigmet-detail-label">
                     STATUS
                 </span>
 
-                <span class="sigmet-detail-value">
-                    No active Convective SIGMET
-                    containing KNDZ
+                <span
+                    class="sigmet-detail-value">
+                    ⚠️ SIGMET data unavailable
                 </span>
 
             </div>
@@ -1990,54 +2491,450 @@ function renderSigmetDetails() {
         `;
 
         return;
+
     }
 
 
-    const match =
-        sigmet.matches[0];
+    const kndzSigmets =
+        sigmetData.matches
+        || [];
+
+
+    const destinationSigmets =
+        getDestinationSigmets(
+            selectedDestination
+        );
+
+
+    const routeSigmets =
+        getRouteSigmets(
+            selectedDestination
+        );
+
+
+    const kndzStatus =
+        kndzSigmets.length
+            ? "⚠️ INSIDE"
+            : "✅ CLEAR";
+
+
+    const destinationStatus =
+        destinationSigmets.length
+            ? "⚠️ INSIDE"
+            : "✅ CLEAR";
+
+
+    const routeStatus =
+        routeSigmets.length
+            ? "⚠️ INTERSECTS"
+            : "✅ CLEAR";
 
 
     container.innerHTML = `
 
         <div class="sigmet-detail">
 
-            <span class="sigmet-detail-label">
-                STATUS
-            </span>
-
-            <span class="sigmet-detail-value">
-                ⚠️ Active Convective SIGMET
-            </span>
-
-        </div>
-
-
-        <div class="sigmet-detail">
-
-            <span class="sigmet-detail-label">
-                AIRPORT
-            </span>
-
-            <span class="sigmet-detail-value">
+            <span
+                class="sigmet-detail-label">
                 KNDZ
             </span>
 
+            <span
+                class="sigmet-detail-value">
+                ${kndzStatus}
+            </span>
+
         </div>
 
 
         <div class="sigmet-detail">
 
-            <span class="sigmet-detail-label">
-                HAZARD
+            <span
+                class="sigmet-detail-label">
+                ${selectedDestination}
             </span>
 
-            <span class="sigmet-detail-value">
-                ⛈️ Convective weather
+            <span
+                class="sigmet-detail-value">
+                ${destinationStatus}
+            </span>
+
+        </div>
+
+
+        <div class="sigmet-detail">
+
+            <span
+                class="sigmet-detail-label">
+                ENROUTE
+            </span>
+
+            <span
+                class="sigmet-detail-value">
+                ${routeStatus}
             </span>
 
         </div>
 
     `;
+
+
+    /*
+       Add a prominent warning
+       when any portion of the route
+       intersects a SIGMET.
+    */
+
+    if (routeSigmets.length) {
+
+        container.innerHTML += `
+
+            <div
+                class="
+                    sigmet-route-warning
+                ">
+
+                ⚡ Your KNDZ →
+                ${selectedDestination}
+                route intersects an active
+                Convective SIGMET.
+
+            </div>
+
+        `;
+
+    }
+
+}
+
+function pointInRing(
+    lon,
+    lat,
+    ring
+) {
+
+    let inside = false;
+
+    let j =
+        ring.length - 1;
+
+
+    for (
+        let i = 0;
+        i < ring.length;
+        i++
+    ) {
+
+        const xi =
+            ring[i][0];
+
+        const yi =
+            ring[i][1];
+
+        const xj =
+            ring[j][0];
+
+        const yj =
+            ring[j][1];
+
+
+        const intersects =
+
+            (
+                (yi > lat)
+                !==
+                (yj > lat)
+            )
+
+            &&
+
+            (
+                lon
+                <
+                (
+                    (xj - xi)
+                    *
+                    (lat - yi)
+                    /
+                    (
+                        (yj - yi)
+                        || 0.0000001
+                    )
+                    +
+                    xi
+                )
+            );
+
+
+        if (intersects) {
+
+            inside =
+                !inside;
+
+        }
+
+
+        j = i;
+
+    }
+
+
+    return inside;
+
+}
+
+function pointInPolygon(
+    lon,
+    lat,
+    polygon
+) {
+
+    if (
+        !polygon ||
+        !polygon.length
+    ) {
+
+        return false;
+
+    }
+
+
+    // Must be inside outer boundary
+    if (
+        !pointInRing(
+            lon,
+            lat,
+            polygon[0]
+        )
+    ) {
+
+        return false;
+
+    }
+
+
+    // Make sure it isn't inside
+    // a polygon "hole"
+    for (
+        let i = 1;
+        i < polygon.length;
+        i++
+    ) {
+
+        if (
+            pointInRing(
+                lon,
+                lat,
+                polygon[i]
+            )
+        ) {
+
+            return false;
+
+        }
+
+    }
+
+
+    return true;
+
+}
+
+function pointInGeometry(
+    lon,
+    lat,
+    geometry
+) {
+
+    if (!geometry) {
+        return false;
+    }
+
+
+    if (
+        geometry.type ===
+        "Polygon"
+    ) {
+
+        return pointInPolygon(
+            lon,
+            lat,
+            geometry.coordinates
+        );
+
+    }
+
+
+    if (
+        geometry.type ===
+        "MultiPolygon"
+    ) {
+
+        return geometry.coordinates.some(
+            polygon =>
+                pointInPolygon(
+                    lon,
+                    lat,
+                    polygon
+                )
+        );
+
+    }
+
+
+    return false;
+
+}
+
+function refreshSigmetMap() {
+
+    if (!sigmetMap) {
+        return;
+    }
+
+    setTimeout(() => {
+
+        sigmetMap.invalidateSize();
+
+    }, 250);
+
+}
+
+function getDestinationSigmets(
+    airport
+) {
+
+    const coordinates =
+        airportCoordinates[
+            airport
+        ];
+
+
+    if (!coordinates) {
+        return [];
+    }
+
+
+    const sigmets =
+        weatherData
+            ?.kndz_convective_sigmet
+            ?.active_sigmets
+        || [];
+
+
+    return sigmets.filter(
+        sigmet =>
+            pointInGeometry(
+                coordinates.lon,
+                coordinates.lat,
+                sigmet.geometry
+            )
+    );
+
+}
+
+function getRouteSigmets(
+    destination
+) {
+
+    const start =
+        airportCoordinates.KNDZ;
+
+    const end =
+        airportCoordinates[
+            destination
+        ];
+
+
+    if (
+        !start ||
+        !end
+    ) {
+
+        return [];
+
+    }
+
+
+    const sigmets =
+        weatherData
+            ?.kndz_convective_sigmet
+            ?.active_sigmets
+        || [];
+
+
+    const hits =
+        new Set();
+
+
+    /*
+        Test 250 points between
+        KNDZ and the destination.
+
+        This is plenty for these
+        relatively short regional routes.
+    */
+
+    const samples = 250;
+
+
+    for (
+        let i = 0;
+        i <= samples;
+        i++
+    ) {
+
+        const fraction =
+            i / samples;
+
+
+        const lat =
+            start.lat +
+            (
+                end.lat -
+                start.lat
+            )
+            * fraction;
+
+
+        const lon =
+            start.lon +
+            (
+                end.lon -
+                start.lon
+            )
+            * fraction;
+
+
+        sigmets.forEach(
+            (sigmet, index) => {
+
+                if (
+                    pointInGeometry(
+                        lon,
+                        lat,
+                        sigmet.geometry
+                    )
+                ) {
+
+                    hits.add(
+                        index
+                    );
+
+                }
+
+            }
+        );
+
+    }
+
+
+    return Array.from(
+        hits
+    ).map(
+        index =>
+            sigmets[index]
+    );
 
 }
 
@@ -2045,6 +2942,11 @@ function renderSigmetDetails() {
 showNewFact();
 
 loadWeather();
+
+window.addEventListener(
+    "resize",
+    refreshSigmetMap
+);
 
 
 /*

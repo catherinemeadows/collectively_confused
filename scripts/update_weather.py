@@ -498,7 +498,7 @@ def sigmet_label(feature):
     return "Active Convective SIGMET"
 
 
-def fetch_kndz_convective_sigmet():
+# def fetch_kndz_convective_sigmet():
     try:
         response = get_with_retries(
             SIGMET_URL,
@@ -535,18 +535,6 @@ def fetch_kndz_convective_sigmet():
                 KNDZ_LAT,
                 feature.get("geometry"),
             ):
-                # matches.append(
-                #     {
-                #         "label":
-                #             sigmet_label(
-                #                 feature
-                #             )
-                #     }
-                # )
-                # properties = feature.get(
-                #     "properties",
-                #     {}
-                # )
 
                 matches.append(
                     {
@@ -583,6 +571,140 @@ def fetch_kndz_convective_sigmet():
                 "Unable to retrieve SIGMET data.",
         }
 
+def fetch_kndz_convective_sigmet():
+    
+    try:
+
+        response = get_with_retries(
+            SIGMET_URL,
+            params={
+                "format": "geojson"
+            },
+        )
+
+
+        if response.status_code == 204:
+
+            return {
+                "status": "CLEAR",
+                "matches": [],
+                "active_sigmets": []
+            }
+
+
+        response.raise_for_status()
+
+        payload = response.json()
+
+        features = payload.get(
+            "features",
+            []
+        )
+
+
+        kndz_matches = []
+
+        active_sigmets = []
+
+
+        for feature in features:
+
+            # Skip anything that isn't
+            # a Convective SIGMET
+            if not is_convective_sigmet(
+                feature
+            ):
+                continue
+
+
+            geometry = feature.get(
+                "geometry"
+            )
+
+
+            if not geometry:
+                continue
+
+
+            item = {
+
+                "label":
+                    sigmet_label(
+                        feature
+                    ),
+
+                "geometry":
+                    geometry,
+
+                "properties":
+                    feature.get(
+                        "properties",
+                        {}
+                    )
+
+            }
+
+
+            # Save ALL active Convective SIGMETs
+            # so the browser can check routes
+            # and destinations.
+            active_sigmets.append(
+                item
+            )
+
+
+            # Separately determine whether
+            # KNDZ itself is inside one.
+            if point_in_geometry(
+                KNDZ_LON,
+                KNDZ_LAT,
+                geometry
+            ):
+
+                kndz_matches.append(
+                    item
+                )
+
+
+        return {
+
+            "status":
+                "INSIDE"
+                if kndz_matches
+                else "CLEAR",
+
+            "matches":
+                kndz_matches,
+
+            "active_sigmets":
+                active_sigmets
+
+        }
+
+
+    except Exception as error:
+
+        print(
+            "SIGMET ERROR:",
+            error
+        )
+
+
+        return {
+
+            "status":
+                "UNKNOWN",
+
+            "matches":
+                [],
+
+            "active_sigmets":
+                [],
+
+            "message":
+                "Unable to retrieve SIGMET data."
+
+        }
 
 def main():
     print("Fetching METAR data...")
