@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T23:19:15.453122+00:00",
+  "generated_at": "2026-08-23T23:39:48.865766+00:00",
   "departure": "KNDZ",
   "airports": {
     "KCEW": {
@@ -57,17 +57,6 @@
       "altimeter_display": "29.94 inHg",
       "observation_time": 1787525760
     },
-    "KTLH": {
-      "raw_metar": "METAR KTLH 232253Z VRB04KT 10SM SCT065 SCT250 36/20 A2993 RMK AO2 LTG DSNT E AND SE SLP134 T03560200",
-      "flight_category": "VFR",
-      "visibility_sm": 10.0,
-      "visibility_display": "10+ SM",
-      "ceiling_ft_agl": null,
-      "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "VRB @ 4 kt",
-      "altimeter_display": "29.93 inHg",
-      "observation_time": 1787525580
-    },
     "KPNS": {
       "raw_metar": "METAR KPNS 232253Z 21008KT 10SM CLR 33/24 A2994 RMK AO2 SLP139 T03280244",
       "flight_category": "VFR",
@@ -78,11 +67,22 @@
       "wind_display": "210\u00b0 @ 8 kt",
       "altimeter_display": "29.94 inHg",
       "observation_time": 1787525580
+    },
+    "KTLH": {
+      "raw_metar": "SPECI KTLH 232317Z 10008KT 10SM TS SCT065CB SCT250 32/22 A2993 RMK AO2 LTG DSNT E-S TSB16 OCNL LTGICCG SE-S TS SE-S MOV S T03220222",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "100\u00b0 @ 8 kt",
+      "altimeter_display": "29.93 inHg",
+      "observation_time": 1787527020
     }
   },
   "tafs": {
     "KNSE": {
-      "raw_taf": "TAF KNSE 2315/2415 VRB06KT 9999 FEW030 SCT200 QNH2993INS TEMPO 2320/2322 4800 TSRA SCT030CB SCT200 TX42/2322Z TN26/2412Z FN00328"
+      "raw_taf": "TAF KNSE 232300Z 2323/2423 VRB06KT 9999 FEW030 SCT200 QNH2992INS BECMG 2414/2416 16008KT 9999 FEW030 QNH2993INS TEMPO 2419/2422 4800 TSRA SCT030CB SCT200 FM242200 VRB04KT 9999 FEW025 QNH2994INS AUTOMATED SENSOR METWATCH 2403 TIL 2409 TX34/2419Z TN21/2411Z FN00328"
     },
     "KNDZ": {
       "raw_taf": "TAF unavailable"
