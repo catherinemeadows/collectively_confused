@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T10:59:20.246119+00:00",
+  "generated_at": "2026-08-24T11:30:04.874226+00:00",
   "departure": "KNDZ",
   "airports": {
     "KCEW": {
@@ -36,15 +36,26 @@
       "observation_time": 1787532600
     },
     "KMOB": {
-      "raw_metar": "METAR KMOB 240956Z AUTO 24003KT 10SM FEW110 24/23 A2999 RMK AO2 SLP153 T02440228 $",
+      "raw_metar": "METAR KMOB 241056Z 00000KT 7SM FEW050 SCT120 BKN250 24/23 A3000 RMK AO2 SLP155 T02440228 $",
+      "flight_category": "VFR",
+      "visibility_sm": 7.0,
+      "visibility_display": "7 SM",
+      "ceiling_ft_agl": 25000.0,
+      "ceiling_display": "25,000 ft AGL",
+      "wind_display": "Calm",
+      "altimeter_display": "30.00 inHg",
+      "observation_time": 1787568960
+    },
+    "KNDZ": {
+      "raw_metar": "METAR KNDZ 241056Z 00000KT 10SM FEW040 SCT070 BKN100 BKN250 24/23 A2999 RMK AO2 SLP140 T02440233 $",
       "flight_category": "VFR",
       "visibility_sm": 10.0,
       "visibility_display": "10+ SM",
-      "ceiling_ft_agl": null,
-      "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "240\u00b0 @ 3 kt",
+      "ceiling_ft_agl": 10000.0,
+      "ceiling_display": "10,000 ft AGL",
+      "wind_display": "Calm",
       "altimeter_display": "29.99 inHg",
-      "observation_time": 1787565360
+      "observation_time": 1787568960
     },
     "KPNS": {
       "raw_metar": "METAR KPNS 241053Z AUTO 29004KT 10SM CLR 27/23 A2997 RMK AO2 SLP149 T02720228",
@@ -67,17 +78,6 @@
       "wind_display": "Calm",
       "altimeter_display": "29.99 inHg",
       "observation_time": 1787568780
-    },
-    "KNDZ": {
-      "raw_metar": "METAR KNDZ 241056Z 00000KT 10SM FEW040 SCT070 BKN100 BKN250 24/23 A2999 RMK AO2 SLP140 T02440233 $",
-      "flight_category": "VFR",
-      "visibility_sm": 10.0,
-      "visibility_display": "10+ SM",
-      "ceiling_ft_agl": 10000.0,
-      "ceiling_display": "10,000 ft AGL",
-      "wind_display": "Calm",
-      "altimeter_display": "29.99 inHg",
-      "observation_time": 1787568960
     }
   },
   "tafs": {
