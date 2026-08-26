@@ -1,17 +1,28 @@
 {
-  "generated_at": "2026-08-26T11:13:48.898876+00:00",
+  "generated_at": "2026-08-26T11:45:37.085042+00:00",
   "departure": "KNDZ",
   "airports": {
-    "KDHN": {
-      "raw_metar": "METAR KDHN 261053Z 00000KT 6SM BR BKN002 BKN023 22/22 A3005 RMK AO1 SLP168 T02220217",
-      "flight_category": "LIFR",
-      "visibility_sm": 6.0,
-      "visibility_display": "6 SM",
-      "ceiling_ft_agl": 200.0,
-      "ceiling_display": "200 ft AGL",
+    "KCEW": {
+      "raw_metar": "METAR KCEW 261053Z AUTO 00000KT 4SM BR CLR 22/22 A3001 RMK AO2 SLP159 T02170217",
+      "flight_category": "MVFR",
+      "visibility_sm": 4.0,
+      "visibility_display": "4 SM",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
       "wind_display": "Calm",
-      "altimeter_display": "30.05 inHg",
+      "altimeter_display": "30.01 inHg",
       "observation_time": 1787741580
+    },
+    "KDHN": {
+      "raw_metar": "SPECI KDHN 261129Z 11003KT 1/4SM FG VV002 22/22 A3005 RMK AO1 T02220217",
+      "flight_category": "LIFR",
+      "visibility_sm": 0.25,
+      "visibility_display": "0.25 SM",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "110\u00b0 @ 3 kt",
+      "altimeter_display": "30.05 inHg",
+      "observation_time": 1787743740
     },
     "KHSA": {
       "raw_metar": "METAR KHSA 260150Z 00000KT 10SM CLR 26/24 A2998",
@@ -35,6 +46,17 @@
       "altimeter_display": "30.00 inHg",
       "observation_time": 1787741760
     },
+    "KNDZ": {
+      "raw_metar": "METAR KNDZ 261056Z 00000KT 10SM FEW120 FEW250 24/24 A2999 RMK AO2 SLP139 T02390239 $",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "Calm",
+      "altimeter_display": "29.99 inHg",
+      "observation_time": 1787741760
+    },
     "KPNS": {
       "raw_metar": "METAR KPNS 261053Z 33005KT 10SM CLR 26/24 A2997 RMK AO2 SLP151 T02610244",
       "flight_category": "VFR",
@@ -56,28 +78,6 @@
       "wind_display": "110\u00b0 @ 3 kt",
       "altimeter_display": "30.00 inHg",
       "observation_time": 1787741580
-    },
-    "KCEW": {
-      "raw_metar": "METAR KCEW 261053Z AUTO 00000KT 4SM BR CLR 22/22 A3001 RMK AO2 SLP159 T02170217",
-      "flight_category": "MVFR",
-      "visibility_sm": 4.0,
-      "visibility_display": "4 SM",
-      "ceiling_ft_agl": null,
-      "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "Calm",
-      "altimeter_display": "30.01 inHg",
-      "observation_time": 1787741580
-    },
-    "KNDZ": {
-      "raw_metar": "METAR KNDZ 261056Z 00000KT 10SM FEW120 FEW250 24/24 A2999 RMK AO2 SLP139 T02390239 $",
-      "flight_category": "VFR",
-      "visibility_sm": 10.0,
-      "visibility_display": "10+ SM",
-      "ceiling_ft_agl": null,
-      "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "Calm",
-      "altimeter_display": "29.99 inHg",
-      "observation_time": 1787741760
     }
   },
   "tafs": {
@@ -92,6 +92,53 @@
     "status": "CLEAR",
     "matches": [],
     "active_sigmets": [
+      {
+        "label": "WSUS33 KKCI 261055\nSIGW \nCONVECTIVE SIGMET 30W\nVALID UNTIL 1255Z\nKS NE CO WY\nFROM 30WSW ANW-50WSW OBH-40SSE AKO-10WNW CYS-30WSW ANW\nAREA TS MOV FROM 29010KT. TOPS ABV FL450.\n\nOUTLOOK VALID 261255-261655\nTS ARE NOT EXPD TO REQUIRE WST ISSUANCES.",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -100.619,
+                42.376
+              ],
+              [
+                -99.374,
+                41.056
+              ],
+              [
+                -102.85,
+                39.545
+              ],
+              [
+                -104.98,
+                41.275
+              ],
+              [
+                -100.619,
+                42.376
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "icaoId": "KKCI",
+          "airSigmetType": "SIGMET",
+          "alphaChar": "W",
+          "hazard": "CONVECTIVE",
+          "seriesId": "30W",
+          "validTimeFrom": "2026-08-26T10:55:00.000Z",
+          "validTimeTo": "2026-08-26T11:54:59.000Z",
+          "severity": 5,
+          "altitudeHi1": 45000,
+          "altitudeHi2": 60000,
+          "altitudeLow1": null,
+          "altitudeLow2": null,
+          "movementDir": 290,
+          "movementSpd": 10,
+          "rawAirSigmet": "WSUS33 KKCI 261055\nSIGW \nCONVECTIVE SIGMET 30W\nVALID UNTIL 1255Z\nKS NE CO WY\nFROM 30WSW ANW-50WSW OBH-40SSE AKO-10WNW CYS-30WSW ANW\nAREA TS MOV FROM 29010KT. TOPS ABV FL450.\n\nOUTLOOK VALID 261255-261655\nTS ARE NOT EXPD TO REQUIRE WST ISSUANCES."
+        }
+      },
       {
         "label": "WSUS31 KKCI 261055\nSIGE \nCONVECTIVE SIGMET 47E\nVALID UNTIL 1255Z\nNC SC FL AND NC FL SC GA CSTL WTRS\nFROM 30WSW ILM-130E ILM-120ENE PBI-10ENE TRV-30S CRG-30WSW ILM\nAREA TS MOV LTL. TOPS ABV FL450.\n\nOUTLOOK VALID 261255-261655\nFROM 40NE ILM-160SSE ECG-140SSE ILM-220E OMN-120SSE MIA-40S\nEYW-40WNW PIE-1",
         "geometry": {
@@ -132,7 +179,7 @@
           "hazard": "CONVECTIVE",
           "seriesId": "47E",
           "validTimeFrom": "2026-08-26T10:55:00.000Z",
-          "validTimeTo": "2026-08-26T12:55:00.000Z",
+          "validTimeTo": "2026-08-26T11:54:59.000Z",
           "severity": 5,
           "altitudeHi1": 45000,
           "altitudeHi2": 60000,
@@ -183,7 +230,7 @@
           "hazard": "CONVECTIVE",
           "seriesId": "48E",
           "validTimeFrom": "2026-08-26T10:55:00.000Z",
-          "validTimeTo": "2026-08-26T12:55:00.000Z",
+          "validTimeTo": "2026-08-26T11:54:59.000Z",
           "severity": 5,
           "altitudeHi1": 37000,
           "altitudeHi2": 37000,
@@ -230,7 +277,7 @@
           "hazard": "CONVECTIVE",
           "seriesId": "49E",
           "validTimeFrom": "2026-08-26T10:55:00.000Z",
-          "validTimeTo": "2026-08-26T12:55:00.000Z",
+          "validTimeTo": "2026-08-26T11:54:59.000Z",
           "severity": 5,
           "altitudeHi1": 45000,
           "altitudeHi2": 60000,
@@ -277,7 +324,7 @@
           "hazard": "CONVECTIVE",
           "seriesId": "50E",
           "validTimeFrom": "2026-08-26T10:55:00.000Z",
-          "validTimeTo": "2026-08-26T12:55:00.000Z",
+          "validTimeTo": "2026-08-26T11:54:59.000Z",
           "severity": 5,
           "altitudeHi1": 43000,
           "altitudeHi2": 43000,
@@ -324,7 +371,7 @@
           "hazard": "CONVECTIVE",
           "seriesId": "51E",
           "validTimeFrom": "2026-08-26T10:55:00.000Z",
-          "validTimeTo": "2026-08-26T12:55:00.000Z",
+          "validTimeTo": "2026-08-26T11:54:59.000Z",
           "severity": 5,
           "altitudeHi1": 43000,
           "altitudeHi2": 43000,
@@ -371,7 +418,7 @@
           "hazard": "CONVECTIVE",
           "seriesId": "56C",
           "validTimeFrom": "2026-08-26T10:55:00.000Z",
-          "validTimeTo": "2026-08-26T12:55:00.000Z",
+          "validTimeTo": "2026-08-26T11:54:59.000Z",
           "severity": 5,
           "altitudeHi1": 41000,
           "altitudeHi2": 41000,
@@ -418,7 +465,7 @@
           "hazard": "CONVECTIVE",
           "seriesId": "57C",
           "validTimeFrom": "2026-08-26T10:55:00.000Z",
-          "validTimeTo": "2026-08-26T12:55:00.000Z",
+          "validTimeTo": "2026-08-26T11:54:59.000Z",
           "severity": 5,
           "altitudeHi1": 33000,
           "altitudeHi2": 33000,
@@ -465,7 +512,7 @@
           "hazard": "CONVECTIVE",
           "seriesId": "58C",
           "validTimeFrom": "2026-08-26T10:55:00.000Z",
-          "validTimeTo": "2026-08-26T12:55:00.000Z",
+          "validTimeTo": "2026-08-26T11:54:59.000Z",
           "severity": 5,
           "altitudeHi1": 45000,
           "altitudeHi2": 60000,
@@ -512,7 +559,7 @@
           "hazard": "CONVECTIVE",
           "seriesId": "59C",
           "validTimeFrom": "2026-08-26T10:55:00.000Z",
-          "validTimeTo": "2026-08-26T12:55:00.000Z",
+          "validTimeTo": "2026-08-26T11:54:59.000Z",
           "severity": 5,
           "altitudeHi1": 33000,
           "altitudeHi2": 33000,
@@ -521,53 +568,6 @@
           "movementDir": 290,
           "movementSpd": 15,
           "rawAirSigmet": "WSUS32 KKCI 261055\nSIGC \nCONVECTIVE SIGMET 59C\nVALID UNTIL 1255Z\nTX NM\nFROM 70NW AMA-40SSE AMA-10N TCS-50SSW RSK-70NW AMA\nAREA TS MOV FROM 29015KT. TOPS TO FL330.\n\nOUTLOOK VALID 261255-261655\nAREA 1...FROM 80ESE YQT-70SE SSM-40WNW FWA-40NW BDF-80ESE YQT\nWST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM\nPREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.\n\nAREA 2...FROM 30S UIN-PXV-MSL-LFK-30E ACT-30S UIN\nWST ISSUANCES POSS. REFER TO MOST RECENT ACUS01 KWNS FROM STORM\nPREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS."
-        }
-      },
-      {
-        "label": "WSUS33 KKCI 261055\nSIGW \nCONVECTIVE SIGMET 30W\nVALID UNTIL 1255Z\nKS NE CO WY\nFROM 30WSW ANW-50WSW OBH-40SSE AKO-10WNW CYS-30WSW ANW\nAREA TS MOV FROM 29010KT. TOPS ABV FL450.\n\nOUTLOOK VALID 261255-261655\nTS ARE NOT EXPD TO REQUIRE WST ISSUANCES.",
-        "geometry": {
-          "type": "Polygon",
-          "coordinates": [
-            [
-              [
-                -100.619,
-                42.376
-              ],
-              [
-                -99.374,
-                41.056
-              ],
-              [
-                -102.85,
-                39.545
-              ],
-              [
-                -104.98,
-                41.275
-              ],
-              [
-                -100.619,
-                42.376
-              ]
-            ]
-          ]
-        },
-        "properties": {
-          "icaoId": "KKCI",
-          "airSigmetType": "SIGMET",
-          "alphaChar": "W",
-          "hazard": "CONVECTIVE",
-          "seriesId": "30W",
-          "validTimeFrom": "2026-08-26T10:55:00.000Z",
-          "validTimeTo": "2026-08-26T12:55:00.000Z",
-          "severity": 5,
-          "altitudeHi1": 45000,
-          "altitudeHi2": 60000,
-          "altitudeLow1": null,
-          "altitudeLow2": null,
-          "movementDir": 290,
-          "movementSpd": 10,
-          "rawAirSigmet": "WSUS33 KKCI 261055\nSIGW \nCONVECTIVE SIGMET 30W\nVALID UNTIL 1255Z\nKS NE CO WY\nFROM 30WSW ANW-50WSW OBH-40SSE AKO-10WNW CYS-30WSW ANW\nAREA TS MOV FROM 29010KT. TOPS ABV FL450.\n\nOUTLOOK VALID 261255-261655\nTS ARE NOT EXPD TO REQUIRE WST ISSUANCES."
         }
       }
     ]
