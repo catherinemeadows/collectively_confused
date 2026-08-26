@@ -263,14 +263,32 @@ function renderTafs() {
     const tafElement =
         document.getElementById("knse-taf");
 
-    if (!tafElement) {
+    const etaInput =
+        document.getElementById("knse-eta");
+
+    const etaButton =
+        document.getElementById("knse-eta-button");
+
+    const etaWindow =
+        document.getElementById("knse-eta-window");
+
+    const rawToggle =
+        document.getElementById("knse-raw-toggle");
+
+    const rawElement =
+        document.getElementById("knse-raw-taf");
+
+
+    if (!tafElement || !etaInput || !etaButton) {
         return;
     }
+
 
     const rawTaf =
         weatherData?.tafs?.KNSE?.raw_taf;
 
-    if (!rawTaf) {
+
+    if (!rawTaf || rawTaf === "TAF unavailable") {
 
         tafElement.innerHTML =
             `<p>TAF unavailable</p>`;
@@ -279,42 +297,13 @@ function renderTafs() {
     }
 
 
+    // Parse the TAF into forecast periods
+    let periods;
+
     try {
 
-        const periods =
+        periods =
             parseTafPeriods(rawTaf);
-
-
-        if (!periods.length) {
-
-            tafElement.innerHTML =
-                `<div class="taf-raw">${rawTaf}</div>`;
-
-            return;
-        }
-
-
-        tafElement.innerHTML =
-            periods.map(period => {
-
-                return `
-                    <div class="taf-period">
-
-                        <div class="taf-time">
-                            ${period.time}
-                        </div>
-
-                        <div class="taf-summary">
-                            ${formatTafConditions(
-                                period.conditions
-                            )}
-                        </div>
-
-                    </div>
-                `;
-
-            }).join("");
-
 
     } catch (error) {
 
@@ -324,9 +313,129 @@ function renderTafs() {
         );
 
         tafElement.innerText =
-            rawTaf;
+            "Unable to read TAF.";
 
+        return;
     }
+
+
+    // Put the full raw TAF into the expandable section
+    rawElement.innerText = rawTaf;
+
+
+    // Show/hide raw TAF
+    rawToggle.addEventListener(
+        "click",
+        function () {
+
+            const isHidden =
+                rawElement.hidden;
+
+            rawElement.hidden =
+                !isHidden;
+
+            rawToggle.innerText =
+                isHidden
+                    ? "▾ Hide Full Raw TAF"
+                    : "▸ Show Full Raw TAF";
+
+        }
+    );
+
+
+    // Show forecast when ETA button is clicked
+    etaButton.addEventListener(
+        "click",
+        function () {
+
+            const eta =
+                new Date(etaInput.value);
+
+
+            if (isNaN(eta.getTime())) {
+
+                tafElement.innerHTML =
+                    `<p>Please enter an ETA.</p>`;
+
+                etaWindow.innerText =
+                    "";
+
+                return;
+            }
+
+
+            // One hour before ETA
+            const windowStart =
+                new Date(
+                    eta.getTime() -
+                    60 * 60 * 1000
+                );
+
+
+            // One hour after ETA
+            const windowEnd =
+                new Date(
+                    eta.getTime() +
+                    60 * 60 * 1000
+                );
+
+
+            // Display the user's local time
+            etaWindow.innerText =
+                `Forecast window: ${
+                    formatUserLocalTime(windowStart)
+                } – ${
+                    formatUserLocalTime(windowEnd)
+                }`;
+
+
+            // Find TAF periods that overlap
+            // the ±1 hour ETA window
+            const applicablePeriods =
+                periods.filter(
+                    period =>
+                        period.start < windowEnd &&
+                        period.end > windowStart
+                );
+
+
+            if (!applicablePeriods.length) {
+
+                tafElement.innerHTML =
+                    `<p>
+                        No TAF conditions apply
+                        to this ETA window.
+                    </p>`;
+
+                return;
+            }
+
+
+            tafElement.innerHTML =
+                applicablePeriods
+                    .map(period => {
+
+                        return `
+                            <div class="taf-period">
+
+                                <div class="taf-time">
+                                    ${period.time}
+                                </div>
+
+                                <div class="taf-summary">
+                                    ${formatTafConditions(
+                                        period.conditions
+                                    )}
+                                </div>
+
+                            </div>
+                        `;
+
+                    })
+                    .join("");
+
+        }
+    );
 
 }
 
@@ -719,6 +828,16 @@ function makeTafDate(
         )
     );
 
+}
+
+function formatUserLocalTime(date) {
+    return new Intl.DateTimeFormat(
+        "en-US",
+        {
+            hour: "numeric",
+            minute: "2-digit"
+        }
+    ).format(date);
 }
 
 function getChangeStartDate(
