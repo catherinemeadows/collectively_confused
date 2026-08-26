@@ -200,50 +200,59 @@
     <!-- ========================= -->
     <!-- CONVECTIVE SIGMET -->
     <!-- ========================= -->
+
+
     <section
-        class="card sigmet-card"
-        id="sigmet-card"
-    >
+    class="card sigmet-card"
+    id="sigmet-card"
+>
 
-        <div class="sigmet-heading">
+    <!-- SIGMET TEXT -->
+    <div class="sigmet-heading">
 
-            <div class="sigmet-icon">
-                ⚡
-            </div>
+        <div class="sigmet-icon">
+            ⚡
+        </div>
 
-            <div>
-                <span class="eyebrow">
-                    CONVECTIVE SIGMET
-                </span>
+        <div class="sigmet-text">
 
-                <h2 id="sigmet-title">
-                    Checking convective weather...
-                </h2>
+            <span class="eyebrow">
+                CONVECTIVE SIGMET
+            </span>
 
-                <p id="sigmet-description">
-                    Loading latest SIGMET information.
-                </p>
-            </div>
+            <h2 id="sigmet-title">
+                Checking convective weather...
+            </h2>
+
+            <p id="sigmet-description">
+                Loading latest SIGMET information.
+            </p>
 
         </div>
 
+    </div>
 
-        <!-- MAP -->
+
+    <!-- KNDZ / DESTINATION / ENROUTE STATUS -->
+    <div
+        id="sigmet-details"
+        class="sigmet-details">
+    </div>
+
+
+    <!-- MAP GETS ITS OWN ROW -->
+    <div class="sigmet-map-wrapper">
 
         <div
             id="sigmet-map"
             class="sigmet-map">
         </div>
 
-
-        <!-- READABLE DETAILS -->
-
-        <div
-            id="sigmet-details"
-            class="sigmet-details">
-        </div>
+    </div>
 
     </section>
+
+
 
     <!-- ========================= -->
     <!-- DESTINATION SELECTOR -->
