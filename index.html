@@ -4,10 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Cat & Emily's Flight Forecast</title>
-
-    <!-- <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/> -->
+    <title>Flight Whimsy</title>
 
     <link
     rel="stylesheet"
@@ -23,11 +20,12 @@
 <header>
     <div class="mascot">🚁</div>
 
-    <h1>Cat & Em's Flight Forecast</h1>
+    <h1>Flight Whimsy</h1>
 
     <p class="tagline">
-        
+       All the stuff you were about to open six tabs for in one convenient site. 
     </p>
+    <p>Brought to you by Cat Meadows & Emily Bobrek</p>
 </header>
 
 <!-- ========================= -->
@@ -168,34 +166,73 @@
 
     <section class="card taf-card">
 
-        <span class="eyebrow">
-            TERMINAL AERODROME FORECAST
-        </span>
+    <span class="eyebrow">
+        TERMINAL AERODROME FORECAST
+    </span>
 
-        <h2>
-            ✈️ KNSE TAF
-        </h2>
+    <h2>
+        ✈️ KNSE TAF
+    </h2>
 
-        <p class="section-description">
-            Forecast translated into local Central Time.
-        </p>
+    <p class="section-description">
+        See the forecast conditions around your estimated arrival time.
+    </p>
 
-        <div class="taf-grid">
+    <div class="taf-eta">
 
-            <div class="taf-box">
+        <label for="knse-eta">
+            ETA (Local Time)
+        </label>
 
-                <div
-                    class="taf"
-                    id="knse-taf">
+        <div class="taf-eta-input">
+            <input
+                type="datetime-local"
+                id="knse-eta"
+            >
 
-                    Loading TAF...
-
-                </div>
-
-            </div>
-
+            <button
+                type="button"
+                id="knse-eta-button"
+            >
+                Show Forecast
+            </button>
         </div>
-    </section>
+
+        <div
+            id="knse-eta-window"
+            class="taf-eta-window"
+        ></div>
+
+    </div>
+
+    <div
+        id="knse-taf"
+        class="taf"
+    >
+        Enter your ETA to see the applicable forecast.
+    </div>
+
+    <div
+        id="knse-raw-taf"
+        class="taf-raw"
+        hidden
+    ></div>
+    <br>
+
+    <button
+    id="knse-raw-toggle"
+    class="taf-raw-toggle"
+    type="button">
+    ▸ Show Full TAF
+    </button>
+
+    <div
+    id="knse-full-taf"
+    hidden>
+    </div>
+
+
+</section>
 
     <!-- ========================= -->
     <!-- CONVECTIVE SIGMET -->

@@ -296,17 +296,36 @@ function renderDeparture() {
 
 function renderTafs() {
 
+    console.log("hello");
     const tafElement =
         document.getElementById("knse-taf");
 
-    if (!tafElement) {
+    const etaInput =
+        document.getElementById("knse-eta");
+
+    const etaButton =
+        document.getElementById("knse-eta-button");
+
+    const etaWindow =
+        document.getElementById("knse-eta-window");
+
+    const rawToggle =
+        document.getElementById("knse-raw-toggle");
+
+    const rawElement =
+        document.getElementById("knse-raw-taf");
+
+
+    if (!tafElement || !etaInput || !etaButton) {
         return;
     }
+
 
     const rawTaf =
         weatherData?.tafs?.KNSE?.raw_taf;
 
-    if (!rawTaf) {
+
+    if (!rawTaf || rawTaf === "TAF unavailable") {
 
         tafElement.innerHTML =
             `<p>TAF unavailable</p>`;
@@ -315,42 +334,13 @@ function renderTafs() {
     }
 
 
+    // Parse the TAF into forecast periods
+    let periods;
+
     try {
 
-        const periods =
+        periods =
             parseTafPeriods(rawTaf);
-
-
-        if (!periods.length) {
-
-            tafElement.innerHTML =
-                `<div class="taf-raw">${rawTaf}</div>`;
-
-            return;
-        }
-
-
-        tafElement.innerHTML =
-            periods.map(period => {
-
-                return `
-                    <div class="taf-period">
-
-                        <div class="taf-time">
-                            ${period.time}
-                        </div>
-
-                        <div class="taf-summary">
-                            ${formatTafConditions(
-                                period.conditions
-                            )}
-                        </div>
-
-                    </div>
-                `;
-
-            }).join("");
-
 
     } catch (error) {
 
@@ -360,9 +350,211 @@ function renderTafs() {
         );
 
         tafElement.innerText =
-            rawTaf;
+            "Unable to read TAF.";
 
+        return;
     }
+
+// Build the full TAF display:
+// readable forecast periods first,
+// raw coded TAF at the bottom.
+    console.log("TAF DEBUG: renderTafs started");
+    const fullTafElement =
+        document.getElementById("knse-full-taf");
+    console.log("TAF DEBUG: fullTafElement:", fullTafElement);
+
+    if (fullTafElement) {
+        console.log("im in if statement");
+
+        const readableTafs =
+            periods
+                .map(period => {
+
+                    return `
+                        <div class="taf-period">
+
+                            <div class="taf-time">
+                                ${period.time}
+                            </div>
+
+                            <div class="taf-summary">
+                                ${formatTafConditions(
+                                    period.conditions
+                                )}
+                            </div>
+
+                        </div>
+                    `;
+
+                })
+                .join("");
+        // console.log("TAF DEBUG: readableTafs:", readableTafs);
+        const formattedRawTaf =
+            rawTaf.replace(
+                /\s+(BECMG|TEMPO|FM\d{6}|PROB\d{2})/g,
+                "\n\n$1"
+            );
+
+        fullTafElement.innerHTML = `
+
+            <div class="taf-full-readable">
+
+                <h3>Full TAF Forecast</h3>
+
+                ${readableTafs}
+
+            </div>
+
+            <div class="taf-full-raw">
+
+                <h3>Raw TAF</h3>
+
+                <pre>${formattedRawTaf}</pre>
+
+            </div>
+
+        `;
+    }
+
+    rawToggle.addEventListener("click", function () {
+
+        console.log("TAF BUTTON CLICKED");
+
+        if (!fullTafElement) {
+            console.error("Full TAF element not found");
+            return;
+        }
+
+        const currentlyHidden =
+            fullTafElement.hasAttribute("hidden");
+
+        console.log(
+            "Currently hidden:",
+            currentlyHidden
+        );
+
+        if (currentlyHidden) {
+
+            // SHOW
+            fullTafElement.removeAttribute("hidden");
+
+            rawToggle.innerText =
+                "▾ Hide Full TAF";
+
+        } else {
+
+            // HIDE
+            fullTafElement.setAttribute(
+                "hidden",
+                ""
+            );
+
+            rawToggle.innerText =
+                "▸ Show Full TAF";
+
+        }
+
+        console.log(
+            "Full TAF hidden after toggle:",
+            fullTafElement.hasAttribute("hidden")
+        );
+
+    });
+
+
+    // Show forecast when ETA button is clicked
+    etaButton.addEventListener(
+        "click",
+        function () {
+
+            const eta =
+                new Date(etaInput.value);
+
+
+            if (isNaN(eta.getTime())) {
+
+                tafElement.innerHTML =
+                    `<p>Please enter an ETA.</p>`;
+
+                etaWindow.innerText =
+                    "";
+
+                return;
+            }
+
+
+            // One hour before ETA
+            const windowStart =
+                new Date(
+                    eta.getTime() -
+                    60 * 60 * 1000
+                );
+
+
+            // One hour after ETA
+            const windowEnd =
+                new Date(
+                    eta.getTime() +
+                    60 * 60 * 1000
+                );
+
+
+            // Display the user's local time
+            etaWindow.innerText =
+                `Forecast window: ${
+                    formatUserLocalTime(windowStart)
+                } – ${
+                    formatUserLocalTime(windowEnd)
+                }`;
+
+
+            // Find TAF periods that overlap
+            // the ±1 hour ETA window
+            const applicablePeriods =
+                periods.filter(
+                    period =>
+                        period.start < windowEnd &&
+                        period.end > windowStart
+                );
+
+
+            if (!applicablePeriods.length) {
+
+                tafElement.innerHTML =
+                    `<p>
+                        No TAF conditions apply
+                        to this ETA window.
+                    </p>`;
+
+                return;
+            }
+
+
+            tafElement.innerHTML =
+                applicablePeriods
+                    .map(period => {
+
+                        return `
+                            <div class="taf-period">
+
+                                <div class="taf-time">
+                                    ${period.time}
+                                </div>
+
+                                <div class="taf-summary">
+                                    ${formatTafConditions(
+                                        period.conditions
+                                    )}
+                                </div>
+
+                            </div>
+                        `;
+
+                    })
+                    .join("");
+
+        }
+    );
 
 }
 
@@ -373,17 +565,6 @@ function parseTafPeriods(rawTaf) {
         rawTaf
             .replace(/\s+/g, " ")
             .trim();
-
-
-    /*
-       Find the overall validity period.
-
-       Example:
-       2012/2118
-
-       = valid from the 20th at 1200Z
-         until the 21st at 1800Z
-    */
 
     const validityMatch =
         taf.match(
@@ -755,6 +936,16 @@ function makeTafDate(
         )
     );
 
+}
+
+function formatUserLocalTime(date) {
+    return new Intl.DateTimeFormat(
+        "en-US",
+        {
+            hour: "numeric",
+            minute: "2-digit"
+        }
+    ).format(date);
 }
 
 function getChangeStartDate(
@@ -1253,21 +1444,6 @@ function renderDestinations() {
                 event.preventDefault();
 
                 event.stopPropagation();
-
-
-                // selectedDestination =
-                //     airport;
-
-
-                // console.log(
-                //     "Selected destination:",
-                //     selectedDestination
-                // );
-
-
-                // renderDestinations();
-
-                // renderSelectedAirport();
 
                 selectedDestination =
                     airport;
@@ -2105,388 +2281,6 @@ function renderSigmetMap() {
     refreshSigmetMap();
 
 }
-
-// function renderSigmetMap() {
-
-//     const mapElement =
-//         document.getElementById(
-//             "sigmet-map"
-//         );
-
-//     if (!mapElement) {
-//         return;
-//     }
-
-//     const kndz = [
-//         30.7044,
-//         -87.0230
-//     ];
-
-
-//     /*
-//        Create map only once.
-//     */
-//     if (!sigmetMap) {
-//         sigmetMap = L.map(
-//             "sigmet-map"
-//         ).setView(
-//             kndz,
-//             7
-//         );
-
-//         L.tileLayer(
-//             "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
-//             {
-//                 attribution:
-//                     "&copy; OpenStreetMap contributors"
-//             }
-//         ).addTo(
-//             sigmetMap
-//         );
-
-//         /*
-//            KNDZ marker
-//         */
-//         L.marker(
-//             kndz
-//         )
-//         .addTo(
-//             sigmetMap
-//         )
-//         .bindPopup(
-//             "<strong>KNDZ</strong><br>Departure"
-//         );
-//     }
-
-//     if (routeLayer) {
-//         sigmetMap.removeLayer(
-//             routeLayer
-//         );
-
-//     }
-
-//     if (destinationMarker) {
-//         sigmetMap.removeLayer(
-//             destinationMarker
-//         );
-
-//         destinationMarker = null;
-//     }
-
-//     const destination =
-//         airportCoordinates[
-//             selectedDestination
-//     ];
-
-//     if (destination) {
-//         routeLayer =
-//             L.polyline(
-//             [
-//                 [
-//                     airportCoordinates.KNDZ.lat,
-//                     airportCoordinates.KNDZ.lon
-//                 ],
-
-//                 [
-//                     destination.lat,
-//                     destination.lon
-//                 ]
-//             ],
-
-//             {
-//                 color: "#1d668c",
-//                 weight: 4,
-//                 dashArray: "8 6"
-//             }
-//             ).addTo(
-//                 sigmetMap
-//             );
-
-//             destinationMarker =
-//             L.marker(
-//                 [
-//                     destination.lat,
-//                     destination.lon
-//                 ]
-//             )
-//             .addTo(
-//                 sigmetMap
-//             )
-//             .bindPopup(
-//                 `<strong>${selectedDestination}</strong>
-//                 <br>
-//                 Destination`
-//             );
-//         }
-
-//     /*
-//        Remove previous SIGMET polygon.
-//     */
-//     if (sigmetLayer) {
-//         sigmetMap.removeLayer(
-//             sigmetLayer
-//         );
-
-//         sigmetLayer = null;
-//     }
-
-//     const sigmet =
-//         weatherData
-//             ?.kndz_convective_sigmet;
-
-
-//     if (
-//         !sigmet?.matches ||
-//         sigmet.matches.length === 0
-//     ) {
-//         sigmetMap.setView(
-//             kndz,
-//             7
-//         );
-
-//         return;
-//     }
-
-//     /*
-//        Build GeoJSON FeatureCollection
-//        from every matching polygon.
-//     */
-
-//     const features =
-//         sigmet.matches
-//             .filter(
-//                 match =>
-//                     match.geometry
-//             )
-//             .map(
-//                 match => ({
-
-//                     type:
-//                         "Feature",
-
-//                     geometry:
-//                         match.geometry,
-
-//                     properties:
-//                         match.properties || {}
-
-//                 })
-//             );
-
-
-//     if (!features.length) {
-//         return;
-//     }
-
-
-//     const geojson = {
-
-//         type:
-//             "FeatureCollection",
-
-//         features:
-//             features
-
-//     };
-
-//     console.log(
-//         JSON.stringify(
-//             geojson,
-//             null,
-//             2
-//         )
-//     );
-
-//     sigmetLayer =
-//         L.geoJSON(
-//             geojson,
-//             {
-
-//                 style: {
-
-//                     color:
-//                         "#c62828",
-
-//                     weight:
-//                         3,
-
-//                     fillColor:
-//                         "#ef5350",
-
-//                     fillOpacity:
-//                         0.25
-
-//                 }
-
-//             }
-//         )
-//         .addTo(
-//             sigmetMap
-//         );
-
-
-//     /*
-//        Automatically zoom so the
-//        whole SIGMET is visible.
-//     */
-
-//     const bounds =
-//         sigmetLayer
-//             .getBounds();
-
-
-//     if (bounds.isValid()) {
-
-//         sigmetMap.fitBounds(
-//             bounds,
-//             {
-//                 padding:
-//                     [25, 25]
-//             }
-//         );
-
-//     }
-
-//     // const bounds =
-//     // L.latLngBounds();
-
-//     // bounds.extend([
-//     //     airportCoordinates.KNDZ.lat,
-//     //     airportCoordinates.KNDZ.lon
-//     // ]);
-
-
-//     // const destination =
-//     //     airportCoordinates[
-//     //         selectedDestination
-//     //     ];
-
-
-//     // if (destination) {
-
-//     //     bounds.extend([
-//     //         destination.lat,
-//     //         destination.lon
-//     //     ]);
-
-//     // }
-
-
-//     // if (
-//     //     sigmetLayer &&
-//     //     sigmetLayer.getBounds().isValid()
-//     // ) {
-
-//     //     bounds.extend(
-//     //         sigmetLayer.getBounds()
-//     //     );
-
-//     // }
-
-
-//     // sigmetMap.fitBounds(
-//     //     bounds,
-//     //     {
-//     //         padding: [25, 25],
-
-//     //         maxZoom: 8
-//     //     }
-//     // );
-
-//     refreshSigmetMap();
-
-// }
-
-// function renderSigmetDetails() {
-
-//     const container =
-//         document.getElementById(
-//             "sigmet-details"
-//         );
-
-
-//     const sigmet =
-//         weatherData
-//             ?.kndz_convective_sigmet;
-
-
-//     if (!container) {
-//         return;
-//     }
-
-
-//     if (
-//         !sigmet?.matches?.length
-//     ) {
-
-//         container.innerHTML = `
-
-//             <div class="sigmet-detail">
-
-//                 <span class="sigmet-detail-label">
-//                     STATUS
-//                 </span>
-
-//                 <span class="sigmet-detail-value">
-//                     No active Convective SIGMET
-//                     containing KNDZ
-//                 </span>
-
-//             </div>
-
-//         `;
-
-//         return;
-//     }
-
-
-//     const match =
-//         sigmet.matches[0];
-
-
-//     container.innerHTML = `
-
-//         <div class="sigmet-detail">
-
-//             <span class="sigmet-detail-label">
-//                 STATUS
-//             </span>
-
-//             <span class="sigmet-detail-value">
-//                 ⚠️ Active Convective SIGMET
-//             </span>
-
-//         </div>
-
-
-//         <div class="sigmet-detail">
-
-//             <span class="sigmet-detail-label">
-//                 AIRPORT
-//             </span>
-
-//             <span class="sigmet-detail-value">
-//                 KNDZ
-//             </span>
-
-//         </div>
-
-
-//         <div class="sigmet-detail">
-
-//             <span class="sigmet-detail-label">
-//                 HAZARD
-//             </span>
-
-//             <span class="sigmet-detail-value">
-//                 ⛈️ Convective weather
-//             </span>
-
-//         </div>
-
-//     `;
-
-// }
 
 function renderSigmetDetails() {
 
