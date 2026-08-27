@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-27T22:10:31.082487+00:00",
+  "generated_at": "2026-08-27T22:40:33.081505+00:00",
   "departure": "KNDZ",
   "airports": {
     "KCEW": {
@@ -35,6 +35,17 @@
       "altimeter_display": "29.93 inHg",
       "observation_time": 1787867580
     },
+    "KHSA": {
+      "raw_metar": "METAR KHSA 272147Z 15006KT 10SM SCT030 29/23 A2993",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "150\u00b0 @ 6 kt",
+      "altimeter_display": "29.93 inHg",
+      "observation_time": 1787867220
+    },
     "KJKA": {
       "raw_metar": "METAR KJKA 272156Z 13004KT 10SM CLR 28/24 A2993",
       "flight_category": "VFR",
@@ -67,17 +78,6 @@
       "wind_display": "100\u00b0 @ 6 kt",
       "altimeter_display": "29.94 inHg",
       "observation_time": 1787864160
-    },
-    "KNPA": {
-      "raw_metar": "METAR KNPA 272156Z 16005KT 10SM FEW026 BKN100 OVC150 31/23 A2993 RMK AO2 SLP137 T2 SET T03170228 PNO $",
-      "flight_category": "VFR",
-      "visibility_sm": 10.0,
-      "visibility_display": "10+ SM",
-      "ceiling_ft_agl": 10000.0,
-      "ceiling_display": "10,000 ft AGL",
-      "wind_display": "160\u00b0 @ 5 kt",
-      "altimeter_display": "29.93 inHg",
-      "observation_time": 1787867760
     },
     "KPNS": {
       "raw_metar": "METAR KPNS 272153Z 17006KT 10SM CLR 28/23 A2994 RMK AO2 SLP138 T02780233",
@@ -112,16 +112,16 @@
       "altimeter_display": "29.96 inHg",
       "observation_time": 1787867580
     },
-    "KHSA": {
-      "raw_metar": "METAR KHSA 272047Z 10005KT 10SM SCT025 26/23 A2995",
+    "KNPA": {
+      "raw_metar": "METAR KNPA 272156Z 16005KT 10SM FEW026 BKN100 OVC150 31/23 A2993 RMK AO2 SLP137 T2 SET T03170228 PNO $",
       "flight_category": "VFR",
       "visibility_sm": 10.0,
       "visibility_display": "10+ SM",
-      "ceiling_ft_agl": null,
-      "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "100\u00b0 @ 5 kt",
-      "altimeter_display": "29.95 inHg",
-      "observation_time": 1787863620
+      "ceiling_ft_agl": 10000.0,
+      "ceiling_display": "10,000 ft AGL",
+      "wind_display": "160\u00b0 @ 5 kt",
+      "altimeter_display": "29.93 inHg",
+      "observation_time": 1787867760
     }
   },
   "tafs": {
@@ -1528,16 +1528,15 @@
     "active_watches": [
       {
         "event": "Severe Thunderstorm Watch",
-        "headline": "Severe Thunderstorm Watch issued August 27 at 2:13PM MDT until August 27 at 9:00PM MDT by NWS Rapid City SD",
-        "description": "THE NATIONAL WEATHER SERVICE HAS ISSUED SEVERE THUNDERSTORM WATCH\n633 IN EFFECT UNTIL 9 PM MDT /10 PM CDT/ THIS EVENING FOR THE\nFOLLOWING AREAS\n\nIN SOUTH DAKOTA THIS WATCH INCLUDES 7 COUNTIES\n\nIN SOUTH CENTRAL SOUTH DAKOTA\n\nMELLETTE              TODD\n\nIN SOUTHWEST SOUTH DAKOTA\n\nBENNETT               CUSTER                FALL RIVER\nJACKSON               OGLALA LAKOTA\n\nTHIS INCLUDES THE CITIES OF ALLEN, CUSTER, EDGEMONT, HERMOSA,\nHOT SPRINGS, KADOKA, KYLE, LACREEK WILDLIFE REFUGE, MARTIN,\nMISSION, OGLALA, PINE RIDGE, ROSEBUD, SAINT FRANCIS, TUTHILL,\nWHITE RIVER, AND WOOD.\n\nTHIS INCLUDES THE TRIBAL LANDS OF THE PINE RIDGE RESERVATION AND\nTHE ROSEBUD RESERVATION.",
+        "headline": "Severe Thunderstorm Watch issued August 27 at 4:21PM MDT until August 27 at 9:00PM MDT by NWS Rapid City SD",
+        "description": "SEVERE THUNDERSTORM WATCH 633 REMAINS VALID UNTIL 9 PM MDT /10 PM\nCDT/ THIS EVENING FOR THE FOLLOWING AREAS\n\nIN SOUTH DAKOTA THIS WATCH INCLUDES 6 COUNTIES\n\nIN SOUTH CENTRAL SOUTH DAKOTA\n\nMELLETTE              TODD\n\nIN SOUTHWEST SOUTH DAKOTA\n\nBENNETT               FALL RIVER            JACKSON\nOGLALA LAKOTA\n\nTHIS INCLUDES THE CITIES OF ALLEN, EDGEMONT, HOT SPRINGS, KADOKA,\nKYLE, LACREEK WILDLIFE REFUGE, MARTIN, MISSION, OGLALA,\nPINE RIDGE, ROSEBUD, SAINT FRANCIS, TUTHILL, WHITE RIVER,\nAND WOOD.\n\nTHIS INCLUDES THE TRIBAL LANDS OF THE PINE RIDGE RESERVATION AND\nTHE ROSEBUD RESERVATION.",
         "instruction": null,
         "severity": "Severe",
-        "effective": "2026-08-27T14:13:00-06:00",
+        "effective": "2026-08-27T16:21:00-06:00",
         "expires": "2026-08-27T21:00:00-06:00",
         "sender": "NWS Rapid City SD",
         "affected_zones": [
           "https://api.weather.gov/zones/county/SDC007",
-          "https://api.weather.gov/zones/county/SDC033",
           "https://api.weather.gov/zones/county/SDC047",
           "https://api.weather.gov/zones/county/SDC071",
           "https://api.weather.gov/zones/county/SDC095",
@@ -1816,854 +1815,6 @@
                 [
                   -101.988396,
                   43.389511
-                ]
-              ]
-            ],
-            [
-              [
-                [
-                  -103.096596,
-                  43.856812
-                ],
-                [
-                  -103.027794,
-                  43.856712
-                ],
-                [
-                  -103.000496,
-                  43.856514
-                ],
-                [
-                  -102.952599,
-                  43.856613
-                ],
-                [
-                  -102.875496,
-                  43.856213
-                ],
-                [
-                  -102.860397,
-                  43.856312
-                ],
-                [
-                  -102.735497,
-                  43.855614
-                ],
-                [
-                  -102.710396,
-                  43.855614
-                ],
-                [
-                  -102.697098,
-                  43.855511
-                ],
-                [
-                  -102.687096,
-                  43.854813
-                ],
-                [
-                  -102.687393,
-                  43.852013
-                ],
-                [
-                  -102.6922,
-                  43.84951
-                ],
-                [
-                  -102.693199,
-                  43.846012
-                ],
-                [
-                  -102.689995,
-                  43.844112
-                ],
-                [
-                  -102.688194,
-                  43.842113
-                ],
-                [
-                  -102.689194,
-                  43.839111
-                ],
-                [
-                  -102.693298,
-                  43.833912
-                ],
-                [
-                  -102.694695,
-                  43.831612
-                ],
-                [
-                  -102.695396,
-                  43.829113
-                ],
-                [
-                  -102.697197,
-                  43.826012
-                ],
-                [
-                  -102.698997,
-                  43.822411
-                ],
-                [
-                  -102.699493,
-                  43.819912
-                ],
-                [
-                  -102.699295,
-                  43.817013
-                ],
-                [
-                  -102.700798,
-                  43.812412
-                ],
-                [
-                  -102.700394,
-                  43.806313
-                ],
-                [
-                  -102.699295,
-                  43.803211
-                ],
-                [
-                  -102.697395,
-                  43.801613
-                ],
-                [
-                  -102.695694,
-                  43.798714
-                ],
-                [
-                  -102.698593,
-                  43.796711
-                ],
-                [
-                  -102.704399,
-                  43.79771
-                ],
-                [
-                  -102.706497,
-                  43.796013
-                ],
-                [
-                  -102.705597,
-                  43.792614
-                ],
-                [
-                  -102.706398,
-                  43.790611
-                ],
-                [
-                  -102.710495,
-                  43.78791
-                ],
-                [
-                  -102.713699,
-                  43.784714
-                ],
-                [
-                  -102.716599,
-                  43.782711
-                ],
-                [
-                  -102.718498,
-                  43.781712
-                ],
-                [
-                  -102.720695,
-                  43.779713
-                ],
-                [
-                  -102.723099,
-                  43.777813
-                ],
-                [
-                  -102.726097,
-                  43.775711
-                ],
-                [
-                  -102.729797,
-                  43.775013
-                ],
-                [
-                  -102.733696,
-                  43.774014
-                ],
-                [
-                  -102.738197,
-                  43.771111
-                ],
-                [
-                  -102.737793,
-                  43.768112
-                ],
-                [
-                  -102.735199,
-                  43.766712
-                ],
-                [
-                  -102.733597,
-                  43.765114
-                ],
-                [
-                  -102.736595,
-                  43.76181
-                ],
-                [
-                  -102.740097,
-                  43.759411
-                ],
-                [
-                  -102.744194,
-                  43.758411
-                ],
-                [
-                  -102.747894,
-                  43.755913
-                ],
-                [
-                  -102.750999,
-                  43.753212
-                ],
-                [
-                  -102.753296,
-                  43.750511
-                ],
-                [
-                  -102.753799,
-                  43.746613
-                ],
-                [
-                  -102.755196,
-                  43.744713
-                ],
-                [
-                  -102.757797,
-                  43.741814
-                ],
-                [
-                  -102.7612,
-                  43.739613
-                ],
-                [
-                  -102.769394,
-                  43.739014
-                ],
-                [
-                  -102.7714,
-                  43.737411
-                ],
-                [
-                  -102.7724,
-                  43.733311
-                ],
-                [
-                  -102.770393,
-                  43.730011
-                ],
-                [
-                  -102.7724,
-                  43.727512
-                ],
-                [
-                  -102.777199,
-                  43.726414
-                ],
-                [
-                  -102.778496,
-                  43.723511
-                ],
-                [
-                  -102.778198,
-                  43.720711
-                ],
-                [
-                  -102.780495,
-                  43.720013
-                ],
-                [
-                  -102.783295,
-                  43.721313
-                ],
-                [
-                  -102.785995,
-                  43.722313
-                ],
-                [
-                  -102.788795,
-                  43.722111
-                ],
-                [
-                  -102.791695,
-                  43.721313
-                ],
-                [
-                  -102.792793,
-                  43.718513
-                ],
-                [
-                  -102.795296,
-                  43.713413
-                ],
-                [
-                  -102.798294,
-                  43.711712
-                ],
-                [
-                  -102.801193,
-                  43.711212
-                ],
-                [
-                  -102.803497,
-                  43.709412
-                ],
-                [
-                  -102.803398,
-                  43.705513
-                ],
-                [
-                  -102.801895,
-                  43.702412
-                ],
-                [
-                  -102.801094,
-                  43.699814
-                ],
-                [
-                  -102.804794,
-                  43.697613
-                ],
-                [
-                  -102.809296,
-                  43.697514
-                ],
-                [
-                  -102.8125,
-                  43.696213
-                ],
-                [
-                  -102.815498,
-                  43.692211
-                ],
-                [
-                  -102.816795,
-                  43.689812
-                ],
-                [
-                  -102.8144,
-                  43.688614
-                ],
-                [
-                  -102.811699,
-                  43.688511
-                ],
-                [
-                  -102.809395,
-                  43.687813
-                ],
-                [
-                  -102.808594,
-                  43.684113
-                ],
-                [
-                  -102.810997,
-                  43.680714
-                ],
-                [
-                  -102.814995,
-                  43.67551
-                ],
-                [
-                  -102.815895,
-                  43.672211
-                ],
-                [
-                  -102.814095,
-                  43.670212
-                ],
-                [
-                  -102.814293,
-                  43.667412
-                ],
-                [
-                  -102.817398,
-                  43.666214
-                ],
-                [
-                  -102.823196,
-                  43.664612
-                ],
-                [
-                  -102.826599,
-                  43.658112
-                ],
-                [
-                  -102.8302,
-                  43.656811
-                ],
-                [
-                  -102.8339,
-                  43.658314
-                ],
-                [
-                  -102.840393,
-                  43.662811
-                ],
-                [
-                  -102.842194,
-                  43.663811
-                ],
-                [
-                  -102.844498,
-                  43.664413
-                ],
-                [
-                  -102.8479,
-                  43.664814
-                ],
-                [
-                  -102.848396,
-                  43.661213
-                ],
-                [
-                  -102.849899,
-                  43.659111
-                ],
-                [
-                  -102.852493,
-                  43.658211
-                ],
-                [
-                  -102.859795,
-                  43.65871
-                ],
-                [
-                  -102.861397,
-                  43.659512
-                ],
-                [
-                  -102.862396,
-                  43.661411
-                ],
-                [
-                  -102.862793,
-                  43.664211
-                ],
-                [
-                  -102.861694,
-                  43.666512
-                ],
-                [
-                  -102.863098,
-                  43.66851
-                ],
-                [
-                  -102.865997,
-                  43.668911
-                ],
-                [
-                  -102.868896,
-                  43.667713
-                ],
-                [
-                  -102.872597,
-                  43.667011
-                ],
-                [
-                  -102.875694,
-                  43.668114
-                ],
-                [
-                  -102.880394,
-                  43.670513
-                ],
-                [
-                  -102.8834,
-                  43.671211
-                ],
-                [
-                  -102.885895,
-                  43.671211
-                ],
-                [
-                  -102.888496,
-                  43.671913
-                ],
-                [
-                  -102.898193,
-                  43.674011
-                ],
-                [
-                  -102.903,
-                  43.674911
-                ],
-                [
-                  -102.908493,
-                  43.674911
-                ],
-                [
-                  -102.910698,
-                  43.672813
-                ],
-                [
-                  -102.908493,
-                  43.668114
-                ],
-                [
-                  -102.910599,
-                  43.66431
-                ],
-                [
-                  -102.9151,
-                  43.663311
-                ],
-                [
-                  -102.919197,
-                  43.66151
-                ],
-                [
-                  -102.918594,
-                  43.657211
-                ],
-                [
-                  -102.921196,
-                  43.653912
-                ],
-                [
-                  -102.923698,
-                  43.651611
-                ],
-                [
-                  -102.923897,
-                  43.648911
-                ],
-                [
-                  -102.922295,
-                  43.64661
-                ],
-                [
-                  -102.920898,
-                  43.644211
-                ],
-                [
-                  -102.921997,
-                  43.640713
-                ],
-                [
-                  -102.924797,
-                  43.639011
-                ],
-                [
-                  -102.928696,
-                  43.637413
-                ],
-                [
-                  -102.930595,
-                  43.634514
-                ],
-                [
-                  -102.932495,
-                  43.630314
-                ],
-                [
-                  -102.930794,
-                  43.628212
-                ],
-                [
-                  -102.927597,
-                  43.626713
-                ],
-                [
-                  -102.929596,
-                  43.622711
-                ],
-                [
-                  -102.932396,
-                  43.618912
-                ],
-                [
-                  -102.936493,
-                  43.61721
-                ],
-                [
-                  -102.940895,
-                  43.616913
-                ],
-                [
-                  -102.945,
-                  43.617111
-                ],
-                [
-                  -102.948395,
-                  43.616611
-                ],
-                [
-                  -102.9533,
-                  43.614513
-                ],
-                [
-                  -102.9562,
-                  43.613712
-                ],
-                [
-                  -102.959694,
-                  43.614014
-                ],
-                [
-                  -102.9627,
-                  43.61581
-                ],
-                [
-                  -102.965096,
-                  43.616814
-                ],
-                [
-                  -102.969498,
-                  43.616814
-                ],
-                [
-                  -102.973999,
-                  43.618511
-                ],
-                [
-                  -102.9767,
-                  43.618313
-                ],
-                [
-                  -102.978897,
-                  43.616611
-                ],
-                [
-                  -102.9786,
-                  43.613514
-                ],
-                [
-                  -102.9814,
-                  43.611511
-                ],
-                [
-                  -102.984894,
-                  43.610111
-                ],
-                [
-                  -102.987694,
-                  43.611412
-                ],
-                [
-                  -102.990494,
-                  43.61161
-                ],
-                [
-                  -102.993294,
-                  43.610813
-                ],
-                [
-                  -102.994995,
-                  43.608013
-                ],
-                [
-                  -102.999794,
-                  43.606411
-                ],
-                [
-                  -103.000999,
-                  43.592911
-                ],
-                [
-                  -103.000694,
-                  43.517014
-                ],
-                [
-                  -103.000793,
-                  43.477211
-                ],
-                [
-                  -103.008293,
-                  43.476913
-                ],
-                [
-                  -103.052994,
-                  43.477112
-                ],
-                [
-                  -103.148994,
-                  43.476913
-                ],
-                [
-                  -103.152794,
-                  43.477112
-                ],
-                [
-                  -103.217796,
-                  43.477211
-                ],
-                [
-                  -103.222397,
-                  43.477413
-                ],
-                [
-                  -103.224396,
-                  43.477112
-                ],
-                [
-                  -103.243896,
-                  43.477112
-                ],
-                [
-                  -103.250496,
-                  43.477413
-                ],
-                [
-                  -103.309097,
-                  43.477612
-                ],
-                [
-                  -103.325096,
-                  43.477814
-                ],
-                [
-                  -103.355598,
-                  43.477814
-                ],
-                [
-                  -103.370193,
-                  43.477612
-                ],
-                [
-                  -103.491295,
-                  43.477711
-                ],
-                [
-                  -103.518097,
-                  43.477413
-                ],
-                [
-                  -103.543396,
-                  43.477413
-                ],
-                [
-                  -103.565697,
-                  43.477711
-                ],
-                [
-                  -103.620499,
-                  43.477711
-                ],
-                [
-                  -103.698799,
-                  43.478012
-                ],
-                [
-                  -103.750595,
-                  43.478012
-                ],
-                [
-                  -103.772095,
-                  43.477711
-                ],
-                [
-                  -103.793396,
-                  43.477711
-                ],
-                [
-                  -103.875496,
-                  43.47821
-                ],
-                [
-                  -103.933594,
-                  43.478813
-                ],
-                [
-                  -103.9617,
-                  43.478512
-                ],
-                [
-                  -103.980499,
-                  43.478611
-                ],
-                [
-                  -103.9963,
-                  43.478413
-                ],
-                [
-                  -104.000496,
-                  43.478111
-                ],
-                [
-                  -104.045799,
-                  43.477814
-                ],
-                [
-                  -104.054794,
-                  43.477512
-                ],
-                [
-                  -104.054794,
-                  43.503113
-                ],
-                [
-                  -104.054794,
-                  43.533314
-                ],
-                [
-                  -104.054993,
-                  43.55751
-                ],
-                [
-                  -104.055,
-                  43.576214
-                ],
-                [
-                  -104.054794,
-                  43.579411
-                ],
-                [
-                  -104.055,
-                  43.637913
-                ],
-                [
-                  -104.055099,
-                  43.750214
-                ],
-                [
-                  -104.055397,
-                  43.841011
-                ],
-                [
-                  -104.055595,
-                  43.853413
-                ],
-                [
-                  -103.875496,
-                  43.854713
-                ],
-                [
-                  -103.739197,
-                  43.854912
-                ],
-                [
-                  -103.500496,
-                  43.856312
-                ],
-                [
-                  -103.391495,
-                  43.856613
-                ],
-                [
-                  -103.325096,
-                  43.856312
-                ],
-                [
-                  -103.272301,
-                  43.856411
-                ],
-                [
-                  -103.250496,
-                  43.856613
-                ],
-                [
-                  -103.096596,
-                  43.856812
                 ]
               ]
             ],
@@ -6938,14 +6089,13 @@
           ]
         },
         "properties": {
-          "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b922d131efed08e797ff8f4b06b531ab9abed05f.001.1",
+          "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7ef852351adf6d6c3f295e2d9574bfd9b2dd122d.002.1",
           "@type": "wx:Alert",
-          "id": "urn:oid:2.49.0.1.840.0.b922d131efed08e797ff8f4b06b531ab9abed05f.001.1",
-          "areaDesc": "Bennett, SD; Custer, SD; Fall River, SD; Jackson, SD; Mellette, SD; Oglala Lakota, SD; Todd, SD",
+          "id": "urn:oid:2.49.0.1.840.0.7ef852351adf6d6c3f295e2d9574bfd9b2dd122d.002.1",
+          "areaDesc": "Bennett, SD; Fall River, SD; Jackson, SD; Mellette, SD; Oglala Lakota, SD; Todd, SD",
           "geocode": {
             "SAME": [
               "046007",
-              "046033",
               "046047",
               "046071",
               "046095",
@@ -6954,7 +6104,6 @@
             ],
             "UGC": [
               "SDC007",
-              "SDC033",
               "SDC047",
               "SDC071",
               "SDC095",
@@ -6964,21 +6113,27 @@
           },
           "affectedZones": [
             "https://api.weather.gov/zones/county/SDC007",
-            "https://api.weather.gov/zones/county/SDC033",
             "https://api.weather.gov/zones/county/SDC047",
             "https://api.weather.gov/zones/county/SDC071",
             "https://api.weather.gov/zones/county/SDC095",
             "https://api.weather.gov/zones/county/SDC102",
             "https://api.weather.gov/zones/county/SDC121"
           ],
-          "references": [],
-          "sent": "2026-08-27T14:13:00-06:00",
-          "effective": "2026-08-27T14:13:00-06:00",
-          "onset": "2026-08-27T14:13:00-06:00",
+          "references": [
+            {
+              "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b922d131efed08e797ff8f4b06b531ab9abed05f.001.1",
+              "identifier": "urn:oid:2.49.0.1.840.0.b922d131efed08e797ff8f4b06b531ab9abed05f.001.1",
+              "sender": "w-nws.webmaster@noaa.gov",
+              "sent": "2026-08-27T14:13:00-06:00"
+            }
+          ],
+          "sent": "2026-08-27T16:21:00-06:00",
+          "effective": "2026-08-27T16:21:00-06:00",
+          "onset": "2026-08-27T16:21:00-06:00",
           "expires": "2026-08-27T21:00:00-06:00",
           "ends": "2026-08-27T21:00:00-06:00",
           "status": "Actual",
-          "messageType": "Alert",
+          "messageType": "Update",
           "category": "Met",
           "severity": "Severe",
           "certainty": "Possible",
@@ -6986,8 +6141,8 @@
           "event": "Severe Thunderstorm Watch",
           "sender": "w-nws.webmaster@noaa.gov",
           "senderName": "NWS Rapid City SD",
-          "headline": "Severe Thunderstorm Watch issued August 27 at 2:13PM MDT until August 27 at 9:00PM MDT by NWS Rapid City SD",
-          "description": "THE NATIONAL WEATHER SERVICE HAS ISSUED SEVERE THUNDERSTORM WATCH\n633 IN EFFECT UNTIL 9 PM MDT /10 PM CDT/ THIS EVENING FOR THE\nFOLLOWING AREAS\n\nIN SOUTH DAKOTA THIS WATCH INCLUDES 7 COUNTIES\n\nIN SOUTH CENTRAL SOUTH DAKOTA\n\nMELLETTE              TODD\n\nIN SOUTHWEST SOUTH DAKOTA\n\nBENNETT               CUSTER                FALL RIVER\nJACKSON               OGLALA LAKOTA\n\nTHIS INCLUDES THE CITIES OF ALLEN, CUSTER, EDGEMONT, HERMOSA,\nHOT SPRINGS, KADOKA, KYLE, LACREEK WILDLIFE REFUGE, MARTIN,\nMISSION, OGLALA, PINE RIDGE, ROSEBUD, SAINT FRANCIS, TUTHILL,\nWHITE RIVER, AND WOOD.\n\nTHIS INCLUDES THE TRIBAL LANDS OF THE PINE RIDGE RESERVATION AND\nTHE ROSEBUD RESERVATION.",
+          "headline": "Severe Thunderstorm Watch issued August 27 at 4:21PM MDT until August 27 at 9:00PM MDT by NWS Rapid City SD",
+          "description": "SEVERE THUNDERSTORM WATCH 633 REMAINS VALID UNTIL 9 PM MDT /10 PM\nCDT/ THIS EVENING FOR THE FOLLOWING AREAS\n\nIN SOUTH DAKOTA THIS WATCH INCLUDES 6 COUNTIES\n\nIN SOUTH CENTRAL SOUTH DAKOTA\n\nMELLETTE              TODD\n\nIN SOUTHWEST SOUTH DAKOTA\n\nBENNETT               FALL RIVER            JACKSON\nOGLALA LAKOTA\n\nTHIS INCLUDES THE CITIES OF ALLEN, EDGEMONT, HOT SPRINGS, KADOKA,\nKYLE, LACREEK WILDLIFE REFUGE, MARTIN, MISSION, OGLALA,\nPINE RIDGE, ROSEBUD, SAINT FRANCIS, TUTHILL, WHITE RIVER,\nAND WOOD.\n\nTHIS INCLUDES THE TRIBAL LANDS OF THE PINE RIDGE RESERVATION AND\nTHE ROSEBUD RESERVATION.",
           "instruction": null,
           "response": "Monitor",
           "note": null,
@@ -6996,7 +6151,7 @@
               "WCNUNR"
             ],
             "WMOidentifier": [
-              "WWUS63 KUNR 272013"
+              "WWUS63 KUNR 272221"
             ],
             "BLOCKCHANNEL": [
               "EAS",
@@ -7007,7 +6162,7 @@
               "WXR"
             ],
             "VTEC": [
-              "/O.NEW.KUNR.SV.A.0633.260827T2013Z-260828T0300Z/"
+              "/O.CON.KUNR.SV.A.0633.000000T0000Z-260828T0300Z/"
             ],
             "eventEndingTime": [
               "2026-08-27T21:00:00-06:00"
