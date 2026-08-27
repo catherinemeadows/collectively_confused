@@ -30,6 +30,18 @@ const airportNames = {
     
     KCEW:
         "Bob Sikes Airport",
+    
+    KNPA:
+        "Naval Air Station Pensacola",
+    
+    KGPT:
+        "Gulfport-Biloxi International",
+    
+    KJKA:
+        "Jack Edwards Field",
+    
+    KPQL:
+        "Trent Lott International Airport",
 
 };
 
@@ -42,6 +54,10 @@ const destinations = [
     "KTLH",
     "KDHN",
     "KCEW",
+    "KNPA",
+    "KGPT",
+    "KJKA",
+    "KPQL",
 
 ];
 
@@ -80,6 +96,26 @@ const airportCoordinates = {
     KDHN: {
         lat: 31.3213,
         lon: -85.4496
+    },
+
+    KGPT: {
+        lat: 30.4072692,
+        lon: -89.0700958
+    },
+
+    KJKA: {
+        lat: 30.2896389,
+        lon: -87.6717778
+    },
+
+    KNPA: {
+        lat: 30.3532728,
+        lon: -87.3179711
+    },
+
+    KPQL: {
+        lat: 30.4628,
+        lon: -88.5292
     }
 
 };
