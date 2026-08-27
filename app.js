@@ -47,6 +47,9 @@ const airportNames = {
     
     KPQL:
         "Trent Lott International Airport",
+    
+    KBFM:
+        "Mobile International Airport",
 
 };
 
@@ -63,6 +66,7 @@ const destinations = [
     "KGPT",
     "KJKA",
     "KPQL",
+    "KBFM",
 
 ];
 
@@ -121,7 +125,12 @@ const airportCoordinates = {
     KPQL: {
         lat: 30.4628,
         lon: -88.5292
-    }
+    },
+
+    KBFM: {
+        lat: 30.6269,
+        lon: -88.0689
+    },
 
 };
 

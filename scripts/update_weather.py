@@ -19,6 +19,7 @@ AIRPORTS = [
     "KJKA",
     "KGPT",
     "KPQL",
+    "KBFM",
 ]
 
 KNDZ_LAT = 30.7044
@@ -40,6 +41,7 @@ TAF_AIRPORTS = [
     "KDHN",
     "KNPA",
     "KJKA",
+    "KBFM",
 ]
 
 HEADERS = {
