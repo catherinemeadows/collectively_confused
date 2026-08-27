@@ -1451,10 +1451,8 @@ function renderDestinations() {
 
                 renderDestinations();
                 renderSelectedAirport();
-                renderSigmetDetails();
-                renderSigmetMap();
-                renderWatchDetails();
-                renderWatchMap();
+                renderSigmet();
+                renderWatches();
 
             }
         );
