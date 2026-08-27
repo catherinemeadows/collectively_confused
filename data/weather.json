@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-27T21:39:33.923160+00:00",
+  "generated_at": "2026-08-27T21:46:27.851648+00:00",
   "departure": "KNDZ",
   "airports": {
     "KBFM": {
@@ -46,17 +46,6 @@
       "altimeter_display": "29.94 inHg",
       "observation_time": 1787863980
     },
-    "KHSA": {
-      "raw_metar": "METAR KHSA 272047Z 10005KT 10SM SCT025 26/23 A2995",
-      "flight_category": "VFR",
-      "visibility_sm": 10.0,
-      "visibility_display": "10+ SM",
-      "ceiling_ft_agl": null,
-      "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "100\u00b0 @ 5 kt",
-      "altimeter_display": "29.95 inHg",
-      "observation_time": 1787863620
-    },
     "KJKA": {
       "raw_metar": "METAR KJKA 272056Z 12007KT 10SM CLR 29/24 A2992",
       "flight_category": "VFR",
@@ -67,6 +56,17 @@
       "wind_display": "120\u00b0 @ 7 kt",
       "altimeter_display": "29.92 inHg",
       "observation_time": 1787864160
+    },
+    "KMAI": {
+      "raw_metar": "METAR KMAI 272053Z AUTO 20007KT 10SM FEW025 28/23 A2994 RMK AO1 LTG DSNT NE AND E SLP137 T02780228 58009",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "200\u00b0 @ 7 kt",
+      "altimeter_display": "29.94 inHg",
+      "observation_time": 1787863980
     },
     "KMOB": {
       "raw_metar": "METAR KMOB 272056Z VRB03KT 10SM FEW060 BKN100 28/22 A2995 RMK AO2 SLP137 T02780222 56021",
@@ -133,6 +133,17 @@
       "wind_display": "270\u00b0 @ 4 kt",
       "altimeter_display": "29.96 inHg",
       "observation_time": 1787863980
+    },
+    "KHSA": {
+      "raw_metar": "METAR KHSA 272047Z 10005KT 10SM SCT025 26/23 A2995",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "100\u00b0 @ 5 kt",
+      "altimeter_display": "29.95 inHg",
+      "observation_time": 1787863620
     }
   },
   "tafs": {
@@ -164,6 +175,9 @@
       "raw_taf": "TAF KNPA 271446Z 2715/2815 17010KT 9999 VCTS SCT025CB BKN100 OVC250 QNH2988INS TEMPO 2715/2721 VRB15G25KT 4800 TSRA BKN025CB FM272100 20010KT 9999 VCSH SCT035 BKN100 OVC250 QNH2988INS TEMPO 2721/2723 8000 -RA BKN035 FM280000 VRB03KT 9999 VCSH FEW035 SCT100 OVC200 QNH2989INS FM280600 VRB03KT 8000 -RA VCTS SCT025CB BKN100 OVC200 QNH2987INS TEMPO 2807/2813 VRB15G25KT 4800 TSRA BKN025CB TX32/2720Z TN26/2811Z FN20033"
     },
     "KNDZ": {
+      "raw_taf": "TAF unavailable"
+    },
+    "KMAI": {
       "raw_taf": "TAF unavailable"
     }
   },

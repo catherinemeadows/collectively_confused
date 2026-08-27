@@ -51,6 +51,9 @@ const airportNames = {
     KBFM:
         "Mobile International Airport",
 
+    KMAI:
+        "Marianna Municipal Airport",
+        
 };
 
 
@@ -67,6 +70,7 @@ const destinations = [
     "KJKA",
     "KPQL",
     "KBFM",
+    "KMAI",
 
 ];
 
@@ -130,6 +134,11 @@ const airportCoordinates = {
     KBFM: {
         lat: 30.6269,
         lon: -88.0689
+    },
+
+    KMAI: {
+        lat: 30.5172,
+        lon: -88.0397
     },
 
 };
