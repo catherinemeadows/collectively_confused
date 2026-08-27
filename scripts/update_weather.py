@@ -32,6 +32,14 @@ NWS_ALERTS_URL = "https://api.weather.gov/alerts/active"
 TAF_AIRPORTS = [
     "KNDZ",
     "KNSE",
+    "KMOB",
+    "KBFM",
+    "KGPT",
+    "KPNS",
+    "KTLH",
+    "KDHN",
+    "KNPA",
+    "KJKA",
 ]
 
 HEADERS = {

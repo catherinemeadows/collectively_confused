@@ -356,17 +356,13 @@ function renderTafs() {
         return;
     }
 
-// Build the full TAF display:
-// readable forecast periods first,
-// raw coded TAF at the bottom.
-    console.log("TAF DEBUG: renderTafs started");
+    // Build the full TAF display:
+    // readable forecast periods first,
+    // raw coded TAF at the bottom.
     const fullTafElement =
         document.getElementById("knse-full-taf");
-    console.log("TAF DEBUG: fullTafElement:", fullTafElement);
 
     if (fullTafElement) {
-        console.log("im in if statement");
-
         const readableTafs =
             periods
                 .map(period => {
@@ -389,7 +385,7 @@ function renderTafs() {
 
                 })
                 .join("");
-        // console.log("TAF DEBUG: readableTafs:", readableTafs);
+        
         const formattedRawTaf =
             rawTaf.replace(
                 /\s+(BECMG|TEMPO|FM\d{6}|PROB\d{2})/g,
@@ -418,9 +414,6 @@ function renderTafs() {
     }
 
     rawToggle.addEventListener("click", function () {
-
-        console.log("TAF BUTTON CLICKED");
-
         if (!fullTafElement) {
             console.error("Full TAF element not found");
             return;
@@ -454,11 +447,6 @@ function renderTafs() {
                 "▸ Show Full TAF";
 
         }
-
-        console.log(
-            "Full TAF hidden after toggle:",
-            fullTafElement.hasAttribute("hidden")
-        );
 
     });
 
@@ -1600,7 +1588,312 @@ function renderSelectedAirport() {
 
         </div>
 
+                <div class="selected-airport-taf">
+                <br>
+            <span class="label">
+                TERMINAL AERODROME FORECAST
+            </span>
+
+            <h3>
+                ✈️ ${airport} TAF
+            </h3>
+
+            <label for="selected-taf-eta">
+                ETA (Local Time)
+            </label>
+
+            <div class="taf-eta-controls">
+
+                <input
+                    type="datetime-local"
+                    id="selected-taf-eta"
+                >
+
+                <button
+                    id="selected-taf-eta-button"
+                    type="button"
+                >
+                    Show TAF
+                </button>
+
+            </div>
+
+            <div
+                id="selected-taf-window"
+                class="taf-window">
+            </div>
+
+            <div
+                id="selected-taf"
+                class="taf-readable"
+            >
+                Enter an ETA to see applicable forecasts.
+            </div>
+            <br>
+
+            <button
+                id="selected-taf-full-button"
+                type="button"
+            >
+                ▸ Show Full TAF
+            </button>
+
+            <br>
+            
+
+            <div
+                id="selected-taf-full"
+                class="taf-full"
+                hidden
+            ></div>
+
+        </div>
+
     `;
+
+    renderSelectedAirportTaf();
+
+}
+
+function renderSelectedAirportTaf() {
+
+    const airport = selectedDestination;
+
+    const tafElement =
+        document.getElementById("selected-taf");
+
+    const etaInput =
+        document.getElementById("selected-taf-eta");
+
+    const etaButton =
+        document.getElementById("selected-taf-eta-button");
+
+    const etaWindow =
+        document.getElementById("selected-taf-window");
+
+    const fullButton =
+        document.getElementById("selected-taf-full-button");
+
+    const fullElement =
+        document.getElementById("selected-taf-full");
+
+
+    if (
+        !tafElement ||
+        !etaInput ||
+        !etaButton ||
+        !etaWindow ||
+        !fullButton ||
+        !fullElement
+    ) {
+        return;
+    }
+
+    const rawTaf =
+        weatherData?.tafs?.[airport]?.raw_taf;
+
+
+    if (!rawTaf || rawTaf === "TAF unavailable") {
+
+        tafElement.innerHTML =
+            `<p>TAF unavailable</p>`;
+
+        fullButton.hidden = true;
+
+        return;
+    }
+
+
+    let periods;
+
+    try {
+
+        periods =
+            parseTafPeriods(rawTaf);
+
+    } catch (error) {
+
+        console.error(
+            "TAF parsing error:",
+            error
+        );
+
+        tafElement.innerText =
+            "Unable to read TAF.";
+
+        return;
+    }
+
+    console.log("ello");
+
+
+    /*
+     * FULL TAF
+     *
+     * Show every readable TAF period,
+     * followed by the raw TAF.
+     */
+
+    const formattedRawTaf =
+        rawTaf.replace(
+                /\s+(BECMG|TEMPO|FM\d{6}|PROB\d{2})/g,
+                "\n\n$1"
+        );
+
+
+    fullElement.innerHTML = `
+
+        <div class="taf-all-readable">
+            <h3>Full TAF Forecast</h3>
+            ${periods
+                .map(period => {
+
+                    return `
+                        <div class="taf-period">
+
+                            <div class="taf-time">
+                                ${period.time}
+                            </div>
+
+                            <div class="taf-summary">
+                                ${formatTafConditions(
+                                    period.conditions
+                                )}
+                            </div>
+
+                        </div>
+                    `;
+
+                })
+                .join("")
+            }
+
+        </div>
+
+        <div class="taf-raw-section">
+            <div class="taf-raw-title">
+                <h3>Raw TAF</h3>
+            </div>
+             <pre>${formattedRawTaf}</pre>
+
+        </div>
+
+    `;
+
+    /*
+     * SHOW / HIDE FULL TAF
+     */
+
+    fullButton.addEventListener(
+        "click",
+        function () {
+
+            const isHidden =
+                fullElement.hidden;
+
+            fullElement.hidden =
+                !isHidden;
+
+            fullButton.innerText =
+                isHidden
+                    ? "▾ Hide Full TAF"
+                    : "▸ Show Full TAF";
+
+        }
+    );
+
+
+    /*
+     * SHOW TAF FOR ETA ±1 HOUR
+     */
+
+    etaButton.addEventListener(
+        "click",
+        function () {
+
+            const eta =
+                new Date(etaInput.value);
+
+
+            if (isNaN(eta.getTime())) {
+
+                tafElement.innerHTML =
+                    `<p>Please enter an ETA.</p>`;
+
+                etaWindow.innerText =
+                    "";
+
+                return;
+            }
+
+
+            const windowStart =
+                new Date(
+                    eta.getTime() -
+                    60 * 60 * 1000
+                );
+
+
+            const windowEnd =
+                new Date(
+                    eta.getTime() +
+                    60 * 60 * 1000
+                );
+
+
+            etaWindow.innerText =
+                `Forecast window: ${
+                    formatUserLocalTime(windowStart)
+                } – ${
+                    formatUserLocalTime(windowEnd)
+                }`;
+
+
+            const applicablePeriods =
+                periods.filter(
+                    period =>
+                        period.start < windowEnd &&
+                        period.end > windowStart
+                );
+
+
+            if (!applicablePeriods.length) {
+
+                tafElement.innerHTML =
+                    `<p>
+                        No TAF conditions apply
+                        to this ETA window.
+                    </p>`;
+
+                return;
+            }
+
+
+            tafElement.innerHTML =
+                applicablePeriods
+                    .map(period => {
+
+                        return `
+                            <div class="taf-period">
+
+                                <div class="taf-time">
+                                    ${period.time}
+                                </div>
+
+                                <div class="taf-summary">
+                                    ${formatTafConditions(
+                                        period.conditions
+                                    )}
+                                </div>
+
+                            </div>
+                        `;
+
+                    })
+                    .join("");
+
+        }
+    );
 
 }
 
