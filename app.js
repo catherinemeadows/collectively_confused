@@ -8,6 +8,11 @@ let sigmetMap = null;
 let sigmetLayer = null;
 let destinationMarker = null;
 
+let watchMap = null;
+let watchLayer = null;
+let watchRouteLayer = null;
+let watchDestinationMarker = null;
+
 const airportNames = {
 
     KNDZ:
@@ -218,15 +223,11 @@ async function loadWeather() {
 
 
         renderDeparture();
-
         renderTafs();
-
         renderDestinations();
-
         renderSelectedAirport();
-
         renderSigmet();
-
+        renderWatches();
         renderUpdateStatus();
 
     }
@@ -1449,12 +1450,11 @@ function renderDestinations() {
                     airport;
 
                 renderDestinations();
-
                 renderSelectedAirport();
-
                 renderSigmetDetails();
-
                 renderSigmetMap();
+                renderWatchDetails();
+                renderWatchMap();
 
             }
         );
@@ -1728,6 +1728,8 @@ function renderSigmet() {
 
     renderSigmetMap();
     renderSigmetDetails();
+    renderWatchDetails();
+    renderWatchMap();
 
 }
 
@@ -1899,7 +1901,8 @@ document
 
     });
 
-
+// SIGMET FUNCTIONS // 
+// **************** //
 function renderSigmetMap() {
 
     const mapElement =
@@ -2768,6 +2771,732 @@ function getRouteSigmets(
 
 }
 
+
+// WW FUNCTIONS // 
+// ************ //
+function getDestinationWatches(
+    airport
+) {
+
+    const coordinates =
+        airportCoordinates[
+            airport
+        ];
+
+
+    if (!coordinates) {
+        return [];
+    }
+
+
+    const watches =
+        weatherData
+            ?.severe_weather_watches
+            ?.active_watches
+        || [];
+
+
+    return watches.filter(
+        watch =>
+            pointInGeometry(
+                coordinates.lon,
+                coordinates.lat,
+                watch.geometry
+            )
+    );
+
+}
+
+function getRouteWatches(
+    destination
+) {
+
+    const start =
+        airportCoordinates.KNDZ;
+
+    const end =
+        airportCoordinates[
+            destination
+        ];
+
+
+    if (
+        !start ||
+        !end
+    ) {
+
+        return [];
+
+    }
+
+
+    const watches =
+        weatherData
+            ?.severe_weather_watches
+            ?.active_watches
+        || [];
+
+
+    const hits =
+        new Set();
+
+
+    const samples = 250;
+
+
+    for (
+        let i = 0;
+        i <= samples;
+        i++
+    ) {
+
+        const fraction =
+            i / samples;
+
+
+        const lat =
+            start.lat +
+            (
+                end.lat -
+                start.lat
+            )
+            * fraction;
+
+
+        const lon =
+            start.lon +
+            (
+                end.lon -
+                start.lon
+            )
+            * fraction;
+
+
+        watches.forEach(
+            (watch, index) => {
+
+                if (
+                    pointInGeometry(
+                        lon,
+                        lat,
+                        watch.geometry
+                    )
+                ) {
+
+                    hits.add(
+                        index
+                    );
+
+                }
+
+            }
+        );
+
+    }
+
+
+    return Array.from(
+        hits
+    ).map(
+        index =>
+            watches[index]
+    );
+
+}
+
+function renderWatches() {
+
+    const data =
+        weatherData
+            ?.severe_weather_watches;
+
+
+    const card =
+        document.getElementById(
+            "watch-card"
+        );
+
+
+    const summary =
+        document.getElementById(
+            "watch-summary"
+        );
+
+
+    if (
+        !card ||
+        !summary
+    ) {
+
+        return;
+
+    }
+
+
+    card.classList.remove(
+        "safe",
+        "danger",
+        "unknown-watch"
+    );
+
+
+    if (!data) {
+
+        card.classList.add(
+            "unknown-watch"
+        );
+
+        summary.innerText =
+            "Watch data unavailable.";
+
+        return;
+
+    }
+
+
+    const destinationWatches =
+        getDestinationWatches(
+            selectedDestination
+        );
+
+
+    const routeWatches =
+        getRouteWatches(
+            selectedDestination
+        );
+
+
+    const kndzWatches =
+        data.matches || [];
+
+
+    /*
+       Any relevant WW?
+    */
+
+    if (
+        kndzWatches.length ||
+        destinationWatches.length ||
+        routeWatches.length
+    ) {
+
+        card.classList.add(
+            "danger"
+        );
+
+
+        summary.innerText =
+            `⚠️ An active severe weather watch affects the KNDZ → ${selectedDestination} flight.`;
+
+    }
+
+    else {
+
+        card.classList.add(
+            "safe"
+        );
+
+
+        summary.innerText =
+            `No Tornado or Severe Thunderstorm Watch currently affects KNDZ, ${selectedDestination}, or the straight-line route.`;
+
+    }
+
+
+    renderWatchDetails();
+
+    renderWatchMap();
+
+}
+
+function renderWatchDetails() {
+
+    const container =
+        document.getElementById(
+            "watch-details"
+        );
+
+
+    if (!container) {
+        return;
+    }
+
+
+    const data =
+        weatherData
+            ?.severe_weather_watches;
+
+
+    if (!data) {
+
+        container.innerHTML =
+            "Watch data unavailable.";
+
+        return;
+
+    }
+
+
+    const kndzWatches =
+        data.matches || [];
+
+
+    const destinationWatches =
+        getDestinationWatches(
+            selectedDestination
+        );
+
+
+    const routeWatches =
+        getRouteWatches(
+            selectedDestination
+        );
+
+
+    const kndzStatus =
+        kndzWatches.length
+            ? "⚠️ WATCH"
+            : "✅ CLEAR";
+
+
+    const destinationStatus =
+        destinationWatches.length
+            ? "⚠️ WATCH"
+            : "✅ CLEAR";
+
+
+    const routeStatus =
+        routeWatches.length
+            ? "⚠️ INTERSECTS"
+            : "✅ CLEAR";
+
+
+    container.innerHTML = `
+
+        <div class="watch-detail">
+
+            <span class="watch-detail-label">
+                KNDZ
+            </span>
+
+            <span class="watch-detail-value">
+                ${kndzStatus}
+            </span>
+
+        </div>
+
+
+        <div class="watch-detail">
+
+            <span class="watch-detail-label">
+                ${selectedDestination}
+            </span>
+
+            <span class="watch-detail-value">
+                ${destinationStatus}
+            </span>
+
+        </div>
+
+
+        <div class="watch-detail">
+
+            <span class="watch-detail-label">
+                ENROUTE
+            </span>
+
+            <span class="watch-detail-value">
+                ${routeStatus}
+            </span>
+
+        </div>
+
+    `;
+
+
+    /*
+       Show which watches matter
+    */
+
+    const relevant =
+        [
+            ...kndzWatches,
+            ...destinationWatches,
+            ...routeWatches
+        ];
+
+
+    const unique =
+        Array.from(
+            new Set(
+                relevant.map(
+                    watch =>
+                        watch.headline
+                        ||
+                        watch.event
+                )
+            )
+        );
+
+
+    if (unique.length) {
+
+        container.innerHTML += `
+
+            <div class="watch-warning">
+
+                <strong>
+                    🌩️ Active Watch
+                </strong>
+
+                <br>
+
+                ${unique.join("<br>")}
+
+            </div>
+
+        `;
+
+    }
+
+}
+
+function renderWatchMap() {
+
+    const mapElement =
+        document.getElementById(
+            "watch-map"
+        );
+
+
+    if (!mapElement) {
+        return;
+    }
+
+
+    const kndz = [
+        airportCoordinates.KNDZ.lat,
+        airportCoordinates.KNDZ.lon
+    ];
+
+
+    /*
+       Create map once
+    */
+
+    if (!watchMap) {
+
+        watchMap =
+            L.map(
+                "watch-map"
+            ).setView(
+                kndz,
+                7
+            );
+
+
+        L.tileLayer(
+            "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+            {
+                attribution:
+                    "&copy; OpenStreetMap contributors"
+            }
+        ).addTo(
+            watchMap
+        );
+
+
+        L.marker(
+            kndz
+        )
+        .addTo(
+            watchMap
+        )
+        .bindPopup(
+            "<strong>KNDZ</strong><br>Departure"
+        );
+
+    }
+
+
+    /*
+       Remove previous route
+    */
+
+    if (watchRouteLayer) {
+
+        watchMap.removeLayer(
+            watchRouteLayer
+        );
+
+        watchRouteLayer = null;
+
+    }
+
+
+    /*
+       Remove previous destination
+    */
+
+    if (watchDestinationMarker) {
+
+        watchMap.removeLayer(
+            watchDestinationMarker
+        );
+
+        watchDestinationMarker = null;
+
+    }
+
+
+    /*
+       Remove previous WW polygons
+    */
+
+    if (watchLayer) {
+
+        watchMap.removeLayer(
+            watchLayer
+        );
+
+        watchLayer = null;
+
+    }
+
+
+    const destination =
+        airportCoordinates[
+            selectedDestination
+        ];
+
+
+    /*
+       Draw route
+    */
+
+    if (destination) {
+
+        watchRouteLayer =
+            L.polyline(
+                [
+                    kndz,
+
+                    [
+                        destination.lat,
+                        destination.lon
+                    ]
+                ],
+                {
+                    color:
+                        "#1d668c",
+
+                    weight:
+                        4,
+
+                    dashArray:
+                        "8 6"
+                }
+            )
+            .addTo(
+                watchMap
+            );
+
+
+        watchDestinationMarker =
+            L.marker(
+                [
+                    destination.lat,
+                    destination.lon
+                ]
+            )
+            .addTo(
+                watchMap
+            )
+            .bindPopup(
+                `<strong>${selectedDestination}</strong>
+                 <br>
+                 Destination`
+            );
+
+    }
+
+
+    /*
+       Get all active WW polygons
+    */
+
+    const watches =
+        weatherData
+            ?.severe_weather_watches
+            ?.active_watches
+        || [];
+
+
+    const features =
+        watches
+            .filter(
+                watch =>
+                    watch.geometry
+            )
+            .map(
+                watch => ({
+
+                    type:
+                        "Feature",
+
+                    geometry:
+                        watch.geometry,
+
+                    properties: {
+                        event:
+                            watch.event,
+
+                        headline:
+                            watch.headline,
+
+                        expires:
+                            watch.expires
+                    }
+
+                })
+            );
+
+
+    /*
+       Draw polygons
+    */
+
+    if (features.length) {
+
+        watchLayer =
+            L.geoJSON(
+                {
+                    type:
+                        "FeatureCollection",
+
+                    features:
+                        features
+                },
+                {
+
+                    style: {
+
+                        color:
+                            "#d97706",
+
+                        weight:
+                            3,
+
+                        fillColor:
+                            "#f59e0b",
+
+                        fillOpacity:
+                            0.25
+
+                    },
+
+
+                    onEachFeature:
+                        function(
+                            feature,
+                            layer
+                        ) {
+
+                            const props =
+                                feature.properties
+                                || {};
+
+
+                            layer.bindPopup(
+                                `<strong>
+                                    🌩️ ${props.event || "Weather Watch"}
+                                 </strong>
+
+                                 <br><br>
+
+                                 ${props.headline || ""}`
+                            );
+
+                        }
+
+                }
+            )
+            .addTo(
+                watchMap
+            );
+
+    }
+
+
+    /*
+       Fit route + WW polygons
+    */
+
+    const bounds =
+        L.latLngBounds();
+
+
+    bounds.extend(
+        kndz
+    );
+
+
+    if (destination) {
+
+        bounds.extend(
+            [
+                destination.lat,
+                destination.lon
+            ]
+        );
+
+    }
+
+
+    if (
+        watchLayer &&
+        watchLayer
+            .getBounds()
+            .isValid()
+    ) {
+
+        bounds.extend(
+            watchLayer.getBounds()
+        );
+
+    }
+
+
+    if (bounds.isValid()) {
+
+        watchMap.fitBounds(
+            bounds,
+            {
+                padding:
+                    [25, 25],
+
+                maxZoom:
+                    8
+            }
+        );
+
+    }
+
+
+    /*
+       Important for tabs/mobile
+    */
+
+    setTimeout(
+        () => {
+
+            watchMap.invalidateSize();
+
+        },
+        250
+    );
+
+}
 
 showNewFact();
 

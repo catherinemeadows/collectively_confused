@@ -42,14 +42,14 @@
     </button>
 
     <button
-        class="tab-button active"
+        class="tab-button"
         data-tab="links"
     >
         🔗 Links
     </button>
 
     <button
-        class="tab-button active"
+        class="tab-button"
         data-tab="whimsy-break"
     >
         🌀 Whimsy Break
@@ -246,13 +246,57 @@
     </div>
 
 
-</section>
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- DESTINATION SELECTOR -->
+    <!-- ========================= -->
+
+    <section class="card">
+        <span class="eyebrow">
+            PICK YOUR ADVENTURE
+        </span>
+
+        <h2>
+            🚁 Where are we flying?
+        </h2>
+
+        <p class="section-description">
+            Select a destination to view current weather.
+        </p>
+
+        <div
+            class="destinations"
+            id="destinations">
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- SELECTED ROUTE -->
+    <!-- ========================= -->
+
+    <section
+        class="card route-card"
+        id="route-card">
+
+        <span class="eyebrow">
+            TODAY'S QUEST
+        </span>
+
+        <h2 id="route-title">
+            KNDZ → KPNS
+        </h2>
+
+        <div id="selected-airport">
+        </div>
+    </section>
+
 
     <!-- ========================= -->
     <!-- CONVECTIVE SIGMET -->
     <!-- ========================= -->
-
-
     <section
     class="card sigmet-card"
     id="sigmet-card"
@@ -303,52 +347,42 @@
 
     </section>
 
-
-
     <!-- ========================= -->
-    <!-- DESTINATION SELECTOR -->
+    <!-- WEATHER WATCHES -->
     <!-- ========================= -->
+    <section
+    class="card watch-card"
+    id="watch-card"
+    >
 
-    <section class="card">
+    <span class="eyebrow">
+        SEVERE WEATHER WATCHES
+    </span>
 
-        <span class="eyebrow">
-            PICK YOUR ADVENTURE
-        </span>
+    <h2>
+        🌩️ Watches
+    </h2>
 
-        <h2>
-            🚁 Where are we flying?
-        </h2>
+    <p id="watch-summary">
+        Checking active watches...
+    </p>
 
-        <p class="section-description">
-            Select a destination to view current weather.
-        </p>
+
+    <div
+        class="watch-details"
+        id="watch-details">
+    </div>
+
+
+    <div class="watch-map-wrapper">
 
         <div
-            class="destinations"
-            id="destinations">
+            id="watch-map"
+            class="watch-map">
         </div>
 
-    </section>
+    </div>
 
-
-    <!-- ========================= -->
-    <!-- SELECTED ROUTE -->
-    <!-- ========================= -->
-
-    <section
-        class="card route-card"
-        id="route-card">
-
-        <span class="eyebrow">
-            TODAY'S QUEST
-        </span>
-
-        <h2 id="route-title">
-            KNDZ → KPNS
-        </h2>
-
-        <div id="selected-airport">
-        </div>
     </section>
 
 
