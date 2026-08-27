@@ -15,6 +15,10 @@ AIRPORTS = [
     "KTLH",
     "KDHN",
     "KCEW",
+    "KNPA",
+    "KJKA",
+    "KGPT",
+    "KPQL",
 ]
 
 KNDZ_LAT = 30.7044
