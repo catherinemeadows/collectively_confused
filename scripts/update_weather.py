@@ -26,12 +26,13 @@ KNDZ_LON = -87.0230
 
 METAR_URL = "https://aviationweather.gov/api/data/metar"
 TAF_URL = "https://aviationweather.gov/api/data/taf"
+SIGMET_URL = "https://aviationweather.gov/api/data/airsigmet"
+NWS_ALERTS_URL = "https://api.weather.gov/alerts/active"
 
 TAF_AIRPORTS = [
     "KNDZ",
     "KNSE",
 ]
-SIGMET_URL = "https://aviationweather.gov/api/data/airsigmet"
 
 HEADERS = {
     "User-Agent": "HoveysFlightDesk/1.0 aviation weather training project"
@@ -501,80 +502,6 @@ def sigmet_label(feature):
 
     return "Active Convective SIGMET"
 
-
-# def fetch_kndz_convective_sigmet():
-    try:
-        response = get_with_retries(
-            SIGMET_URL,
-            params={
-                "format": "geojson",
-            },
-        )
-
-        if response.status_code == 204:
-            return {
-                "status": "CLEAR",
-                "matches": [],
-            }
-
-        response.raise_for_status()
-
-        payload = response.json()
-
-        features = payload.get(
-            "features",
-            [],
-        )
-
-        matches = []
-
-        for feature in features:
-            if not is_convective_sigmet(
-                feature
-            ):
-                continue
-
-            if point_in_geometry(
-                KNDZ_LON,
-                KNDZ_LAT,
-                feature.get("geometry"),
-            ):
-
-                matches.append(
-                    {
-                        "label": sigmet_label(feature),
-
-                        "geometry": feature.get("geometry"),
-
-                        "properties": feature.get("properties",
-                        {})
-                    }
-                )
-
-        if matches:
-            return {
-                "status": "INSIDE",
-                "matches": matches,
-            }
-
-        return {
-            "status": "CLEAR",
-            "matches": [],
-        }
-
-    except Exception as error:
-        print(
-            "SIGMET ERROR:",
-            error,
-        )
-
-        return {
-            "status": "UNKNOWN",
-            "matches": [],
-            "message":
-                "Unable to retrieve SIGMET data.",
-        }
-
 def fetch_kndz_convective_sigmet():
     
     try:
@@ -710,6 +637,161 @@ def fetch_kndz_convective_sigmet():
 
         }
 
+def fetch_active_watches():
+    try:
+        response = get_with_retries(
+            NWS_ALERTS_URL
+        )
+
+        response.raise_for_status()
+
+        payload = response.json()
+
+        features = payload.get(
+            "features",
+            []
+        )
+
+
+        active_watches = []
+        kndz_matches = []
+
+
+        for feature in features:
+
+            properties = feature.get(
+                "properties",
+                {}
+            )
+
+            event = str(
+                properties.get(
+                    "event",
+                    ""
+                )
+            )
+
+
+            # We only want WW products:
+            # Tornado Watch and
+            # Severe Thunderstorm Watch
+
+            if event not in [
+                "Tornado Watch",
+                "Severe Thunderstorm Watch"
+            ]:
+                continue
+
+
+            geometry = feature.get(
+                "geometry"
+            )
+            
+            # Some NWS alerts may not
+            # include polygon geometry.
+            if not geometry:
+                    continue
+
+            item = {
+
+                "event":
+                    event,
+
+                "headline":
+                    properties.get(
+                        "headline"
+                    ),
+
+                "description":
+                    properties.get(
+                        "description"
+                    ),
+
+                "instruction":
+                    properties.get(
+                        "instruction"
+                    ),
+
+                "severity":
+                    properties.get(
+                        "severity"
+                    ),
+
+                "effective":
+                    properties.get(
+                        "effective"
+                    ),
+
+                "expires":
+                    properties.get(
+                        "expires"
+                    ),
+
+                "sender":
+                    properties.get(
+                        "senderName"
+                    ),
+
+                "geometry":
+                    geometry,
+
+                "properties":
+                    properties
+
+            }
+
+
+            active_watches.append(
+                item
+            )
+
+
+            if point_in_geometry(
+                KNDZ_LON,
+                KNDZ_LAT,
+                geometry
+            ):
+
+                kndz_matches.append(
+                    item
+                )
+
+        return {
+
+            "status":
+                "INSIDE"
+                if kndz_matches
+                else "CLEAR",
+
+            "matches":
+                kndz_matches,
+
+            "active_watches":
+                active_watches
+        }
+
+    except Exception as error:
+        print(
+            "WATCH ERROR:",
+            error
+        )
+
+        return {
+
+            "status":
+                "UNKNOWN",
+
+            "matches":
+                [],
+
+            "active_watches":
+                [],
+
+            "message":
+                "Unable to retrieve watch data."
+
+        }
+
 def main():
     print("Fetching METAR data...")
 
@@ -752,22 +834,14 @@ def main():
     sigmet = (
         fetch_kndz_convective_sigmet()
     )
+    
+    print(
+    "Checking severe weather watches..."
+    )
 
-    data = {
-        "generated_at":
-            datetime.now(
-                timezone.utc
-            ).isoformat(),
-
-        "departure":
-            "KNDZ",
-
-        "airports":
-            airports,
-
-        "kndz_convective_sigmet":
-            sigmet,
-    }
+    watches = (
+        fetch_active_watches()
+    )
 
     tafs = fetch_tafs()
 
@@ -788,7 +862,10 @@ def main():
 
     "kndz_convective_sigmet":
         sigmet,
-}
+    
+    "severe_weather_watches":
+        watches
+    }
 
     os.makedirs(
         "data",
@@ -891,6 +968,7 @@ def get_with_retries(
     raise RuntimeError(
         "Aviation Weather request failed."
     )
+    
 
 
 if __name__ == "__main__":
