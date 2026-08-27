@@ -636,9 +636,96 @@ def fetch_kndz_convective_sigmet():
                 "Unable to retrieve SIGMET data."
 
         }
+def fetch_zone_geometry(zone_url):
+    
+    try:
+
+        response = get_with_retries(
+            zone_url
+        )
+
+        response.raise_for_status()
+
+        zone = response.json()
+
+        return zone.get(
+            "geometry"
+        )
+
+    except Exception as error:
+
+        print(
+            "ZONE GEOMETRY ERROR:",
+            zone_url,
+            error
+        )
+
+        return None
+
+
+def combine_geometries(
+    geometries
+):
+
+    """
+    Combine Polygon and MultiPolygon
+    geometries into one MultiPolygon.
+    """
+
+    polygons = []
+
+
+    for geometry in geometries:
+
+        if not geometry:
+            continue
+
+
+        geometry_type = geometry.get(
+            "type"
+        )
+
+
+        coordinates = geometry.get(
+            "coordinates",
+            []
+        )
+
+
+        if geometry_type == "Polygon":
+
+            polygons.append(
+                coordinates
+            )
+
+
+        elif geometry_type == "MultiPolygon":
+
+            polygons.extend(
+                coordinates
+            )
+
+
+    if not polygons:
+
+        return None
+
+
+    return {
+
+        "type":
+            "MultiPolygon",
+
+        "coordinates":
+            polygons
+
+    }
+
 
 def fetch_active_watches():
+
     try:
+
         response = get_with_retries(
             NWS_ALERTS_URL
         )
@@ -654,6 +741,7 @@ def fetch_active_watches():
 
 
         active_watches = []
+
         kndz_matches = []
 
 
@@ -664,6 +752,7 @@ def fetch_active_watches():
                 {}
             )
 
+
             event = str(
                 properties.get(
                     "event",
@@ -672,26 +761,69 @@ def fetch_active_watches():
             )
 
 
-            # We only want WW products:
-            # Tornado Watch and
-            # Severe Thunderstorm Watch
-
+            
+            # Only keep Tornado Watches
+            # and Severe Thunderstorm Watches.
             if event not in [
                 "Tornado Watch",
                 "Severe Thunderstorm Watch"
             ]:
+
                 continue
 
 
+            
+            # First try the geometry directly
+            # attached to the alert.
             geometry = feature.get(
                 "geometry"
             )
-            
-            # Some NWS alerts may not
-            # include polygon geometry.
-            if not geometry:
-                    continue
 
+
+            
+            #Many watches have geometry = null.
+
+            # In that case, retrieve the
+            # affected NWS zones and combine
+            # their polygons.
+            if not geometry:
+    
+                affected_zones = (
+                    properties.get(
+                        "affectedZones",
+                        []
+                    )
+                    or []
+                )
+
+
+                zone_geometries = []
+
+
+                for zone_url in affected_zones:
+
+                    zone_geometry = (
+                        fetch_zone_geometry(
+                            zone_url
+                        )
+                    )
+
+
+                    if zone_geometry:
+
+                        zone_geometries.append(
+                            zone_geometry
+                        )
+
+
+                geometry = combine_geometries(
+                    zone_geometries
+                )
+
+
+            
+            # We still want to record the watch
+            # even if geometry could not be built.
             item = {
 
                 "event":
@@ -732,6 +864,12 @@ def fetch_active_watches():
                         "senderName"
                     ),
 
+                "affected_zones":
+                    properties.get(
+                        "affectedZones",
+                        []
+                    ),
+
                 "geometry":
                     geometry,
 
@@ -746,15 +884,43 @@ def fetch_active_watches():
             )
 
 
-            if point_in_geometry(
-                KNDZ_LON,
-                KNDZ_LAT,
+            
+            # Only perform point-in-polygon
+            # if we successfully obtained
+            # geometry.
+            if (
                 geometry
+                and
+                point_in_geometry(
+                    KNDZ_LON,
+                    KNDZ_LAT,
+                    geometry
+                )
             ):
 
                 kndz_matches.append(
                     item
                 )
+
+
+        print(
+            "Active severe watches found:",
+            len(active_watches)
+        )
+
+
+        for watch in active_watches:
+
+            print(
+                watch["event"],
+                "|",
+                watch["headline"],
+                "| geometry:",
+                bool(
+                    watch["geometry"]
+                )
+            )
+
 
         return {
 
@@ -768,13 +934,17 @@ def fetch_active_watches():
 
             "active_watches":
                 active_watches
+
         }
 
+
     except Exception as error:
+
         print(
             "WATCH ERROR:",
             error
         )
+
 
         return {
 
@@ -791,6 +961,161 @@ def fetch_active_watches():
                 "Unable to retrieve watch data."
 
         }
+
+# def fetch_active_watches():
+#     try:
+#         response = get_with_retries(
+#             NWS_ALERTS_URL
+#         )
+
+#         response.raise_for_status()
+
+#         payload = response.json()
+
+#         features = payload.get(
+#             "features",
+#             []
+#         )
+
+
+#         active_watches = []
+#         kndz_matches = []
+
+
+#         for feature in features:
+
+#             properties = feature.get(
+#                 "properties",
+#                 {}
+#             )
+
+#             event = str(
+#                 properties.get(
+#                     "event",
+#                     ""
+#                 )
+#             )
+
+
+#             # We only want WW products:
+#             # Tornado Watch and
+#             # Severe Thunderstorm Watch
+
+#             if event not in [
+#                 "Tornado Watch",
+#                 "Severe Thunderstorm Watch"
+#             ]:
+#                 continue
+
+
+#             geometry = feature.get(
+#                 "geometry"
+#             )
+            
+#             # Some NWS alerts may not
+#             # include polygon geometry.
+#             if not geometry:
+#                     continue
+
+#             item = {
+
+#                 "event":
+#                     event,
+
+#                 "headline":
+#                     properties.get(
+#                         "headline"
+#                     ),
+
+#                 "description":
+#                     properties.get(
+#                         "description"
+#                     ),
+
+#                 "instruction":
+#                     properties.get(
+#                         "instruction"
+#                     ),
+
+#                 "severity":
+#                     properties.get(
+#                         "severity"
+#                     ),
+
+#                 "effective":
+#                     properties.get(
+#                         "effective"
+#                     ),
+
+#                 "expires":
+#                     properties.get(
+#                         "expires"
+#                     ),
+
+#                 "sender":
+#                     properties.get(
+#                         "senderName"
+#                     ),
+
+#                 "geometry":
+#                     geometry,
+
+#                 "properties":
+#                     properties
+
+#             }
+
+
+#             active_watches.append(
+#                 item
+#             )
+
+
+#             if point_in_geometry(
+#                 KNDZ_LON,
+#                 KNDZ_LAT,
+#                 geometry
+#             ):
+
+#                 kndz_matches.append(
+#                     item
+#                 )
+
+#         return {
+
+#             "status":
+#                 "INSIDE"
+#                 if kndz_matches
+#                 else "CLEAR",
+
+#             "matches":
+#                 kndz_matches,
+
+#             "active_watches":
+#                 active_watches
+#         }
+
+#     except Exception as error:
+#         print(
+#             "WATCH ERROR:",
+#             error
+#         )
+
+#         return {
+
+#             "status":
+#                 "UNKNOWN",
+
+#             "matches":
+#                 [],
+
+#             "active_watches":
+#                 [],
+
+#             "message":
+#                 "Unable to retrieve watch data."
+
+#         }
 
 def main():
     print("Fetching METAR data...")
