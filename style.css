@@ -1096,16 +1096,15 @@ section.card.lofi-card .lofi-radio {
 
 /* Tab content hidden by default */
 
+/* Hide EVERY tab by default */
 .tab-content {
-    display: none;
+    display: none !important;
 }
 
-
-/* Show selected tab */
-
+/* Only show the active tab */
 .tab-content.active {
-    display: block;
-} 
+    display: block !important;
+}
 
 
 /* Feedback tab doesn't need
@@ -1579,3 +1578,4 @@ section.card.lofi-card .lofi-radio {
     }
 
 }
+
