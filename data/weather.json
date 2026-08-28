@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28T15:10:39.273915+00:00",
+  "generated_at": "2026-08-28T15:40:19.181701+00:00",
   "departure": "KNDZ",
   "airports": {
     "KCEW": {
@@ -34,6 +34,17 @@
       "wind_display": "VRB @ 6 kt",
       "altimeter_display": "30.02 inHg",
       "observation_time": 1787928780
+    },
+    "KHSA": {
+      "raw_metar": "METAR KHSA 281450Z 01007KT 10SM CLR 29/23 A3002",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "010\u00b0 @ 7 kt",
+      "altimeter_display": "30.02 inHg",
+      "observation_time": 1787928600
     },
     "KJKA": {
       "raw_metar": "METAR KJKA 281455Z 03004KT 10SM BKN044 26/24 A3002 RMK LTG DST S",
@@ -111,22 +122,11 @@
       "wind_display": "330\u00b0 @ 5 kt",
       "altimeter_display": "30.05 inHg",
       "observation_time": 1787928780
-    },
-    "KHSA": {
-      "raw_metar": "METAR KHSA 281450Z 01007KT 10SM CLR 29/23 A3002",
-      "flight_category": "VFR",
-      "visibility_sm": 10.0,
-      "visibility_display": "10+ SM",
-      "ceiling_ft_agl": null,
-      "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "010\u00b0 @ 7 kt",
-      "altimeter_display": "30.02 inHg",
-      "observation_time": 1787928600
     }
   },
   "tafs": {
     "KNSE": {
-      "raw_taf": "TAF KNSE 280700Z 2807/2907 VRB05KT 9999 VCSH FEW020 SCT035 BKN100 OVC150 QNH2995INS TEMPO 2808/2812 8000 -SHRA BR SCT020 OVC070 FM281300 VRB06KT 9999 VCSH SCT020 BKN070 BKN150 QNH2997INS TEMPO 2814/2819 VRB15G25KT 8000 -TSRA SCT015 BKN035CB OVC060 FM282000 09007KT 9999 SCT025 BKN050 BKN120 BKN200 QNH2994INS AUTOMATED SENSOR METWATCH 2807 TIL 2811 TX30/2818Z TN24/2811Z FN00298"
+      "raw_taf": "TAF KNSE 281500Z 2815/2915 VRB06KT 9999 VCSH SCT020 SCT060 BKN160 BKN250 QNH2997INS TEMPO 2815/2819 8000 -RA FEW010 BKN020 BKN080 FM281900 10006KT 9999 VCSH FEW025 SCT040 SCT120 BKN250 QNH2994INS TEMPO 2819/2822 6000 -TSRA BR SCT015 BKN035 BKN120 FM282300 16005KT 9999 SCT015 SCT100 BKN150 BKN250 QNH2994INS FM290700 VRB03KT 9999 FEW006 SCT020 SCT120 BKN250 QNH2996INS TEMPO 2911/2913 6000 BR SCT003 BKN010 TX28/2822Z TN22/2907Z FN20071"
     },
     "KNDZ": {
       "raw_taf": "TAF unavailable"
