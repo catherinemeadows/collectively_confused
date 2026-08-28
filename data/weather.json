@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28T05:10:16.771771+00:00",
+  "generated_at": "2026-08-28T05:40:18.222526+00:00",
   "departure": "KNDZ",
   "airports": {
     "KCEW": {
@@ -47,15 +47,15 @@
       "observation_time": 1787881800
     },
     "KJKA": {
-      "raw_metar": "METAR KJKA 280455Z AUTO 01004KT 10SM FEW025 SCT037 BKN049 26/25 A2997 RMK AO2",
+      "raw_metar": "METAR KJKA 280515Z AUTO 00000KT 9SM FEW050 SCT065 BKN075 26/25 A2997 RMK AO2",
       "flight_category": "VFR",
-      "visibility_sm": 10.0,
-      "visibility_display": "10+ SM",
-      "ceiling_ft_agl": 4900.0,
-      "ceiling_display": "4,900 ft AGL",
-      "wind_display": "010\u00b0 @ 4 kt",
+      "visibility_sm": 9.0,
+      "visibility_display": "9 SM",
+      "ceiling_ft_agl": 7500.0,
+      "ceiling_display": "7,500 ft AGL",
+      "wind_display": "Calm",
       "altimeter_display": "29.97 inHg",
-      "observation_time": 1787892900
+      "observation_time": 1787894100
     },
     "KMOB": {
       "raw_metar": "METAR KMOB 280456Z AUTO 00000KT 10SM FEW026 BKN100 BKN120 24/23 A3000 RMK AO2 SLP155 T02390228",
@@ -68,41 +68,8 @@
       "altimeter_display": "30.00 inHg",
       "observation_time": 1787892960
     },
-    "KNDZ": {
-      "raw_metar": "METAR KNDZ 280356Z 00000KT 10SM SCT130 SCT250 24/24 A2998 RMK AO2 SLP137 T02440239 $",
-      "flight_category": "VFR",
-      "visibility_sm": 10.0,
-      "visibility_display": "10+ SM",
-      "ceiling_ft_agl": null,
-      "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "Calm",
-      "altimeter_display": "29.98 inHg",
-      "observation_time": 1787889360
-    },
-    "KNPA": {
-      "raw_metar": "METAR KNPA 280456Z AUTO A2997 RMK AO2 SLP152 PWINO TSNO PNO $",
-      "flight_category": "UNKNOWN",
-      "visibility_sm": null,
-      "visibility_display": "---",
-      "ceiling_ft_agl": null,
-      "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "---",
-      "altimeter_display": "29.97 inHg",
-      "observation_time": 1787892960
-    },
     "KPNS": {
       "raw_metar": "METAR KPNS 280453Z 00000KT 10SM FEW120 26/23 A2998 RMK AO2 SLP151 T02610233",
-      "flight_category": "VFR",
-      "visibility_sm": 10.0,
-      "visibility_display": "10+ SM",
-      "ceiling_ft_agl": null,
-      "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "Calm",
-      "altimeter_display": "29.98 inHg",
-      "observation_time": 1787892780
-    },
-    "KPQL": {
-      "raw_metar": "METAR KPQL 280453Z AUTO 00000KT 10SM FEW075 24/23 A2998 RMK AO2 SLP153 T02390233",
       "flight_category": "VFR",
       "visibility_sm": 10.0,
       "visibility_display": "10+ SM",
@@ -122,6 +89,39 @@
       "wind_display": "Calm",
       "altimeter_display": "30.00 inHg",
       "observation_time": 1787892780
+    },
+    "KNDZ": {
+      "raw_metar": "METAR KNDZ 280456Z 00000KT 10SM SCT120 SCT250 25/24 A2999 RMK AO2 SLP140 T02500239 $",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "Calm",
+      "altimeter_display": "29.99 inHg",
+      "observation_time": 1787892960
+    },
+    "KPQL": {
+      "raw_metar": "METAR KPQL 280453Z AUTO 00000KT 10SM FEW075 24/23 A2998 RMK AO2 SLP153 T02390233",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "Calm",
+      "altimeter_display": "29.98 inHg",
+      "observation_time": 1787892780
+    },
+    "KNPA": {
+      "raw_metar": "METAR KNPA 280456Z AUTO A2997 RMK AO2 SLP152 PWINO TSNO PNO $",
+      "flight_category": "UNKNOWN",
+      "visibility_sm": null,
+      "visibility_display": "---",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "---",
+      "altimeter_display": "29.97 inHg",
+      "observation_time": 1787892960
     }
   },
   "tafs": {
