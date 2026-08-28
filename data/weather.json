@@ -1,18 +1,7 @@
 {
-  "generated_at": "2026-08-28T04:10:15.790802+00:00",
+  "generated_at": "2026-08-28T04:23:06.249759+00:00",
   "departure": "KNDZ",
   "airports": {
-    "KCEW": {
-      "raw_metar": "METAR KCEW 280353Z AUTO 00000KT 8SM CLR 24/23 A3001 RMK AO2 SLP158 T02390233",
-      "flight_category": "VFR",
-      "visibility_sm": 8.0,
-      "visibility_display": "8 SM",
-      "ceiling_ft_agl": null,
-      "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "Calm",
-      "altimeter_display": "30.01 inHg",
-      "observation_time": 1787889180
-    },
     "KDHN": {
       "raw_metar": "METAR KDHN 280353Z AUTO 24004KT 10SM CLR 25/24 A3002 RMK AO1 SLP158 T02500239",
       "flight_category": "VFR",
@@ -45,6 +34,17 @@
       "wind_display": "Calm",
       "altimeter_display": "29.94 inHg",
       "observation_time": 1787881800
+    },
+    "KJKA": {
+      "raw_metar": "METAR KJKA 280415Z AUTO 02004KT 10SM SCT025 SCT030 BKN050 26/25 A2997 RMK AO2",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": 5000.0,
+      "ceiling_display": "5,000 ft AGL",
+      "wind_display": "020\u00b0 @ 4 kt",
+      "altimeter_display": "29.97 inHg",
+      "observation_time": 1787890500
     },
     "KMOB": {
       "raw_metar": "METAR KMOB 280356Z 00000KT 10SM FEW055 SCT120 24/23 A2999 RMK AO2 SLP152 T02390228",
@@ -112,16 +112,16 @@
       "altimeter_display": "29.98 inHg",
       "observation_time": 1787889180
     },
-    "KJKA": {
-      "raw_metar": "METAR KJKA 280355Z AUTO 36004KT 10SM FEW033 SCT055 SCT120 27/25 A2997 RMK AO2",
+    "KCEW": {
+      "raw_metar": "METAR KCEW 280353Z AUTO 00000KT 8SM CLR 24/23 A3001 RMK AO2 SLP158 T02390233",
       "flight_category": "VFR",
-      "visibility_sm": 10.0,
-      "visibility_display": "10+ SM",
+      "visibility_sm": 8.0,
+      "visibility_display": "8 SM",
       "ceiling_ft_agl": null,
       "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "360\u00b0 @ 4 kt",
-      "altimeter_display": "29.97 inHg",
-      "observation_time": 1787889300
+      "wind_display": "Calm",
+      "altimeter_display": "30.01 inHg",
+      "observation_time": 1787889180
     }
   },
   "tafs": {
