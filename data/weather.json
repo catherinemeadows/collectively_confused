@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-08-29T14:10:28.396014+00:00",
+  "generated_at": "2026-08-29T14:40:47.923228+00:00",
   "departure": "KNDZ",
   "airports": {
     "KCEW": {
-      "raw_metar": "SPECI KCEW 291401Z AUTO 10003KT 9SM OVC006 26/24 A3010 RMK AO2 CIG 004V010 T02560244",
-      "flight_category": "IFR",
-      "visibility_sm": 9.0,
-      "visibility_display": "9 SM",
-      "ceiling_ft_agl": 600.0,
-      "ceiling_display": "600 ft AGL",
-      "wind_display": "100\u00b0 @ 3 kt",
+      "raw_metar": "SPECI KCEW 291427Z AUTO 08003KT 10SM SCT007 BKN080 27/24 A3010 RMK AO2 T02720244",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": 8000.0,
+      "ceiling_display": "8,000 ft AGL",
+      "wind_display": "080\u00b0 @ 3 kt",
       "altimeter_display": "30.10 inHg",
-      "observation_time": 1788012060
+      "observation_time": 1788013620
     },
     "KDHN": {
       "raw_metar": "METAR KDHN 291353Z VRB03KT 10SM CLR 26/23 A3014 RMK AO1 SLP201 T02560228",
@@ -101,17 +101,6 @@
       "altimeter_display": "30.06 inHg",
       "observation_time": 1788011580
     },
-    "KPQL": {
-      "raw_metar": "METAR KPQL 291353Z 03006KT 10SM CLR 27/24 A3005 RMK AO2 SLP177 T02670239",
-      "flight_category": "VFR",
-      "visibility_sm": 10.0,
-      "visibility_display": "10+ SM",
-      "ceiling_ft_agl": null,
-      "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "030\u00b0 @ 6 kt",
-      "altimeter_display": "30.05 inHg",
-      "observation_time": 1788011580
-    },
     "KTLH": {
       "raw_metar": "METAR KTLH 291353Z 09006KT 10SM BKN070 OVC180 25/22 A3009 RMK AO2 SLP190 T02500222 $",
       "flight_category": "VFR",
@@ -121,6 +110,17 @@
       "ceiling_display": "7,000 ft AGL",
       "wind_display": "090\u00b0 @ 6 kt",
       "altimeter_display": "30.09 inHg",
+      "observation_time": 1788011580
+    },
+    "KPQL": {
+      "raw_metar": "METAR KPQL 291353Z 03006KT 10SM CLR 27/24 A3005 RMK AO2 SLP177 T02670239",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "030\u00b0 @ 6 kt",
+      "altimeter_display": "30.05 inHg",
       "observation_time": 1788011580
     }
   },
