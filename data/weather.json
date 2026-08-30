@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-30T10:10:15.877317+00:00",
+  "generated_at": "2026-08-30T10:40:33.513167+00:00",
   "departure": "KNDZ",
   "airports": {
     "KCEW": {
@@ -47,15 +47,15 @@
       "observation_time": 1788051000
     },
     "KJKA": {
-      "raw_metar": "METAR KJKA 300955Z AUTO 02004KT 10SM FEW024 SCT030 BKN038 25/25 A3001 RMK AO2",
+      "raw_metar": "METAR KJKA 301015Z AUTO 00000KT 10SM FEW021 FEW029 SCT045 25/25 A3001 RMK AO2",
       "flight_category": "VFR",
       "visibility_sm": 10.0,
       "visibility_display": "10+ SM",
-      "ceiling_ft_agl": 3800.0,
-      "ceiling_display": "3,800 ft AGL",
-      "wind_display": "020\u00b0 @ 4 kt",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "Calm",
       "altimeter_display": "30.01 inHg",
-      "observation_time": 1788083700
+      "observation_time": 1788084900
     },
     "KMOB": {
       "raw_metar": "METAR KMOB 300956Z AUTO 03003KT 10SM CLR 23/23 A3003 RMK AO2 SLP165 T02330228 $",
@@ -67,6 +67,17 @@
       "wind_display": "030\u00b0 @ 3 kt",
       "altimeter_display": "30.03 inHg",
       "observation_time": 1788083760
+    },
+    "KNDZ": {
+      "raw_metar": "METAR KNDZ 290856Z AUTO 06003KT 10SM CLR 24/23 A3001 RMK AO2 SLP148 T02390233 56007 $",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "060\u00b0 @ 3 kt",
+      "altimeter_display": "30.01 inHg",
+      "observation_time": 1787993760
     },
     "KNPA": {
       "raw_metar": "METAR KNPA 300956Z AUTO A3001 RMK AO2 SLP165 PWINO TSNO PNO $",
@@ -111,17 +122,6 @@
       "wind_display": "070\u00b0 @ 5 kt",
       "altimeter_display": "30.06 inHg",
       "observation_time": 1788083580
-    },
-    "KNDZ": {
-      "raw_metar": "METAR KNDZ 290856Z AUTO 06003KT 10SM CLR 24/23 A3001 RMK AO2 SLP148 T02390233 56007 $",
-      "flight_category": "VFR",
-      "visibility_sm": 10.0,
-      "visibility_display": "10+ SM",
-      "ceiling_ft_agl": null,
-      "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "060\u00b0 @ 3 kt",
-      "altimeter_display": "30.01 inHg",
-      "observation_time": 1787993760
     }
   },
   "tafs": {
