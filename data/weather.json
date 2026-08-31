@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31T17:10:15.398035+00:00",
+  "generated_at": "2026-08-31T17:40:22.335018+00:00",
   "departure": "KNDZ",
   "airports": {
     "KCEW": {
@@ -35,17 +35,6 @@
       "altimeter_display": "30.05 inHg",
       "observation_time": 1788195180
     },
-    "KHSA": {
-      "raw_metar": "METAR KHSA 311650Z 13011G14KT 10SM BKN029 32/24 A3005",
-      "flight_category": "MVFR",
-      "visibility_sm": 10.0,
-      "visibility_display": "10+ SM",
-      "ceiling_ft_agl": 2900.0,
-      "ceiling_display": "2,900 ft AGL",
-      "wind_display": "130\u00b0 @ 11 kt G14",
-      "altimeter_display": "30.05 inHg",
-      "observation_time": 1788195000
-    },
     "KJKA": {
       "raw_metar": "METAR KJKA 311655Z 09010KT 10SM SCT026 SCT033 SCT039 32/26 A3006",
       "flight_category": "VFR",
@@ -69,15 +58,15 @@
       "observation_time": 1788195360
     },
     "KNDZ": {
-      "raw_metar": "METAR KNDZ 311456Z 09006KT FEW032 FEW130 SCT250 29/24 A3009 RMK SLP173 T02890244 51010",
-      "flight_category": "UNKNOWN",
-      "visibility_sm": null,
-      "visibility_display": "---",
-      "ceiling_ft_agl": null,
-      "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "090\u00b0 @ 6 kt",
+      "raw_metar": "METAR KNDZ 311556Z 08006KT 10SM SCT033 SCT150 BKN250 30/23 A3009 RMK SLP173 T03000233",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": 25000.0,
+      "ceiling_display": "25,000 ft AGL",
+      "wind_display": "080\u00b0 @ 6 kt",
       "altimeter_display": "30.09 inHg",
-      "observation_time": 1788188160
+      "observation_time": 1788191760
     },
     "KNPA": {
       "raw_metar": "METAR KNPA 311656Z 10006KT 10SM SCT025 SCT180 BKN280 32/26 A3006 RMK AO2 SLP182 T03170256 PNO $",
@@ -122,6 +111,17 @@
       "wind_display": "090\u00b0 @ 7 kt",
       "altimeter_display": "30.08 inHg",
       "observation_time": 1788195180
+    },
+    "KHSA": {
+      "raw_metar": "METAR KHSA 311650Z 13011G14KT 10SM BKN029 32/24 A3005",
+      "flight_category": "MVFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": 2900.0,
+      "ceiling_display": "2,900 ft AGL",
+      "wind_display": "130\u00b0 @ 11 kt G14",
+      "altimeter_display": "30.05 inHg",
+      "observation_time": 1788195000
     }
   },
   "tafs": {
