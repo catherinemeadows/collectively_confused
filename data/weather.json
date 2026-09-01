@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T04:10:17.863287+00:00",
+  "generated_at": "2026-09-01T04:40:15.905058+00:00",
   "departure": "KNDZ",
   "airports": {
     "KCEW": {
@@ -47,7 +47,7 @@
       "observation_time": 1788223800
     },
     "KJKA": {
-      "raw_metar": "METAR KJKA 010355Z AUTO 00000KT 10SM CLR 26/25 A3003 RMK AO2",
+      "raw_metar": "METAR KJKA 010415Z AUTO 00000KT 10SM CLR 26/26 A3003 RMK AO2",
       "flight_category": "VFR",
       "visibility_sm": 10.0,
       "visibility_display": "10+ SM",
@@ -55,7 +55,7 @@
       "ceiling_display": "No BKN/OVC ceiling reported",
       "wind_display": "Calm",
       "altimeter_display": "30.03 inHg",
-      "observation_time": 1788234900
+      "observation_time": 1788236100
     },
     "KMOB": {
       "raw_metar": "METAR KMOB 010356Z 00000KT 10SM FEW200 26/24 A3005 RMK AO2 SLP171 T02560244 $",
@@ -69,7 +69,7 @@
       "observation_time": 1788234960
     },
     "KNDZ": {
-      "raw_metar": "METAR KNDZ 010256Z 00000KT 10SM FEW030 SCT250 26/24 A3005 RMK SLP160 T02610244 51012",
+      "raw_metar": "METAR KNDZ 010356Z 00000KT 10SM FEW025 SCT250 25/24 A3005 RMK SLP160 T02500244",
       "flight_category": "VFR",
       "visibility_sm": 10.0,
       "visibility_display": "10+ SM",
@@ -77,7 +77,18 @@
       "ceiling_display": "No BKN/OVC ceiling reported",
       "wind_display": "Calm",
       "altimeter_display": "30.05 inHg",
-      "observation_time": 1788231360
+      "observation_time": 1788234960
+    },
+    "KNPA": {
+      "raw_metar": "METAR KNPA 010356Z AUTO A3003 RMK AO2 SLP172 PWINO TSNO PNO $",
+      "flight_category": "UNKNOWN",
+      "visibility_sm": null,
+      "visibility_display": "---",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "---",
+      "altimeter_display": "30.03 inHg",
+      "observation_time": 1788234960
     },
     "KPNS": {
       "raw_metar": "METAR KPNS 010353Z AUTO 00000KT 10SM CLR 27/24 A3004 RMK AO2 SLP172 T02670244",
@@ -111,17 +122,6 @@
       "wind_display": "110\u00b0 @ 4 kt",
       "altimeter_display": "30.06 inHg",
       "observation_time": 1788234780
-    },
-    "KNPA": {
-      "raw_metar": "METAR KNPA 010356Z AUTO A3003 RMK AO2 SLP172 PWINO TSNO PNO $",
-      "flight_category": "UNKNOWN",
-      "visibility_sm": null,
-      "visibility_display": "---",
-      "ceiling_ft_agl": null,
-      "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "---",
-      "altimeter_display": "30.03 inHg",
-      "observation_time": 1788234960
     }
   },
   "tafs": {
