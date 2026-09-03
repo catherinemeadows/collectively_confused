@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T19:10:24.420729+00:00",
+  "generated_at": "2026-09-03T19:41:00.674068+00:00",
   "departure": "KNDZ",
   "airports": {
     "KCEW": {
@@ -23,6 +23,17 @@
       "wind_display": "070\u00b0 @ 9 kt G17",
       "altimeter_display": "30.02 inHg",
       "observation_time": 1788461580
+    },
+    "KGPT": {
+      "raw_metar": "SPECI KGPT 031913Z 19010KT 10SM TS FEW045 33/24 A2995 RMK AO2 LTG DSNT E AND NW TSB07 T03330239",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "190\u00b0 @ 10 kt",
+      "altimeter_display": "29.95 inHg",
+      "observation_time": 1788462780
     },
     "KHSA": {
       "raw_metar": "METAR KHSA 031850Z 14007KT 10SM VCTS SCT040 32/21 A2996",
@@ -57,6 +68,17 @@
       "altimeter_display": "29.98 inHg",
       "observation_time": 1788461760
     },
+    "KNDZ": {
+      "raw_metar": "METAR KNDZ 031856Z COR 07008KT 10SM SCT039 BKN120 BKN250 33/23 A2998 RMK SLP135 T2 SET T03280233",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": 12000.0,
+      "ceiling_display": "12,000 ft AGL",
+      "wind_display": "070\u00b0 @ 8 kt",
+      "altimeter_display": "29.98 inHg",
+      "observation_time": 1788461760
+    },
     "KNPA": {
       "raw_metar": "METAR KNPA 031856Z 18005KT 10SM SCT025 SCT050 BKN150 BKN250 29/22 A2997 RMK AO2 SLP149 T2 SET T02890222 PNO $",
       "flight_category": "VFR",
@@ -80,15 +102,15 @@
       "observation_time": 1788461580
     },
     "KPQL": {
-      "raw_metar": "METAR KPQL 031853Z VRB04KT 10SM VCTS FEW065 32/23 A2996 RMK AO2 LTG DSNT E AND SW AND W SLP147 T03170233",
+      "raw_metar": "SPECI KPQL 031926Z 23006KT 10SM TS BKN035 28/23 A2996 RMK AO2 LTG DSNT E AND W TSB20 T02830228",
       "flight_category": "VFR",
       "visibility_sm": 10.0,
       "visibility_display": "10+ SM",
-      "ceiling_ft_agl": null,
-      "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "VRB @ 4 kt",
+      "ceiling_ft_agl": 3500.0,
+      "ceiling_display": "3,500 ft AGL",
+      "wind_display": "230\u00b0 @ 6 kt",
       "altimeter_display": "29.96 inHg",
-      "observation_time": 1788461580
+      "observation_time": 1788463560
     },
     "KTLH": {
       "raw_metar": "METAR KTLH 031853Z COR 07011KT 10SM BKN040CB BKN150 34/22 A2995 RMK AO2 SLP140 CB OHD AND E MOV W T03390222",
@@ -100,28 +122,6 @@
       "wind_display": "070\u00b0 @ 11 kt",
       "altimeter_display": "29.95 inHg",
       "observation_time": 1788461580
-    },
-    "KGPT": {
-      "raw_metar": "SPECI KGPT 031903Z 15009KT 130V190 10SM VCTS CLR 33/23 A2995 RMK AO2 LTG DSNT E T03330233",
-      "flight_category": "VFR",
-      "visibility_sm": 10.0,
-      "visibility_display": "10+ SM",
-      "ceiling_ft_agl": null,
-      "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "150\u00b0 @ 9 kt",
-      "altimeter_display": "29.95 inHg",
-      "observation_time": 1788462180
-    },
-    "KNDZ": {
-      "raw_metar": "METAR KNDZ 031856Z 07008KT 10SM SCT039 BKN120 BKN250 33/23 A2998 SLP135 T2 SET T03280233",
-      "flight_category": "VFR",
-      "visibility_sm": 10.0,
-      "visibility_display": "10+ SM",
-      "ceiling_ft_agl": 12000.0,
-      "ceiling_display": "12,000 ft AGL",
-      "wind_display": "070\u00b0 @ 8 kt",
-      "altimeter_display": "29.98 inHg",
-      "observation_time": 1788461760
     }
   },
   "tafs": {
@@ -1025,6 +1025,831 @@
     "status": "CLEAR",
     "matches": [],
     "active_watches": [
+      {
+        "event": "Severe Thunderstorm Watch",
+        "headline": "Severe Thunderstorm Watch issued September 3 at 3:11PM EDT until September 3 at 10:00PM EDT by NWS Wilmington OH",
+        "description": "THE NATIONAL WEATHER SERVICE HAS ISSUED SEVERE THUNDERSTORM WATCH\n649 IN EFFECT UNTIL 10 PM EDT THIS EVENING FOR THE FOLLOWING\nAREAS\n\nIN OHIO THIS WATCH INCLUDES 2 COUNTIES\n\nIN CENTRAL OHIO\n\nDELAWARE              LICKING\n\nTHIS INCLUDES THE CITIES OF DELAWARE AND NEWARK.",
+        "instruction": null,
+        "severity": "Severe",
+        "effective": "2026-09-03T15:11:00-04:00",
+        "expires": "2026-09-03T22:00:00-04:00",
+        "sender": "NWS Wilmington OH",
+        "affected_zones": [
+          "https://api.weather.gov/zones/county/OHC041",
+          "https://api.weather.gov/zones/county/OHC089"
+        ],
+        "geometry": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  -83.039696,
+                  40.434311
+                ],
+                [
+                  -83.0345,
+                  40.434311
+                ],
+                [
+                  -83.020996,
+                  40.433113
+                ],
+                [
+                  -83.0215,
+                  40.418812
+                ],
+                [
+                  -83.018196,
+                  40.41851
+                ],
+                [
+                  -83.002998,
+                  40.417713
+                ],
+                [
+                  -82.978096,
+                  40.416714
+                ],
+                [
+                  -82.963295,
+                  40.416714
+                ],
+                [
+                  -82.924698,
+                  40.414814
+                ],
+                [
+                  -82.927399,
+                  40.383614
+                ],
+                [
+                  -82.928596,
+                  40.373814
+                ],
+                [
+                  -82.929893,
+                  40.35881
+                ],
+                [
+                  -82.923294,
+                  40.358013
+                ],
+                [
+                  -82.8451,
+                  40.354012
+                ],
+                [
+                  -82.832794,
+                  40.35321
+                ],
+                [
+                  -82.821297,
+                  40.352913
+                ],
+                [
+                  -82.816895,
+                  40.352512
+                ],
+                [
+                  -82.810394,
+                  40.352413
+                ],
+                [
+                  -82.794296,
+                  40.351711
+                ],
+                [
+                  -82.771896,
+                  40.35041
+                ],
+                [
+                  -82.749893,
+                  40.349712
+                ],
+                [
+                  -82.744698,
+                  40.349411
+                ],
+                [
+                  -82.745598,
+                  40.340813
+                ],
+                [
+                  -82.746895,
+                  40.323311
+                ],
+                [
+                  -82.749893,
+                  40.288612
+                ],
+                [
+                  -82.7528,
+                  40.277012
+                ],
+                [
+                  -82.7528,
+                  40.273811
+                ],
+                [
+                  -82.753197,
+                  40.267311
+                ],
+                [
+                  -82.756393,
+                  40.227013
+                ],
+                [
+                  -82.756294,
+                  40.223011
+                ],
+                [
+                  -82.758797,
+                  40.188812
+                ],
+                [
+                  -82.758995,
+                  40.183212
+                ],
+                [
+                  -82.760399,
+                  40.163311
+                ],
+                [
+                  -82.762299,
+                  40.138012
+                ],
+                [
+                  -82.762695,
+                  40.129211
+                ],
+                [
+                  -82.7621,
+                  40.125912
+                ],
+                [
+                  -82.790993,
+                  40.127113
+                ],
+                [
+                  -82.796997,
+                  40.127113
+                ],
+                [
+                  -82.810295,
+                  40.128014
+                ],
+                [
+                  -82.831993,
+                  40.129112
+                ],
+                [
+                  -82.843796,
+                  40.129414
+                ],
+                [
+                  -82.872894,
+                  40.130611
+                ],
+                [
+                  -82.881699,
+                  40.130611
+                ],
+                [
+                  -82.888397,
+                  40.131313
+                ],
+                [
+                  -82.897293,
+                  40.131813
+                ],
+                [
+                  -82.909599,
+                  40.132214
+                ],
+                [
+                  -82.912399,
+                  40.132511
+                ],
+                [
+                  -82.920197,
+                  40.132713
+                ],
+                [
+                  -82.930595,
+                  40.133614
+                ],
+                [
+                  -82.936394,
+                  40.133713
+                ],
+                [
+                  -82.951698,
+                  40.134411
+                ],
+                [
+                  -82.963898,
+                  40.134712
+                ],
+                [
+                  -82.970993,
+                  40.135014
+                ],
+                [
+                  -82.973801,
+                  40.135311
+                ],
+                [
+                  -82.981895,
+                  40.135612
+                ],
+                [
+                  -82.991394,
+                  40.135811
+                ],
+                [
+                  -82.996094,
+                  40.136112
+                ],
+                [
+                  -83.031197,
+                  40.137211
+                ],
+                [
+                  -83.036995,
+                  40.137611
+                ],
+                [
+                  -83.043694,
+                  40.137611
+                ],
+                [
+                  -83.064896,
+                  40.138512
+                ],
+                [
+                  -83.072395,
+                  40.138512
+                ],
+                [
+                  -83.076996,
+                  40.138813
+                ],
+                [
+                  -83.089699,
+                  40.139111
+                ],
+                [
+                  -83.127693,
+                  40.140411
+                ],
+                [
+                  -83.142395,
+                  40.141514
+                ],
+                [
+                  -83.170197,
+                  40.143112
+                ],
+                [
+                  -83.170097,
+                  40.146011
+                ],
+                [
+                  -83.170494,
+                  40.150112
+                ],
+                [
+                  -83.171097,
+                  40.175613
+                ],
+                [
+                  -83.171196,
+                  40.189812
+                ],
+                [
+                  -83.171799,
+                  40.216412
+                ],
+                [
+                  -83.171799,
+                  40.223412
+                ],
+                [
+                  -83.172195,
+                  40.243912
+                ],
+                [
+                  -83.247093,
+                  40.244713
+                ],
+                [
+                  -83.247696,
+                  40.249313
+                ],
+                [
+                  -83.248398,
+                  40.264111
+                ],
+                [
+                  -83.248093,
+                  40.303612
+                ],
+                [
+                  -83.248299,
+                  40.366611
+                ],
+                [
+                  -83.249596,
+                  40.375813
+                ],
+                [
+                  -83.249397,
+                  40.410511
+                ],
+                [
+                  -83.248596,
+                  40.439213
+                ],
+                [
+                  -83.248596,
+                  40.443913
+                ],
+                [
+                  -83.124893,
+                  40.437511
+                ],
+                [
+                  -83.039696,
+                  40.434311
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  -82.500298,
+                  40.265713
+                ],
+                [
+                  -82.492798,
+                  40.265511
+                ],
+                [
+                  -82.477196,
+                  40.264713
+                ],
+                [
+                  -82.476601,
+                  40.258911
+                ],
+                [
+                  -82.477394,
+                  40.245811
+                ],
+                [
+                  -82.458199,
+                  40.245213
+                ],
+                [
+                  -82.374893,
+                  40.241314
+                ],
+                [
+                  -82.346298,
+                  40.240211
+                ],
+                [
+                  -82.325996,
+                  40.239712
+                ],
+                [
+                  -82.284401,
+                  40.239311
+                ],
+                [
+                  -82.281593,
+                  40.239513
+                ],
+                [
+                  -82.278397,
+                  40.240211
+                ],
+                [
+                  -82.2631,
+                  40.240211
+                ],
+                [
+                  -82.206894,
+                  40.239513
+                ],
+                [
+                  -82.196198,
+                  40.239113
+                ],
+                [
+                  -82.182899,
+                  40.238411
+                ],
+                [
+                  -82.184998,
+                  40.204514
+                ],
+                [
+                  -82.186699,
+                  40.182713
+                ],
+                [
+                  -82.186897,
+                  40.17691
+                ],
+                [
+                  -82.187393,
+                  40.169712
+                ],
+                [
+                  -82.187393,
+                  40.167313
+                ],
+                [
+                  -82.187599,
+                  40.156513
+                ],
+                [
+                  -82.188698,
+                  40.137112
+                ],
+                [
+                  -82.190399,
+                  40.100914
+                ],
+                [
+                  -82.191498,
+                  40.081211
+                ],
+                [
+                  -82.191895,
+                  40.077511
+                ],
+                [
+                  -82.192894,
+                  40.055313
+                ],
+                [
+                  -82.194496,
+                  40.027214
+                ],
+                [
+                  -82.194992,
+                  40.016811
+                ],
+                [
+                  -82.195099,
+                  40.01041
+                ],
+                [
+                  -82.1959,
+                  39.999611
+                ],
+                [
+                  -82.197594,
+                  39.967411
+                ],
+                [
+                  -82.1987,
+                  39.951214
+                ],
+                [
+                  -82.201797,
+                  39.950314
+                ],
+                [
+                  -82.216896,
+                  39.950912
+                ],
+                [
+                  -82.231697,
+                  39.951111
+                ],
+                [
+                  -82.231697,
+                  39.947212
+                ],
+                [
+                  -82.233795,
+                  39.91991
+                ],
+                [
+                  -82.2341,
+                  39.913212
+                ],
+                [
+                  -82.288696,
+                  39.91571
+                ],
+                [
+                  -82.302399,
+                  39.916214
+                ],
+                [
+                  -82.306198,
+                  39.916214
+                ],
+                [
+                  -82.369095,
+                  39.919712
+                ],
+                [
+                  -82.374893,
+                  39.91991
+                ],
+                [
+                  -82.388496,
+                  39.920811
+                ],
+                [
+                  -82.412895,
+                  39.922112
+                ],
+                [
+                  -82.418098,
+                  39.922913
+                ],
+                [
+                  -82.418198,
+                  39.927914
+                ],
+                [
+                  -82.428795,
+                  39.92831
+                ],
+                [
+                  -82.462799,
+                  39.930412
+                ],
+                [
+                  -82.473793,
+                  39.925114
+                ],
+                [
+                  -82.493698,
+                  39.926113
+                ],
+                [
+                  -82.504898,
+                  39.926514
+                ],
+                [
+                  -82.5131,
+                  39.927113
+                ],
+                [
+                  -82.526794,
+                  39.927612
+                ],
+                [
+                  -82.557693,
+                  39.929111
+                ],
+                [
+                  -82.629601,
+                  39.932011
+                ],
+                [
+                  -82.648895,
+                  39.933212
+                ],
+                [
+                  -82.739197,
+                  39.937412
+                ],
+                [
+                  -82.749199,
+                  39.93811
+                ],
+                [
+                  -82.768494,
+                  39.938911
+                ],
+                [
+                  -82.782494,
+                  39.939713
+                ],
+                [
+                  -82.781799,
+                  39.946613
+                ],
+                [
+                  -82.780792,
+                  39.96051
+                ],
+                [
+                  -82.780495,
+                  39.968113
+                ],
+                [
+                  -82.779198,
+                  39.976212
+                ],
+                [
+                  -82.773697,
+                  39.97681
+                ],
+                [
+                  -82.772995,
+                  39.987011
+                ],
+                [
+                  -82.771896,
+                  39.998013
+                ],
+                [
+                  -82.7715,
+                  40.005112
+                ],
+                [
+                  -82.770798,
+                  40.013611
+                ],
+                [
+                  -82.770294,
+                  40.017914
+                ],
+                [
+                  -82.767494,
+                  40.051113
+                ],
+                [
+                  -82.767197,
+                  40.062214
+                ],
+                [
+                  -82.7668,
+                  40.068913
+                ],
+                [
+                  -82.7621,
+                  40.125912
+                ],
+                [
+                  -82.762695,
+                  40.129211
+                ],
+                [
+                  -82.762299,
+                  40.138012
+                ],
+                [
+                  -82.760399,
+                  40.163311
+                ],
+                [
+                  -82.758995,
+                  40.183212
+                ],
+                [
+                  -82.758797,
+                  40.188812
+                ],
+                [
+                  -82.756294,
+                  40.223011
+                ],
+                [
+                  -82.756393,
+                  40.227013
+                ],
+                [
+                  -82.753197,
+                  40.267311
+                ],
+                [
+                  -82.7528,
+                  40.273811
+                ],
+                [
+                  -82.7528,
+                  40.277012
+                ],
+                [
+                  -82.746994,
+                  40.276913
+                ],
+                [
+                  -82.721397,
+                  40.275913
+                ],
+                [
+                  -82.656097,
+                  40.27301
+                ],
+                [
+                  -82.627098,
+                  40.271912
+                ],
+                [
+                  -82.599098,
+                  40.270512
+                ],
+                [
+                  -82.591194,
+                  40.270313
+                ],
+                [
+                  -82.569794,
+                  40.269112
+                ],
+                [
+                  -82.546494,
+                  40.268112
+                ],
+                [
+                  -82.519897,
+                  40.266613
+                ],
+                [
+                  -82.500298,
+                  40.265713
+                ]
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d492255fed7ccabcfd31339ee44403b397fd1cd2.001.1",
+          "@type": "wx:Alert",
+          "id": "urn:oid:2.49.0.1.840.0.d492255fed7ccabcfd31339ee44403b397fd1cd2.001.1",
+          "areaDesc": "Delaware, OH; Licking, OH",
+          "geocode": {
+            "SAME": [
+              "039041",
+              "039089"
+            ],
+            "UGC": [
+              "OHC041",
+              "OHC089"
+            ]
+          },
+          "affectedZones": [
+            "https://api.weather.gov/zones/county/OHC041",
+            "https://api.weather.gov/zones/county/OHC089"
+          ],
+          "references": [],
+          "sent": "2026-09-03T15:11:00-04:00",
+          "effective": "2026-09-03T15:11:00-04:00",
+          "onset": "2026-09-03T15:11:00-04:00",
+          "expires": "2026-09-03T22:00:00-04:00",
+          "ends": "2026-09-03T22:00:00-04:00",
+          "status": "Actual",
+          "messageType": "Alert",
+          "category": "Met",
+          "severity": "Severe",
+          "certainty": "Possible",
+          "urgency": "Future",
+          "event": "Severe Thunderstorm Watch",
+          "sender": "w-nws.webmaster@noaa.gov",
+          "senderName": "NWS Wilmington OH",
+          "headline": "Severe Thunderstorm Watch issued September 3 at 3:11PM EDT until September 3 at 10:00PM EDT by NWS Wilmington OH",
+          "description": "THE NATIONAL WEATHER SERVICE HAS ISSUED SEVERE THUNDERSTORM WATCH\n649 IN EFFECT UNTIL 10 PM EDT THIS EVENING FOR THE FOLLOWING\nAREAS\n\nIN OHIO THIS WATCH INCLUDES 2 COUNTIES\n\nIN CENTRAL OHIO\n\nDELAWARE              LICKING\n\nTHIS INCLUDES THE CITIES OF DELAWARE AND NEWARK.",
+          "instruction": null,
+          "response": "Monitor",
+          "note": null,
+          "parameters": {
+            "AWIPSidentifier": [
+              "WCNILN"
+            ],
+            "WMOidentifier": [
+              "WWUS61 KILN 031911"
+            ],
+            "BLOCKCHANNEL": [
+              "EAS",
+              "NWEM",
+              "CMAS"
+            ],
+            "EAS-ORG": [
+              "WXR"
+            ],
+            "VTEC": [
+              "/O.NEW.KILN.SV.A.0649.260903T1911Z-260904T0200Z/"
+            ],
+            "eventEndingTime": [
+              "2026-09-03T22:00:00-04:00"
+            ]
+          },
+          "scope": "Public",
+          "code": "IPAWSv1.0",
+          "language": "en-US",
+          "web": "http://www.weather.gov",
+          "eventCode": {
+            "SAME": [
+              "SVA"
+            ],
+            "NationalWeatherService": [
+              "SVA"
+            ]
+          }
+        }
+      },
       {
         "event": "Severe Thunderstorm Watch",
         "headline": "Severe Thunderstorm Watch issued September 3 at 3:03PM EDT until September 3 at 10:00PM EDT by NWS Cleveland OH",
