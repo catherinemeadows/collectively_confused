@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T07:10:13.948291+00:00",
+  "generated_at": "2026-09-04T07:40:18.089000+00:00",
   "departure": "KNDZ",
   "airports": {
     "KCEW": {
@@ -47,7 +47,7 @@
       "observation_time": 1788486600
     },
     "KJKA": {
-      "raw_metar": "METAR KJKA 040655Z AUTO 00000KT 10SM SCT100 26/25 A2993 RMK AO2",
+      "raw_metar": "METAR KJKA 040715Z AUTO 00000KT 10SM FEW100 25/25 A2993 RMK AO2",
       "flight_category": "VFR",
       "visibility_sm": 10.0,
       "visibility_display": "10+ SM",
@@ -55,7 +55,7 @@
       "ceiling_display": "No BKN/OVC ceiling reported",
       "wind_display": "Calm",
       "altimeter_display": "29.93 inHg",
-      "observation_time": 1788504900
+      "observation_time": 1788506100
     },
     "KMOB": {
       "raw_metar": "METAR KMOB 040656Z AUTO 00000KT 10SM -RA FEW110 26/25 A2996 RMK AO2 SLP140 P0001 T02560250",
@@ -67,17 +67,6 @@
       "wind_display": "Calm",
       "altimeter_display": "29.96 inHg",
       "observation_time": 1788504960
-    },
-    "KNDZ": {
-      "raw_metar": "METAR KNDZ 040556Z 01003KT 10SM FEW050 SCT090 BKN250 24/23 A2997 RMK SLP131 LAST T2 SET 60012 T02390233 10278 20239 403330239 58001",
-      "flight_category": "VFR",
-      "visibility_sm": 10.0,
-      "visibility_display": "10+ SM",
-      "ceiling_ft_agl": 25000.0,
-      "ceiling_display": "25,000 ft AGL",
-      "wind_display": "010\u00b0 @ 3 kt",
-      "altimeter_display": "29.97 inHg",
-      "observation_time": 1788501360
     },
     "KNPA": {
       "raw_metar": "METAR KNPA 040656Z AUTO A2993 RMK AO2 SLP138 PWINO TSNO PNO $",
@@ -91,26 +80,15 @@
       "observation_time": 1788504960
     },
     "KPNS": {
-      "raw_metar": "METAR KPNS 040653Z AUTO 04003KT 10SM CLR 25/24 A2993 RMK AO2 SLP137 T02500244",
+      "raw_metar": "SPECI KPNS 040720Z AUTO 02005KT 10SM FEW004 25/24 A2993 RMK AO2 T02500244",
       "flight_category": "VFR",
       "visibility_sm": 10.0,
       "visibility_display": "10+ SM",
       "ceiling_ft_agl": null,
       "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "040\u00b0 @ 3 kt",
+      "wind_display": "020\u00b0 @ 5 kt",
       "altimeter_display": "29.93 inHg",
-      "observation_time": 1788504780
-    },
-    "KPQL": {
-      "raw_metar": "METAR KPQL 040653Z AUTO 00000KT 10SM -RA CLR 26/25 A2993 RMK AO2 RAB09 SLP137 P0000 T02560250",
-      "flight_category": "VFR",
-      "visibility_sm": 10.0,
-      "visibility_display": "10+ SM",
-      "ceiling_ft_agl": null,
-      "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "Calm",
-      "altimeter_display": "29.93 inHg",
-      "observation_time": 1788504780
+      "observation_time": 1788506400
     },
     "KTLH": {
       "raw_metar": "METAR KTLH 040653Z AUTO 07003KT 10SM CLR 26/24 A2995 RMK AO2 SLP140 T02610239",
@@ -122,11 +100,33 @@
       "wind_display": "070\u00b0 @ 3 kt",
       "altimeter_display": "29.95 inHg",
       "observation_time": 1788504780
+    },
+    "KNDZ": {
+      "raw_metar": "METAR KNDZ 040556Z 01003KT 10SM FEW050 SCT090 BKN250 24/23 A2997 RMK SLP131 LAST T2 SET 60012 T02390233 10278 20239 403330239 58001",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": 25000.0,
+      "ceiling_display": "25,000 ft AGL",
+      "wind_display": "010\u00b0 @ 3 kt",
+      "altimeter_display": "29.97 inHg",
+      "observation_time": 1788501360
+    },
+    "KPQL": {
+      "raw_metar": "METAR KPQL 040653Z AUTO 00000KT 10SM -RA CLR 26/25 A2993 RMK AO2 RAB09 SLP137 P0000 T02560250",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "Calm",
+      "altimeter_display": "29.93 inHg",
+      "observation_time": 1788504780
     }
   },
   "tafs": {
     "KNSE": {
-      "raw_taf": "TAF KNSE 040700Z 0407/0507 VRB05KT 9999 VCSH SCT030 BKN100 OVC150 QNH2992INS TEMPO 0410/0415 SHRA 4800 BKN030 BECMG 0416/0417 VRB06KT 9999 VCTS BKN030CB BKN100 OVC250 QNH2986INS TEMPO 0418/0423 VRB20G30KT 3200 TSRA BKN020CB OVC100 BECMG 0501/0502 VBR06KT 9999 NSW SCT025 BKN120 BKN180 QNH2989INS AUTOMATED SENSOR METWATCH 0407 TIL 0411 TX31/0418Z TN24/0411Z FN00324"
+      "raw_taf": "TAF KNSE COR 040700Z 0407/0507 VRB05KT 9999 VCSH SCT030 BKN100 OVC150 QNH2992INS TEMPO 0410/0415 4800 SHRA BKN030 BECMG 0416/0417 VRB06KT 9999 VCTS BKN030CB BKN100 OVC250 QNH2986INS TEMPO 0418/0423 VRB20G30KT 3200 TSRA BKN020CB OVC100 BECMG 0501/0502 VBR06KT 9999 NSW SCT025 BKN120 BKN180 QNH2989INS AUTOMATED SENSOR METWATCH 0407 TIL 0411 TX31/0418Z TN24/0411Z COR 0726 FN00324"
     },
     "KNDZ": {
       "raw_taf": "TAF unavailable"
