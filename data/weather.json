@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-06T18:10:44.545447+00:00",
+  "generated_at": "2026-09-06T18:26:03.500838+00:00",
   "departure": "KNDZ",
   "airports": {
     "KCEW": {
@@ -58,15 +58,15 @@
       "observation_time": 1788717300
     },
     "KMOB": {
-      "raw_metar": "METAR KMOB 061756Z 00000KT 10SM SCT036 BKN075 32/24 A2991 RMK AO2 SLP125 T03220239 10328 20239 58009",
+      "raw_metar": "SPECI KMOB 061821Z 24004KT 10SM TS SCT036CB BKN075 32/23 A2990 RMK AO2 TSE16B19 FRQ LTGICCG N TS N MOV S T03220233",
       "flight_category": "VFR",
       "visibility_sm": 10.0,
       "visibility_display": "10+ SM",
       "ceiling_ft_agl": 7500.0,
       "ceiling_display": "7,500 ft AGL",
-      "wind_display": "Calm",
-      "altimeter_display": "29.91 inHg",
-      "observation_time": 1788717360
+      "wind_display": "240\u00b0 @ 4 kt",
+      "altimeter_display": "29.90 inHg",
+      "observation_time": 1788718860
     },
     "KNDZ": {
       "raw_metar": "METAR KNDZ 061756Z AUTO 00000KT 10SM SCT036 31/24 A2990 RMK AO2 SLP108 T03110239 10328 20244 58012 $",
@@ -101,17 +101,6 @@
       "altimeter_display": "29.89 inHg",
       "observation_time": 1788717180
     },
-    "KPQL": {
-      "raw_metar": "METAR KPQL 061753Z VRB04KT 10SM SCT038 OVC055 32/26 A2990 RMK AO2 SLP125 6//// T03170256 10328 20233 58008 PNO $",
-      "flight_category": "VFR",
-      "visibility_sm": 10.0,
-      "visibility_display": "10+ SM",
-      "ceiling_ft_agl": 5500.0,
-      "ceiling_display": "5,500 ft AGL",
-      "wind_display": "VRB @ 4 kt",
-      "altimeter_display": "29.90 inHg",
-      "observation_time": 1788717180
-    },
     "KTLH": {
       "raw_metar": "METAR KTLH 061753Z 27007KT 10SM FEW041 BKN060 33/23 A2988 RMK AO2 SLP118 T03330228 10339 20244 58012",
       "flight_category": "VFR",
@@ -121,6 +110,17 @@
       "ceiling_display": "6,000 ft AGL",
       "wind_display": "270\u00b0 @ 7 kt",
       "altimeter_display": "29.88 inHg",
+      "observation_time": 1788717180
+    },
+    "KPQL": {
+      "raw_metar": "METAR KPQL 061753Z VRB04KT 10SM SCT038 OVC055 32/26 A2990 RMK AO2 SLP125 6//// T03170256 10328 20233 58008 PNO $",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": 5500.0,
+      "ceiling_display": "5,500 ft AGL",
+      "wind_display": "VRB @ 4 kt",
+      "altimeter_display": "29.90 inHg",
       "observation_time": 1788717180
     }
   },
