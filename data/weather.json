@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-08T15:10:16.602597+00:00",
+  "generated_at": "2026-09-08T15:40:17.667626+00:00",
   "departure": "KNDZ",
   "airports": {
     "KCEW": {
@@ -68,6 +68,17 @@
       "altimeter_display": "30.14 inHg",
       "observation_time": 1788879360
     },
+    "KNDZ": {
+      "raw_metar": "METAR KNDZ 081456Z 10009KT 10SM SCT018 SCT180 BKN250 28/23 A3015 RMK AO2 SLP194 T02830233 53021 $",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": 25000.0,
+      "ceiling_display": "25,000 ft AGL",
+      "wind_display": "100\u00b0 @ 9 kt",
+      "altimeter_display": "30.15 inHg",
+      "observation_time": 1788879360
+    },
     "KNPA": {
       "raw_metar": "METAR KNPA 081456Z 08010KT 10SM BKN015 BKN250 29/25 A3013 RMK AO2 SLP203 T02890244 52023 PNO $",
       "flight_category": "MVFR",
@@ -111,22 +122,11 @@
       "wind_display": "070\u00b0 @ 8 kt",
       "altimeter_display": "30.15 inHg",
       "observation_time": 1788879180
-    },
-    "KNDZ": {
-      "raw_metar": "METAR KNDZ 081256Z 08009KT 10SM SCT180 BKN250 25/23 A3010 RMK AO2 SLP178 T02500233 $",
-      "flight_category": "VFR",
-      "visibility_sm": 10.0,
-      "visibility_display": "10+ SM",
-      "ceiling_ft_agl": 25000.0,
-      "ceiling_display": "25,000 ft AGL",
-      "wind_display": "080\u00b0 @ 9 kt",
-      "altimeter_display": "30.10 inHg",
-      "observation_time": 1788872160
     }
   },
   "tafs": {
     "KNSE": {
-      "raw_taf": "TAF KNSE 080600Z 0807/0907 09008KT 9999 VCSH SCT020 SCT050 QNH3000INS BECMG 0901/0903 VRB06KT 9999 VCTS SCT020CB BKN050 QNH3004INS AUTOMATED SENSOR METWATCH 0807 TIL 0811 TX34/0821Z TN23/0906Z FN00296"
+      "raw_taf": "TAF KNSE 081500Z 0815/0915 10008KT 9999 SCT020 BKN250 QNH3012INS FM081700 10010KT 9999 SCT035 SCT150 BKN250 QNH3011INS TEMPO 0817/0820 09012G20KT FM082000 09008KT 9999 VCSH SCT050 SCT120 BKN250 QNH3007INS TEMPO 0820/0823 10010G16KT SCT035 BKN070 BKN120 FM090100 07006KT 9999 FEW040 FEW120 QNH3009INS FM091100 08008KT 9999 FEW010 SCT020 BKN250 QNH3011INS TEMPO 0913/0915 FEW008 BKN013 TX33/0820Z TN23/0909Z FN20071"
     },
     "KNDZ": {
       "raw_taf": "TAF unavailable"
