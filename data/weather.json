@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T05:10:17.238923+00:00",
+  "generated_at": "2026-09-10T05:40:19.034344+00:00",
   "departure": "KNDZ",
   "airports": {
     "KCEW": {
@@ -47,15 +47,15 @@
       "observation_time": 1789004820
     },
     "KJKA": {
-      "raw_metar": "METAR KJKA 100455Z AUTO 00000KT 10SM CLR 26/26 A3005 RMK AO2",
+      "raw_metar": "METAR KJKA 100515Z AUTO 00000KT 10SM FEW017 FEW046 26/26 A3004 RMK AO2",
       "flight_category": "VFR",
       "visibility_sm": 10.0,
       "visibility_display": "10+ SM",
       "ceiling_ft_agl": null,
       "ceiling_display": "No BKN/OVC ceiling reported",
       "wind_display": "Calm",
-      "altimeter_display": "30.05 inHg",
-      "observation_time": 1789016100
+      "altimeter_display": "30.04 inHg",
+      "observation_time": 1789017300
     },
     "KMOB": {
       "raw_metar": "METAR KMOB 100456Z AUTO 32003KT 10SM CLR 25/24 A3007 RMK AO2 SLP180 T02500244",
@@ -67,17 +67,6 @@
       "wind_display": "320\u00b0 @ 3 kt",
       "altimeter_display": "30.07 inHg",
       "observation_time": 1789016160
-    },
-    "KNDZ": {
-      "raw_metar": "METAR KNDZ 100356Z 00000KT 10SM FEW040 BKN250 26/24 A3006 RMK AO2 SLP165 T02610244 $",
-      "flight_category": "VFR",
-      "visibility_sm": 10.0,
-      "visibility_display": "10+ SM",
-      "ceiling_ft_agl": 25000.0,
-      "ceiling_display": "25,000 ft AGL",
-      "wind_display": "Calm",
-      "altimeter_display": "30.06 inHg",
-      "observation_time": 1789012560
     },
     "KNPA": {
       "raw_metar": "METAR KNPA 100456Z AUTO A3004 RMK AO2 SLP176 PWINO TSNO PNO $",
@@ -122,6 +111,17 @@
       "wind_display": "070\u00b0 @ 4 kt",
       "altimeter_display": "30.08 inHg",
       "observation_time": 1789015980
+    },
+    "KNDZ": {
+      "raw_metar": "METAR KNDZ 100456Z 00000KT 10SM FEW040 BKN250 24/24 A3006 RMK SLP163 T02440239",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": 25000.0,
+      "ceiling_display": "25,000 ft AGL",
+      "wind_display": "Calm",
+      "altimeter_display": "30.06 inHg",
+      "observation_time": 1789016160
     }
   },
   "tafs": {
