@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T00:30:19.944272+00:00",
+  "generated_at": "2026-09-11T00:40:18.532167+00:00",
   "departure": "KNDZ",
   "airports": {
     "KCEW": {
@@ -22,17 +22,6 @@
       "ceiling_display": "No BKN/OVC ceiling reported",
       "wind_display": "240\u00b0 @ 6 kt",
       "altimeter_display": "30.02 inHg",
-      "observation_time": 1789084380
-    },
-    "KGPT": {
-      "raw_metar": "METAR KGPT 102353Z 05004KT 10SM CLR 27/26 A2992 RMK AO2 SLP131 60001 T02720256 10283 20256 56006",
-      "flight_category": "VFR",
-      "visibility_sm": 10.0,
-      "visibility_display": "10+ SM",
-      "ceiling_ft_agl": null,
-      "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "050\u00b0 @ 4 kt",
-      "altimeter_display": "29.92 inHg",
       "observation_time": 1789084380
     },
     "KHSA": {
@@ -102,15 +91,15 @@
       "observation_time": 1789084380
     },
     "KPQL": {
-      "raw_metar": "METAR KPQL 102353Z 00000KT 10SM CLR 27/26 A2994 RMK AO2 SLP139 60000 T02670256 10294 20261 55005",
-      "flight_category": "VFR",
+      "raw_metar": "SPECI KPQL 110031Z AUTO 00000KT 10SM -RA BKN018 BKN029 27/26 A2994 RMK AO2 RAB18 P0000 T02670256",
+      "flight_category": "MVFR",
       "visibility_sm": 10.0,
       "visibility_display": "10+ SM",
-      "ceiling_ft_agl": null,
-      "ceiling_display": "No BKN/OVC ceiling reported",
+      "ceiling_ft_agl": 1800.0,
+      "ceiling_display": "1,800 ft AGL",
       "wind_display": "Calm",
       "altimeter_display": "29.94 inHg",
-      "observation_time": 1789084380
+      "observation_time": 1789086660
     },
     "KTLH": {
       "raw_metar": "METAR KTLH 102353Z 11003KT 10SM FEW040 SCT065 BKN150 25/24 A3000 RMK AO2 SLP157 CB DSNT SW TCU DSNT S 60041 T02500239 10333 20250 55001 $",
@@ -121,6 +110,17 @@
       "ceiling_display": "15,000 ft AGL",
       "wind_display": "110\u00b0 @ 3 kt",
       "altimeter_display": "30.00 inHg",
+      "observation_time": 1789084380
+    },
+    "KGPT": {
+      "raw_metar": "METAR KGPT 102353Z 05004KT 10SM CLR 27/26 A2992 RMK AO2 SLP131 60001 T02720256 10283 20256 56006",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "050\u00b0 @ 4 kt",
+      "altimeter_display": "29.92 inHg",
       "observation_time": 1789084380
     }
   },
