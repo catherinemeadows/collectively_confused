@@ -1,28 +1,28 @@
 {
-  "generated_at": "2026-09-12T20:10:19.488787+00:00",
+  "generated_at": "2026-09-12T20:40:20.982725+00:00",
   "departure": "KNDZ",
   "airports": {
     "KCEW": {
-      "raw_metar": "SPECI KCEW 122004Z AUTO 20005KT 2SM +TSRA BR FEW075 BKN100 BKN120 23/23 A3002 RMK AO2 LTG DSNT ALQDS P0004 T02330228",
-      "flight_category": "IFR",
-      "visibility_sm": 2.0,
-      "visibility_display": "2 SM",
-      "ceiling_ft_agl": 10000.0,
-      "ceiling_display": "10,000 ft AGL",
-      "wind_display": "200\u00b0 @ 5 kt",
-      "altimeter_display": "30.02 inHg",
-      "observation_time": 1789243440
+      "raw_metar": "SPECI KCEW 122027Z AUTO 18004KT 10SM -RA SCT100 23/23 A3003 RMK AO2 LTG DSNT ALQDS TSE13 P0005 T02330228",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "180\u00b0 @ 4 kt",
+      "altimeter_display": "30.03 inHg",
+      "observation_time": 1789244820
     },
     "KDHN": {
-      "raw_metar": "METAR KDHN 121953Z 00000KT 8SM -RA SCT031 BKN070 OVC080 27/24 A3001 RMK AO1 LTG DSNT SW AND W RAB21 SLP157 P0018 T02670244",
+      "raw_metar": "SPECI KDHN 122033Z 17005KT 7SM -TSRA FEW036 BKN070 OVC090 27/24 A3002 RMK AO1 LTG DSNT ALQDS RAE11B27 TSB27 P0000 T02670244",
       "flight_category": "VFR",
-      "visibility_sm": 8.0,
-      "visibility_display": "8 SM",
+      "visibility_sm": 7.0,
+      "visibility_display": "7 SM",
       "ceiling_ft_agl": 7000.0,
       "ceiling_display": "7,000 ft AGL",
-      "wind_display": "Calm",
-      "altimeter_display": "30.01 inHg",
-      "observation_time": 1789242780
+      "wind_display": "170\u00b0 @ 5 kt",
+      "altimeter_display": "30.02 inHg",
+      "observation_time": 1789245180
     },
     "KGPT": {
       "raw_metar": "METAR KGPT 121953Z 19005KT 10SM CLR 29/24 A2997 RMK AO2 SLP149 T02940239",
@@ -34,17 +34,6 @@
       "wind_display": "190\u00b0 @ 5 kt",
       "altimeter_display": "29.97 inHg",
       "observation_time": 1789242780
-    },
-    "KHSA": {
-      "raw_metar": "METAR KHSA 121950Z 20008G13KT 10SM BKN040 30/24 A2998",
-      "flight_category": "VFR",
-      "visibility_sm": 10.0,
-      "visibility_display": "10+ SM",
-      "ceiling_ft_agl": 4000.0,
-      "ceiling_display": "4,000 ft AGL",
-      "wind_display": "200\u00b0 @ 8 kt G13",
-      "altimeter_display": "29.98 inHg",
-      "observation_time": 1789242600
     },
     "KJKA": {
       "raw_metar": "METAR KJKA 121956Z 21009KT 10SM SCT025 SCT030 32/25 A2999 RMK LTG DSNT NE AND E",
@@ -91,15 +80,15 @@
       "observation_time": 1789242960
     },
     "KPNS": {
-      "raw_metar": "METAR KPNS 121953Z 19006KT 10SM TS FEW028 27/23 A3000 RMK AO2 LTG DSNT E AND W AND NW RAE1855B42E52 TSE1859B44 SLP159 P0000 T02720233",
+      "raw_metar": "SPECI KPNS 122035Z 15003KT 10SM TS FEW036 FEW090 26/24 A2999 RMK AO2 LTG DSNT W RAB04E24 TSE09B29 P0001 T02610239",
       "flight_category": "VFR",
       "visibility_sm": 10.0,
       "visibility_display": "10+ SM",
       "ceiling_ft_agl": null,
       "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "190\u00b0 @ 6 kt",
-      "altimeter_display": "30.00 inHg",
-      "observation_time": 1789242780
+      "wind_display": "150\u00b0 @ 3 kt",
+      "altimeter_display": "29.99 inHg",
+      "observation_time": 1789245300
     },
     "KPQL": {
       "raw_metar": "METAR KPQL 121953Z 23005KT 10SM CLR 30/24 A2998 RMK AO2 SLP152 T03000244",
@@ -122,6 +111,17 @@
       "wind_display": "090\u00b0 @ 6 kt",
       "altimeter_display": "29.99 inHg",
       "observation_time": 1789243200
+    },
+    "KHSA": {
+      "raw_metar": "METAR KHSA 121950Z 20008G13KT 10SM BKN040 30/24 A2998",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": 4000.0,
+      "ceiling_display": "4,000 ft AGL",
+      "wind_display": "200\u00b0 @ 8 kt G13",
+      "altimeter_display": "29.98 inHg",
+      "observation_time": 1789242600
     }
   },
   "tafs": {
