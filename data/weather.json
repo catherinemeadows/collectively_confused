@@ -1,42 +1,31 @@
 {
-  "generated_at": "2026-09-12T00:40:14.389921+00:00",
+  "generated_at": "2026-09-12T01:10:20.498559+00:00",
   "departure": "KNDZ",
   "airports": {
     "KCEW": {
-      "raw_metar": "METAR KCEW 112353Z AUTO 00000KT 10SM CLR 26/24 A2993 RMK AO2 SLP131 60001 T02610244 10278 20233 56007",
+      "raw_metar": "SPECI KCEW 120103Z AUTO 00000KT 10SM FEW019 SCT025 26/25 A2994 RMK AO2 T02560250",
       "flight_category": "VFR",
       "visibility_sm": 10.0,
       "visibility_display": "10+ SM",
       "ceiling_ft_agl": null,
       "ceiling_display": "No BKN/OVC ceiling reported",
       "wind_display": "Calm",
-      "altimeter_display": "29.93 inHg",
-      "observation_time": 1789170780
+      "altimeter_display": "29.94 inHg",
+      "observation_time": 1789174980
     },
     "KDHN": {
-      "raw_metar": "METAR KDHN 112353Z AUTO 17004KT 10SM FEW013 25/23 A2997 RMK AO1 SLP143 60000 T02500228 10278 20250 56004",
+      "raw_metar": "METAR KDHN 120053Z AUTO 12004KT 10SM CLR 24/23 A2998 RMK AO1 SLP146 T02390228",
       "flight_category": "VFR",
       "visibility_sm": 10.0,
       "visibility_display": "10+ SM",
       "ceiling_ft_agl": null,
       "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "170\u00b0 @ 4 kt",
-      "altimeter_display": "29.97 inHg",
-      "observation_time": 1789170780
+      "wind_display": "120\u00b0 @ 4 kt",
+      "altimeter_display": "29.98 inHg",
+      "observation_time": 1789174380
     },
     "KGPT": {
-      "raw_metar": "METAR KGPT 112353Z VRB03KT 10SM SCT022 SCT027 SCT035 29/25 A2986 RMK AO2 LTG DSNT NE AND S SLP112 T02940250 10317 20294 55002",
-      "flight_category": "VFR",
-      "visibility_sm": 10.0,
-      "visibility_display": "10+ SM",
-      "ceiling_ft_agl": null,
-      "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "VRB @ 3 kt",
-      "altimeter_display": "29.86 inHg",
-      "observation_time": 1789170780
-    },
-    "KHSA": {
-      "raw_metar": "METAR KHSA 112350Z 00000KT 10SM SCT030 27/25 A2987",
+      "raw_metar": "METAR KGPT 120053Z 00000KT 10SM FEW041 SCT050 28/23 A2987 RMK AO2 LTG DSNT NE AND E TSB16E18 SLP115 T02780233",
       "flight_category": "VFR",
       "visibility_sm": 10.0,
       "visibility_display": "10+ SM",
@@ -44,84 +33,95 @@
       "ceiling_display": "No BKN/OVC ceiling reported",
       "wind_display": "Calm",
       "altimeter_display": "29.87 inHg",
-      "observation_time": 1789170600
+      "observation_time": 1789174380
     },
-    "KJKA": {
-      "raw_metar": "METAR KJKA 112356Z 20006KT 10SM SCT021 28/24 A2987 RMK LTG DSNT N AND NW",
+    "KHSA": {
+      "raw_metar": "METAR KHSA 120050Z 00000KT 10SM VCTS SCT020 26/24 A2988",
       "flight_category": "VFR",
       "visibility_sm": 10.0,
       "visibility_display": "10+ SM",
       "ceiling_ft_agl": null,
       "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "200\u00b0 @ 6 kt",
-      "altimeter_display": "29.87 inHg",
-      "observation_time": 1789170960
+      "wind_display": "Calm",
+      "altimeter_display": "29.88 inHg",
+      "observation_time": 1789174200
+    },
+    "KJKA": {
+      "raw_metar": "METAR KJKA 120056Z 23007KT 10SM SCT024 28/24 A2998 RMK LTG DSNT N AND NW",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "230\u00b0 @ 7 kt",
+      "altimeter_display": "29.98 inHg",
+      "observation_time": 1789174560
     },
     "KMOB": {
-      "raw_metar": "METAR KMOB 112356Z 21006KT 10SM FEW030 SCT080 BKN250 27/24 A2989 RMK AO2 SLP119 60001 T02720239 10317 20272 53001",
+      "raw_metar": "METAR KMOB 120056Z 00000KT 10SM SCT050 BKN250 26/24 A2990 RMK AO2 SLP122 T02610239",
       "flight_category": "VFR",
       "visibility_sm": 10.0,
       "visibility_display": "10+ SM",
       "ceiling_ft_agl": 25000.0,
       "ceiling_display": "25,000 ft AGL",
-      "wind_display": "210\u00b0 @ 6 kt",
-      "altimeter_display": "29.89 inHg",
-      "observation_time": 1789170960
-    },
-    "KNPA": {
-      "raw_metar": "METAR KNPA 112356Z 23005KT 10SM SCT025 BKN120 OVC250 29/25 A2987 RMK AO2 SLP116 T2 SET T02940244 10311 20289 58008 PNO $",
-      "flight_category": "VFR",
-      "visibility_sm": 10.0,
-      "visibility_display": "10+ SM",
-      "ceiling_ft_agl": 12000.0,
-      "ceiling_display": "12,000 ft AGL",
-      "wind_display": "230\u00b0 @ 5 kt",
-      "altimeter_display": "29.87 inHg",
-      "observation_time": 1789170960
-    },
-    "KPNS": {
-      "raw_metar": "METAR KPNS 112353Z 20008KT 10SM SCT016 SCT028 SCT034 28/25 A2987 RMK AO2 SLP117 60024 T02780250 10289 20267 58005",
-      "flight_category": "VFR",
-      "visibility_sm": 10.0,
-      "visibility_display": "10+ SM",
-      "ceiling_ft_agl": null,
-      "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "200\u00b0 @ 8 kt",
-      "altimeter_display": "29.87 inHg",
-      "observation_time": 1789170780
-    },
-    "KPQL": {
-      "raw_metar": "SPECI KPQL 120005Z 18003KT 10SM SCT021 28/25 A2988 RMK AO2 LTG DSNT N T02830250",
-      "flight_category": "VFR",
-      "visibility_sm": 10.0,
-      "visibility_display": "10+ SM",
-      "ceiling_ft_agl": null,
-      "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "180\u00b0 @ 3 kt",
-      "altimeter_display": "29.88 inHg",
-      "observation_time": 1789171500
-    },
-    "KTLH": {
-      "raw_metar": "SPECI KTLH 120021Z 13003KT 10SM BKN008 25/24 A2995 RMK AO2 T02500239",
-      "flight_category": "IFR",
-      "visibility_sm": 10.0,
-      "visibility_display": "10+ SM",
-      "ceiling_ft_agl": 800.0,
-      "ceiling_display": "800 ft AGL",
-      "wind_display": "130\u00b0 @ 3 kt",
-      "altimeter_display": "29.95 inHg",
-      "observation_time": 1789172460
+      "wind_display": "Calm",
+      "altimeter_display": "29.90 inHg",
+      "observation_time": 1789174560
     },
     "KNDZ": {
-      "raw_metar": "METAR KNDZ 112356Z 00000KT 8SM -RA SCT029 SCT040 BKN120 BKN250 27/26 A2989 RMK AO2 RAB48 SLP107 T1 SET P0001 60001 T02670256 10289 20239 56006 $",
+      "raw_metar": "METAR KNDZ 120056Z 29003KT 10SM FEW026 SCT045 BKN120 BKN250 26/26 A2991 RMK AO2 RAE01 SLP113 T2 SET P0000 T02560256 $",
       "flight_category": "VFR",
-      "visibility_sm": 8.0,
-      "visibility_display": "8 SM",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
       "ceiling_ft_agl": 12000.0,
       "ceiling_display": "12,000 ft AGL",
-      "wind_display": "Calm",
+      "wind_display": "290\u00b0 @ 3 kt",
+      "altimeter_display": "29.91 inHg",
+      "observation_time": 1789174560
+    },
+    "KNPA": {
+      "raw_metar": "METAR KNPA 120056Z 23010KT 10SM SCT025 BKN250 29/24 A2989 RMK AO2 SLP123 FRQ LTGICCG DSNT W-NW CB DSNT W-NW T02830239 PNO $",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": 25000.0,
+      "ceiling_display": "25,000 ft AGL",
+      "wind_display": "230\u00b0 @ 10 kt",
       "altimeter_display": "29.89 inHg",
-      "observation_time": 1789170960
+      "observation_time": 1789174560
+    },
+    "KPNS": {
+      "raw_metar": "METAR KPNS 120053Z 24006KT 10SM SCT016 SCT022 27/24 A2990 RMK AO2 SLP126 T02720244",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "240\u00b0 @ 6 kt",
+      "altimeter_display": "29.90 inHg",
+      "observation_time": 1789174380
+    },
+    "KPQL": {
+      "raw_metar": "METAR KPQL 120053Z AUTO 00000KT 10SM SCT023 SCT027 BKN035 28/25 A2988 RMK AO2 LTG DSNT W AND NW SLP118 T02780250",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": 3500.0,
+      "ceiling_display": "3,500 ft AGL",
+      "wind_display": "Calm",
+      "altimeter_display": "29.88 inHg",
+      "observation_time": 1789174380
+    },
+    "KTLH": {
+      "raw_metar": "METAR KTLH 120053Z 09004KT 10SM SCT007 SCT012 24/24 A2996 RMK AO2 SLP145 T02440239",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "090\u00b0 @ 4 kt",
+      "altimeter_display": "29.96 inHg",
+      "observation_time": 1789174380
     }
   },
   "tafs": {
@@ -137,379 +137,34 @@
     "matches": [],
     "active_sigmets": [
       {
-        "label": "WSUS31 KKCI 112355\nSIGE \nCONVECTIVE SIGMET 21E\nVALID UNTIL 0155Z\nNC SC GA TN AL AND NC SC GA CSTL WTRS\nFROM 30WSW HMV-40SW ILM-60SE SAV-40SW GQO-30WSW HMV\nAREA SEV TS MOV FROM 25015KT. TOPS ABV FL450.\nHAIL TO 1 IN...WIND GUSTS TO 50KT POSS.\nREF INTL SIGMET HOTEL SERIES.\n\nOUTLOOK VALID 120155-120555\n",
+        "label": "WSUS32 KKCI 120055\nSIGC \nCONVECTIVE SIGMET 1C\nVALID UNTIL 0255Z\nTX\nFROM TTT-50W LFK-30NNW PSX-40SSW SAT-40NNE DLF-TTT\nAREA TS MOV FROM 31010KT. TOPS ABV FL450.\n\nOUTLOOK VALID 120255-120655\nAREA 1...FROM 50W INL-70ESE INL-30S YQT-40E YQT-80N\nSAW-SAW-PWE-GLD-SNY-50W INL\nREF WW 666.\nWST ISSUANCES EXPD.",
         "geometry": {
           "type": "Polygon",
           "coordinates": [
             [
               [
-                -82.706,
-                36.246
+                -97.04,
+                32.87
               ],
               [
-                -78.436,
-                33.879
+                -95.696,
+                31.156
               ],
               [
-                -80.284,
-                31.452
+                -96.531,
+                29.225
               ],
               [
-                -85.72,
-                34.489
-              ],
-              [
-                -82.706,
-                36.246
-              ]
-            ]
-          ]
-        },
-        "properties": {
-          "icaoId": "KKCI",
-          "airSigmetType": "SIGMET",
-          "alphaChar": "E",
-          "hazard": "CONVECTIVE",
-          "seriesId": "21E",
-          "validTimeFrom": "2026-09-11T23:55:00.000Z",
-          "validTimeTo": "2026-09-12T01:55:00.000Z",
-          "severity": 5,
-          "altitudeHi1": 45000,
-          "altitudeHi2": 60000,
-          "altitudeLow1": null,
-          "altitudeLow2": null,
-          "movementDir": 250,
-          "movementSpd": 15,
-          "rawAirSigmet": "WSUS31 KKCI 112355\nSIGE \nCONVECTIVE SIGMET 21E\nVALID UNTIL 0155Z\nNC SC GA TN AL AND NC SC GA CSTL WTRS\nFROM 30WSW HMV-40SW ILM-60SE SAV-40SW GQO-30WSW HMV\nAREA SEV TS MOV FROM 25015KT. TOPS ABV FL450.\nHAIL TO 1 IN...WIND GUSTS TO 50KT POSS.\nREF INTL SIGMET HOTEL SERIES.\n\nOUTLOOK VALID 120155-120555\nFROM TTH-150SE SIE-180ESE ECG-130SSE ILM-190ENE PBI-150SE\nMIA-80WSW EYW-120WSW PIE-170SE LEV-TTH\nWST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM\nPREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS."
-        }
-      },
-      {
-        "label": "WSUS31 KKCI 112355\nSIGE \nCONVECTIVE SIGMET 22E\nVALID UNTIL 0155Z\nFL GA AND CSTL WTRS\nFROM 50WNW SAV-70SE SAV-10ENE RSW-50W RSW-30WSW PIE-50WNW SAV\nAREA TS MOV FROM 13010KT. TOPS ABV FL450.\nREF INTL SIGMET DELTA SERIES.\n\nOUTLOOK VALID 120155-120555\nFROM TTH-150SE SIE-180ESE ECG-130SSE ILM-190ENE PBI-",
-        "geometry": {
-          "type": "Polygon",
-          "coordinates": [
-            [
-              [
-                -82.025,
-                32.476
-              ],
-              [
-                -80.143,
-                31.331
-              ],
-              [
-                -81.604,
-                26.595
-              ],
-              [
-                -82.714,
-                26.527
-              ],
-              [
-                -83.205,
-                27.716
-              ],
-              [
-                -82.025,
-                32.476
-              ]
-            ]
-          ]
-        },
-        "properties": {
-          "icaoId": "KKCI",
-          "airSigmetType": "SIGMET",
-          "alphaChar": "E",
-          "hazard": "CONVECTIVE",
-          "seriesId": "22E",
-          "validTimeFrom": "2026-09-11T23:55:00.000Z",
-          "validTimeTo": "2026-09-12T01:55:00.000Z",
-          "severity": 5,
-          "altitudeHi1": 45000,
-          "altitudeHi2": 60000,
-          "altitudeLow1": null,
-          "altitudeLow2": null,
-          "movementDir": 130,
-          "movementSpd": 10,
-          "rawAirSigmet": "WSUS31 KKCI 112355\nSIGE \nCONVECTIVE SIGMET 22E\nVALID UNTIL 0155Z\nFL GA AND CSTL WTRS\nFROM 50WNW SAV-70SE SAV-10ENE RSW-50W RSW-30WSW PIE-50WNW SAV\nAREA TS MOV FROM 13010KT. TOPS ABV FL450.\nREF INTL SIGMET DELTA SERIES.\n\nOUTLOOK VALID 120155-120555\nFROM TTH-150SE SIE-180ESE ECG-130SSE ILM-190ENE PBI-150SE\nMIA-80WSW EYW-120WSW PIE-170SE LEV-TTH\nWST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM\nPREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS."
-        }
-      },
-      {
-        "label": "WSUS31 KKCI 112355\nSIGE \nCONVECTIVE SIGMET 23E\nVALID UNTIL 0155Z\nFL AND CSTL WTRS\nFROM 130ENE OMN-220ENE OMN-120SSE MIA-40S RSW-130ENE OMN\nAREA SEV TS MOV FROM 20010KT. TOPS ABV FL450.\nWIND GUSTS TO 50KT POSS.\nREF INTL SIGMET INDIA AND HOTEL SERIES.\n\nOUTLOOK VALID 120155-120555\nFROM TTH-150SE SIE-18",
-        "geometry": {
-          "type": "Polygon",
-          "coordinates": [
-            [
-              [
-                -78.798,
-                30.109
-              ],
-              [
-                -77.184,
-                30.642
-              ],
-              [
-                -79.465,
-                23.955
-              ],
-              [
-                -81.78,
-                25.865
-              ],
-              [
-                -78.798,
-                30.109
-              ]
-            ]
-          ]
-        },
-        "properties": {
-          "icaoId": "KKCI",
-          "airSigmetType": "SIGMET",
-          "alphaChar": "E",
-          "hazard": "CONVECTIVE",
-          "seriesId": "23E",
-          "validTimeFrom": "2026-09-11T23:55:00.000Z",
-          "validTimeTo": "2026-09-12T01:55:00.000Z",
-          "severity": 5,
-          "altitudeHi1": 45000,
-          "altitudeHi2": 60000,
-          "altitudeLow1": null,
-          "altitudeLow2": null,
-          "movementDir": 200,
-          "movementSpd": 10,
-          "rawAirSigmet": "WSUS31 KKCI 112355\nSIGE \nCONVECTIVE SIGMET 23E\nVALID UNTIL 0155Z\nFL AND CSTL WTRS\nFROM 130ENE OMN-220ENE OMN-120SSE MIA-40S RSW-130ENE OMN\nAREA SEV TS MOV FROM 20010KT. TOPS ABV FL450.\nWIND GUSTS TO 50KT POSS.\nREF INTL SIGMET INDIA AND HOTEL SERIES.\n\nOUTLOOK VALID 120155-120555\nFROM TTH-150SE SIE-180ESE ECG-130SSE ILM-190ENE PBI-150SE\nMIA-80WSW EYW-120WSW PIE-170SE LEV-TTH\nWST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM\nPREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS."
-        }
-      },
-      {
-        "label": "WSUS31 KKCI 112355\nSIGE \nCONVECTIVE SIGMET 24E\nVALID UNTIL 0155Z\nTN KY AL MS MO AR\nFROM 30S IIU-40ESE MSL-10NNE IGB-40NW SQS-40NNW DYR-30S IIU\nAREA SEV TS MOV FROM 19010KT. TOPS ABV FL450.\nWIND GUSTS TO 50KT POSS\n\nOUTLOOK VALID 120155-120555\nFROM TTH-150SE SIE-180ESE ECG-130SSE ILM-190ENE PBI-150SE\n",
-        "geometry": {
-          "type": "Polygon",
-          "coordinates": [
-            [
-              [
-                -85.58,
-                37.597
-              ],
-              [
-                -86.735,
-                34.443
-              ],
-              [
-                -88.442,
-                33.638
-              ],
-              [
-                -90.847,
-                33.929
-              ],
-              [
-                -89.637,
-                36.634
-              ],
-              [
-                -85.58,
-                37.597
-              ]
-            ]
-          ]
-        },
-        "properties": {
-          "icaoId": "KKCI",
-          "airSigmetType": "SIGMET",
-          "alphaChar": "E",
-          "hazard": "CONVECTIVE",
-          "seriesId": "24E",
-          "validTimeFrom": "2026-09-11T23:55:00.000Z",
-          "validTimeTo": "2026-09-12T01:55:00.000Z",
-          "severity": 5,
-          "altitudeHi1": 45000,
-          "altitudeHi2": 60000,
-          "altitudeLow1": null,
-          "altitudeLow2": null,
-          "movementDir": 190,
-          "movementSpd": 10,
-          "rawAirSigmet": "WSUS31 KKCI 112355\nSIGE \nCONVECTIVE SIGMET 24E\nVALID UNTIL 0155Z\nTN KY AL MS MO AR\nFROM 30S IIU-40ESE MSL-10NNE IGB-40NW SQS-40NNW DYR-30S IIU\nAREA SEV TS MOV FROM 19010KT. TOPS ABV FL450.\nWIND GUSTS TO 50KT POSS\n\nOUTLOOK VALID 120155-120555\nFROM TTH-150SE SIE-180ESE ECG-130SSE ILM-190ENE PBI-150SE\nMIA-80WSW EYW-120WSW PIE-170SE LEV-TTH\nWST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM\nPREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS."
-        }
-      },
-      {
-        "label": "WSUS33 KKCI 112355\nSIGW \nCONVECTIVE SIGMET 55W\nVALID UNTIL 0155Z\nNM AZ UT\nFROM 10SSW HVE-ABQ-30SSE DMN-DRK-20NW BCE-10SSW HVE\nAREA SEV TS MOV FROM 28020KT. TOPS ABV FL450.\nHAIL TO 1 IN...WIND GUSTS TO 50KT POSS.\n\nOUTLOOK VALID 120155-120555\nFROM OCS-LAR-ELP-50S TUS-90W TUS-ELY-OCS\nWST ISSUANCES EXPD",
-        "geometry": {
-          "type": "Polygon",
-          "coordinates": [
-            [
-              [
-                -110.783,
-                38.262
-              ],
-              [
-                -106.82,
-                35.04
-              ],
-              [
-                -107.373,
-                31.815
-              ],
-              [
-                -112.48,
-                34.7
-              ],
-              [
-                -112.598,
-                37.925
-              ],
-              [
-                -110.783,
-                38.262
-              ]
-            ]
-          ]
-        },
-        "properties": {
-          "icaoId": "KKCI",
-          "airSigmetType": "SIGMET",
-          "alphaChar": "W",
-          "hazard": "CONVECTIVE",
-          "seriesId": "55W",
-          "validTimeFrom": "2026-09-11T23:55:00.000Z",
-          "validTimeTo": "2026-09-12T01:55:00.000Z",
-          "severity": 5,
-          "altitudeHi1": 45000,
-          "altitudeHi2": 60000,
-          "altitudeLow1": null,
-          "altitudeLow2": null,
-          "movementDir": 280,
-          "movementSpd": 20,
-          "rawAirSigmet": "WSUS33 KKCI 112355\nSIGW \nCONVECTIVE SIGMET 55W\nVALID UNTIL 0155Z\nNM AZ UT\nFROM 10SSW HVE-ABQ-30SSE DMN-DRK-20NW BCE-10SSW HVE\nAREA SEV TS MOV FROM 28020KT. TOPS ABV FL450.\nHAIL TO 1 IN...WIND GUSTS TO 50KT POSS.\n\nOUTLOOK VALID 120155-120555\nFROM OCS-LAR-ELP-50S TUS-90W TUS-ELY-OCS\nWST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM\nPREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS."
-        }
-      },
-      {
-        "label": "WSUS33 KKCI 112355\nSIGW \nCONVECTIVE SIGMET 56W\nVALID UNTIL 0155Z\nNM AZ\nFROM 80SW SJN-40WNW DMN-60SSW DMN-50S TUS-50WSW TUS-80SW SJN\nAREA SEV TS MOV LTL. TOPS ABV FL450.\nWIND GUSTS TO 50KT POSS.\n\nOUTLOOK VALID 120155-120555\nFROM OCS-LAR-ELP-50S TUS-90W TUS-ELY-OCS\nWST ISSUANCES EXPD. REFER TO MOST RE",
-        "geometry": {
-          "type": "Polygon",
-          "coordinates": [
-            [
-              [
-                -110.267,
-                33.475
-              ],
-              [
-                -108.328,
-                32.532
-              ],
-              [
-                -108.047,
-                31.358
-              ],
-              [
-                -110.92,
-                31.265
-              ],
-              [
-                -111.828,
-                31.777
-              ],
-              [
-                -110.267,
-                33.475
-              ]
-            ]
-          ]
-        },
-        "properties": {
-          "icaoId": "KKCI",
-          "airSigmetType": "SIGMET",
-          "alphaChar": "W",
-          "hazard": "CONVECTIVE",
-          "seriesId": "56W",
-          "validTimeFrom": "2026-09-11T23:55:00.000Z",
-          "validTimeTo": "2026-09-12T01:55:00.000Z",
-          "severity": 5,
-          "altitudeHi1": 45000,
-          "altitudeHi2": 60000,
-          "altitudeLow1": null,
-          "altitudeLow2": null,
-          "movementDir": null,
-          "movementSpd": null,
-          "rawAirSigmet": "WSUS33 KKCI 112355\nSIGW \nCONVECTIVE SIGMET 56W\nVALID UNTIL 0155Z\nNM AZ\nFROM 80SW SJN-40WNW DMN-60SSW DMN-50S TUS-50WSW TUS-80SW SJN\nAREA SEV TS MOV LTL. TOPS ABV FL450.\nWIND GUSTS TO 50KT POSS.\n\nOUTLOOK VALID 120155-120555\nFROM OCS-LAR-ELP-50S TUS-90W TUS-ELY-OCS\nWST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM\nPREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS."
-        }
-      },
-      {
-        "label": "WSUS33 KKCI 112355\nSIGW \nCONVECTIVE SIGMET 57W\nVALID UNTIL 0155Z\nCO WY UT\nFROM 50NW CHE-40WNW CHE-50ENE MTU-40SSW OCS-50NW CHE\nAREA TS MOV FROM 27010KT. TOPS TO FL340.\n\nOUTLOOK VALID 120155-120555\nFROM OCS-LAR-ELP-50S TUS-90W TUS-ELY-OCS\nWST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STOR",
-        "geometry": {
-          "type": "Polygon",
-          "coordinates": [
-            [
-              [
-                -108.094,
-                41.108
-              ],
-              [
-                -108.121,
-                40.772
-              ],
-              [
-                -109.115,
-                40.465
-              ],
-              [
-                -109.357,
-                40.975
-              ],
-              [
-                -108.094,
-                41.108
-              ]
-            ]
-          ]
-        },
-        "properties": {
-          "icaoId": "KKCI",
-          "airSigmetType": "SIGMET",
-          "alphaChar": "W",
-          "hazard": "CONVECTIVE",
-          "seriesId": "57W",
-          "validTimeFrom": "2026-09-11T23:55:00.000Z",
-          "validTimeTo": "2026-09-12T01:55:00.000Z",
-          "severity": 5,
-          "altitudeHi1": 34000,
-          "altitudeHi2": 34000,
-          "altitudeLow1": null,
-          "altitudeLow2": null,
-          "movementDir": 270,
-          "movementSpd": 10,
-          "rawAirSigmet": "WSUS33 KKCI 112355\nSIGW \nCONVECTIVE SIGMET 57W\nVALID UNTIL 0155Z\nCO WY UT\nFROM 50NW CHE-40WNW CHE-50ENE MTU-40SSW OCS-50NW CHE\nAREA TS MOV FROM 27010KT. TOPS TO FL340.\n\nOUTLOOK VALID 120155-120555\nFROM OCS-LAR-ELP-50S TUS-90W TUS-ELY-OCS\nWST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM\nPREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS."
-        }
-      },
-      {
-        "label": "WSUS32 KKCI 112355\nSIGC \nCONVECTIVE SIGMET 25C\nVALID UNTIL 0155Z\nAR TX OK\nFROM 40W FSM-60W LIT-50SW IAH-40S SAT-40NNE DLF-40W FSM\nAREA TS MOV FROM 31010KT. TOPS ABV FL450.\n\nOUTLOOK VALID 120155-120555\nAREA 1...FROM 50W INL-70ESE INL-30S YQT-40E YQT-80N\nSAW-SAW-PWE-GLD-SNY-50W INL\nREF WW 666.\nWST ISS",
-        "geometry": {
-          "type": "Polygon",
-          "coordinates": [
-            [
-              [
-                -95.085,
-                35.377
-              ],
-              [
-                -93.392,
-                34.674
-              ],
-              [
-                -96.028,
-                29.368
-              ],
-              [
-                -98.46,
-                28.975
+                -98.751,
+                29.026
               ],
               [
                 -100.476,
                 29.974
               ],
               [
-                -95.085,
-                35.377
+                -97.04,
+                32.87
               ]
             ]
           ]
@@ -519,9 +174,9 @@
           "airSigmetType": "SIGMET",
           "alphaChar": "C",
           "hazard": "CONVECTIVE",
-          "seriesId": "25C",
-          "validTimeFrom": "2026-09-11T23:55:00.000Z",
-          "validTimeTo": "2026-09-12T01:55:00.000Z",
+          "seriesId": "1C",
+          "validTimeFrom": "2026-09-12T00:55:00.000Z",
+          "validTimeTo": "2026-09-12T02:55:00.000Z",
           "severity": 5,
           "altitudeHi1": 45000,
           "altitudeHi2": 60000,
@@ -529,38 +184,38 @@
           "altitudeLow2": null,
           "movementDir": 310,
           "movementSpd": 10,
-          "rawAirSigmet": "WSUS32 KKCI 112355\nSIGC \nCONVECTIVE SIGMET 25C\nVALID UNTIL 0155Z\nAR TX OK\nFROM 40W FSM-60W LIT-50SW IAH-40S SAT-40NNE DLF-40W FSM\nAREA TS MOV FROM 31010KT. TOPS ABV FL450.\n\nOUTLOOK VALID 120155-120555\nAREA 1...FROM 50W INL-70ESE INL-30S YQT-40E YQT-80N\nSAW-SAW-PWE-GLD-SNY-50W INL\nREF WW 666.\nWST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM\nPREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.\n\nAREA 2...FROM TTH-140ESE LEV-110SSW LCH-70E BRO-90SSE LRD-DLF-TTH\nWST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM\nPREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS."
+          "rawAirSigmet": "WSUS32 KKCI 120055\nSIGC \nCONVECTIVE SIGMET 1C\nVALID UNTIL 0255Z\nTX\nFROM TTT-50W LFK-30NNW PSX-40SSW SAT-40NNE DLF-TTT\nAREA TS MOV FROM 31010KT. TOPS ABV FL450.\n\nOUTLOOK VALID 120255-120655\nAREA 1...FROM 50W INL-70ESE INL-30S YQT-40E YQT-80N\nSAW-SAW-PWE-GLD-SNY-50W INL\nREF WW 666.\nWST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM\nPREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.\n\nAREA 2...FROM TTH-140ESE LEV-110SSW LCH-70E BRO-90SSE LRD-DLF-TTH\nWST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM\nPREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS."
         }
       },
       {
-        "label": "WSUS32 KKCI 112355\nSIGC \nCONVECTIVE SIGMET 26C\nVALID UNTIL 0155Z\nMI WI MN LS\nFROM INL-80ESE INL-40SE YQT-60NNW RHI-10SSW DLH-INL\nAREA TS MOV FROM 24035KT. TOPS ABV FL450.\n\nOUTLOOK VALID 120155-120555\nAREA 1...FROM 50W INL-70ESE INL-30S YQT-40E YQT-80N\nSAW-SAW-PWE-GLD-SNY-50W INL\nREF WW 666.\nWST ISSU",
+        "label": "WSUS32 KKCI 120055\nSIGC \nCONVECTIVE SIGMET 2C\nVALID UNTIL 0255Z\nMI WI MN LS\nFROM 40E YQT-60NNE RHI-20S DLH-70ESE INL-30S YQT-40E YQT\nAREA TS MOV FROM 24035KT. TOPS ABV FL450.\n\nOUTLOOK VALID 120255-120655\nAREA 1...FROM 50W INL-70ESE INL-30S YQT-40E YQT-80N\nSAW-SAW-PWE-GLD-SNY-50W INL\nREF WW 666.\nWST ",
         "geometry": {
           "type": "Polygon",
           "coordinates": [
             [
               [
-                -93.4,
-                48.57
+                -88.319,
+                48.366
               ],
               [
-                -91.563,
-                48.046
-              ],
-              [
-                -88.619,
-                47.898
-              ],
-              [
-                -90.005,
+                -88.895,
                 46.55
               ],
               [
-                -92.295,
-                46.642
+                -92.2,
+                46.468
               ],
               [
-                -93.4,
-                48.57
+                -91.784,
+                48.112
+              ],
+              [
+                -89.32,
+                47.867
+              ],
+              [
+                -88.319,
+                48.366
               ]
             ]
           ]
@@ -570,9 +225,9 @@
           "airSigmetType": "SIGMET",
           "alphaChar": "C",
           "hazard": "CONVECTIVE",
-          "seriesId": "26C",
-          "validTimeFrom": "2026-09-11T23:55:00.000Z",
-          "validTimeTo": "2026-09-12T01:55:00.000Z",
+          "seriesId": "2C",
+          "validTimeFrom": "2026-09-12T00:55:00.000Z",
+          "validTimeTo": "2026-09-12T02:55:00.000Z",
           "severity": 5,
           "altitudeHi1": 45000,
           "altitudeHi2": 60000,
@@ -580,22 +235,18 @@
           "altitudeLow2": null,
           "movementDir": 240,
           "movementSpd": 35,
-          "rawAirSigmet": "WSUS32 KKCI 112355\nSIGC \nCONVECTIVE SIGMET 26C\nVALID UNTIL 0155Z\nMI WI MN LS\nFROM INL-80ESE INL-40SE YQT-60NNW RHI-10SSW DLH-INL\nAREA TS MOV FROM 24035KT. TOPS ABV FL450.\n\nOUTLOOK VALID 120155-120555\nAREA 1...FROM 50W INL-70ESE INL-30S YQT-40E YQT-80N\nSAW-SAW-PWE-GLD-SNY-50W INL\nREF WW 666.\nWST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM\nPREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.\n\nAREA 2...FROM TTH-140ESE LEV-110SSW LCH-70E BRO-90SSE LRD-DLF-TTH\nWST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM\nPREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS."
+          "rawAirSigmet": "WSUS32 KKCI 120055\nSIGC \nCONVECTIVE SIGMET 2C\nVALID UNTIL 0255Z\nMI WI MN LS\nFROM 40E YQT-60NNE RHI-20S DLH-70ESE INL-30S YQT-40E YQT\nAREA TS MOV FROM 24035KT. TOPS ABV FL450.\n\nOUTLOOK VALID 120255-120655\nAREA 1...FROM 50W INL-70ESE INL-30S YQT-40E YQT-80N\nSAW-SAW-PWE-GLD-SNY-50W INL\nREF WW 666.\nWST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM\nPREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.\n\nAREA 2...FROM TTH-140ESE LEV-110SSW LCH-70E BRO-90SSE LRD-DLF-TTH\nWST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM\nPREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS."
         }
       },
       {
-        "label": "WSUS32 KKCI 112355\nSIGC \nCONVECTIVE SIGMET 27C\nVALID UNTIL 0155Z\nFL AL MS LA AND AL MS LA CSTL WTRS\nFROM 30ESE SQS-20SE IGB-30WNW CEW-40E HRV-10N MCB-30ESE SQS\nAREA SEV TS MOV FROM 25010KT. TOPS ABV FL450.\nWIND GUSTS TO 50KT POSS.\n\nOUTLOOK VALID 120155-120555\nAREA 1...FROM 50W INL-70ESE INL-30S YQT-",
+        "label": "WSUS32 KKCI 120055\nSIGC \nCONVECTIVE SIGMET 3C\nVALID UNTIL 0255Z\nFL AL MS LA AND AL MS LA CSTL WTRS\nFROM 30SE IGB-30WNW CEW-40E HRV-30ENE MHZ-30SE IGB\nAREA SEV TS MOV FROM 25010KT. TOPS ABV FL450.\nWIND GUSTS TO 50KT POSS.\n\nOUTLOOK VALID 120255-120655\nAREA 1...FROM 50W INL-70ESE INL-30S YQT-40E YQT-80",
         "geometry": {
           "type": "Polygon",
           "coordinates": [
             [
               [
-                -89.724,
-                33.266
-              ],
-              [
-                -88.239,
-                33.245
+                -88.095,
+                33.124
               ],
               [
                 -87.222,
@@ -606,12 +257,12 @@
                 29.848
               ],
               [
-                -90.26,
-                31.471
+                -89.548,
+                32.621
               ],
               [
-                -89.724,
-                33.266
+                -88.095,
+                33.124
               ]
             ]
           ]
@@ -621,9 +272,9 @@
           "airSigmetType": "SIGMET",
           "alphaChar": "C",
           "hazard": "CONVECTIVE",
-          "seriesId": "27C",
-          "validTimeFrom": "2026-09-11T23:55:00.000Z",
-          "validTimeTo": "2026-09-12T01:55:00.000Z",
+          "seriesId": "3C",
+          "validTimeFrom": "2026-09-12T00:55:00.000Z",
+          "validTimeTo": "2026-09-12T02:55:00.000Z",
           "severity": 5,
           "altitudeHi1": 45000,
           "altitudeHi2": 60000,
@@ -631,175 +282,34 @@
           "altitudeLow2": null,
           "movementDir": 250,
           "movementSpd": 10,
-          "rawAirSigmet": "WSUS32 KKCI 112355\nSIGC \nCONVECTIVE SIGMET 27C\nVALID UNTIL 0155Z\nFL AL MS LA AND AL MS LA CSTL WTRS\nFROM 30ESE SQS-20SE IGB-30WNW CEW-40E HRV-10N MCB-30ESE SQS\nAREA SEV TS MOV FROM 25010KT. TOPS ABV FL450.\nWIND GUSTS TO 50KT POSS.\n\nOUTLOOK VALID 120155-120555\nAREA 1...FROM 50W INL-70ESE INL-30S YQT-40E YQT-80N\nSAW-SAW-PWE-GLD-SNY-50W INL\nREF WW 666.\nWST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM\nPREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.\n\nAREA 2...FROM TTH-140ESE LEV-110SSW LCH-70E BRO-90SSE LRD-DLF-TTH\nWST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM\nPREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS."
+          "rawAirSigmet": "WSUS32 KKCI 120055\nSIGC \nCONVECTIVE SIGMET 3C\nVALID UNTIL 0255Z\nFL AL MS LA AND AL MS LA CSTL WTRS\nFROM 30SE IGB-30WNW CEW-40E HRV-30ENE MHZ-30SE IGB\nAREA SEV TS MOV FROM 25010KT. TOPS ABV FL450.\nWIND GUSTS TO 50KT POSS.\n\nOUTLOOK VALID 120255-120655\nAREA 1...FROM 50W INL-70ESE INL-30S YQT-40E YQT-80N\nSAW-SAW-PWE-GLD-SNY-50W INL\nREF WW 666.\nWST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM\nPREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.\n\nAREA 2...FROM TTH-140ESE LEV-110SSW LCH-70E BRO-90SSE LRD-DLF-TTH\nWST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM\nPREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS."
         }
       },
       {
-        "label": "WSUS32 KKCI 112355\nSIGC \nCONVECTIVE SIGMET 28C\nVALID UNTIL 0155Z\nTX\nFROM 30SW ABI-30NNW JCT-30W SJT-30SW ABI\nAREA TS MOV FROM 32010KT. TOPS TO FL400.\n\nOUTLOOK VALID 120155-120555\nAREA 1...FROM 50W INL-70ESE INL-30S YQT-40E YQT-80N\nSAW-SAW-PWE-GLD-SNY-50W INL\nREF WW 666.\nWST ISSUANCES EXPD. REFER TO ",
+        "label": "WSUS31 KKCI 120055\nSIGE \nCONVECTIVE SIGMET 1E\nVALID UNTIL 0255Z\nIL MO\nFROM 50SW AXC-50SSW AXC-10WSW FAM-30SSW STL-50SW AXC\nAREA TS MOV FROM 21005KT. TOPS TO FL330.\n\nOUTLOOK VALID 120255-120655\nFROM TTH-150SE SIE-180ESE ECG-130SSE ILM-190ENE PBI-150SE\nMIA-80WSW EYW-120WSW PIE-170SE LEV-TTH\nWST ISSUAN",
         "geometry": {
           "type": "Polygon",
           "coordinates": [
             [
               [
-                -100.28,
-                32.124
+                -89.612,
+                39.137
               ],
               [
-                -100.045,
-                31.065
+                -89.261,
+                38.957
               ],
               [
-                -101.049,
-                31.379
+                -90.429,
+                37.605
               ],
               [
-                -100.28,
-                32.124
-              ]
-            ]
-          ]
-        },
-        "properties": {
-          "icaoId": "KKCI",
-          "airSigmetType": "SIGMET",
-          "alphaChar": "C",
-          "hazard": "CONVECTIVE",
-          "seriesId": "28C",
-          "validTimeFrom": "2026-09-11T23:55:00.000Z",
-          "validTimeTo": "2026-09-12T01:55:00.000Z",
-          "severity": 5,
-          "altitudeHi1": 40000,
-          "altitudeHi2": 40000,
-          "altitudeLow1": null,
-          "altitudeLow2": null,
-          "movementDir": 320,
-          "movementSpd": 10,
-          "rawAirSigmet": "WSUS32 KKCI 112355\nSIGC \nCONVECTIVE SIGMET 28C\nVALID UNTIL 0155Z\nTX\nFROM 30SW ABI-30NNW JCT-30W SJT-30SW ABI\nAREA TS MOV FROM 32010KT. TOPS TO FL400.\n\nOUTLOOK VALID 120155-120555\nAREA 1...FROM 50W INL-70ESE INL-30S YQT-40E YQT-80N\nSAW-SAW-PWE-GLD-SNY-50W INL\nREF WW 666.\nWST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM\nPREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.\n\nAREA 2...FROM TTH-140ESE LEV-110SSW LCH-70E BRO-90SSE LRD-DLF-TTH\nWST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM\nPREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS."
-        }
-      },
-      {
-        "label": "WSUS32 KKCI 112355\nSIGC \nCONVECTIVE SIGMET 29C\nVALID UNTIL 0155Z\nTX\nFROM 40SE ELP-50SW INK-70ESE MRF-90S MRF-40SE ELP\nDVLPG AREA TS MOV FROM 32010KT. TOPS TO FL450.\n\nOUTLOOK VALID 120155-120555\nAREA 1...FROM 50W INL-70ESE INL-30S YQT-40E YQT-80N\nSAW-SAW-PWE-GLD-SNY-50W INL\nREF WW 666.\nWST ISSUANCES ",
-        "geometry": {
-          "type": "Polygon",
-          "coordinates": [
-            [
-              [
-                -105.73,
-                31.349
+                -90.726,
+                38.395
               ],
               [
-                -103.931,
-                31.277
-              ],
-              [
-                -102.706,
-                29.847
-              ],
-              [
-                -103.95,
-                28.8
-              ],
-              [
-                -105.73,
-                31.349
-              ]
-            ]
-          ]
-        },
-        "properties": {
-          "icaoId": "KKCI",
-          "airSigmetType": "SIGMET",
-          "alphaChar": "C",
-          "hazard": "CONVECTIVE",
-          "seriesId": "29C",
-          "validTimeFrom": "2026-09-11T23:55:00.000Z",
-          "validTimeTo": "2026-09-12T01:55:00.000Z",
-          "severity": 5,
-          "altitudeHi1": 45000,
-          "altitudeHi2": 45000,
-          "altitudeLow1": null,
-          "altitudeLow2": null,
-          "movementDir": 320,
-          "movementSpd": 10,
-          "rawAirSigmet": "WSUS32 KKCI 112355\nSIGC \nCONVECTIVE SIGMET 29C\nVALID UNTIL 0155Z\nTX\nFROM 40SE ELP-50SW INK-70ESE MRF-90S MRF-40SE ELP\nDVLPG AREA TS MOV FROM 32010KT. TOPS TO FL450.\n\nOUTLOOK VALID 120155-120555\nAREA 1...FROM 50W INL-70ESE INL-30S YQT-40E YQT-80N\nSAW-SAW-PWE-GLD-SNY-50W INL\nREF WW 666.\nWST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM\nPREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.\n\nAREA 2...FROM TTH-140ESE LEV-110SSW LCH-70E BRO-90SSE LRD-DLF-TTH\nWST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM\nPREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS."
-        }
-      },
-      {
-        "label": "WSUS32 KKCI 112355\nSIGC \nCONVECTIVE SIGMET 30C\nVALID UNTIL 0155Z\nMN IA NE SD ND\nFROM 40W INL-INL-60NNW DLH-40SSE FSD-30N ONL-40W INL\nAREA SEV TS MOV FROM 26025KT. TOPS ABV FL450.\nHAIL TO 2 IN...WIND GUSTS TO 60KT POSS.\n\nOUTLOOK VALID 120155-120555\nAREA 1...FROM 50W INL-70ESE INL-30S YQT-40E YQT-80N\n",
-        "geometry": {
-          "type": "Polygon",
-          "coordinates": [
-            [
-              [
-                -94.405,
-                48.566
-              ],
-              [
-                -93.4,
-                48.57
-              ],
-              [
-                -92.767,
-                47.72
-              ],
-              [
-                -96.432,
-                43.035
-              ],
-              [
-                -98.69,
-                42.973
-              ],
-              [
-                -94.405,
-                48.566
-              ]
-            ]
-          ]
-        },
-        "properties": {
-          "icaoId": "KKCI",
-          "airSigmetType": "SIGMET",
-          "alphaChar": "C",
-          "hazard": "CONVECTIVE",
-          "seriesId": "30C",
-          "validTimeFrom": "2026-09-11T23:55:00.000Z",
-          "validTimeTo": "2026-09-12T01:55:00.000Z",
-          "severity": 5,
-          "altitudeHi1": 45000,
-          "altitudeHi2": 60000,
-          "altitudeLow1": null,
-          "altitudeLow2": null,
-          "movementDir": 260,
-          "movementSpd": 25,
-          "rawAirSigmet": "WSUS32 KKCI 112355\nSIGC \nCONVECTIVE SIGMET 30C\nVALID UNTIL 0155Z\nMN IA NE SD ND\nFROM 40W INL-INL-60NNW DLH-40SSE FSD-30N ONL-40W INL\nAREA SEV TS MOV FROM 26025KT. TOPS ABV FL450.\nHAIL TO 2 IN...WIND GUSTS TO 60KT POSS.\n\nOUTLOOK VALID 120155-120555\nAREA 1...FROM 50W INL-70ESE INL-30S YQT-40E YQT-80N\nSAW-SAW-PWE-GLD-SNY-50W INL\nREF WW 666.\nWST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM\nPREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.\n\nAREA 2...FROM TTH-140ESE LEV-110SSW LCH-70E BRO-90SSE LRD-DLF-TTH\nWST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM\nPREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS."
-        }
-      },
-      {
-        "label": "WSUS31 KKCI 112355\nSIGE \nCONVECTIVE SIGMET 25E\nVALID UNTIL 0155Z\nVA NC TN AND NC VA CSTL WTRS\nFROM 50SW CSN-70E ECG-40S RDU-20NE HMV-50SW CSN\nAREA SEV TS MOV FROM 27010KT. TOPS ABV FL450.\nWIND GUSTS TO 50KT POSS.\n\nOUTLOOK VALID 120155-120555\nFROM TTH-150SE SIE-180ESE ECG-130SSE ILM-190ENE PBI-150SE\n",
-        "geometry": {
-          "type": "Polygon",
-          "coordinates": [
-            [
-              [
-                -78.62,
-                38.047
-              ],
-              [
-                -74.732,
-                36.241
-              ],
-              [
-                -78.78,
-                35.205
-              ],
-              [
-                -81.837,
-                36.675
-              ],
-              [
-                -78.62,
-                38.047
+                -89.612,
+                39.137
               ]
             ]
           ]
@@ -809,9 +319,209 @@
           "airSigmetType": "SIGMET",
           "alphaChar": "E",
           "hazard": "CONVECTIVE",
-          "seriesId": "25E",
-          "validTimeFrom": "2026-09-11T23:55:00.000Z",
-          "validTimeTo": "2026-09-12T01:55:00.000Z",
+          "seriesId": "1E",
+          "validTimeFrom": "2026-09-12T00:55:00.000Z",
+          "validTimeTo": "2026-09-12T02:55:00.000Z",
+          "severity": 5,
+          "altitudeHi1": 33000,
+          "altitudeHi2": 33000,
+          "altitudeLow1": null,
+          "altitudeLow2": null,
+          "movementDir": 210,
+          "movementSpd": 5,
+          "rawAirSigmet": "WSUS31 KKCI 120055\nSIGE \nCONVECTIVE SIGMET 1E\nVALID UNTIL 0255Z\nIL MO\nFROM 50SW AXC-50SSW AXC-10WSW FAM-30SSW STL-50SW AXC\nAREA TS MOV FROM 21005KT. TOPS TO FL330.\n\nOUTLOOK VALID 120255-120655\nFROM TTH-150SE SIE-180ESE ECG-130SSE ILM-190ENE PBI-150SE\nMIA-80WSW EYW-120WSW PIE-170SE LEV-TTH\nWST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM\nPREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS."
+        }
+      },
+      {
+        "label": "WSUS31 KKCI 120055\nSIGE \nCONVECTIVE SIGMET 2E\nVALID UNTIL 0255Z\nNC SC FL GA AND FL SC GA CSTL WTRS\nFROM 30NE SPA-30ENE CHS-40ESE CRG-30SW CRG-ODF-30NE SPA\nAREA TS MOV FROM 13010KT. TOPS ABV FL450.\nREF INTL SIGMET DELTA SERIES.\n\nOUTLOOK VALID 120255-120655\nFROM TTH-150SE SIE-180ESE ECG-130SSE ILM-190",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -81.494,
+                35.385
+              ],
+              [
+                -79.485,
+                33.081
+              ],
+              [
+                -80.8,
+                30.084
+              ],
+              [
+                -81.921,
+                29.984
+              ],
+              [
+                -83.3,
+                34.7
+              ],
+              [
+                -81.494,
+                35.385
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "icaoId": "KKCI",
+          "airSigmetType": "SIGMET",
+          "alphaChar": "E",
+          "hazard": "CONVECTIVE",
+          "seriesId": "2E",
+          "validTimeFrom": "2026-09-12T00:55:00.000Z",
+          "validTimeTo": "2026-09-12T02:55:00.000Z",
+          "severity": 5,
+          "altitudeHi1": 45000,
+          "altitudeHi2": 60000,
+          "altitudeLow1": null,
+          "altitudeLow2": null,
+          "movementDir": 130,
+          "movementSpd": 10,
+          "rawAirSigmet": "WSUS31 KKCI 120055\nSIGE \nCONVECTIVE SIGMET 2E\nVALID UNTIL 0255Z\nNC SC FL GA AND FL SC GA CSTL WTRS\nFROM 30NE SPA-30ENE CHS-40ESE CRG-30SW CRG-ODF-30NE SPA\nAREA TS MOV FROM 13010KT. TOPS ABV FL450.\nREF INTL SIGMET DELTA SERIES.\n\nOUTLOOK VALID 120255-120655\nFROM TTH-150SE SIE-180ESE ECG-130SSE ILM-190ENE PBI-150SE\nMIA-80WSW EYW-120WSW PIE-170SE LEV-TTH\nWST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM\nPREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS."
+        }
+      },
+      {
+        "label": "WSUS31 KKCI 120055\nSIGE \nCONVECTIVE SIGMET 3E\nVALID UNTIL 0255Z\nFL AND CSTL WTRS\nFROM 220ENE OMN-60E MIA-40SSE RSW-60ENE OMN-220ENE OMN\nAREA TS MOV FROM 20010KT. TOPS ABV FL450.\nREF INTL SIGMET HOTEL SERIES.\n\nOUTLOOK VALID 120255-120655\nFROM TTH-150SE SIE-180ESE ECG-130SSE ILM-190ENE PBI-150SE\nMIA-8",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -77.184,
+                30.642
+              ],
+              [
+                -79.192,
+                25.796
+              ],
+              [
+                -81.497,
+                25.916
+              ],
+              [
+                -80.05,
+                29.677
+              ],
+              [
+                -77.184,
+                30.642
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "icaoId": "KKCI",
+          "airSigmetType": "SIGMET",
+          "alphaChar": "E",
+          "hazard": "CONVECTIVE",
+          "seriesId": "3E",
+          "validTimeFrom": "2026-09-12T00:55:00.000Z",
+          "validTimeTo": "2026-09-12T02:55:00.000Z",
+          "severity": 5,
+          "altitudeHi1": 45000,
+          "altitudeHi2": 60000,
+          "altitudeLow1": null,
+          "altitudeLow2": null,
+          "movementDir": 200,
+          "movementSpd": 10,
+          "rawAirSigmet": "WSUS31 KKCI 120055\nSIGE \nCONVECTIVE SIGMET 3E\nVALID UNTIL 0255Z\nFL AND CSTL WTRS\nFROM 220ENE OMN-60E MIA-40SSE RSW-60ENE OMN-220ENE OMN\nAREA TS MOV FROM 20010KT. TOPS ABV FL450.\nREF INTL SIGMET HOTEL SERIES.\n\nOUTLOOK VALID 120255-120655\nFROM TTH-150SE SIE-180ESE ECG-130SSE ILM-190ENE PBI-150SE\nMIA-80WSW EYW-120WSW PIE-170SE LEV-TTH\nWST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM\nPREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS."
+        }
+      },
+      {
+        "label": "WSUS31 KKCI 120055\nSIGE \nCONVECTIVE SIGMET 4E\nVALID UNTIL 0255Z\nTN KY AL IL MS MO AR\nFROM 40SW IIU-50SE BWG-40ENE SQS-50NW SQS-50N DYR-40SW IIU\nAREA TS MOV FROM 19010KT. TOPS ABV FL450.\n\nOUTLOOK VALID 120255-120655\nFROM TTH-150SE SIE-180ESE ECG-130SSE ILM-190ENE PBI-150SE\nMIA-80WSW EYW-120WSW PIE-17",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -86.174,
+                37.628
+              ],
+              [
+                -85.707,
+                36.337
+              ],
+              [
+                -89.542,
+                33.712
+              ],
+              [
+                -90.993,
+                34.049
+              ],
+              [
+                -89.32,
+                36.855
+              ],
+              [
+                -86.174,
+                37.628
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "icaoId": "KKCI",
+          "airSigmetType": "SIGMET",
+          "alphaChar": "E",
+          "hazard": "CONVECTIVE",
+          "seriesId": "4E",
+          "validTimeFrom": "2026-09-12T00:55:00.000Z",
+          "validTimeTo": "2026-09-12T02:55:00.000Z",
+          "severity": 5,
+          "altitudeHi1": 45000,
+          "altitudeHi2": 60000,
+          "altitudeLow1": null,
+          "altitudeLow2": null,
+          "movementDir": 190,
+          "movementSpd": 10,
+          "rawAirSigmet": "WSUS31 KKCI 120055\nSIGE \nCONVECTIVE SIGMET 4E\nVALID UNTIL 0255Z\nTN KY AL IL MS MO AR\nFROM 40SW IIU-50SE BWG-40ENE SQS-50NW SQS-50N DYR-40SW IIU\nAREA TS MOV FROM 19010KT. TOPS ABV FL450.\n\nOUTLOOK VALID 120255-120655\nFROM TTH-150SE SIE-180ESE ECG-130SSE ILM-190ENE PBI-150SE\nMIA-80WSW EYW-120WSW PIE-170SE LEV-TTH\nWST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM\nPREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS."
+        }
+      },
+      {
+        "label": "WSUS31 KKCI 120055\nSIGE \nCONVECTIVE SIGMET 5E\nVALID UNTIL 0255Z\nVA NC TN AND NC VA CSTL WTRS\nFROM 50NNE LYH-30NE ORF-60ESE ECG-20SSW RDU-HMV-50NNE LYH\nAREA TS MOV FROM 27010KT. TOPS ABV FL450.\n\nOUTLOOK VALID 120255-120655\nFROM TTH-150SE SIE-180ESE ECG-130SSE ILM-190ENE PBI-150SE\nMIA-80WSW EYW-120WSW",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -78.824,
+                38.021
+              ],
+              [
+                -75.753,
+                37.245
+              ],
+              [
+                -75.043,
+                35.863
+              ],
+              [
+                -78.936,
+                35.563
+              ],
+              [
+                -82.13,
+                36.44
+              ],
+              [
+                -78.824,
+                38.021
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "icaoId": "KKCI",
+          "airSigmetType": "SIGMET",
+          "alphaChar": "E",
+          "hazard": "CONVECTIVE",
+          "seriesId": "5E",
+          "validTimeFrom": "2026-09-12T00:55:00.000Z",
+          "validTimeTo": "2026-09-12T02:55:00.000Z",
           "severity": 5,
           "altitudeHi1": 45000,
           "altitudeHi2": 60000,
@@ -819,7 +529,344 @@
           "altitudeLow2": null,
           "movementDir": 270,
           "movementSpd": 10,
-          "rawAirSigmet": "WSUS31 KKCI 112355\nSIGE \nCONVECTIVE SIGMET 25E\nVALID UNTIL 0155Z\nVA NC TN AND NC VA CSTL WTRS\nFROM 50SW CSN-70E ECG-40S RDU-20NE HMV-50SW CSN\nAREA SEV TS MOV FROM 27010KT. TOPS ABV FL450.\nWIND GUSTS TO 50KT POSS.\n\nOUTLOOK VALID 120155-120555\nFROM TTH-150SE SIE-180ESE ECG-130SSE ILM-190ENE PBI-150SE\nMIA-80WSW EYW-120WSW PIE-170SE LEV-TTH\nWST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM\nPREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS."
+          "rawAirSigmet": "WSUS31 KKCI 120055\nSIGE \nCONVECTIVE SIGMET 5E\nVALID UNTIL 0255Z\nVA NC TN AND NC VA CSTL WTRS\nFROM 50NNE LYH-30NE ORF-60ESE ECG-20SSW RDU-HMV-50NNE LYH\nAREA TS MOV FROM 27010KT. TOPS ABV FL450.\n\nOUTLOOK VALID 120255-120655\nFROM TTH-150SE SIE-180ESE ECG-130SSE ILM-190ENE PBI-150SE\nMIA-80WSW EYW-120WSW PIE-170SE LEV-TTH\nWST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM\nPREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS."
+        }
+      },
+      {
+        "label": "WSUS32 KKCI 120055\nSIGC \nCONVECTIVE SIGMET 4C\nVALID UNTIL 0255Z\nTX\nFROM 30SSW ABI-30N JCT-40W JCT-20WSW SJT-30SSW ABI\nAREA TS MOV FROM 32010KT. TOPS TO FL450.\n\nOUTLOOK VALID 120255-120655\nAREA 1...FROM 50W INL-70ESE INL-30S YQT-40E YQT-80N\nSAW-SAW-PWE-GLD-SNY-50W INL\nREF WW 666.\nWST ISSUANCES EXPD. ",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -100.087,
+                32.015
+              ],
+              [
+                -99.82,
+                31.103
+              ],
+              [
+                -100.592,
+                30.598
+              ],
+              [
+                -100.819,
+                31.252
+              ],
+              [
+                -100.087,
+                32.015
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "icaoId": "KKCI",
+          "airSigmetType": "SIGMET",
+          "alphaChar": "C",
+          "hazard": "CONVECTIVE",
+          "seriesId": "4C",
+          "validTimeFrom": "2026-09-12T00:55:00.000Z",
+          "validTimeTo": "2026-09-12T02:55:00.000Z",
+          "severity": 5,
+          "altitudeHi1": 45000,
+          "altitudeHi2": 45000,
+          "altitudeLow1": null,
+          "altitudeLow2": null,
+          "movementDir": 320,
+          "movementSpd": 10,
+          "rawAirSigmet": "WSUS32 KKCI 120055\nSIGC \nCONVECTIVE SIGMET 4C\nVALID UNTIL 0255Z\nTX\nFROM 30SSW ABI-30N JCT-40W JCT-20WSW SJT-30SSW ABI\nAREA TS MOV FROM 32010KT. TOPS TO FL450.\n\nOUTLOOK VALID 120255-120655\nAREA 1...FROM 50W INL-70ESE INL-30S YQT-40E YQT-80N\nSAW-SAW-PWE-GLD-SNY-50W INL\nREF WW 666.\nWST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM\nPREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.\n\nAREA 2...FROM TTH-140ESE LEV-110SSW LCH-70E BRO-90SSE LRD-DLF-TTH\nWST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM\nPREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS."
+        }
+      },
+      {
+        "label": "WSUS32 KKCI 120055\nSIGC \nCONVECTIVE SIGMET 5C\nVALID UNTIL 0255Z\nAR TX OK\nFROM 10NNW FSM-60N TXK-50SE TTT-30NW TTT-10NNW FSM\nAREA TS MOV FROM 32010KT. TOPS ABV FL450.\n\nOUTLOOK VALID 120255-120655\nAREA 1...FROM 50W INL-70ESE INL-30S YQT-40E YQT-80N\nSAW-SAW-PWE-GLD-SNY-50W INL\nREF WW 666.\nWST ISSUANCES",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -94.35,
+                35.538
+              ],
+              [
+                -94.07,
+                34.507
+              ],
+              [
+                -96.341,
+                32.277
+              ],
+              [
+                -97.465,
+                33.225
+              ],
+              [
+                -94.35,
+                35.538
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "icaoId": "KKCI",
+          "airSigmetType": "SIGMET",
+          "alphaChar": "C",
+          "hazard": "CONVECTIVE",
+          "seriesId": "5C",
+          "validTimeFrom": "2026-09-12T00:55:00.000Z",
+          "validTimeTo": "2026-09-12T02:55:00.000Z",
+          "severity": 5,
+          "altitudeHi1": 45000,
+          "altitudeHi2": 60000,
+          "altitudeLow1": null,
+          "altitudeLow2": null,
+          "movementDir": 320,
+          "movementSpd": 10,
+          "rawAirSigmet": "WSUS32 KKCI 120055\nSIGC \nCONVECTIVE SIGMET 5C\nVALID UNTIL 0255Z\nAR TX OK\nFROM 10NNW FSM-60N TXK-50SE TTT-30NW TTT-10NNW FSM\nAREA TS MOV FROM 32010KT. TOPS ABV FL450.\n\nOUTLOOK VALID 120255-120655\nAREA 1...FROM 50W INL-70ESE INL-30S YQT-40E YQT-80N\nSAW-SAW-PWE-GLD-SNY-50W INL\nREF WW 666.\nWST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM\nPREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.\n\nAREA 2...FROM TTH-140ESE LEV-110SSW LCH-70E BRO-90SSE LRD-DLF-TTH\nWST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM\nPREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS."
+        }
+      },
+      {
+        "label": "WSUS32 KKCI 120055\nSIGC \nCONVECTIVE SIGMET 6C\nVALID UNTIL 0255Z\nMN IA NE SD\nFROM 40W INL-60ESE INL-DLH-60WNW FOD-10SSW ONL-40W INL\nAREA SEV TS MOV FROM 26025KT. TOPS ABV FL450.\nTORNADOES...HAIL TO 2 IN...WIND GUSTS TO 60KT POSS.\n\nOUTLOOK VALID 120255-120655\nAREA 1...FROM 50W INL-70ESE INL-30S YQT-40",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -94.405,
+                48.566
+              ],
+              [
+                -92.018,
+                48.18
+              ],
+              [
+                -92.2,
+                46.8
+              ],
+              [
+                -95.549,
+                42.985
+              ],
+              [
+                -98.778,
+                42.312
+              ],
+              [
+                -94.405,
+                48.566
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "icaoId": "KKCI",
+          "airSigmetType": "SIGMET",
+          "alphaChar": "C",
+          "hazard": "CONVECTIVE",
+          "seriesId": "6C",
+          "validTimeFrom": "2026-09-12T00:55:00.000Z",
+          "validTimeTo": "2026-09-12T02:55:00.000Z",
+          "severity": 5,
+          "altitudeHi1": 45000,
+          "altitudeHi2": 60000,
+          "altitudeLow1": null,
+          "altitudeLow2": null,
+          "movementDir": 260,
+          "movementSpd": 25,
+          "rawAirSigmet": "WSUS32 KKCI 120055\nSIGC \nCONVECTIVE SIGMET 6C\nVALID UNTIL 0255Z\nMN IA NE SD\nFROM 40W INL-60ESE INL-DLH-60WNW FOD-10SSW ONL-40W INL\nAREA SEV TS MOV FROM 26025KT. TOPS ABV FL450.\nTORNADOES...HAIL TO 2 IN...WIND GUSTS TO 60KT POSS.\n\nOUTLOOK VALID 120255-120655\nAREA 1...FROM 50W INL-70ESE INL-30S YQT-40E YQT-80N\nSAW-SAW-PWE-GLD-SNY-50W INL\nREF WW 666.\nWST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM\nPREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS.\n\nAREA 2...FROM TTH-140ESE LEV-110SSW LCH-70E BRO-90SSE LRD-DLF-TTH\nWST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM\nPREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS."
+        }
+      },
+      {
+        "label": "WSUS33 KKCI 120055\nSIGW \nCONVECTIVE SIGMET 1W\nVALID UNTIL 0255Z\nCO NM AZ UT\nFROM HVE-ABQ-20S DMN-40SSE DRK-40NW BCE-HVE\nAREA SEV TS MOV FROM 28020KT. TOPS ABV FL450.\nHAIL TO 1 IN POSS.\n\nOUTLOOK VALID 120255-120655\nFROM OCS-LAR-ELP-50S TUS-90W TUS-ELY-OCS\nWST ISSUANCES EXPD. REFER TO MOST RECENT ACUS",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -110.7,
+                38.42
+              ],
+              [
+                -106.82,
+                35.04
+              ],
+              [
+                -107.6,
+                31.948
+              ],
+              [
+                -112.173,
+                34.085
+              ],
+              [
+                -112.898,
+                38.159
+              ],
+              [
+                -110.7,
+                38.42
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "icaoId": "KKCI",
+          "airSigmetType": "SIGMET",
+          "alphaChar": "W",
+          "hazard": "CONVECTIVE",
+          "seriesId": "1W",
+          "validTimeFrom": "2026-09-12T00:55:00.000Z",
+          "validTimeTo": "2026-09-12T02:55:00.000Z",
+          "severity": 5,
+          "altitudeHi1": 45000,
+          "altitudeHi2": 60000,
+          "altitudeLow1": null,
+          "altitudeLow2": null,
+          "movementDir": 280,
+          "movementSpd": 20,
+          "rawAirSigmet": "WSUS33 KKCI 120055\nSIGW \nCONVECTIVE SIGMET 1W\nVALID UNTIL 0255Z\nCO NM AZ UT\nFROM HVE-ABQ-20S DMN-40SSE DRK-40NW BCE-HVE\nAREA SEV TS MOV FROM 28020KT. TOPS ABV FL450.\nHAIL TO 1 IN POSS.\n\nOUTLOOK VALID 120255-120655\nFROM OCS-LAR-ELP-50S TUS-90W TUS-ELY-OCS\nWST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM\nPREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS."
+        }
+      },
+      {
+        "label": "WSUS33 KKCI 120055\nSIGW \nCONVECTIVE SIGMET 2W\nVALID UNTIL 0255Z\nNM AZ\nFROM 50NNW SSO-20S DMN-50S TUS-80W TUS-30S PHX-50NNW SSO\nAREA TS MOV LTL. TOPS ABV FL450.\n\nOUTLOOK VALID 120255-120655\nFROM OCS-LAR-ELP-50S TUS-90W TUS-ELY-OCS\nWST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM\nPREDIC",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -109.641,
+                33.041
+              ],
+              [
+                -107.6,
+                31.948
+              ],
+              [
+                -110.92,
+                31.265
+              ],
+              [
+                -112.489,
+                32.09
+              ],
+              [
+                -112.02,
+                32.927
+              ],
+              [
+                -109.641,
+                33.041
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "icaoId": "KKCI",
+          "airSigmetType": "SIGMET",
+          "alphaChar": "W",
+          "hazard": "CONVECTIVE",
+          "seriesId": "2W",
+          "validTimeFrom": "2026-09-12T00:55:00.000Z",
+          "validTimeTo": "2026-09-12T02:55:00.000Z",
+          "severity": 5,
+          "altitudeHi1": 45000,
+          "altitudeHi2": 60000,
+          "altitudeLow1": null,
+          "altitudeLow2": null,
+          "movementDir": null,
+          "movementSpd": null,
+          "rawAirSigmet": "WSUS33 KKCI 120055\nSIGW \nCONVECTIVE SIGMET 2W\nVALID UNTIL 0255Z\nNM AZ\nFROM 50NNW SSO-20S DMN-50S TUS-80W TUS-30S PHX-50NNW SSO\nAREA TS MOV LTL. TOPS ABV FL450.\n\nOUTLOOK VALID 120255-120655\nFROM OCS-LAR-ELP-50S TUS-90W TUS-ELY-OCS\nWST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM\nPREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS."
+        }
+      },
+      {
+        "label": "WSUS33 KKCI 120055\nSIGW \nCONVECTIVE SIGMET 3W\nVALID UNTIL 0255Z\nNE CO WY\nFROM 40WSW DDY-50NNW BFF-20SSE CYS-60S OCS-40WSW DDY\nAREA TS MOV FROM 27010KT. TOPS TO FL340.\n\nOUTLOOK VALID 120255-120655\nFROM OCS-LAR-ELP-50S TUS-90W TUS-ELY-OCS\nWST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -107.117,
+                42.833
+              ],
+              [
+                -103.915,
+                42.661
+              ],
+              [
+                -104.602,
+                40.903
+              ],
+              [
+                -109.02,
+                40.593
+              ],
+              [
+                -107.117,
+                42.833
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "icaoId": "KKCI",
+          "airSigmetType": "SIGMET",
+          "alphaChar": "W",
+          "hazard": "CONVECTIVE",
+          "seriesId": "3W",
+          "validTimeFrom": "2026-09-12T00:55:00.000Z",
+          "validTimeTo": "2026-09-12T02:55:00.000Z",
+          "severity": 5,
+          "altitudeHi1": 34000,
+          "altitudeHi2": 34000,
+          "altitudeLow1": null,
+          "altitudeLow2": null,
+          "movementDir": 270,
+          "movementSpd": 10,
+          "rawAirSigmet": "WSUS33 KKCI 120055\nSIGW \nCONVECTIVE SIGMET 3W\nVALID UNTIL 0255Z\nNE CO WY\nFROM 40WSW DDY-50NNW BFF-20SSE CYS-60S OCS-40WSW DDY\nAREA TS MOV FROM 27010KT. TOPS TO FL340.\n\nOUTLOOK VALID 120255-120655\nFROM OCS-LAR-ELP-50S TUS-90W TUS-ELY-OCS\nWST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM\nPREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS."
+        }
+      },
+      {
+        "label": "WSUS33 KKCI 120055\nSIGW \nCONVECTIVE SIGMET 4W\nVALID UNTIL 0255Z\nAZ\nFROM 30SW DRK-60NE BZA-60SSE EED-30SW DRK\nAREA TS MOV FROM 27010KT. TOPS TO FL340.\n\nOUTLOOK VALID 120255-120655\nFROM OCS-LAR-ELP-50S TUS-90W TUS-ELY-OCS\nWST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM\nPREDICTION CENTE",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -112.911,
+                34.344
+              ],
+              [
+                -113.755,
+                33.472
+              ],
+              [
+                -114.011,
+                33.848
+              ],
+              [
+                -112.911,
+                34.344
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "icaoId": "KKCI",
+          "airSigmetType": "SIGMET",
+          "alphaChar": "W",
+          "hazard": "CONVECTIVE",
+          "seriesId": "4W",
+          "validTimeFrom": "2026-09-12T00:55:00.000Z",
+          "validTimeTo": "2026-09-12T02:55:00.000Z",
+          "severity": 5,
+          "altitudeHi1": 34000,
+          "altitudeHi2": 34000,
+          "altitudeLow1": null,
+          "altitudeLow2": null,
+          "movementDir": 270,
+          "movementSpd": 10,
+          "rawAirSigmet": "WSUS33 KKCI 120055\nSIGW \nCONVECTIVE SIGMET 4W\nVALID UNTIL 0255Z\nAZ\nFROM 30SW DRK-60NE BZA-60SSE EED-30SW DRK\nAREA TS MOV FROM 27010KT. TOPS TO FL340.\n\nOUTLOOK VALID 120255-120655\nFROM OCS-LAR-ELP-50S TUS-90W TUS-ELY-OCS\nWST ISSUANCES EXPD. REFER TO MOST RECENT ACUS01 KWNS FROM STORM\nPREDICTION CENTER FOR SYNOPSIS AND METEOROLOGICAL DETAILS."
         }
       }
     ]
