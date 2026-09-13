@@ -23,6 +23,9 @@ const airportNames = {
 
     KMOB:
         "Mobile Regional",
+    
+    KBFM:
+        "Mobile International",
 
     KHSA:
         "Stennis International",
@@ -47,6 +50,9 @@ const airportNames = {
     
     KPQL:
         "Trent Lott International Airport",
+    
+    KMAI:
+        "Marianna Municipal",
 
 };
 
@@ -55,6 +61,7 @@ const destinations = [
 
     "KPNS",
     "KMOB",
+    "KBFM",
     "KHSA",
     "KTLH",
     "KDHN",
@@ -63,6 +70,7 @@ const destinations = [
     "KGPT",
     "KJKA",
     "KPQL",
+    "KMAI",
 
 ];
 
@@ -86,6 +94,11 @@ const airportCoordinates = {
     KMOB: {
         lat: 30.6914,
         lon: -88.2428
+    },
+
+    KMAI: {
+        lat: 30.8378,
+        lon:-85.1819
     },
 
     KHSA: {
@@ -121,6 +134,11 @@ const airportCoordinates = {
     KPQL: {
         lat: 30.4628,
         lon: -88.5292
+    },
+
+    KBFM: {
+        lat: 30.6268,
+        lon: -88.0681
     }
 
 };

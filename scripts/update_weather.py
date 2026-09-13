@@ -19,6 +19,8 @@ AIRPORTS = [
     "KJKA",
     "KGPT",
     "KPQL",
+    "KBFM",
+    "KMAI",
 ]
 
 KNDZ_LAT = 30.7044
@@ -1119,7 +1121,7 @@ def fetch_active_watches():
 
 def main():
     print("Fetching METAR data...")
-
+    
     try:
         airports = fetch_metars()
 
@@ -1197,12 +1199,23 @@ def main():
         exist_ok=True,
     )
 
+    print("AIRPORTS:")
+    print(airports)
+
+    print("DATA AIRPORTS:")
+    print(data["airports"])
+
+    print("KBFM:")
+    print(data["airports"].get("KBFM"))
+
+    print("KMAI:")
+    print(data["airports"].get("KMAI"))
     with open(
         "data/weather.json",
         "w",
         encoding="utf-8",
     ) as file:
-
+        
         json.dump(
             data,
             file,
