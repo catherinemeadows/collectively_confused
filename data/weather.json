@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-13T17:10:29.864779+00:00",
+  "generated_at": "2026-09-13T17:40:18.099741+00:00",
   "departure": "KNDZ",
   "airports": {
     "KCEW": {
@@ -14,14 +14,25 @@
       "observation_time": 1789318380
     },
     "KDHN": {
-      "raw_metar": "METAR KDHN 131653Z 28007KT 10SM FEW022 SCT027 BKN033 31/24 A3010 RMK AO1 SLP185 T03060239 $",
+      "raw_metar": "SPECI KDHN 131731Z VRB03KT 10SM SCT030 32/23 A3008 RMK AO1 T03170233 $",
       "flight_category": "VFR",
       "visibility_sm": 10.0,
       "visibility_display": "10+ SM",
-      "ceiling_ft_agl": 3300.0,
-      "ceiling_display": "3,300 ft AGL",
-      "wind_display": "280\u00b0 @ 7 kt",
-      "altimeter_display": "30.10 inHg",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "VRB @ 3 kt",
+      "altimeter_display": "30.08 inHg",
+      "observation_time": 1789320660
+    },
+    "KGPT": {
+      "raw_metar": "METAR KGPT 131653Z VRB06KT 10SM FEW029 FEW048 SCT060 31/25 A3006 RMK AO2 SLP178 T03110250",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "VRB @ 6 kt",
+      "altimeter_display": "30.06 inHg",
       "observation_time": 1789318380
     },
     "KHSA": {
@@ -110,17 +121,6 @@
       "ceiling_display": "No BKN/OVC ceiling reported",
       "wind_display": "240\u00b0 @ 6 kt",
       "altimeter_display": "30.05 inHg",
-      "observation_time": 1789318380
-    },
-    "KGPT": {
-      "raw_metar": "METAR KGPT 131653Z VRB06KT 10SM FEW029 FEW048 SCT060 31/25 A3006 RMK AO2 SLP178 T03110250",
-      "flight_category": "VFR",
-      "visibility_sm": 10.0,
-      "visibility_display": "10+ SM",
-      "ceiling_ft_agl": null,
-      "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "VRB @ 6 kt",
-      "altimeter_display": "30.06 inHg",
       "observation_time": 1789318380
     }
   },
