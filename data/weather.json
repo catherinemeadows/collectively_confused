@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-13T15:10:14.588157+00:00",
+  "generated_at": "2026-09-13T15:40:13.594310+00:00",
   "departure": "KNDZ",
   "airports": {
     "KCEW": {
@@ -36,15 +36,15 @@
       "observation_time": 1789311180
     },
     "KHSA": {
-      "raw_metar": "METAR KHSA 131350Z 00000KT 10SM CLR 28/25 A3007",
+      "raw_metar": "METAR KHSA 131450Z 00000KT 10SM CLR 30/25 A3008",
       "flight_category": "VFR",
       "visibility_sm": 10.0,
       "visibility_display": "10+ SM",
       "ceiling_ft_agl": null,
       "ceiling_display": "No BKN/OVC ceiling reported",
       "wind_display": "Calm",
-      "altimeter_display": "30.07 inHg",
-      "observation_time": 1789307400
+      "altimeter_display": "30.08 inHg",
+      "observation_time": 1789311000
     },
     "KJKA": {
       "raw_metar": "METAR KJKA 131456Z 00000KT 10SM CLR 31/25 A3008",
@@ -79,17 +79,6 @@
       "altimeter_display": "30.09 inHg",
       "observation_time": 1789311360
     },
-    "KNPA": {
-      "raw_metar": "METAR KNPA 131456Z AUTO A3007 RMK AO2 SLP186 6//// 50010 PWINO TSNO PNO $",
-      "flight_category": "UNKNOWN",
-      "visibility_sm": null,
-      "visibility_display": "---",
-      "ceiling_ft_agl": null,
-      "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "---",
-      "altimeter_display": "30.07 inHg",
-      "observation_time": 1789311360
-    },
     "KPNS": {
       "raw_metar": "METAR KPNS 131453Z 33006KT 10SM FEW015 29/25 A3008 RMK AO2 SLP186 T02940250 50011",
       "flight_category": "VFR",
@@ -122,11 +111,22 @@
       "wind_display": "330\u00b0 @ 6 kt",
       "altimeter_display": "30.08 inHg",
       "observation_time": 1789311180
+    },
+    "KNPA": {
+      "raw_metar": "METAR KNPA 131456Z AUTO A3007 RMK AO2 SLP186 6//// 50010 PWINO TSNO PNO $",
+      "flight_category": "UNKNOWN",
+      "visibility_sm": null,
+      "visibility_display": "---",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "---",
+      "altimeter_display": "30.07 inHg",
+      "observation_time": 1789311360
     }
   },
   "tafs": {
     "KNSE": {
-      "raw_taf": "TAF KNSE 130600Z 1307/1407 VRB06KT 9000 BR FEW010 SCT020 QNH2995INS FM131200 VRB06KT 9999 FEW030 QNH2994INS AUTOMATED SENSOR METWATCH 1307 TIL 1411 TX32/1320Z TN23/1312Z FN00276"
+      "raw_taf": "TAF KNSE 131500Z 1315/1415 VRB06KT 9999 FEW030 QNH2990INS AUTOMATED SENSOR METWATCH 1315 TIL 1411 TX33/1320Z TN24/1409Z FN00291"
     },
     "KNDZ": {
       "raw_taf": "TAF unavailable"
