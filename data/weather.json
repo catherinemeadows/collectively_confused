@@ -1,7 +1,18 @@
 {
-  "generated_at": "2026-09-15T15:10:16.316661+00:00",
+  "generated_at": "2026-09-15T15:40:18.671207+00:00",
   "departure": "KNDZ",
   "airports": {
+    "KBFM": {
+      "raw_metar": "METAR KBFM 151453Z 04005KT 10SM CLR 31/26 A3013 RMK AO2 SLP204 T03060256 51009",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "040\u00b0 @ 5 kt",
+      "altimeter_display": "30.13 inHg",
+      "observation_time": 1789483980
+    },
     "KCEW": {
       "raw_metar": "METAR KCEW 151453Z AUTO 00000KT 10SM CLR 32/24 A3016 RMK AO2 SLP208 T03170244 51009",
       "flight_category": "VFR",
@@ -112,17 +123,6 @@
       "altimeter_display": "30.12 inHg",
       "observation_time": 1789483980
     },
-    "KPQL": {
-      "raw_metar": "METAR KPQL 151453Z 06004KT 10SM CLR 31/24 A3011 RMK AO2 SLP199 T03110244 51009",
-      "flight_category": "VFR",
-      "visibility_sm": 10.0,
-      "visibility_display": "10+ SM",
-      "ceiling_ft_agl": null,
-      "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "060\u00b0 @ 4 kt",
-      "altimeter_display": "30.11 inHg",
-      "observation_time": 1789483980
-    },
     "KTLH": {
       "raw_metar": "METAR KTLH 151453Z 10007KT 10SM FEW110 31/23 A3014 RMK AO2 SLP204 T03060233 51012 $",
       "flight_category": "VFR",
@@ -134,21 +134,21 @@
       "altimeter_display": "30.14 inHg",
       "observation_time": 1789483980
     },
-    "KBFM": {
-      "raw_metar": "METAR KBFM 151453Z 04005KT 10SM CLR 31/26 A3013 RMK AO2 SLP204 T03060256 51009",
+    "KPQL": {
+      "raw_metar": "METAR KPQL 151453Z 06004KT 10SM CLR 31/24 A3011 RMK AO2 SLP199 T03110244 51009",
       "flight_category": "VFR",
       "visibility_sm": 10.0,
       "visibility_display": "10+ SM",
       "ceiling_ft_agl": null,
       "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "040\u00b0 @ 5 kt",
-      "altimeter_display": "30.13 inHg",
+      "wind_display": "060\u00b0 @ 4 kt",
+      "altimeter_display": "30.11 inHg",
       "observation_time": 1789483980
     }
   },
   "tafs": {
     "KNSE": {
-      "raw_taf": "TAF KNSE 1507/1607 VRB06KT 9999 FEW070 SCT250 QNH3002INS FM151500 VRB06KT 9999 BKN070 QNH2999INS FM160000 VRB06KT 9999 FEW070 QNH3003INS AUTOMATED SENSOR METWATCH 1507 TIL 1511 TX34/1518Z TN24/1604Z FN00319"
+      "raw_taf": "TAF KNSE COR 151500Z 1515/1615 07006KT 9999 FEW025 FEW070 SCT250 QNH3011INS FM151800 09008KT 9999 VCSH SCT050 SCT100 BKN250 QNH3005INS TEMPO 1518/1522 11010G16KT SCT040 BKN080 BKN250 FM152300 14006KT 9999 FEW060 SCT250 QNH3005INS FM160400 VRB05KT 9999 FEW050 FEW250 QNH3013INS FM160800 06010KT 9999 SCT020 SCT080 BKN250 QNH3014INS TEMPO 1610/1614 SCT008 BKN015 BKN060 FM161400 08012G20KT 9999 SCT015 SCT040 BKN100 BKN250 QNH3019INS TX34/1519Z TN23/1609Z COR 1529 FN20071"
     },
     "KNDZ": {
       "raw_taf": "TAF unavailable"
