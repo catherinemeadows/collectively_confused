@@ -1,18 +1,7 @@
 {
-  "generated_at": "2026-09-19T21:40:26.366933+00:00",
+  "generated_at": "2026-09-19T21:45:53.122007+00:00",
   "departure": "KNDZ",
   "airports": {
-    "KBFM": {
-      "raw_metar": "METAR KBFM 192053Z 15005KT 10SM CLR 34/20 A2996 RMK AO2 SLP145 T03440200 56022",
-      "flight_category": "VFR",
-      "visibility_sm": 10.0,
-      "visibility_display": "10+ SM",
-      "ceiling_ft_agl": null,
-      "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "150\u00b0 @ 5 kt",
-      "altimeter_display": "29.96 inHg",
-      "observation_time": 1789851180
-    },
     "KCEW": {
       "raw_metar": "METAR KCEW 192053Z AUTO 00000KT 10SM CLR 34/19 A2996 RMK AO2 SLP141 T03440189 56023",
       "flight_category": "VFR",
@@ -45,6 +34,17 @@
       "wind_display": "190\u00b0 @ 7 kt",
       "altimeter_display": "29.95 inHg",
       "observation_time": 1789851180
+    },
+    "KHSA": {
+      "raw_metar": "METAR KHSA 192050Z 18004KT 10SM CLR 34/20 A2995",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "180\u00b0 @ 4 kt",
+      "altimeter_display": "29.95 inHg",
+      "observation_time": 1789851000
     },
     "KJKA": {
       "raw_metar": "METAR KJKA 192056Z 18006KT 10SM CLR 32/21 A2995",
@@ -134,16 +134,16 @@
       "altimeter_display": "29.93 inHg",
       "observation_time": 1789851180
     },
-    "KHSA": {
-      "raw_metar": "METAR KHSA 192050Z 18004KT 10SM CLR 34/20 A2995",
+    "KBFM": {
+      "raw_metar": "METAR KBFM 192053Z 15005KT 10SM CLR 34/20 A2996 RMK AO2 SLP145 T03440200 56022",
       "flight_category": "VFR",
       "visibility_sm": 10.0,
       "visibility_display": "10+ SM",
       "ceiling_ft_agl": null,
       "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "180\u00b0 @ 4 kt",
-      "altimeter_display": "29.95 inHg",
-      "observation_time": 1789851000
+      "wind_display": "150\u00b0 @ 5 kt",
+      "altimeter_display": "29.96 inHg",
+      "observation_time": 1789851180
     }
   },
   "tafs": {
