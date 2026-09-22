@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-09-22T22:40:22.309024+00:00",
+  "generated_at": "2026-09-22T22:54:28.666058+00:00",
   "departure": "KNDZ",
   "airports": {
     "KBFM": {
-      "raw_metar": "SPECI KBFM 222233Z 09018G26KT 10SM VCTS SCT040 29/23 A2994 RMK AO2 PK WND 08026/2223 LTG DSNT SE AND S T02940233",
+      "raw_metar": "SPECI KBFM 222241Z 10017G26KT 10SM VCTS SCT040 29/23 A2993 RMK AO2 PK WND 08026/2223 WSHFT 2221 LTG DSNT SE AND S T02890228",
       "flight_category": "VFR",
       "visibility_sm": 10.0,
       "visibility_display": "10+ SM",
       "ceiling_ft_agl": null,
       "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "090\u00b0 @ 18 kt G26",
-      "altimeter_display": "29.94 inHg",
-      "observation_time": 1790116380
+      "wind_display": "100\u00b0 @ 17 kt G26",
+      "altimeter_display": "29.93 inHg",
+      "observation_time": 1790116860
     },
     "KCEW": {
       "raw_metar": "METAR KCEW 222153Z AUTO 36003KT 9SM CLR 26/23 A2995 RMK AO2 LTG DSNT SW SLP138 T02560233 $",
@@ -45,28 +45,6 @@
       "wind_display": "030\u00b0 @ 7 kt",
       "altimeter_display": "29.90 inHg",
       "observation_time": 1790113980
-    },
-    "KHSA": {
-      "raw_metar": "METAR KHSA 222150Z 00000KT 10SM FEW050 34/21 A2990",
-      "flight_category": "VFR",
-      "visibility_sm": 10.0,
-      "visibility_display": "10+ SM",
-      "ceiling_ft_agl": null,
-      "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "Calm",
-      "altimeter_display": "29.90 inHg",
-      "observation_time": 1790113800
-    },
-    "KJKA": {
-      "raw_metar": "SPECI KJKA 222231Z 09010KT 1SM TSRA OVC005 22/21 A2993 RMK LTG DSNT ALQDS",
-      "flight_category": "IFR",
-      "visibility_sm": 1.0,
-      "visibility_display": "1 SM",
-      "ceiling_ft_agl": 500.0,
-      "ceiling_display": "500 ft AGL",
-      "wind_display": "090\u00b0 @ 10 kt",
-      "altimeter_display": "29.93 inHg",
-      "observation_time": 1790116260
     },
     "KMAI": {
       "raw_metar": "METAR KMAI 222153Z AUTO 34007KT 10SM FEW055 BKN075 OVC110 26/23 A2991 RMK AO1 RAB12E47 SLP128 P0002 T02610228",
@@ -102,15 +80,15 @@
       "observation_time": 1790114160
     },
     "KNPA": {
-      "raw_metar": "METAR KNPA 222156Z 23003KT 5SM TSRA SCT040CB BKN110 OVC150 24/23 A2992 RMK AO2 PK WND 06036/2119 RAB18 SLP132 FRQ LTGICCG S-W TS S-W MOV SW T1 SET P0007 T02390228",
-      "flight_category": "MVFR",
-      "visibility_sm": 5.0,
-      "visibility_display": "5 SM",
+      "raw_metar": "SPECI KNPA 222238Z 00000KT 10SM -RA FEW040 SCT080 BKN110 OVC150 24/23 A2992 RMK AO2 TSE38 FRQ LTGICCG DSNT SW-W CB DSNT SW-W T1 SET P0001 T02390228 ",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
       "ceiling_ft_agl": 11000.0,
       "ceiling_display": "11,000 ft AGL",
-      "wind_display": "230\u00b0 @ 3 kt",
+      "wind_display": "Calm",
       "altimeter_display": "29.92 inHg",
-      "observation_time": 1790114160
+      "observation_time": 1790116680
     },
     "KPNS": {
       "raw_metar": "SPECI KPNS 222200Z 00000KT 10SM FEW120 26/22 A2992 RMK AO2 LTG DSNT S-NW T02610217",
@@ -144,6 +122,28 @@
       "wind_display": "040\u00b0 @ 3 kt",
       "altimeter_display": "29.90 inHg",
       "observation_time": 1790113980
+    },
+    "KJKA": {
+      "raw_metar": "SPECI KJKA 222246Z 00000KT 7SM -RA SCT005 23/22 A2993 RMK LTG DSNT ALQDS",
+      "flight_category": "VFR",
+      "visibility_sm": 7.0,
+      "visibility_display": "7 SM",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "Calm",
+      "altimeter_display": "29.93 inHg",
+      "observation_time": 1790117160
+    },
+    "KHSA": {
+      "raw_metar": "METAR KHSA 222150Z 00000KT 10SM FEW050 34/21 A2990",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "Calm",
+      "altimeter_display": "29.90 inHg",
+      "observation_time": 1790113800
     }
   },
   "tafs": {
