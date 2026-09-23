@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T12:19:58.133407+00:00",
+  "generated_at": "2026-09-23T12:40:24.739124+00:00",
   "departure": "KNDZ",
   "airports": {
     "KBFM": {
@@ -25,15 +25,15 @@
       "observation_time": 1790164380
     },
     "KDHN": {
-      "raw_metar": "METAR KDHN 231153Z 03004KT 3SM BR CLR 22/21 A3009 RMK AO1 SLP183 70033 T02170211 10222 20211 53015",
-      "flight_category": "MVFR",
-      "visibility_sm": 3.0,
-      "visibility_display": "3 SM",
+      "raw_metar": "SPECI KDHN 231233Z 06007KT 6SM BR FEW002 22/22 A3009 RMK AO1 T02220217",
+      "flight_category": "VFR",
+      "visibility_sm": 6.0,
+      "visibility_display": "6 SM",
       "ceiling_ft_agl": null,
       "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "030\u00b0 @ 4 kt",
+      "wind_display": "060\u00b0 @ 7 kt",
       "altimeter_display": "30.09 inHg",
-      "observation_time": 1790164380
+      "observation_time": 1790166780
     },
     "KGPT": {
       "raw_metar": "METAR KGPT 231153Z 01004KT 10SM CLR 23/22 A3002 RMK AO2 SLP163 T02330217 10250 20228 53013",
@@ -101,17 +101,6 @@
       "altimeter_display": "30.03 inHg",
       "observation_time": 1790164560
     },
-    "KNPA": {
-      "raw_metar": "METAR KNPA 231156Z 36005KT 10SM CLR 22/21 A3001 RMK AO2 SLP165 70008 T02220211 10233 20222 53013 $",
-      "flight_category": "VFR",
-      "visibility_sm": 10.0,
-      "visibility_display": "10+ SM",
-      "ceiling_ft_agl": null,
-      "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "360\u00b0 @ 5 kt",
-      "altimeter_display": "30.01 inHg",
-      "observation_time": 1790164560
-    },
     "KPNS": {
       "raw_metar": "METAR KPNS 231153Z 03004KT 10SM CLR 23/21 A3002 RMK AO2 SLP165 70001 T02280211 10239 20222 53012",
       "flight_category": "VFR",
@@ -144,6 +133,17 @@
       "wind_display": "Calm",
       "altimeter_display": "30.02 inHg",
       "observation_time": 1790164380
+    },
+    "KNPA": {
+      "raw_metar": "METAR KNPA 231156Z 36005KT 10SM CLR 22/21 A3001 RMK AO2 SLP165 70008 T02220211 10233 20222 53013 $",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "360\u00b0 @ 5 kt",
+      "altimeter_display": "30.01 inHg",
+      "observation_time": 1790164560
     }
   },
   "tafs": {
