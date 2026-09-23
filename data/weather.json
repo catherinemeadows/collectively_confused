@@ -1,7 +1,18 @@
 {
-  "generated_at": "2026-09-23T06:37:16.116423+00:00",
+  "generated_at": "2026-09-23T06:40:14.468807+00:00",
   "departure": "KNDZ",
   "airports": {
+    "KBFM": {
+      "raw_metar": "METAR KBFM 230553Z AUTO 03003KT 10SM CLR 23/22 A3000 RMK AO2 SLP159 T02330217 10267 20228 403390222 51002",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "030\u00b0 @ 3 kt",
+      "altimeter_display": "30.00 inHg",
+      "observation_time": 1790142780
+    },
     "KCEW": {
       "raw_metar": "METAR KCEW 230553Z AUTO 00000KT 7SM CLR 23/22 A3001 RMK AO2 SLP158 T02280222 10250 20228 403330222 55002 $",
       "flight_category": "VFR",
@@ -112,28 +123,6 @@
       "altimeter_display": "29.96 inHg",
       "observation_time": 1790142780
     },
-    "KTLH": {
-      "raw_metar": "METAR KTLH 230553Z AUTO 07005KT 10SM CLR 26/22 A2996 RMK AO2 SLP145 T02560222 10289 20250 50000 $",
-      "flight_category": "VFR",
-      "visibility_sm": 10.0,
-      "visibility_display": "10+ SM",
-      "ceiling_ft_agl": null,
-      "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "070\u00b0 @ 5 kt",
-      "altimeter_display": "29.96 inHg",
-      "observation_time": 1790142780
-    },
-    "KBFM": {
-      "raw_metar": "METAR KBFM 230553Z AUTO 03003KT 10SM CLR 23/22 A3000 RMK AO2 SLP159 T02330217 10267 20228 403390222 51002",
-      "flight_category": "VFR",
-      "visibility_sm": 10.0,
-      "visibility_display": "10+ SM",
-      "ceiling_ft_agl": null,
-      "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "030\u00b0 @ 3 kt",
-      "altimeter_display": "30.00 inHg",
-      "observation_time": 1790142780
-    },
     "KPQL": {
       "raw_metar": "METAR KPQL 230553Z AUTO 00000KT 9SM CLR 22/21 A2998 RMK AO2 SLP153 T02170211 10289 20211 403330211 50001",
       "flight_category": "VFR",
@@ -143,6 +132,17 @@
       "ceiling_display": "No BKN/OVC ceiling reported",
       "wind_display": "Calm",
       "altimeter_display": "29.98 inHg",
+      "observation_time": 1790142780
+    },
+    "KTLH": {
+      "raw_metar": "METAR KTLH 230553Z AUTO 07005KT 10SM CLR 26/22 A2996 RMK AO2 SLP145 T02560222 10289 20250 50000 $",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "070\u00b0 @ 5 kt",
+      "altimeter_display": "29.96 inHg",
       "observation_time": 1790142780
     }
   },
