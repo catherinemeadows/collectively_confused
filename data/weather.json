@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T16:10:18.937893+00:00",
+  "generated_at": "2026-09-24T16:40:27.111288+00:00",
   "departure": "KNDZ",
   "airports": {
     "KBFM": {
@@ -14,26 +14,26 @@
       "observation_time": 1790265180
     },
     "KCEW": {
-      "raw_metar": "METAR KCEW 241553Z AUTO 00000KT 10SM FEW021 27/22 A3010 RMK AO2 SLP191 T02720217",
-      "flight_category": "VFR",
-      "visibility_sm": 10.0,
-      "visibility_display": "10+ SM",
-      "ceiling_ft_agl": null,
-      "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "Calm",
-      "altimeter_display": "30.10 inHg",
-      "observation_time": 1790265180
-    },
-    "KDHN": {
-      "raw_metar": "METAR KDHN 241553Z VRB04KT 10SM OVC012 23/19 A3015 RMK AO1 SLP204 T02330189",
+      "raw_metar": "SPECI KCEW 241633Z AUTO 09006KT 10SM BKN022 28/21 A3010 RMK AO2 T02780211",
       "flight_category": "MVFR",
       "visibility_sm": 10.0,
       "visibility_display": "10+ SM",
-      "ceiling_ft_agl": 1200.0,
-      "ceiling_display": "1,200 ft AGL",
-      "wind_display": "VRB @ 4 kt",
-      "altimeter_display": "30.15 inHg",
-      "observation_time": 1790265180
+      "ceiling_ft_agl": 2200.0,
+      "ceiling_display": "2,200 ft AGL",
+      "wind_display": "090\u00b0 @ 6 kt",
+      "altimeter_display": "30.10 inHg",
+      "observation_time": 1790267580
+    },
+    "KDHN": {
+      "raw_metar": "SPECI KDHN 241620Z 07006KT 10SM OVC018 24/19 A3014 RMK AO1 T02440194",
+      "flight_category": "MVFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": 1800.0,
+      "ceiling_display": "1,800 ft AGL",
+      "wind_display": "070\u00b0 @ 6 kt",
+      "altimeter_display": "30.14 inHg",
+      "observation_time": 1790266800
     },
     "KGPT": {
       "raw_metar": "METAR KGPT 241553Z 06004KT 10SM CLR 28/22 A3006 RMK AO2 SLP179 T02830217",
@@ -102,15 +102,15 @@
       "observation_time": 1790265360
     },
     "KNPA": {
-      "raw_metar": "METAR KNPA 241556Z 08010KT 10SM BKN012 BKN250 27/23 A3007 RMK AO2 SLP183 T02670228 $",
+      "raw_metar": "SPECI KNPA 241632Z 10007KT 10SM BKN015 BKN250 27/23 A3006 RMK AO2 T02720228 $ ",
       "flight_category": "MVFR",
       "visibility_sm": 10.0,
       "visibility_display": "10+ SM",
-      "ceiling_ft_agl": 1200.0,
-      "ceiling_display": "1,200 ft AGL",
-      "wind_display": "080\u00b0 @ 10 kt",
-      "altimeter_display": "30.07 inHg",
-      "observation_time": 1790265360
+      "ceiling_ft_agl": 1500.0,
+      "ceiling_display": "1,500 ft AGL",
+      "wind_display": "100\u00b0 @ 7 kt",
+      "altimeter_display": "30.06 inHg",
+      "observation_time": 1790267520
     },
     "KPNS": {
       "raw_metar": "METAR KPNS 241553Z VRB05KT 10SM FEW015 BKN030 27/22 A3007 RMK AO2 SLP184 T02670217",
@@ -123,17 +123,6 @@
       "altimeter_display": "30.07 inHg",
       "observation_time": 1790265180
     },
-    "KPQL": {
-      "raw_metar": "METAR KPQL 241553Z VRB05KT 10SM CLR 28/23 A3006 RMK AO2 SLP181 T02830228",
-      "flight_category": "VFR",
-      "visibility_sm": 10.0,
-      "visibility_display": "10+ SM",
-      "ceiling_ft_agl": null,
-      "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "VRB @ 5 kt",
-      "altimeter_display": "30.06 inHg",
-      "observation_time": 1790265180
-    },
     "KTLH": {
       "raw_metar": "METAR KTLH 241553Z 36006KT 10SM OVC020 24/19 A3008 RMK AO2 SLP186 T02440194 $",
       "flight_category": "MVFR",
@@ -143,6 +132,17 @@
       "ceiling_display": "2,000 ft AGL",
       "wind_display": "360\u00b0 @ 6 kt",
       "altimeter_display": "30.08 inHg",
+      "observation_time": 1790265180
+    },
+    "KPQL": {
+      "raw_metar": "METAR KPQL 241553Z VRB05KT 10SM CLR 28/23 A3006 RMK AO2 SLP181 T02830228",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "VRB @ 5 kt",
+      "altimeter_display": "30.06 inHg",
       "observation_time": 1790265180
     }
   },
