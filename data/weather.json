@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T22:10:16.899890+00:00",
+  "generated_at": "2026-09-24T22:40:35.292573+00:00",
   "departure": "KNDZ",
   "airports": {
     "KBFM": {
@@ -13,16 +13,27 @@
       "altimeter_display": "30.00 inHg",
       "observation_time": 1790286780
     },
-    "KDHN": {
-      "raw_metar": "METAR KDHN 242153Z 02010KT 10SM FEW027 25/19 A3008 RMK AO1 SLP180 T02500189",
+    "KCEW": {
+      "raw_metar": "METAR KCEW 242153Z AUTO 10SM SCT033 29/21 A3003 RMK AO2 SLP164 T02890211",
       "flight_category": "VFR",
       "visibility_sm": 10.0,
       "visibility_display": "10+ SM",
       "ceiling_ft_agl": null,
       "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "020\u00b0 @ 10 kt",
-      "altimeter_display": "30.08 inHg",
+      "wind_display": "---",
+      "altimeter_display": "30.03 inHg",
       "observation_time": 1790286780
+    },
+    "KDHN": {
+      "raw_metar": "SPECI KDHN 242212Z 03008KT 10SM BKN025 24/19 A3008 RMK AO1 T02440189",
+      "flight_category": "MVFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": 2500.0,
+      "ceiling_display": "2,500 ft AGL",
+      "wind_display": "030\u00b0 @ 8 kt",
+      "altimeter_display": "30.08 inHg",
+      "observation_time": 1790287920
     },
     "KGPT": {
       "raw_metar": "METAR KGPT 242153Z 19003KT 10SM FEW065 FEW080 31/24 A2997 RMK AO2 SLP149 T03060239",
@@ -132,17 +143,6 @@
       "ceiling_display": "7,000 ft AGL",
       "wind_display": "360\u00b0 @ 9 kt",
       "altimeter_display": "30.00 inHg",
-      "observation_time": 1790286780
-    },
-    "KCEW": {
-      "raw_metar": "METAR KCEW 242153Z AUTO 10SM SCT033 29/21 A3003 RMK AO2 SLP164 T02890211",
-      "flight_category": "VFR",
-      "visibility_sm": 10.0,
-      "visibility_display": "10+ SM",
-      "ceiling_ft_agl": null,
-      "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "---",
-      "altimeter_display": "30.03 inHg",
       "observation_time": 1790286780
     }
   },
