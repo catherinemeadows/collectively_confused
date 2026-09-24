@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T11:10:22.644483+00:00",
+  "generated_at": "2026-09-24T11:40:16.720759+00:00",
   "departure": "KNDZ",
   "airports": {
     "KBFM": {
@@ -57,6 +57,17 @@
       "altimeter_display": "30.00 inHg",
       "observation_time": 1790214600
     },
+    "KJKA": {
+      "raw_metar": "METAR KJKA 241115Z AUTO 03006KT 10SM BKN030 24/23 A3002 RMK AO2",
+      "flight_category": "MVFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": 3000.0,
+      "ceiling_display": "3,000 ft AGL",
+      "wind_display": "030\u00b0 @ 6 kt",
+      "altimeter_display": "30.02 inHg",
+      "observation_time": 1790248500
+    },
     "KMAI": {
       "raw_metar": "METAR KMAI 241053Z AUTO 06006KT 10SM FEW070 21/19 A3006 RMK AO1 SLP176 T02060194",
       "flight_category": "VFR",
@@ -102,15 +113,15 @@
       "observation_time": 1790247360
     },
     "KPNS": {
-      "raw_metar": "SPECI KPNS 241056Z COR 05007KT 10SM BKN018 24/22 A3003 RMK AO2 T02390217",
-      "flight_category": "MVFR",
+      "raw_metar": "SPECI KPNS 241128Z 06007KT 10SM FEW016 FEW023 23/22 A3004 RMK AO2 T02330217",
+      "flight_category": "VFR",
       "visibility_sm": 10.0,
       "visibility_display": "10+ SM",
-      "ceiling_ft_agl": 1800.0,
-      "ceiling_display": "1,800 ft AGL",
-      "wind_display": "050\u00b0 @ 7 kt",
-      "altimeter_display": "30.03 inHg",
-      "observation_time": 1790247360
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "060\u00b0 @ 7 kt",
+      "altimeter_display": "30.04 inHg",
+      "observation_time": 1790249280
     },
     "KPQL": {
       "raw_metar": "METAR KPQL 241053Z AUTO 01007KT 10SM CLR 22/21 A3004 RMK AO2 SLP173 T02220206",
@@ -133,17 +144,6 @@
       "wind_display": "030\u00b0 @ 3 kt",
       "altimeter_display": "30.05 inHg",
       "observation_time": 1790247180
-    },
-    "KJKA": {
-      "raw_metar": "METAR KJKA 241055Z AUTO VRB05KT 10SM BKN029 24/23 A3002 RMK AO2",
-      "flight_category": "MVFR",
-      "visibility_sm": 10.0,
-      "visibility_display": "10+ SM",
-      "ceiling_ft_agl": 2900.0,
-      "ceiling_display": "2,900 ft AGL",
-      "wind_display": "VRB @ 5 kt",
-      "altimeter_display": "30.02 inHg",
-      "observation_time": 1790247300
     }
   },
   "tafs": {
