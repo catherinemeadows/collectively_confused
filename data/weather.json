@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T05:10:12.112901+00:00",
+  "generated_at": "2026-10-02T05:40:15.890212+00:00",
   "departure": "KNDZ",
   "airports": {
     "KBFM": {
@@ -58,15 +58,26 @@
       "observation_time": 1790905800
     },
     "KJKA": {
-      "raw_metar": "METAR KJKA 020455Z AUTO 12007G12KT 10SM SCT023 BKN028 BKN035 28/25 A2998 RMK AO2",
-      "flight_category": "MVFR",
+      "raw_metar": "METAR KJKA 020535Z AUTO 12007KT 10SM -RA SCT021 SCT031 BKN040 27/25 A2998 RMK AO2",
+      "flight_category": "VFR",
       "visibility_sm": 10.0,
       "visibility_display": "10+ SM",
-      "ceiling_ft_agl": 2800.0,
-      "ceiling_display": "2,800 ft AGL",
-      "wind_display": "120\u00b0 @ 7 kt G12",
+      "ceiling_ft_agl": 4000.0,
+      "ceiling_display": "4,000 ft AGL",
+      "wind_display": "120\u00b0 @ 7 kt",
       "altimeter_display": "29.98 inHg",
-      "observation_time": 1790916900
+      "observation_time": 1790919300
+    },
+    "KMAI": {
+      "raw_metar": "METAR KMAI 020453Z AUTO 11006KT 10SM CLR 24/21 A3003 RMK AO1 SLP167 T02440211 $",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "110\u00b0 @ 6 kt",
+      "altimeter_display": "30.03 inHg",
+      "observation_time": 1790916780
     },
     "KMOB": {
       "raw_metar": "METAR KMOB 020456Z AUTO 02003KT 10SM FEW023 FEW030 24/23 A3001 RMK AO2 SLP158 T02390228",
@@ -90,16 +101,27 @@
       "altimeter_display": "30.01 inHg",
       "observation_time": 1790916960
     },
-    "KPNS": {
-      "raw_metar": "SPECI KPNS 020505Z AUTO 06005KT 10SM BKN021 BKN026 BKN050 26/24 A2999 RMK AO2 T02560239",
-      "flight_category": "MVFR",
+    "KNPA": {
+      "raw_metar": "METAR KNPA 020456Z AUTO 12009KT 10SM FEW022 SCT027 SCT055 28/24 A2999 RMK AO2 SLP155 T02780244 403060256 PNO $",
+      "flight_category": "VFR",
       "visibility_sm": 10.0,
       "visibility_display": "10+ SM",
-      "ceiling_ft_agl": 2100.0,
-      "ceiling_display": "2,100 ft AGL",
-      "wind_display": "060\u00b0 @ 5 kt",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "120\u00b0 @ 9 kt",
       "altimeter_display": "29.99 inHg",
-      "observation_time": 1790917500
+      "observation_time": 1790916960
+    },
+    "KPNS": {
+      "raw_metar": "SPECI KPNS 020532Z AUTO 12008KT 10SM SCT021 27/24 A2999 RMK AO2 T02720239",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "120\u00b0 @ 8 kt",
+      "altimeter_display": "29.99 inHg",
+      "observation_time": 1790919120
     },
     "KPQL": {
       "raw_metar": "METAR KPQL 020453Z AUTO 00000KT 10SM FEW023 FEW060 23/23 A2998 RMK AO2 SLP154 T02330228",
@@ -121,28 +143,6 @@
       "ceiling_display": "No BKN/OVC ceiling reported",
       "wind_display": "090\u00b0 @ 8 kt",
       "altimeter_display": "30.04 inHg",
-      "observation_time": 1790916780
-    },
-    "KNPA": {
-      "raw_metar": "METAR KNPA 020456Z AUTO 12009KT 10SM FEW022 SCT027 SCT055 28/24 A2999 RMK AO2 SLP155 T02780244 403060256 PNO $",
-      "flight_category": "VFR",
-      "visibility_sm": 10.0,
-      "visibility_display": "10+ SM",
-      "ceiling_ft_agl": null,
-      "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "120\u00b0 @ 9 kt",
-      "altimeter_display": "29.99 inHg",
-      "observation_time": 1790916960
-    },
-    "KMAI": {
-      "raw_metar": "METAR KMAI 020453Z AUTO 11006KT 10SM CLR 24/21 A3003 RMK AO1 SLP167 T02440211 $",
-      "flight_category": "VFR",
-      "visibility_sm": 10.0,
-      "visibility_display": "10+ SM",
-      "ceiling_ft_agl": null,
-      "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "110\u00b0 @ 6 kt",
-      "altimeter_display": "30.03 inHg",
       "observation_time": 1790916780
     }
   },
