@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-05T12:10:19.246157+00:00",
+  "generated_at": "2026-10-05T12:40:14.849752+00:00",
   "departure": "KNDZ",
   "airports": {
     "KBFM": {
@@ -14,15 +14,26 @@
       "observation_time": 1791201180
     },
     "KCEW": {
-      "raw_metar": "METAR KCEW 051153Z AUTO 00000KT 9SM -RA BKN006 OVC010 23/23 A2999 RMK AO2 CIG 003V008 SLP151 P0008 60088 70406 T02330228 10239 20228 53002",
+      "raw_metar": "SPECI KCEW 051225Z AUTO 00000KT 5SM -RA BR BKN008 BKN014 OVC020 23/23 A2999 RMK AO2 RAE1154B13 CIG 005V012 P0000 T02330228",
       "flight_category": "IFR",
-      "visibility_sm": 9.0,
-      "visibility_display": "9 SM",
-      "ceiling_ft_agl": 600.0,
-      "ceiling_display": "600 ft AGL",
+      "visibility_sm": 5.0,
+      "visibility_display": "5 SM",
+      "ceiling_ft_agl": 800.0,
+      "ceiling_display": "800 ft AGL",
       "wind_display": "Calm",
       "altimeter_display": "29.99 inHg",
-      "observation_time": 1791201180
+      "observation_time": 1791203100
+    },
+    "KDHN": {
+      "raw_metar": "SPECI KDHN 051230Z 06004KT 10SM -RA SCT003 22/21 A3003 RMK AO1 P0002 T02170211",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "060\u00b0 @ 4 kt",
+      "altimeter_display": "30.03 inHg",
+      "observation_time": 1791203400
     },
     "KGPT": {
       "raw_metar": "METAR KGPT 051153Z 01006KT 10SM BKN008 OVC032 23/23 A2996 RMK AO2 SLP145 70204 T02330228 10239 20233 53003",
@@ -58,15 +69,15 @@
       "observation_time": 1791201360
     },
     "KMAI": {
-      "raw_metar": "SPECI KMAI 051202Z AUTO 06004KT 10SM -RA BKN010 BKN035 OVC070 24/23 A2997 RMK AO1 CIG 003V011 P0000 T02390233 $",
-      "flight_category": "MVFR",
-      "visibility_sm": 10.0,
-      "visibility_display": "10+ SM",
-      "ceiling_ft_agl": 1000.0,
-      "ceiling_display": "1,000 ft AGL",
-      "wind_display": "060\u00b0 @ 4 kt",
-      "altimeter_display": "29.97 inHg",
-      "observation_time": 1791201720
+      "raw_metar": "SPECI KMAI 051210Z AUTO 00000KT 4SM +RA BR BKN008 BKN035 OVC075 24/23 A2998 RMK AO1 P0005 T02390233 $",
+      "flight_category": "IFR",
+      "visibility_sm": 4.0,
+      "visibility_display": "4 SM",
+      "ceiling_ft_agl": 800.0,
+      "ceiling_display": "800 ft AGL",
+      "wind_display": "Calm",
+      "altimeter_display": "29.98 inHg",
+      "observation_time": 1791202200
     },
     "KMOB": {
       "raw_metar": "METAR KMOB 051156Z 36009KT 4SM BR BKN007 OVC012 23/22 A2999 RMK AO2 SLP152 60002 70060 T02280217 10233 20228 53007",
@@ -113,15 +124,15 @@
       "observation_time": 1791201180
     },
     "KPQL": {
-      "raw_metar": "SPECI KPQL 051202Z 01007KT 10SM OVC010 23/22 A2996 RMK AO2 T02280222 PNO",
-      "flight_category": "MVFR",
+      "raw_metar": "SPECI KPQL 051227Z 02005KT 10SM OVC008 23/22 A2997 RMK AO2 CIG 006V011 T02330222 PNO",
+      "flight_category": "IFR",
       "visibility_sm": 10.0,
       "visibility_display": "10+ SM",
-      "ceiling_ft_agl": 1000.0,
-      "ceiling_display": "1,000 ft AGL",
-      "wind_display": "010\u00b0 @ 7 kt",
-      "altimeter_display": "29.96 inHg",
-      "observation_time": 1791201720
+      "ceiling_ft_agl": 800.0,
+      "ceiling_display": "800 ft AGL",
+      "wind_display": "020\u00b0 @ 5 kt",
+      "altimeter_display": "29.97 inHg",
+      "observation_time": 1791203220
     },
     "KTLH": {
       "raw_metar": "METAR KTLH 051153Z 16004KT 10SM -RA SCT003 23/23 A2999 RMK AO2 SLP153 P0002 60004 70044 T02330228 10244 20233 53008 $",
@@ -132,17 +143,6 @@
       "ceiling_display": "No BKN/OVC ceiling reported",
       "wind_display": "160\u00b0 @ 4 kt",
       "altimeter_display": "29.99 inHg",
-      "observation_time": 1791201180
-    },
-    "KDHN": {
-      "raw_metar": "METAR KDHN 051153Z 05006KT 5SM RA BR SCT050 OVC090 22/21 A3003 RMK AO1 SLP164 P0041 60214 70395 T02170211 10233 20217 51007",
-      "flight_category": "MVFR",
-      "visibility_sm": 5.0,
-      "visibility_display": "5 SM",
-      "ceiling_ft_agl": 9000.0,
-      "ceiling_display": "9,000 ft AGL",
-      "wind_display": "050\u00b0 @ 6 kt",
-      "altimeter_display": "30.03 inHg",
       "observation_time": 1791201180
     }
   },
