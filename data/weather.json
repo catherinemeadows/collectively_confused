@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06T03:10:19.495839+00:00",
+  "generated_at": "2026-10-06T03:40:18.283516+00:00",
   "departure": "KNDZ",
   "airports": {
     "KBFM": {
@@ -14,15 +14,15 @@
       "observation_time": 1791255180
     },
     "KCEW": {
-      "raw_metar": "METAR KCEW 060253Z AUTO 00000KT 10SM SCT010 BKN015 23/22 A3000 RMK AO2 SLP157 60000 T02280222 51010",
-      "flight_category": "MVFR",
+      "raw_metar": "SPECI KCEW 060337Z AUTO 10SM FEW017 SCT022 23/22 A3000 RMK AO2 T02280217",
+      "flight_category": "VFR",
       "visibility_sm": 10.0,
       "visibility_display": "10+ SM",
-      "ceiling_ft_agl": 1500.0,
-      "ceiling_display": "1,500 ft AGL",
-      "wind_display": "Calm",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "---",
       "altimeter_display": "30.00 inHg",
-      "observation_time": 1791255180
+      "observation_time": 1791257820
     },
     "KDHN": {
       "raw_metar": "METAR KDHN 060253Z AUTO 06008KT 10SM BKN012 OVC018 23/22 A3004 RMK AO1 SLP167 T02280217 51010",
@@ -56,17 +56,6 @@
       "wind_display": "Calm",
       "altimeter_display": "29.96 inHg",
       "observation_time": 1791247800
-    },
-    "KJKA": {
-      "raw_metar": "METAR KJKA 060255Z AUTO 03005KT 10SM SCT039 SCT046 BKN100 24/23 A2997 RMK AO2",
-      "flight_category": "VFR",
-      "visibility_sm": 10.0,
-      "visibility_display": "10+ SM",
-      "ceiling_ft_agl": 10000.0,
-      "ceiling_display": "10,000 ft AGL",
-      "wind_display": "030\u00b0 @ 5 kt",
-      "altimeter_display": "29.97 inHg",
-      "observation_time": 1791255300
     },
     "KMAI": {
       "raw_metar": "METAR KMAI 060253Z AUTO 05011KT 10SM BKN012 BKN024 OVC042 22/21 A2999 RMK AO1 RAE53 SLP153 P0000 60004 T02220211 53008",
@@ -144,6 +133,17 @@
       "wind_display": "090\u00b0 @ 11 kt",
       "altimeter_display": "29.98 inHg",
       "observation_time": 1791255960
+    },
+    "KJKA": {
+      "raw_metar": "METAR KJKA 060315Z AUTO 03005KT 10SM BKN039 OVC048 24/23 A2997 RMK AO2",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": 3900.0,
+      "ceiling_display": "3,900 ft AGL",
+      "wind_display": "030\u00b0 @ 5 kt",
+      "altimeter_display": "29.97 inHg",
+      "observation_time": 1791256500
     }
   },
   "tafs": {
