@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06T18:10:54.288005+00:00",
+  "generated_at": "2026-10-06T18:40:20.273376+00:00",
   "departure": "KNDZ",
   "airports": {
     "KBFM": {
@@ -36,15 +36,15 @@
       "observation_time": 1791309180
     },
     "KGPT": {
-      "raw_metar": "METAR KGPT 061753Z 03005KT 10SM OVC027 26/21 A2992 RMK AO2 SLP132 T02610211 10261 20217 58010",
-      "flight_category": "MVFR",
+      "raw_metar": "SPECI KGPT 061823Z 07009KT 10SM SCT027 28/21 A2991 RMK AO2 T02780211",
+      "flight_category": "VFR",
       "visibility_sm": 10.0,
       "visibility_display": "10+ SM",
-      "ceiling_ft_agl": 2700.0,
-      "ceiling_display": "2,700 ft AGL",
-      "wind_display": "030\u00b0 @ 5 kt",
-      "altimeter_display": "29.92 inHg",
-      "observation_time": 1791309180
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "070\u00b0 @ 9 kt",
+      "altimeter_display": "29.91 inHg",
+      "observation_time": 1791310980
     },
     "KHSA": {
       "raw_metar": "METAR KHSA 061750Z 06008KT 10SM OVC025 28/21 A2993",
@@ -56,17 +56,6 @@
       "wind_display": "060\u00b0 @ 8 kt",
       "altimeter_display": "29.93 inHg",
       "observation_time": 1791309000
-    },
-    "KJKA": {
-      "raw_metar": "METAR KJKA 061755Z 08010G17KT 10SM SCT022 SCT085 28/22 A2991",
-      "flight_category": "VFR",
-      "visibility_sm": 10.0,
-      "visibility_display": "10+ SM",
-      "ceiling_ft_agl": null,
-      "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "080\u00b0 @ 10 kt G17",
-      "altimeter_display": "29.91 inHg",
-      "observation_time": 1791309300
     },
     "KMAI": {
       "raw_metar": "METAR KMAI 061753Z AUTO 06013G18KT 10SM OVC020 24/21 A2994 RMK AO1 SLP138 T02440206 10244 20206 58014",
@@ -144,6 +133,17 @@
       "wind_display": "050\u00b0 @ 9 kt",
       "altimeter_display": "29.95 inHg",
       "observation_time": 1791309180
+    },
+    "KJKA": {
+      "raw_metar": "METAR KJKA 061755Z 08010G17KT 10SM SCT022 SCT085 28/22 A2991",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "080\u00b0 @ 10 kt G17",
+      "altimeter_display": "29.91 inHg",
+      "observation_time": 1791309300
     }
   },
   "tafs": {
