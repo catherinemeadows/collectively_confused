@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-10T19:01:00.296274+00:00",
+  "generated_at": "2026-10-10T19:10:18.646998+00:00",
   "departure": "KNDZ",
   "airports": {
     "KBFM": {
@@ -91,15 +91,26 @@
       "observation_time": 1791658560
     },
     "KNDZ": {
-      "raw_metar": "METAR KNDZ 101756Z AUTO A2990 RMK AO2 SLPNO 51007 PWINO TSNO $",
+      "raw_metar": "METAR KNDZ 101856Z AUTO A2989 RMK AO2 SLPNO PWINO TSNO $",
       "flight_category": "UNKNOWN",
       "visibility_sm": null,
       "visibility_display": "---",
       "ceiling_ft_agl": null,
       "ceiling_display": "No BKN/OVC ceiling reported",
       "wind_display": "---",
-      "altimeter_display": "29.90 inHg",
-      "observation_time": 1791654960
+      "altimeter_display": "29.89 inHg",
+      "observation_time": 1791658560
+    },
+    "KNPA": {
+      "raw_metar": "METAR KNPA 101856Z AUTO VRB06KT 10SM OVC028 22/16 A2989 RMK AO2 SLP122 T02220161 PNO $",
+      "flight_category": "MVFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": 2800.0,
+      "ceiling_display": "2,800 ft AGL",
+      "wind_display": "VRB @ 6 kt",
+      "altimeter_display": "29.89 inHg",
+      "observation_time": 1791658560
     },
     "KPNS": {
       "raw_metar": "METAR KPNS 101853Z 26011KT 10SM SCT028 OVC034 23/16 A2988 RMK AO2 SLP121 T02280161",
@@ -133,17 +144,6 @@
       "wind_display": "190\u00b0 @ 7 kt",
       "altimeter_display": "29.85 inHg",
       "observation_time": 1791658380
-    },
-    "KNPA": {
-      "raw_metar": "METAR KNPA 101856Z AUTO VRB06KT 10SM OVC028 22/16 A2989 RMK AO2 SLP122 T02220161 PNO $",
-      "flight_category": "MVFR",
-      "visibility_sm": 10.0,
-      "visibility_display": "10+ SM",
-      "ceiling_ft_agl": 2800.0,
-      "ceiling_display": "2,800 ft AGL",
-      "wind_display": "VRB @ 6 kt",
-      "altimeter_display": "29.89 inHg",
-      "observation_time": 1791658560
     }
   },
   "tafs": {
