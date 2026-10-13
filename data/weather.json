@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T06:10:32.574047+00:00",
+  "generated_at": "2026-10-13T06:40:13.519085+00:00",
   "departure": "KNDZ",
   "airports": {
     "KBFM": {
@@ -57,17 +57,6 @@
       "altimeter_display": "30.05 inHg",
       "observation_time": 1791852600
     },
-    "KJKA": {
-      "raw_metar": "METAR KJKA 130555Z AUTO 00000KT 1/4SM FG VV002 19/19 A3006 RMK AO2",
-      "flight_category": "LIFR",
-      "visibility_sm": 0.25,
-      "visibility_display": "0.25 SM",
-      "ceiling_ft_agl": null,
-      "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "Calm",
-      "altimeter_display": "30.06 inHg",
-      "observation_time": 1791870900
-    },
     "KMAI": {
       "raw_metar": "METAR KMAI 130553Z AUTO 00000KT 10SM CLR 18/17 A3005 RMK AO1 SLP175 T01780167 10244 20178 403220156 58001 $",
       "flight_category": "VFR",
@@ -124,15 +113,15 @@
       "observation_time": 1791870780
     },
     "KPQL": {
-      "raw_metar": "METAR KPQL 130553Z AUTO 00000KT 1/2SM FG CLR 14/14 A3007 RMK AO2 SLP183 T01440144 10200 20139 403170133 58002",
-      "flight_category": "LIFR",
-      "visibility_sm": 0.5,
-      "visibility_display": "0.5 SM",
+      "raw_metar": "SPECI KPQL 130633Z AUTO 00000KT 2SM BR SCT001 14/14 A3007 RMK AO2 VIS 1V4 T01390139",
+      "flight_category": "IFR",
+      "visibility_sm": 2.0,
+      "visibility_display": "2 SM",
       "ceiling_ft_agl": null,
       "ceiling_display": "No BKN/OVC ceiling reported",
       "wind_display": "Calm",
       "altimeter_display": "30.07 inHg",
-      "observation_time": 1791870780
+      "observation_time": 1791873180
     },
     "KTLH": {
       "raw_metar": "METAR KTLH 130553Z AUTO 00000KT 10SM CLR 17/16 A3004 RMK AO2 SLP172 T01670156 10244 20167 58002 $",
@@ -144,6 +133,17 @@
       "wind_display": "Calm",
       "altimeter_display": "30.04 inHg",
       "observation_time": 1791870780
+    },
+    "KJKA": {
+      "raw_metar": "METAR KJKA 130615Z AUTO 00000KT 1/4SM FG VV002 19/19 A3006 RMK AO2",
+      "flight_category": "LIFR",
+      "visibility_sm": 0.25,
+      "visibility_display": "0.25 SM",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "Calm",
+      "altimeter_display": "30.06 inHg",
+      "observation_time": 1791872100
     }
   },
   "tafs": {
