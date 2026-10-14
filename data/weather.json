@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-14T07:11:09.593898+00:00",
+  "generated_at": "2026-10-14T07:40:13.914595+00:00",
   "departure": "KNDZ",
   "airports": {
     "KBFM": {
@@ -58,15 +58,15 @@
       "observation_time": 1791939000
     },
     "KJKA": {
-      "raw_metar": "METAR KJKA 140655Z AUTO 00000KT 3/4SM BR VV005 18/18 A3005 RMK AO2 VIS M1/4V2 1/2",
+      "raw_metar": "METAR KJKA 140715Z AUTO 00000KT 1/2SM BR VV005 18/18 A3005 RMK AO2 VIS M1/4V3",
       "flight_category": "LIFR",
-      "visibility_sm": 0.75,
-      "visibility_display": "0.75 SM",
+      "visibility_sm": 0.5,
+      "visibility_display": "0.5 SM",
       "ceiling_ft_agl": null,
       "ceiling_display": "No BKN/OVC ceiling reported",
       "wind_display": "Calm",
       "altimeter_display": "30.05 inHg",
-      "observation_time": 1791960900
+      "observation_time": 1791962100
     },
     "KMAI": {
       "raw_metar": "METAR KMAI 140653Z AUTO 00000KT 10SM CLR 19/18 A3005 RMK AO1 SLP176 T01890178",
@@ -90,16 +90,27 @@
       "altimeter_display": "30.08 inHg",
       "observation_time": 1791960960
     },
+    "KNDZ": {
+      "raw_metar": "METAR KNDZ 140656Z AUTO A3006 RMK AO2 SLPNO PWINO TSNO PNO $",
+      "flight_category": "UNKNOWN",
+      "visibility_sm": null,
+      "visibility_display": "---",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "---",
+      "altimeter_display": "30.06 inHg",
+      "observation_time": 1791960960
+    },
     "KNPA": {
-      "raw_metar": "METAR KNPA 140656Z AUTO 00000KT 9SM CLR 18/17 A3005 RMK AO2 SLP178 T01780172 $",
-      "flight_category": "VFR",
-      "visibility_sm": 9.0,
-      "visibility_display": "9 SM",
+      "raw_metar": "SPECI KNPA 140729Z AUTO 00000KT 1 3/4SM BR CLR 17/17 A3005 RMK AO2 T01720172 $ ",
+      "flight_category": "IFR",
+      "visibility_sm": 1.75,
+      "visibility_display": "1.75 SM",
       "ceiling_ft_agl": null,
       "ceiling_display": "No BKN/OVC ceiling reported",
       "wind_display": "Calm",
       "altimeter_display": "30.05 inHg",
-      "observation_time": 1791960960
+      "observation_time": 1791962940
     },
     "KPNS": {
       "raw_metar": "METAR KPNS 140653Z AUTO 31003KT 9SM CLR 21/18 A3006 RMK AO2 SLP178 T02060183",
@@ -113,15 +124,15 @@
       "observation_time": 1791960780
     },
     "KPQL": {
-      "raw_metar": "SPECI KPQL 140659Z AUTO 00000KT 3SM BR BKN001 14/14 A3007 RMK AO2 T01440144",
+      "raw_metar": "SPECI KPQL 140733Z AUTO 00000KT 1/4SM FG VV001 16/15 A3006 RMK AO2 T01560150",
       "flight_category": "LIFR",
-      "visibility_sm": 3.0,
-      "visibility_display": "3 SM",
-      "ceiling_ft_agl": 100.0,
-      "ceiling_display": "100 ft AGL",
+      "visibility_sm": 0.25,
+      "visibility_display": "0.25 SM",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
       "wind_display": "Calm",
-      "altimeter_display": "30.07 inHg",
-      "observation_time": 1791961140
+      "altimeter_display": "30.06 inHg",
+      "observation_time": 1791963180
     },
     "KTLH": {
       "raw_metar": "METAR KTLH 140653Z AUTO 00000KT 10SM CLR 18/17 A3006 RMK AO2 SLP177 T01780167",
@@ -133,22 +144,11 @@
       "wind_display": "Calm",
       "altimeter_display": "30.06 inHg",
       "observation_time": 1791960780
-    },
-    "KNDZ": {
-      "raw_metar": "METAR KNDZ 140656Z AUTO A3006 RMK AO2 SLPNO PWINO TSNO PNO $",
-      "flight_category": "UNKNOWN",
-      "visibility_sm": null,
-      "visibility_display": "---",
-      "ceiling_ft_agl": null,
-      "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "---",
-      "altimeter_display": "30.06 inHg",
-      "observation_time": 1791960960
     }
   },
   "tafs": {
     "KNSE": {
-      "raw_taf": "TAF KNSE 132300Z 1323/1423 VRB06KT 9999 FEW200 QNH2999INS AUTOMATED SENSOR METWATCH 1323 TIL 1409 TX33/1419Z TN16/1411Z FN00331"
+      "raw_taf": "TAF KNSE 140700Z 1407/1507 VRB06KT 9999 FEW040 FEW250 QNH3000INS AUTOMATED SENSOR METWATCH 1407 TIL 1409 TX33/1419Z TN16/1411Z FN00331"
     },
     "KNDZ": {
       "raw_taf": "TAF unavailable"
