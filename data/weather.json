@@ -1,18 +1,7 @@
 {
-  "generated_at": "2026-10-15T20:10:48.172519+00:00",
+  "generated_at": "2026-10-15T20:40:14.972310+00:00",
   "departure": "KNDZ",
   "airports": {
-    "KBFM": {
-      "raw_metar": "METAR KBFM 151953Z 15007KT 10SM CLR 31/17 A3006 RMK AO2 SLP179 T03110167",
-      "flight_category": "VFR",
-      "visibility_sm": 10.0,
-      "visibility_display": "10+ SM",
-      "ceiling_ft_agl": null,
-      "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "150\u00b0 @ 7 kt",
-      "altimeter_display": "30.06 inHg",
-      "observation_time": 1792093980
-    },
     "KCEW": {
       "raw_metar": "METAR KCEW 151953Z AUTO 00000KT 10SM FEW060 31/16 A3008 RMK AO2 SLP181 T03060161",
       "flight_category": "VFR",
@@ -144,11 +133,22 @@
       "wind_display": "360\u00b0 @ 5 kt",
       "altimeter_display": "30.05 inHg",
       "observation_time": 1792093980
+    },
+    "KBFM": {
+      "raw_metar": "METAR KBFM 151953Z 15007KT 10SM CLR 31/17 A3006 RMK AO2 SLP179 T03110167",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "150\u00b0 @ 7 kt",
+      "altimeter_display": "30.06 inHg",
+      "observation_time": 1792093980
     }
   },
   "tafs": {
     "KNSE": {
-      "raw_taf": "TAF KNSE 151600Z 1515/1615 VRB05KT 9999 SKC QNH3012INS FM151900 17006KT 9999 FEW050 QNH3003INS FM160500 VRB03KT 4800 BR SCT005 SCT250 QNH3006INS TEMPO 1608/1613 1600 BR SCT002 BKN008 FM161400 VRB05KT 8000 BR FEW003 SCT020 SCT250 QNH3009INS LAST NO AMDS AFT 1516 NEXT 1907 AUTMATED SENSOR METWATCH 1517 TIL 1911 TX31/1519Z TN18/1610Z AMD 1607 FN20071"
+      "raw_taf": "TAF COR KNSE 1516/1615 VRB05KT 9999 SKC QNH3012INS FM151900 17006KT 9999 FEW050 QNH3003INS FM160500 VRB03KT 4800 BR SCT005 SCT250 QNH3006INS TEMPO 1608/1613 1600 BR SCT002 BKN008 FM161400 VRB05KT 8000 BR FEW003 SCT020 SCT250 QNH3009INS LAST NO AMDS AFT 1516 NEXT 1907 AUTMATED SENSOR METWATCH 1517 TIL 1911 TX31/1519Z TN18/1610Z COR 2005 FN20071"
     },
     "KNDZ": {
       "raw_taf": "TAF unavailable"
