@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T14:21:31.818063+00:00",
+  "generated_at": "2026-10-16T14:40:30.399606+00:00",
   "departure": "KNDZ",
   "airports": {
     "KBFM": {
@@ -12,6 +12,17 @@
       "wind_display": "030\u00b0 @ 5 kt",
       "altimeter_display": "30.10 inHg",
       "observation_time": 1792158780
+    },
+    "KCEW": {
+      "raw_metar": "SPECI KCEW 161428Z AUTO 00000KT 9SM SCT001 23/22 A3012 RMK AO2 T02280222",
+      "flight_category": "VFR",
+      "visibility_sm": 9.0,
+      "visibility_display": "9 SM",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "Calm",
+      "altimeter_display": "30.12 inHg",
+      "observation_time": 1792160880
     },
     "KDHN": {
       "raw_metar": "METAR KDHN 161353Z 31004KT 10SM CLR 24/18 A3014 RMK AO1 SLP202 T02440178 $",
@@ -101,17 +112,6 @@
       "altimeter_display": "30.09 inHg",
       "observation_time": 1792158960
     },
-    "KPNS": {
-      "raw_metar": "METAR KPNS 161353Z COR 02004KT 10SM SCT065 24/22 A3009 RMK AO2 SLP189 T02390217",
-      "flight_category": "VFR",
-      "visibility_sm": 10.0,
-      "visibility_display": "10+ SM",
-      "ceiling_ft_agl": null,
-      "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "020\u00b0 @ 4 kt",
-      "altimeter_display": "30.09 inHg",
-      "observation_time": 1792158780
-    },
     "KPQL": {
       "raw_metar": "METAR KPQL 161353Z AUTO 02004KT 10SM CLR 22/21 A3008 RMK AO2 SLP187 T02220211",
       "flight_category": "VFR",
@@ -134,16 +134,16 @@
       "altimeter_display": "30.11 inHg",
       "observation_time": 1792158780
     },
-    "KCEW": {
-      "raw_metar": "SPECI KCEW 161412Z AUTO 00000KT 3SM BR OVC001 22/22 A3012 RMK AO2 T02170217",
-      "flight_category": "LIFR",
-      "visibility_sm": 3.0,
-      "visibility_display": "3 SM",
-      "ceiling_ft_agl": 100.0,
-      "ceiling_display": "100 ft AGL",
-      "wind_display": "Calm",
-      "altimeter_display": "30.12 inHg",
-      "observation_time": 1792159920
+    "KPNS": {
+      "raw_metar": "METAR KPNS 161353Z COR 02004KT 10SM SCT065 24/22 A3009 RMK AO2 SLP189 T02390217",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "020\u00b0 @ 4 kt",
+      "altimeter_display": "30.09 inHg",
+      "observation_time": 1792158780
     }
   },
   "tafs": {
