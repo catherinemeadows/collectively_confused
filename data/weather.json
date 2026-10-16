@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T07:10:18.159545+00:00",
+  "generated_at": "2026-10-16T07:40:44.575274+00:00",
   "departure": "KNDZ",
   "airports": {
     "KBFM": {
@@ -14,14 +14,25 @@
       "observation_time": 1792133580
     },
     "KCEW": {
-      "raw_metar": "METAR KCEW 160653Z AUTO 00000KT 7SM CLR 18/18 A3009 RMK AO2 SLP185 T01780178",
-      "flight_category": "VFR",
+      "raw_metar": "SPECI KCEW 160733Z AUTO 00000KT 7SM BKN001 18/17 A3009 RMK AO2 T01780172",
+      "flight_category": "LIFR",
       "visibility_sm": 7.0,
       "visibility_display": "7 SM",
-      "ceiling_ft_agl": null,
-      "ceiling_display": "No BKN/OVC ceiling reported",
+      "ceiling_ft_agl": 100.0,
+      "ceiling_display": "100 ft AGL",
       "wind_display": "Calm",
       "altimeter_display": "30.09 inHg",
+      "observation_time": 1792135980
+    },
+    "KDHN": {
+      "raw_metar": "METAR KDHN 160653Z AUTO 26004KT 10SM CLR 21/19 A3011 RMK AO1 SLP191 T02110189 $",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "260\u00b0 @ 4 kt",
+      "altimeter_display": "30.11 inHg",
       "observation_time": 1792133580
     },
     "KGPT": {
@@ -47,15 +58,15 @@
       "observation_time": 1792115400
     },
     "KJKA": {
-      "raw_metar": "METAR KJKA 160655Z AUTO 00000KT 2 1/2SM BR SCT043 22/22 A3004 RMK AO2 VIS 1V5",
-      "flight_category": "IFR",
-      "visibility_sm": 2.5,
-      "visibility_display": "2.5 SM",
+      "raw_metar": "METAR KJKA 160735Z AUTO 00000KT 1/4SM UP FG VV002 21/21 A3004 RMK AO2 VIS 1/4V5",
+      "flight_category": "LIFR",
+      "visibility_sm": 0.25,
+      "visibility_display": "0.25 SM",
       "ceiling_ft_agl": null,
       "ceiling_display": "No BKN/OVC ceiling reported",
       "wind_display": "Calm",
       "altimeter_display": "30.04 inHg",
-      "observation_time": 1792133700
+      "observation_time": 1792136100
     },
     "KMAI": {
       "raw_metar": "METAR KMAI 160653Z AUTO 00000KT 10SM CLR 20/18 A3006 RMK AO1 SLP177 T02000183 $",
@@ -132,17 +143,6 @@
       "ceiling_display": "No BKN/OVC ceiling reported",
       "wind_display": "Calm",
       "altimeter_display": "30.06 inHg",
-      "observation_time": 1792133580
-    },
-    "KDHN": {
-      "raw_metar": "METAR KDHN 160653Z AUTO 26004KT 10SM CLR 21/19 A3011 RMK AO1 SLP191 T02110189 $",
-      "flight_category": "VFR",
-      "visibility_sm": 10.0,
-      "visibility_display": "10+ SM",
-      "ceiling_ft_agl": null,
-      "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "260\u00b0 @ 4 kt",
-      "altimeter_display": "30.11 inHg",
       "observation_time": 1792133580
     }
   },
