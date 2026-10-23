@@ -40,23 +40,20 @@ const aircraftResults = {
 
 
     mh60: {
-        name: "🚁 MH-60 — The Problem Solver",
+        name: "🚁 MH-60 — The Unhinged War Mule",
         description: `
-            You are the MH-60.
+            You are the MH-60!
 
             <br><br>
 
-            Give you a problem and your immediate response is:
+            You're unhinged, overworked, and mission capable.
+
 
             <br><br>
 
-            "Alright. What needs fixing?"
-
-            <br><br>
-
-            You are adaptable, competent, and suspiciously calm when everyone
-            else is losing their minds. You don't necessarily need a perfect
-            plan—you just need enough information to start making things happen.
+            You're the golden retriever of naval aviation: loud, loyal, and convinced everyone loves you. 
+            You have an unshakable superiority complex because you're multi-mission capable, which is just a fancy way 
+            of saying you have commitment issues.
 
             <br><br>
 
@@ -64,13 +61,12 @@ const aircraftResults = {
 
             <br><br>
 
-            Unfortunately, this has led you to believe that every problem is
-            your problem.
+           You're emotionally dependent on your crew chief, think every ship is your personal parking spot, 
+           and have never met a mission you couldn't turn into a four-hour flight.
 
             <br><br>
 
-            <strong>Your toxic trait:</strong> You say "I can handle it" when
-            you absolutely should be delegating.
+            <strong>Your toxic trait:</strong> Thinks multi-mission means God's favorite.
 
             <br><br>
 
@@ -132,7 +128,7 @@ const aircraftResults = {
 
             You have approximately 900% more confidence than necessary and have
             somehow convinced yourself that if something doesn't work, the
-            solution is simply to apply more aircraft.
+            solution is simply to apply more aircraft. You drink hydraulic fluid like gatorade.
 
             <br><br>
 
@@ -412,24 +408,24 @@ const questions = [
         text: "🎵 What would your walk-up song be?",
         answers: [
             {
-                text: "Danger Zone",
+                text: "Danger Zone by Kenny Loggins ✈️",
                 scores: { fa18: 3, th73: 1 }
             },
             {
-                text: "In The Air Tonight",
+                text: "Party in the USA by Miley Cyrus 🇺🇸",
                 scores: { mh60: 2, p8: 2 }
             },
             {
-                text: "Free Bird",
+                text: "Free Bird by Lynyrd Skynyrd 🦅",
                 scores: { mh60: 2, c130: 1 }
             },
             {
-                text: "The Imperial March",
+                text: "Higher by Creed 🙌⬆️",
                 scores: { e2d: 3, p8: 1 }
             },
             {
-                text: "Something completely unhinged that nobody else understands",
-                scores: { mv22b: 3, mh65: 2 }
+                text: "He's a Pirate (PoTC theme) by Klaus Badelt 🏴‍☠️",
+                scores: { mv22b: 2, mh65: 3 }
             }
         ]
     },
@@ -440,23 +436,23 @@ const questions = [
         text: "🧠 What aviation thing scratches your brain just right?",
         answers: [
             {
-                text: "Watching rotor blades spool up",
-                scores: { uh1y: 3, mh65: 1 }
+                text: "Watching rotor blades spool up 🤩",
+                scores: { uh1y: 3, ch53: 1 }
             },
             {
-                text: "Listening to an engine start",
-                scores: { fa18: 2, ch53: 2 }
+                text: "A landing so butter you didn't even realize you touched down for a second 🧈",
+                scores: { fa18: 2, c130: 2 }
             },
             {
-                text: "That beautiful turbine winding-down sound",
-                scores: { mh60: 2, c130: 1 }
+                text: "Flying 50 feet over the water 🤙",
+                scores: { mh60: 2, mh65: 1 }
             },
             {
-                text: "Watching someone absolutely nail a landing",
+                text: "Hearing “on glidepath, on course“ on a PAR 🤓",
                 scores: { th73: 3, p8: 1 }
             },
             {
-                text: "Hearing an absolutely CRISP radio call",
+                text: "A radio call so crisp that you wonder if you should be an ATC controller 😏",
                 scores: { e2d: 2, fa18: 1 }
             }
         ]
@@ -468,24 +464,24 @@ const questions = [
         text: "🔥 What's your biggest aviation hot take?",
         answers: [
             {
-                text: "Fixed-wing pilots are just helicopter pilots who haven't discovered the joy of hovering.",
-                scores: { uh1y: 3, mh65: 2 }
+                text: "If the switch has a guard, I want to touch it more 🚫",
+                scores: { uh1y: 3, ch53: 2 }
             },
             {
-                text: "If you need more than three acronyms to explain it, it's probably too complicated.",
+                text: "Meow on Guard isn't funny 👀",
                 scores: { e2d: 3, p8: 2 }
             },
             {
-                text: "Cockpit coffee is a required aircraft system.",
-                scores: { c130: 3, mh60: 2 }
+                text: "Every holding entry is a direct entry if you're not scared 😎",
+                scores: { mh60: 3, fa18: 2 }
             },
             {
-                text: "“Stand by” is aviation's way of saying “I have absolutely no idea.”",
-                scores: { mv22b: 3, fa18: 1 }
+                text: "You can always see 1 SM away if you look hard enough 🧐",
+                scores: { mv22b: 3, c130: 1 }
             },
             {
-                text: "There is no such thing as a “quick flight.”",
-                scores: { ch53: 3, th73: 1 }
+                text: "Centerline is a suggestion. They're for people who need external validation 🙄",
+                scores: { th73: 3, ch53: 1 }
             }
         ]
     },
@@ -524,24 +520,24 @@ const questions = [
         text: "📻 ATC says something you absolutely did not catch. What do you do?",
         answers: [
             {
-                text: "Ask for a repeat like a responsible adult.",
-                scores: { th73: 3, p8: 1 }
+                text: "Respond with “say again” like a responsible adult. 🤓",
+                scores: { e2d: 3, p8: 1 }
             },
             {
-                text: "Pretend I heard it and hope context saves me.",
+                text: "Pretend I heard it and hope context saves me. 🙏",
                 scores: { fa18: 3, mv22b: 1 }
             },
             {
-                text: "Wait three seconds hoping someone else answers.",
+                text: "Wait three seconds hoping someone else answers. 🤫",
                 scores: { c130: 2, uh1y: 2 }
             },
             {
-                text: "Stare at the radio like it personally betrayed me.",
-                scores: { mh65: 3, ch53: 1 }
+                text: "Say “you're coming in broken and unreadable” 👀",
+                scores: { mh65: 3, mh60: 1 }
             },
             {
-                text: "Look at the other pilot like they definitely heard it.",
-                scores: { mh60: 2, mv22b: 2 }
+                text: "Look at my instructor 👉👈🥺",
+                scores: { th73: 3, mv22b: 2 }
             }
         ]
     },
@@ -552,11 +548,11 @@ const questions = [
         text: "☠️ What is the most toxic pilot phrase?",
         answers: [
             {
-                text: "“It's just a quick flight.”",
+                text: "“This basically flies itself.”",
                 scores: { c130: 3, uh1y: 1 }
             },
             {
-                text: "“I've done this before.”",
+                text: "“I've landed in worse.”",
                 scores: { fa18: 3, ch53: 2 }
             },
             {
@@ -564,7 +560,7 @@ const questions = [
                 scores: { mv22b: 3, mh65: 1 }
             },
             {
-                text: "“It'll be fine.”",
+                text: "“NATOPS doesn't say you can't.”",
                 scores: { mh60: 3, uh1y: 1 }
             },
             {
@@ -580,11 +576,11 @@ const questions = [
     text: "😨 What scares you most?",
     answers: [
         {
-            text: "Realizing I forgot something immediately after takeoff.",
+            text: "“Standby to copy a number”",
             scores: { th73: 3, uh1y: 2 }
         },
         {
-            text: "Sharks.",
+            text: "A flock of birds with nothing to lose",
             scores: { mh65: 3, ch53: 1 }
         },
         {
@@ -604,62 +600,6 @@ const questions = [
 
 
     // QUESTION 8
-    {
-        text: "🔄 Your instructor says, “Let's do that again.” What does your brain hear?",
-        answers: [
-            {
-                text: "No big deal.",
-                scores: { uh1y: 3, mh60: 1 }
-            },
-            {
-                text: "I have failed.",
-                scores: { th73: 3, mh65: 1 }
-            },
-            {
-                text: "Interesting. What did I screw up?",
-                scores: { e2d: 3, p8: 1 }
-            },
-            {
-                text: "Okay. ROUND TWO.",
-                scores: { fa18: 3, ch53: 2 }
-            },
-            {
-                text: "Act like I totally know why we're doing it again.",
-                scores: { mv22b: 2, c130: 2 }
-            }
-        ]
-    },
-
-
-    // QUESTION 9
-{
-    text: "🛫 What is your preflight personality?",
-    answers: [
-        {
-            text: "Silent and focused.",
-            scores: { e2d: 3, p8: 2 }
-        },
-        {
-            text: "Talking through absolutely everything out loud.",
-            scores: { th73: 3, c130: 2 }
-        },
-        {
-            text: "Making jokes until someone tells me to stop.",
-            scores: { uh1y: 3, mh60: 2 }
-        },
-        {
-            text: "Checking the same thing approximately 47 times.",
-            scores: { mh65: 3, p8: 2 }
-        },
-        {
-            text: "I somehow turn a 10-minute preflight into a full archaeological expedition.",
-            scores: { mv22b: 3, ch53: 2 }
-        }
-    ]
-},
-
-
-    // QUESTION 10
     {
         text: "⏰ Your alarm goes off for a 0500 brief. What happens next?",
         answers: [
@@ -687,141 +627,58 @@ const questions = [
     },
 
 
-    // QUESTION 11
+
+    // QUESTION 9
     {
-        text: "📚 How do you study the night before an important check?",
+        text: "What's your aviation love language? 💕",
         answers: [
             {
-                text: "Planned, organized review.",
-                scores: { e2d: 3, p8: 2 }
-            },
-            {
-                text: "Study until I physically cannot anymore.",
-                scores: { th73: 3, ch53: 1 }
-            },
-            {
-                text: "Suddenly become an expert at cleaning my room.",
-                scores: { mv22b: 3, mh65: 1 }
-            },
-            {
-                text: "Stare at the gouge until words stop having meaning.",
-                scores: { fa18: 2, c130: 2 }
-            },
-            {
-                text: "Convince myself that sleeping is actually part of studying.",
-                scores: { uh1y: 2, mh60: 2 }
-            }
-        ]
-    },
-
-
-    // QUESTION 12
-    {
-        text: "🫠 Something completely unexpected happens. What's your first reaction?",
-        answers: [
-            {
-                text: "Fix the problem.",
+                text: "Acts of service (someone else doing the preflight).",
                 scores: { mh60: 3, uh1y: 1 }
             },
             {
-                text: "Figure out why it happened.",
+                text: "Quality time (in the holding pattern).",
                 scores: { e2d: 3, p8: 2 }
             },
             {
-                text: "Look at whoever is next to me.",
+                text: "Receiving gifts (golden gouge).",
                 scores: { mh65: 2, mv22b: 2 }
             },
             {
-                text: "Say, “Well, that's not ideal.”",
-                scores: { c130: 3, th73: 1 }
+                text: "Words of affirmation (from an IP).",
+                scores: { ch53: 1, th73: 3 }
             },
             {
-                text: "Immediately start making a backup plan.",
-                scores: { ch53: 3, th73: 1 }
+                text: "Physical touch (firm landings).",
+                scores: { c130: 3, fa18: 1 }
             }
         ]
     },
 
 
-    // QUESTION 13
+    // QUESTION 10
     {
-        text: "🎤 You have to brief something you've studied approximately 900 times. How do you do it?",
+        text: "What's your aviation ick? 🤢",
         answers: [
             {
-                text: "Extremely professionally.",
-                scores: { e2d: 3, p8: 1 }
+                text: "An IP who says “back in my day.” 👴",
+                scores: { th73: 3, mh65: 2 }
             },
             {
-                text: "Confidently... perhaps slightly too confidently.",
-                scores: { fa18: 3, ch53: 1 }
-            },
-            {
-                text: "Like I'm discovering the information alongside the audience.",
-                scores: { th73: 3, mv22b: 1 }
-            },
-            {
-                text: "Like I'm personally offended that anyone asked.",
-                scores: { mh65: 3, c130: 1 }
-            },
-            {
-                text: "I somehow turn it into a 20-minute TED Talk.",
-                scores: { p8: 3, e2d: 1 }
-            }
-        ]
-    },
-
-
-    // QUESTION 14
-    {
-        text: "💪 What is your greatest aviation strength?",
-        answers: [
-            {
-                text: "Staying calm.",
-                scores: { mh60: 3, mh65: 2 }
-            },
-            {
-                text: "Knowing random information nobody asked for.",
+                text: "A pilot who refers to their aircraft as “she.” 🧚",
                 scores: { e2d: 3, p8: 2 }
             },
             {
-                text: "Being adaptable.",
-                scores: { mv22b: 3, uh1y: 1 }
+                text: "People who say “roger that” in normal conversations. 🥴",
+                scores: { mh60: 3, mh65: 1 }
             },
             {
-                text: "Making everyone laugh when things get stressful.",
+                text: "A guy who introduces himself by his callsign. 😬",
                 scores: { c130: 3, ch53: 1 }
             },
             {
-                text: "Being extremely confident for absolutely no reason.",
-                scores: { fa18: 3, ch53: 2 }
-            }
-        ]
-    },
-
-
-    // QUESTION 15
-    {
-        text: "🙋 Someone asks for a volunteer. What do you do?",
-        answers: [
-            {
-                text: "Immediately raise my hand. I have no fear.",
-                scores: { fa18: 3, ch53: 2 }
-            },
-            {
-                text: "Make aggressive eye contact with the floor.",
-                scores: { mh65: 3, c130: 1 }
-            },
-            {
-                text: "Wait to see if someone else volunteers, then suddenly become extremely interested in something else.",
-                scores: { p8: 3, e2d: 1 }
-            },
-            {
-                text: "Raise my hand and immediately regret it.",
-                scores: { th73: 3, mv22b: 1 }
-            },
-            {
-                text: "Volunteer because apparently I enjoy making my own problems.",
-                scores: { mh60: 3, uh1y: 2 }
+                text: "Someone who says “I would've gone jets, but…” 🤡",
+                scores: { fa18: 3, uh1y: 2 }
             }
         ]
     }
@@ -990,17 +847,33 @@ nextButton.addEventListener("click", nextQuestion);
 
 
 function nextQuestion() {
+    // Get the scores for the answer selected on this question
+    const selectedAnswer = answerButtons.dataset.selectedAnswer;
 
+    // Don't continue unless an answer has been selected
+    if (!selectedAnswer) {
+        alert("Pick an answer first!");
+        return;
+    }
+
+    // Convert the saved answer scores back into an object
+    const answerScores = JSON.parse(selectedAnswer);
+
+    // Add the selected answer's points to each aircraft
+    for (const aircraft in answerScores) {
+        scores[aircraft] += answerScores[aircraft];
+    }
+
+    // Clear the saved answer before moving on
+    delete answerButtons.dataset.selectedAnswer;
+
+    // Move to the next question or show the result
     currentQuestion++;
 
     if (currentQuestion < questions.length) {
-
         showQuestion();
-
     } else {
-
         showResult();
-
     }
 }
 
