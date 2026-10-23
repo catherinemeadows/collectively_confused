@@ -669,7 +669,7 @@
         <p class="section-description">
             Helpful powerpoints to brief with! <br>
             Feel free to make your own copy to make edits! <br>
-            DISCLAIMER: Made May 2026, reference NATOPS for most up to date information.
+            <strong>DISCLAIMER: Made May 2026, reference NATOPS for most up to date information.</strong>
         </p>
 
 
@@ -914,6 +914,63 @@
         id="whimsy-break"
         class="tab-content"
 >
+
+    <!-- ========================= -->
+    <!-- NAVAL AIRCRAFT PERSONALITY QUIZ -->
+    <!-- ========================= -->
+
+    <section class="card quiz-card">
+
+    <span class="eyebrow">
+        🚁 NAVAL AVIATION CHAOS
+    </span>
+
+    <h2>
+        What Naval Aircraft Are You?
+    </h2>
+
+    <p class="section-description">
+        Answer 10 completely unhinged questions and discover
+        which naval aircraft matches your personality.
+    </p>
+
+    <div id="quiz-container">
+
+        <div id="quiz-start">
+            <button id="start-quiz-button">
+                🚀 Start the Quiz
+            </button>
+        </div>
+
+        <div id="quiz-question" hidden>
+            <p id="quiz-progress"></p>
+
+            <h3 id="question-text"></h3>
+
+            <div id="answer-buttons"></div>
+
+            <button id="next-question-button" hidden>
+                Next Question →
+            </button>
+        </div>
+
+        <div id="quiz-result" hidden>
+
+            <h3 id="result-aircraft"></h3>
+
+            <p id="result-description"></p>
+
+            <button id="restart-quiz-button">
+                🔄 Take It Again
+            </button>
+
+        </div>
+
+    </div>
+
+    </section>
+
+
     <!-- ========================= -->
     <!-- FUN FACT -->
     <!-- ========================= -->
@@ -982,38 +1039,6 @@
         </div>
     </section>
 
-    <section class="card patch-card">
-
-    <div class="patch-image-container">
-        <img
-            src="images/blue_patch.png"
-            alt="Collectively Confused Scan Before Flight patch"
-            class="patch-image"
-        >
-    </div>
-
-    <div class="patch-content">
-
-        <span class="eyebrow">
-            🚁 MERCH
-        </span>
-
-        <h2>
-            Coming Soon!
-        </h2>
-
-        <p>
-            Order patches that scan directly to this site.
-        </p>
-
-        <div class="coming-soon-badge">
-            ▦ SCAN BEFORE FLIGHT
-        </div>
-
-    </div>
-
-</section>
-
 </div>
 
 
@@ -1061,52 +1086,6 @@
     </section>
 </div>
 
-<!-- ========================= -->
-<!-- BUY PATCH TAB -->
-<!-- ========================= -->
-<!-- <div
-    id="buy-patch"
-    class="tab-content"
-> -->
-
-<!-- ========================= -->
-<!-- PATCHES COMING SOON -->
-<!-- ========================= -->
-
-<!-- <section class="card patch-card">
-
-    <div class="patch-image-container">
-        <img
-            src="images/blue_patch.png"
-            alt="Collectively Confused Scan Before Flight patch"
-            class="patch-image"
-        >
-    </div>
-
-    <div class="patch-content">
-
-        <span class="eyebrow">
-            🚁 MERCH
-        </span>
-
-        <h2>
-            Coming Soon!
-        </h2>
-
-        <p>
-            Order patches that scan directly to this site.
-        </p>
-
-        <div class="coming-soon-badge">
-            ▦ SCAN BEFORE FLIGHT
-        </div>
-
-    </div>
-
-</section> -->
-
-</div>
-
 </main>
 
 
@@ -1139,8 +1118,7 @@
 
 <!-- Hovey JavaScript -->
 <script src="app.js"></script>
-
-</body>
+<script src="quiz.js"></script>
 
 </body>
 </html>

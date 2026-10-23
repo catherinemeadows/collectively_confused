@@ -1736,3 +1736,134 @@ section.card.lofi-card .lofi-radio {
 
 
 } */
+
+/* ========================================
+   NAVAL AIRCRAFT PERSONALITY QUIZ
+   ======================================== */
+
+.quiz-card {
+    text-align: center;
+}
+
+#quiz-container {
+    max-width: 800px;
+    margin: 30px auto 0;
+}
+
+#quiz-progress {
+    font-size: 0.9rem;
+    font-weight: 700;
+    opacity: 0.65;
+    margin-bottom: 18px;
+}
+
+#question-text {
+    margin-bottom: 28px;
+}
+
+
+/* ========================================
+   QUIZ ANSWER BUBBLES
+   ======================================== */
+
+#answer-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 100%;
+}
+
+
+#answer-buttons .quiz-answer {
+    display: block;
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 17px 24px;
+
+    margin: 0;
+
+    border: 2px solid #b7dff2;
+    border-radius: 999px;
+
+    background-color: #dff3ff;
+
+    color: #183b4d;
+
+    font-size: 1rem;
+    font-weight: 600;
+
+    text-align: center;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.15s ease,
+        box-shadow 0.2s ease;
+}
+
+
+/* Hover */
+
+#answer-buttons .quiz-answer:hover:not(:disabled) {
+    background-color: #c8eaff;
+
+    border-color: #91cce8;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 5px 12px rgba(80, 150, 190, 0.18);
+}
+
+
+/* Selected answer */
+
+#answer-buttons .quiz-answer.selected {
+    background-color: #8fd0ef;
+
+    border-color: #5fb4dc;
+
+    color: #123346;
+
+    transform: scale(1.02);
+
+    box-shadow: 0 5px 14px rgba(60, 140, 180, 0.22);
+}
+
+
+/* Disabled answers */
+
+#answer-buttons .quiz-answer:disabled {
+    opacity: 1;
+    cursor: default;
+}
+
+
+/* ========================================
+   NEXT QUESTION BUTTON
+   ======================================== */
+
+#next-question-button {
+    margin-top: 22px;
+}
+
+
+/* ========================================
+   QUIZ RESULT
+   ======================================== */
+
+#quiz-result {
+    padding: 25px;
+}
+
+#result-aircraft {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+#result-description {
+    line-height: 1.7;
+}
