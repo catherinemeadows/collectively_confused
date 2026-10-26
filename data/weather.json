@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T20:10:30.021900+00:00",
+  "generated_at": "2026-10-26T20:40:17.315970+00:00",
   "departure": "KNDZ",
   "airports": {
     "KBFM": {
@@ -57,6 +57,17 @@
       "altimeter_display": "30.20 inHg",
       "observation_time": 1793044200
     },
+    "KJKA": {
+      "raw_metar": "METAR KJKA 261955Z 11007G14KT 10SM CLR 26/14 A3019",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "110\u00b0 @ 7 kt G14",
+      "altimeter_display": "30.19 inHg",
+      "observation_time": 1793044500
+    },
     "KMAI": {
       "raw_metar": "METAR KMAI 261953Z AUTO 05014G18KT 10SM CLR 25/10 A3019 RMK AO1 SLP222 T02500100",
       "flight_category": "VFR",
@@ -67,17 +78,6 @@
       "wind_display": "050\u00b0 @ 14 kt G18",
       "altimeter_display": "30.19 inHg",
       "observation_time": 1793044380
-    },
-    "KMOB": {
-      "raw_metar": "METAR KMOB 261956Z AUTO 04009KT 10SM OVC065 26/12 A3021 RMK AO2 SLP228 T02560122",
-      "flight_category": "VFR",
-      "visibility_sm": 10.0,
-      "visibility_display": "10+ SM",
-      "ceiling_ft_agl": 6500.0,
-      "ceiling_display": "6,500 ft AGL",
-      "wind_display": "040\u00b0 @ 9 kt",
-      "altimeter_display": "30.21 inHg",
-      "observation_time": 1793044560
     },
     "KNDZ": {
       "raw_metar": "METAR KNDZ 261956Z 05009KT 10SM SCT060 BKN250 25/12 A3020 RMK AO2 SLP212 T02500122",
@@ -134,16 +134,16 @@
       "altimeter_display": "30.17 inHg",
       "observation_time": 1793044380
     },
-    "KJKA": {
-      "raw_metar": "METAR KJKA 261955Z 11007G14KT 10SM CLR 26/14 A3019",
+    "KMOB": {
+      "raw_metar": "METAR KMOB 261956Z COR 04009KT 10SM OVC065 26/12 A3021 RMK AO2 SLP228 T02560122",
       "flight_category": "VFR",
       "visibility_sm": 10.0,
       "visibility_display": "10+ SM",
-      "ceiling_ft_agl": null,
-      "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "110\u00b0 @ 7 kt G14",
-      "altimeter_display": "30.19 inHg",
-      "observation_time": 1793044500
+      "ceiling_ft_agl": 6500.0,
+      "ceiling_display": "6,500 ft AGL",
+      "wind_display": "040\u00b0 @ 9 kt",
+      "altimeter_display": "30.21 inHg",
+      "observation_time": 1793044560
     }
   },
   "tafs": {
