@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T22:10:21.061958+00:00",
+  "generated_at": "2026-10-30T22:40:13.895519+00:00",
   "departure": "KNDZ",
   "airports": {
     "KBFM": {
@@ -22,6 +22,17 @@
       "ceiling_display": "No BKN/OVC ceiling reported",
       "wind_display": "Calm",
       "altimeter_display": "30.12 inHg",
+      "observation_time": 1793397180
+    },
+    "KDHN": {
+      "raw_metar": "METAR KDHN 302153Z 03004KT 10SM CLR 25/16 A3014 RMK AO1 SLP203 T02500156",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "030\u00b0 @ 4 kt",
+      "altimeter_display": "30.14 inHg",
       "observation_time": 1793397180
     },
     "KGPT": {
@@ -133,22 +144,11 @@
       "wind_display": "040\u00b0 @ 5 kt",
       "altimeter_display": "30.08 inHg",
       "observation_time": 1793397180
-    },
-    "KDHN": {
-      "raw_metar": "METAR KDHN 302153Z 03004KT 10SM CLR 25/16 A3014 RMK AO1 SLP203 T02500156",
-      "flight_category": "VFR",
-      "visibility_sm": 10.0,
-      "visibility_display": "10+ SM",
-      "ceiling_ft_agl": null,
-      "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "030\u00b0 @ 4 kt",
-      "altimeter_display": "30.14 inHg",
-      "observation_time": 1793397180
     }
   },
   "tafs": {
     "KNSE": {
-      "raw_taf": "TAF KNSE 301400Z 3015/3115 06009KT 9999 SCT055 SCT100 BKN250 QNH3015INS FM302000 04007KT 9999 FEW035 BKN050 BKN200 QNH3008INS FM310400 VRB04KT 9999 FEW025 SCT045 BKN080 QNH3010INS FM311100 07008KT 9999 SCT015 BKN025 OVC045 QNH3012INS TX26/3019Z TN18/3112Z FN20105"
+      "raw_taf": "TAF KNSE 302200Z 3023/3123 04006KT 9999 FEW030 BKN050 BKN160 QNH3009INS FM310400 VRB05KT 9999 FEW025 SCT050 BKN200 QNH3010INS FM310900 06008KT 9999 SCT020 BKN040 BKN200 QNH3011INS FM311100 08010KT 9999 BKN020 BKN060 BKN200 QNH3013INS FM311700 12010G18KT 9999 BKN025 BKN075 QNH3011INS FM312100 12008KT 9999 VCSH SCT035 BKN040 OVC075 QNH3012INS AUTOMATED SENSOR METWATCH 3104 TIL 0120 TX/3120Z TN/3109Z FN00324"
     },
     "KNDZ": {
       "raw_taf": "TAF unavailable"
