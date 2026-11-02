@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T20:40:25.044523+00:00",
+  "generated_at": "2026-11-02T21:10:23.859996+00:00",
   "departure": "KNDZ",
   "airports": {
     "KBFM": {
@@ -159,18 +159,304 @@
     "matches": [],
     "active_sigmets": [
       {
-        "label": "WSUS31 KKCI 021955\nMKCE WST 021955\nCONVECTIVE SIGMET 49E\nVALID UNTIL 2155Z\nFL AND CSTL WTRS\nFROM 70ENE OMN-160NE TRV-50ESE PBI-110WSW RSW-90SW SRQ-70ENE OMN\nAREA EMBD TS MOV FROM 15015KT. TOPS ABV FL450.\nHVY RAINFALL IS OCCURRING WATCH FOR PONDING ON RUNWAYS.\nREF INTL SIGMET JULIETT SERIES.",
+        "label": "WSUS32 KKCI 022055\nMKCC WST 022055\nCONVECTIVE SIGMET 36C\nVALID UNTIL 2255Z\nMO IA KS NE\nFROM 30ENE MCW-20WNW DBQ-10NNW BUM-80W BUM-20SW PWE-30ENE MCW\nAREA TS MOV FROM 22050KT. TOPS TO FL350.",
         "geometry": {
           "type": "Polygon",
           "coordinates": [
             [
               [
-                -79.875,
-                29.749
+                -92.699,
+                43.283
               ],
               [
-                -78.327,
-                29.545
+                -91.129,
+                42.524
+              ],
+              [
+                -94.573,
+                38.423
+              ],
+              [
+                -96.185,
+                38.258
+              ],
+              [
+                -96.517,
+                39.964
+              ],
+              [
+                -92.699,
+                43.283
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "icaoId": "KKCI",
+          "airSigmetType": "SIGMET",
+          "alphaChar": "C",
+          "hazard": "CONVECTIVE",
+          "seriesId": "36C",
+          "validTimeFrom": "2026-11-02T20:55:00.000Z",
+          "validTimeTo": "2026-11-02T22:55:00.000Z",
+          "severity": 5,
+          "altitudeHi1": 35000,
+          "altitudeHi2": 35000,
+          "altitudeLow1": null,
+          "altitudeLow2": null,
+          "movementDir": 220,
+          "movementSpd": 50,
+          "rawAirSigmet": "WSUS32 KKCI 022055\nMKCC WST 022055\nCONVECTIVE SIGMET 36C\nVALID UNTIL 2255Z\nMO IA KS NE\nFROM 30ENE MCW-20WNW DBQ-10NNW BUM-80W BUM-20SW PWE-30ENE MCW\nAREA TS MOV FROM 22050KT. TOPS TO FL350."
+        }
+      },
+      {
+        "label": "WSUS32 KKCI 022055\nMKCC WST 022055\nCONVECTIVE SIGMET 37C\nVALID UNTIL 2255Z\nTX OK KS\nFROM 30SSE ICT-40NW SPS-30WNW CDS-70NE MMB-30SSE ICT\nAREA SEV TS MOV FROM 22025KT. TOPS TO FL450.\nTORNADOES...HAIL TO 2 IN...WIND GUSTS TO 65KT POSS.",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -97.335,
+                37.29
+              ],
+              [
+                -99.161,
+                34.459
+              ],
+              [
+                -100.842,
+                34.556
+              ],
+              [
+                -98.847,
+                37.159
+              ],
+              [
+                -97.335,
+                37.29
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "icaoId": "KKCI",
+          "airSigmetType": "SIGMET",
+          "alphaChar": "C",
+          "hazard": "CONVECTIVE",
+          "seriesId": "37C",
+          "validTimeFrom": "2026-11-02T20:55:00.000Z",
+          "validTimeTo": "2026-11-02T22:55:00.000Z",
+          "severity": 5,
+          "altitudeHi1": 45000,
+          "altitudeHi2": 45000,
+          "altitudeLow1": null,
+          "altitudeLow2": null,
+          "movementDir": 220,
+          "movementSpd": 25,
+          "rawAirSigmet": "WSUS32 KKCI 022055\nMKCC WST 022055\nCONVECTIVE SIGMET 37C\nVALID UNTIL 2255Z\nTX OK KS\nFROM 30SSE ICT-40NW SPS-30WNW CDS-70NE MMB-30SSE ICT\nAREA SEV TS MOV FROM 22025KT. TOPS TO FL450.\nTORNADOES...HAIL TO 2 IN...WIND GUSTS TO 65KT POSS."
+        }
+      },
+      {
+        "label": "WSUS32 KKCI 022055\nMKCC WST 022055\nCONVECTIVE SIGMET 38C\nVALID UNTIL 2255Z\nTX OK KS CO NM\nFROM 30SW MCK-20SSE LBL-20N FTI-60WNW PUB-30SW MCK\nAREA EMBD TS MOV LTL. TOPS TO FL320.",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -101.05,
+                39.846
+              ],
+              [
+                -100.808,
+                36.734
+              ],
+              [
+                -105.14,
+                35.993
+              ],
+              [
+                -105.615,
+                38.658
+              ],
+              [
+                -101.05,
+                39.846
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "icaoId": "KKCI",
+          "airSigmetType": "SIGMET",
+          "alphaChar": "C",
+          "hazard": "CONVECTIVE",
+          "seriesId": "38C",
+          "validTimeFrom": "2026-11-02T20:55:00.000Z",
+          "validTimeTo": "2026-11-02T22:55:00.000Z",
+          "severity": 5,
+          "altitudeHi1": 32000,
+          "altitudeHi2": 32000,
+          "altitudeLow1": null,
+          "altitudeLow2": null,
+          "movementDir": null,
+          "movementSpd": 0,
+          "rawAirSigmet": "WSUS32 KKCI 022055\nMKCC WST 022055\nCONVECTIVE SIGMET 38C\nVALID UNTIL 2255Z\nTX OK KS CO NM\nFROM 30SW MCK-20SSE LBL-20N FTI-60WNW PUB-30SW MCK\nAREA EMBD TS MOV LTL. TOPS TO FL320."
+        }
+      },
+      {
+        "label": "WSUS32 KKCI 022055\nMKCC WST 022055\nCONVECTIVE SIGMET 39C\nVALID UNTIL 2255Z\nMO OK KS\nFROM 10N BUM-MLC-30SSW OKC-80ENE ICT-10N BUM\nAREA TS MOV FROM 22050KT. TOPS TO FL450.",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -94.49,
+                38.436
+              ],
+              [
+                -95.78,
+                34.85
+              ],
+              [
+                -97.838,
+                34.897
+              ],
+              [
+                -96.02,
+                38.26
+              ],
+              [
+                -94.49,
+                38.436
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "icaoId": "KKCI",
+          "airSigmetType": "SIGMET",
+          "alphaChar": "C",
+          "hazard": "CONVECTIVE",
+          "seriesId": "39C",
+          "validTimeFrom": "2026-11-02T20:55:00.000Z",
+          "validTimeTo": "2026-11-02T22:55:00.000Z",
+          "severity": 5,
+          "altitudeHi1": 45000,
+          "altitudeHi2": 45000,
+          "altitudeLow1": null,
+          "altitudeLow2": null,
+          "movementDir": 220,
+          "movementSpd": 50,
+          "rawAirSigmet": "WSUS32 KKCI 022055\nMKCC WST 022055\nCONVECTIVE SIGMET 39C\nVALID UNTIL 2255Z\nMO OK KS\nFROM 10N BUM-MLC-30SSW OKC-80ENE ICT-10N BUM\nAREA TS MOV FROM 22050KT. TOPS TO FL450."
+        }
+      },
+      {
+        "label": "WSUS32 KKCI 022055\nMKCC WST 022055\nCONVECTIVE SIGMET 40C\nVALID UNTIL 2255Z\nMN IA NE SD\nFROM 80SSE FAR-60W FOD-20SE OBH-40SSE ABR-80SSE FAR\nAREA TS MOV FROM 22050KT. TOPS TO FL380.",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -96.108,
+                45.522
+              ],
+              [
+                -95.646,
+                42.602
+              ],
+              [
+                -98.038,
+                41.144
+              ],
+              [
+                -98.004,
+                44.807
+              ],
+              [
+                -96.108,
+                45.522
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "icaoId": "KKCI",
+          "airSigmetType": "SIGMET",
+          "alphaChar": "C",
+          "hazard": "CONVECTIVE",
+          "seriesId": "40C",
+          "validTimeFrom": "2026-11-02T20:55:00.000Z",
+          "validTimeTo": "2026-11-02T22:55:00.000Z",
+          "severity": 5,
+          "altitudeHi1": 38000,
+          "altitudeHi2": 38000,
+          "altitudeLow1": null,
+          "altitudeLow2": null,
+          "movementDir": 220,
+          "movementSpd": 50,
+          "rawAirSigmet": "WSUS32 KKCI 022055\nMKCC WST 022055\nCONVECTIVE SIGMET 40C\nVALID UNTIL 2255Z\nMN IA NE SD\nFROM 80SSE FAR-60W FOD-20SE OBH-40SSE ABR-80SSE FAR\nAREA TS MOV FROM 22050KT. TOPS TO FL380."
+        }
+      },
+      {
+        "label": "WSUS32 KKCI 022055\nMKCC WST 022055\nCONVECTIVE SIGMET 41C\nVALID UNTIL 2255Z\nKS\nFROM 60ENE HLC-40NNW SLN-50WNW ICT-50E GCK-60ENE HLC\nDVLPG AREA TS MOV FROM 22050KT. TOPS TO FL380.",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.037,
+                39.644
+              ],
+              [
+                -97.957,
+                39.542
+              ],
+              [
+                -98.56,
+                38.058
+              ],
+              [
+                -99.676,
+                37.915
+              ],
+              [
+                -99.037,
+                39.644
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "icaoId": "KKCI",
+          "airSigmetType": "SIGMET",
+          "alphaChar": "C",
+          "hazard": "CONVECTIVE",
+          "seriesId": "41C",
+          "validTimeFrom": "2026-11-02T20:55:00.000Z",
+          "validTimeTo": "2026-11-02T22:55:00.000Z",
+          "severity": 5,
+          "altitudeHi1": 38000,
+          "altitudeHi2": 38000,
+          "altitudeLow1": null,
+          "altitudeLow2": null,
+          "movementDir": 220,
+          "movementSpd": 50,
+          "rawAirSigmet": "WSUS32 KKCI 022055\nMKCC WST 022055\nCONVECTIVE SIGMET 41C\nVALID UNTIL 2255Z\nKS\nFROM 60ENE HLC-40NNW SLN-50WNW ICT-50E GCK-60ENE HLC\nDVLPG AREA TS MOV FROM 22050KT. TOPS TO FL380."
+        }
+      },
+      {
+        "label": "WSUS31 KKCI 022055\nMKCE WST 022055\nCONVECTIVE SIGMET 51E\nVALID UNTIL 2255Z\nFL AND CSTL WTRS\nFROM 20NNE ORL-130ENE TRV-50ESE PBI-110WSW RSW-20NNE ORL\nAREA EMBD TS MOV FROM 15015KT. TOPS ABV FL450.\nHVY RAINFALL IS OCCURRING WATCH FOR PONDING ON RUNWAYS.\nREF INTL SIGMET JULIETT SERIES.",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -81.198,
+                28.848
+              ],
+              [
+                -78.224,
+                28.507
               ],
               [
                 -79.235,
@@ -181,12 +467,8 @@
                 25.803
               ],
               [
-                -83.731,
-                26.336
-              ],
-              [
-                -79.875,
-                29.749
+                -81.198,
+                28.848
               ]
             ]
           ]
@@ -196,9 +478,9 @@
           "airSigmetType": "SIGMET",
           "alphaChar": "E",
           "hazard": "CONVECTIVE",
-          "seriesId": "49E",
-          "validTimeFrom": "2026-11-02T19:55:00.000Z",
-          "validTimeTo": "2026-11-02T21:55:00.000Z",
+          "seriesId": "51E",
+          "validTimeFrom": "2026-11-02T20:55:00.000Z",
+          "validTimeTo": "2026-11-02T22:55:00.000Z",
           "severity": 5,
           "altitudeHi1": 45000,
           "altitudeHi2": 45000,
@@ -206,62 +488,11 @@
           "altitudeLow2": null,
           "movementDir": 150,
           "movementSpd": 15,
-          "rawAirSigmet": "WSUS31 KKCI 021955\nMKCE WST 021955\nCONVECTIVE SIGMET 49E\nVALID UNTIL 2155Z\nFL AND CSTL WTRS\nFROM 70ENE OMN-160NE TRV-50ESE PBI-110WSW RSW-90SW SRQ-70ENE OMN\nAREA EMBD TS MOV FROM 15015KT. TOPS ABV FL450.\nHVY RAINFALL IS OCCURRING WATCH FOR PONDING ON RUNWAYS.\nREF INTL SIGMET JULIETT SERIES."
+          "rawAirSigmet": "WSUS31 KKCI 022055\nMKCE WST 022055\nCONVECTIVE SIGMET 51E\nVALID UNTIL 2255Z\nFL AND CSTL WTRS\nFROM 20NNE ORL-130ENE TRV-50ESE PBI-110WSW RSW-20NNE ORL\nAREA EMBD TS MOV FROM 15015KT. TOPS ABV FL450.\nHVY RAINFALL IS OCCURRING WATCH FOR PONDING ON RUNWAYS.\nREF INTL SIGMET JULIETT SERIES."
         }
       },
       {
-        "label": "WSUS32 KKCI 021955\nMKCC WST 021955\nCONVECTIVE SIGMET 31C\nVALID UNTIL 2155Z\nMO IA KS NE\nFROM 10E MCW-30WSW DBQ-10NNW BUM-60ENE ICT-40SW PWE-10E MCW\nAREA TS MOV FROM 22050KT. TOPS TO FL350.",
-        "geometry": {
-          "type": "Polygon",
-          "coordinates": [
-            [
-              [
-                -93.102,
-                43.09
-              ],
-              [
-                -91.33,
-                42.203
-              ],
-              [
-                -94.573,
-                38.423
-              ],
-              [
-                -96.412,
-                38.134
-              ],
-              [
-                -96.822,
-                39.728
-              ],
-              [
-                -93.102,
-                43.09
-              ]
-            ]
-          ]
-        },
-        "properties": {
-          "icaoId": "KKCI",
-          "airSigmetType": "SIGMET",
-          "alphaChar": "C",
-          "hazard": "CONVECTIVE",
-          "seriesId": "31C",
-          "validTimeFrom": "2026-11-02T19:55:00.000Z",
-          "validTimeTo": "2026-11-02T21:55:00.000Z",
-          "severity": 5,
-          "altitudeHi1": 35000,
-          "altitudeHi2": 35000,
-          "altitudeLow1": null,
-          "altitudeLow2": null,
-          "movementDir": 220,
-          "movementSpd": 50,
-          "rawAirSigmet": "WSUS32 KKCI 021955\nMKCC WST 021955\nCONVECTIVE SIGMET 31C\nVALID UNTIL 2155Z\nMO IA KS NE\nFROM 10E MCW-30WSW DBQ-10NNW BUM-60ENE ICT-40SW PWE-10E MCW\nAREA TS MOV FROM 22050KT. TOPS TO FL350."
-        }
-      },
-      {
-        "label": "WSUS31 KKCI 021955\nMKCE WST 021955\nCONVECTIVE SIGMET 50E\nVALID UNTIL 2155Z\nFL AND CSTL WTRS\nFROM 60ESE PBI-130SE MIA-80WSW EYW-110WSW RSW-60ESE PBI\nAREA EMBD TS MOV FROM 16015KT. TOPS ABV FL450.\nHVY RAINFALL IS OCCURRING WATCH FOR PONDING ON RUNWAYS.\nREF INTL SIGMET JULIETT SERIES.",
+        "label": "WSUS31 KKCI 022055\nMKCE WST 022055\nCONVECTIVE SIGMET 52E\nVALID UNTIL 2255Z\nFL AND CSTL WTRS\nFROM 60ESE PBI-130SE MIA-80WSW EYW-110WSW RSW-60ESE PBI\nAREA EMBD TS MOV FROM 16015KT. TOPS ABV FL450.\nHVY RAINFALL IS OCCURRING WATCH FOR PONDING ON RUNWAYS.\nREF INTL SIGMET JULIETT SERIES.",
         "geometry": {
           "type": "Polygon",
           "coordinates": [
@@ -294,9 +525,9 @@
           "airSigmetType": "SIGMET",
           "alphaChar": "E",
           "hazard": "CONVECTIVE",
-          "seriesId": "50E",
-          "validTimeFrom": "2026-11-02T19:55:00.000Z",
-          "validTimeTo": "2026-11-02T21:55:00.000Z",
+          "seriesId": "52E",
+          "validTimeFrom": "2026-11-02T20:55:00.000Z",
+          "validTimeTo": "2026-11-02T22:55:00.000Z",
           "severity": 5,
           "altitudeHi1": 45000,
           "altitudeHi2": 45000,
@@ -304,195 +535,7 @@
           "altitudeLow2": null,
           "movementDir": 160,
           "movementSpd": 15,
-          "rawAirSigmet": "WSUS31 KKCI 021955\nMKCE WST 021955\nCONVECTIVE SIGMET 50E\nVALID UNTIL 2155Z\nFL AND CSTL WTRS\nFROM 60ESE PBI-130SE MIA-80WSW EYW-110WSW RSW-60ESE PBI\nAREA EMBD TS MOV FROM 16015KT. TOPS ABV FL450.\nHVY RAINFALL IS OCCURRING WATCH FOR PONDING ON RUNWAYS.\nREF INTL SIGMET JULIETT SERIES."
-        }
-      },
-      {
-        "label": "WSUS32 KKCI 021955\nMKCC WST 021955\nCONVECTIVE SIGMET 32C\nVALID UNTIL 2155Z\nTX OK KS\nFROM 50NNE MMB-20NNW END-30ENE CDS-40ESE AMA-50NNE MMB\nAREA SEV TS MOV FROM 22025KT. TOPS TO FL450.\nTORNADOES...HAIL TO 2 IN...WIND GUSTS TO 65KT POSS.",
-        "geometry": {
-          "type": "Polygon",
-          "coordinates": [
-            [
-              [
-                -99.489,
-                37.111
-              ],
-              [
-                -98.082,
-                36.656
-              ],
-              [
-                -99.722,
-                34.564
-              ],
-              [
-                -100.892,
-                35.028
-              ],
-              [
-                -99.489,
-                37.111
-              ]
-            ]
-          ]
-        },
-        "properties": {
-          "icaoId": "KKCI",
-          "airSigmetType": "SIGMET",
-          "alphaChar": "C",
-          "hazard": "CONVECTIVE",
-          "seriesId": "32C",
-          "validTimeFrom": "2026-11-02T19:55:00.000Z",
-          "validTimeTo": "2026-11-02T21:55:00.000Z",
-          "severity": 5,
-          "altitudeHi1": 45000,
-          "altitudeHi2": 45000,
-          "altitudeLow1": null,
-          "altitudeLow2": null,
-          "movementDir": 220,
-          "movementSpd": 25,
-          "rawAirSigmet": "WSUS32 KKCI 021955\nMKCC WST 021955\nCONVECTIVE SIGMET 32C\nVALID UNTIL 2155Z\nTX OK KS\nFROM 50NNE MMB-20NNW END-30ENE CDS-40ESE AMA-50NNE MMB\nAREA SEV TS MOV FROM 22025KT. TOPS TO FL450.\nTORNADOES...HAIL TO 2 IN...WIND GUSTS TO 65KT POSS."
-        }
-      },
-      {
-        "label": "WSUS32 KKCI 021955\nMKCC WST 021955\nCONVECTIVE SIGMET 33C\nVALID UNTIL 2155Z\nOK KS CO NM\nFROM 20SW GLD-50W LBL-30NW CIM-40WNW PUB-20SW GLD\nAREA EMBD TS MOV LTL. TOPS TO FL320.",
-        "geometry": {
-          "type": "Polygon",
-          "coordinates": [
-            [
-              [
-                -101.993,
-                39.154
-              ],
-              [
-                -102.012,
-                37.035
-              ],
-              [
-                -105.311,
-                36.842
-              ],
-              [
-                -105.219,
-                38.537
-              ],
-              [
-                -101.993,
-                39.154
-              ]
-            ]
-          ]
-        },
-        "properties": {
-          "icaoId": "KKCI",
-          "airSigmetType": "SIGMET",
-          "alphaChar": "C",
-          "hazard": "CONVECTIVE",
-          "seriesId": "33C",
-          "validTimeFrom": "2026-11-02T19:55:00.000Z",
-          "validTimeTo": "2026-11-02T21:55:00.000Z",
-          "severity": 5,
-          "altitudeHi1": 32000,
-          "altitudeHi2": 32000,
-          "altitudeLow1": null,
-          "altitudeLow2": null,
-          "movementDir": null,
-          "movementSpd": 0,
-          "rawAirSigmet": "WSUS32 KKCI 021955\nMKCC WST 021955\nCONVECTIVE SIGMET 33C\nVALID UNTIL 2155Z\nOK KS CO NM\nFROM 20SW GLD-50W LBL-30NW CIM-40WNW PUB-20SW GLD\nAREA EMBD TS MOV LTL. TOPS TO FL320."
-        }
-      },
-      {
-        "label": "WSUS32 KKCI 021955\nMKCC WST 021955\nCONVECTIVE SIGMET 34C\nVALID UNTIL 2155Z\nMO OK KS\nFROM 10N BUM-20WSW MLC-30NNE SPS-60ENE ICT-10N BUM\nAREA SEV TS MOV FROM 22050KT. TOPS TO FL450.\nTORNADOES...HAIL TO 2 IN...WIND GUSTS TO 65KT POSS.",
-        "geometry": {
-          "type": "Polygon",
-          "coordinates": [
-            [
-              [
-                -94.49,
-                38.436
-              ],
-              [
-                -96.153,
-                34.719
-              ],
-              [
-                -98.363,
-                34.453
-              ],
-              [
-                -96.412,
-                38.134
-              ],
-              [
-                -94.49,
-                38.436
-              ]
-            ]
-          ]
-        },
-        "properties": {
-          "icaoId": "KKCI",
-          "airSigmetType": "SIGMET",
-          "alphaChar": "C",
-          "hazard": "CONVECTIVE",
-          "seriesId": "34C",
-          "validTimeFrom": "2026-11-02T19:55:00.000Z",
-          "validTimeTo": "2026-11-02T21:55:00.000Z",
-          "severity": 5,
-          "altitudeHi1": 45000,
-          "altitudeHi2": 45000,
-          "altitudeLow1": null,
-          "altitudeLow2": null,
-          "movementDir": 220,
-          "movementSpd": 50,
-          "rawAirSigmet": "WSUS32 KKCI 021955\nMKCC WST 021955\nCONVECTIVE SIGMET 34C\nVALID UNTIL 2155Z\nMO OK KS\nFROM 10N BUM-20WSW MLC-30NNE SPS-60ENE ICT-10N BUM\nAREA SEV TS MOV FROM 22050KT. TOPS TO FL450.\nTORNADOES...HAIL TO 2 IN...WIND GUSTS TO 65KT POSS."
-        }
-      },
-      {
-        "label": "WSUS32 KKCI 021955\nMKCC WST 021955\nCONVECTIVE SIGMET 35C\nVALID UNTIL 2155Z\nMN IA NE SD\nFROM 70NW RWF-80W FOD-10SE OBH-30SSE ABR-70NW RWF\nAREA TS MOV FROM 22050KT. TOPS TO FL380.",
-        "geometry": {
-          "type": "Polygon",
-          "coordinates": [
-            [
-              [
-                -96.3,
-                45.288
-              ],
-              [
-                -96.098,
-                42.596
-              ],
-              [
-                -98.194,
-                41.262
-              ],
-              [
-                -98.094,
-                44.96
-              ],
-              [
-                -96.3,
-                45.288
-              ]
-            ]
-          ]
-        },
-        "properties": {
-          "icaoId": "KKCI",
-          "airSigmetType": "SIGMET",
-          "alphaChar": "C",
-          "hazard": "CONVECTIVE",
-          "seriesId": "35C",
-          "validTimeFrom": "2026-11-02T19:55:00.000Z",
-          "validTimeTo": "2026-11-02T21:55:00.000Z",
-          "severity": 5,
-          "altitudeHi1": 38000,
-          "altitudeHi2": 38000,
-          "altitudeLow1": null,
-          "altitudeLow2": null,
-          "movementDir": 220,
-          "movementSpd": 50,
-          "rawAirSigmet": "WSUS32 KKCI 021955\nMKCC WST 021955\nCONVECTIVE SIGMET 35C\nVALID UNTIL 2155Z\nMN IA NE SD\nFROM 70NW RWF-80W FOD-10SE OBH-30SSE ABR-70NW RWF\nAREA TS MOV FROM 22050KT. TOPS TO FL380."
+          "rawAirSigmet": "WSUS31 KKCI 022055\nMKCE WST 022055\nCONVECTIVE SIGMET 52E\nVALID UNTIL 2255Z\nFL AND CSTL WTRS\nFROM 60ESE PBI-130SE MIA-80WSW EYW-110WSW RSW-60ESE PBI\nAREA EMBD TS MOV FROM 16015KT. TOPS ABV FL450.\nHVY RAINFALL IS OCCURRING WATCH FOR PONDING ON RUNWAYS.\nREF INTL SIGMET JULIETT SERIES."
         }
       }
     ]
