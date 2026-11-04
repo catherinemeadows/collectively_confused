@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T02:10:21.533738+00:00",
+  "generated_at": "2026-11-04T02:40:22.280226+00:00",
   "departure": "KNDZ",
   "airports": {
     "KBFM": {
@@ -14,26 +14,26 @@
       "observation_time": 1793757360
     },
     "KCEW": {
-      "raw_metar": "METAR KCEW 040153Z AUTO 08005KT 7SM -RA BKN027 OVC037 23/22 A2999 RMK AO2 RAB47 SLP151 P0000 T02280222",
-      "flight_category": "MVFR",
+      "raw_metar": "SPECI KCEW 040232Z AUTO 09005KT 7SM -RA BKN007 OVC025 23/22 A2999 RMK AO2 P0001 T02280222",
+      "flight_category": "IFR",
       "visibility_sm": 7.0,
       "visibility_display": "7 SM",
-      "ceiling_ft_agl": 2700.0,
-      "ceiling_display": "2,700 ft AGL",
-      "wind_display": "080\u00b0 @ 5 kt",
+      "ceiling_ft_agl": 700.0,
+      "ceiling_display": "700 ft AGL",
+      "wind_display": "090\u00b0 @ 5 kt",
       "altimeter_display": "29.99 inHg",
-      "observation_time": 1793757180
+      "observation_time": 1793759520
     },
     "KDHN": {
-      "raw_metar": "METAR KDHN 040153Z 12013G21KT 10SM OVC014 23/21 A3005 RMK AO1 PK WND 10029/0130 SLP170 T02280206",
-      "flight_category": "MVFR",
+      "raw_metar": "SPECI KDHN 040220Z 11008G17KT 10SM SCT013 BKN031 OVC055 22/21 A3005 RMK AO1 RAB01E12 P0000 T02220206",
+      "flight_category": "VFR",
       "visibility_sm": 10.0,
       "visibility_display": "10+ SM",
-      "ceiling_ft_agl": 1400.0,
-      "ceiling_display": "1,400 ft AGL",
-      "wind_display": "120\u00b0 @ 13 kt G21",
+      "ceiling_ft_agl": 3100.0,
+      "ceiling_display": "3,100 ft AGL",
+      "wind_display": "110\u00b0 @ 8 kt G17",
       "altimeter_display": "30.05 inHg",
-      "observation_time": 1793757180
+      "observation_time": 1793758800
     },
     "KGPT": {
       "raw_metar": "METAR KGPT 040153Z 13009KT 10SM FEW010 23/22 A2993 RMK AO2 SLP135 T02280217",
@@ -45,17 +45,6 @@
       "wind_display": "130\u00b0 @ 9 kt",
       "altimeter_display": "29.93 inHg",
       "observation_time": 1793757180
-    },
-    "KHSA": {
-      "raw_metar": "METAR KHSA 040150Z 13006KT 7SM BR SCT012 BKN021 23/22 A2992",
-      "flight_category": "MVFR",
-      "visibility_sm": 7.0,
-      "visibility_display": "7 SM",
-      "ceiling_ft_agl": 2100.0,
-      "ceiling_display": "2,100 ft AGL",
-      "wind_display": "130\u00b0 @ 6 kt",
-      "altimeter_display": "29.92 inHg",
-      "observation_time": 1793757000
     },
     "KJKA": {
       "raw_metar": "METAR KJKA 040156Z 01004KT 3SM -RA BR SCT011 BKN028 23/22 A2992",
@@ -80,7 +69,7 @@
       "observation_time": 1793757180
     },
     "KMOB": {
-      "raw_metar": "METAR KMOB 040156Z AUTO 11006KT 10SM FEW020 SCT070 23/21 A2995 RMK AO2 SLP139 T02280211",
+      "raw_metar": "METAR KMOB 040156Z COR 11006KT 10SM FEW020 SCT070 SCT200 23/21 A2995 RMK A02 SLP139 T02280211",
       "flight_category": "VFR",
       "visibility_sm": 10.0,
       "visibility_display": "10+ SM",
@@ -124,15 +113,15 @@
       "observation_time": 1793757180
     },
     "KPQL": {
-      "raw_metar": "METAR KPQL 040153Z AUTO 11005KT 10SM FEW012 SCT027 BKN080 24/22 A2993 RMK AO2 SLP137 T02390222",
-      "flight_category": "VFR",
+      "raw_metar": "SPECI KPQL 040207Z AUTO 00000KT 10SM BKN009 BKN080 BKN110 24/22 A2994 RMK AO2 T02390222",
+      "flight_category": "IFR",
       "visibility_sm": 10.0,
       "visibility_display": "10+ SM",
-      "ceiling_ft_agl": 8000.0,
-      "ceiling_display": "8,000 ft AGL",
-      "wind_display": "110\u00b0 @ 5 kt",
-      "altimeter_display": "29.93 inHg",
-      "observation_time": 1793757180
+      "ceiling_ft_agl": 900.0,
+      "ceiling_display": "900 ft AGL",
+      "wind_display": "Calm",
+      "altimeter_display": "29.94 inHg",
+      "observation_time": 1793758020
     },
     "KTLH": {
       "raw_metar": "METAR KTLH 040153Z 09010KT 10SM FEW049 FEW065 22/21 A3002 RMK AO2 SLP164 T02220211 $",
@@ -144,6 +133,17 @@
       "wind_display": "090\u00b0 @ 10 kt",
       "altimeter_display": "30.02 inHg",
       "observation_time": 1793757180
+    },
+    "KHSA": {
+      "raw_metar": "METAR KHSA 040150Z 13006KT 7SM BR SCT012 BKN021 23/22 A2992",
+      "flight_category": "MVFR",
+      "visibility_sm": 7.0,
+      "visibility_display": "7 SM",
+      "ceiling_ft_agl": 2100.0,
+      "ceiling_display": "2,100 ft AGL",
+      "wind_display": "130\u00b0 @ 6 kt",
+      "altimeter_display": "29.92 inHg",
+      "observation_time": 1793757000
     }
   },
   "tafs": {
