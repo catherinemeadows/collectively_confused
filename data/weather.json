@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T00:10:19.322349+00:00",
+  "generated_at": "2026-11-05T00:40:32.445982+00:00",
   "departure": "KNDZ",
   "airports": {
     "KBFM": {
@@ -36,15 +36,26 @@
       "observation_time": 1793836380
     },
     "KGPT": {
-      "raw_metar": "METAR KGPT 042353Z 00000KT 10SM SCT028 OVC075 24/23 A2986 RMK AO2 SLP109 60000 T02440228 10278 20244 53008",
+      "raw_metar": "SPECI KGPT 050021Z 30006KT 10SM SCT018 BKN025 OVC070 24/22 A2987 RMK AO2 T02390222",
+      "flight_category": "MVFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": 2500.0,
+      "ceiling_display": "2,500 ft AGL",
+      "wind_display": "300\u00b0 @ 6 kt",
+      "altimeter_display": "29.87 inHg",
+      "observation_time": 1793838060
+    },
+    "KHSA": {
+      "raw_metar": "SPECI KHSA 042350Z VRB05KT 10SM SCT024 24/21 A2985",
       "flight_category": "VFR",
       "visibility_sm": 10.0,
       "visibility_display": "10+ SM",
-      "ceiling_ft_agl": 7500.0,
-      "ceiling_display": "7,500 ft AGL",
-      "wind_display": "Calm",
-      "altimeter_display": "29.86 inHg",
-      "observation_time": 1793836380
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "VRB @ 5 kt",
+      "altimeter_display": "29.85 inHg",
+      "observation_time": 1793836200
     },
     "KJKA": {
       "raw_metar": "METAR KJKA 042356Z 19005KT 10SM BKN100 25/23 A2987",
@@ -133,17 +144,6 @@
       "wind_display": "140\u00b0 @ 5 kt",
       "altimeter_display": "29.92 inHg",
       "observation_time": 1793836380
-    },
-    "KHSA": {
-      "raw_metar": "SPECI KHSA 042350Z VRB05KT 10SM SCT024 24/21 A2985",
-      "flight_category": "VFR",
-      "visibility_sm": 10.0,
-      "visibility_display": "10+ SM",
-      "ceiling_ft_agl": null,
-      "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "VRB @ 5 kt",
-      "altimeter_display": "29.85 inHg",
-      "observation_time": 1793836200
     }
   },
   "tafs": {
