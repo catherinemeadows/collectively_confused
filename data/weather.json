@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T15:10:34.254035+00:00",
+  "generated_at": "2026-11-12T15:40:29.152805+00:00",
   "departure": "KNDZ",
   "airports": {
     "KBFM": {
@@ -68,6 +68,17 @@
       "altimeter_display": "29.92 inHg",
       "observation_time": 1794495300
     },
+    "KMAI": {
+      "raw_metar": "METAR KMAI 121453Z AUTO 30006KT 10SM CLR 19/14 A2986 RMK AO1 SLP111 T01890144 50006",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "300\u00b0 @ 6 kt",
+      "altimeter_display": "29.86 inHg",
+      "observation_time": 1794495180
+    },
     "KMOB": {
       "raw_metar": "METAR KMOB 121456Z 31005KT 10SM SCT250 20/13 A2994 RMK AO2 SLP136 T02000128 51011",
       "flight_category": "VFR",
@@ -133,22 +144,11 @@
       "wind_display": "290\u00b0 @ 9 kt",
       "altimeter_display": "29.88 inHg",
       "observation_time": 1794495180
-    },
-    "KMAI": {
-      "raw_metar": "METAR KMAI 121453Z AUTO 30006KT 10SM CLR 19/14 A2986 RMK AO1 SLP111 T01890144 50006",
-      "flight_category": "VFR",
-      "visibility_sm": 10.0,
-      "visibility_display": "10+ SM",
-      "ceiling_ft_agl": null,
-      "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "300\u00b0 @ 6 kt",
-      "altimeter_display": "29.86 inHg",
-      "observation_time": 1794495180
     }
   },
   "tafs": {
     "KNSE": {
-      "raw_taf": "TAF KNSE 120600Z 1207/1307 VRB06KT 9999 FEW020 SCT040 BKN050 QNH2984INS BECMG 1210/1212 VRB06KT 9999 SCT005 BKN010 QNH2987INS BECMG 1214/1216 31010G20KT 9999 SCT020 620005 QNH2979INS BECMG 1222/1300 VRB06KT 9999 SKC 600000 QNH2983INS AUTOMATED SENSOR METWATCH 1207 TIL 1212 TX24/1219Z TN11/1306Z FN00327"
+      "raw_taf": "TAF KNSE 1215/1315 30008KT 9999 FEW030 FEW080 SCT250 QNH2989INS FM121700 31010G18KT 9999 FEW040 SCT250 QNH2980INS TEMPO 1217/1223 32013G22KT FM130200 33008KT 9999 SKC QNH2985INS TX25/1218Z TN06/1412Z FN20071"
     },
     "KNDZ": {
       "raw_taf": "TAF unavailable"
