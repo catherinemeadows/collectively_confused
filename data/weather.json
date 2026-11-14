@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T11:10:21.521030+00:00",
+  "generated_at": "2026-11-14T11:40:16.152153+00:00",
   "departure": "KNDZ",
   "airports": {
     "KBFM": {
@@ -58,15 +58,26 @@
       "observation_time": 1794621000
     },
     "KJKA": {
-      "raw_metar": "METAR KJKA 141055Z AUTO 04004KT 10SM CLR 05/01 A3010 RMK AO2",
+      "raw_metar": "METAR KJKA 141115Z AUTO 00000KT 10SM CLR 05/01 A3010 RMK AO2",
       "flight_category": "VFR",
       "visibility_sm": 10.0,
       "visibility_display": "10+ SM",
       "ceiling_ft_agl": null,
       "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "040\u00b0 @ 4 kt",
+      "wind_display": "Calm",
       "altimeter_display": "30.10 inHg",
-      "observation_time": 1794653700
+      "observation_time": 1794654900
+    },
+    "KMAI": {
+      "raw_metar": "METAR KMAI 141053Z AUTO 01004KT 10SM CLR 03/01 A3006 RMK AO1 SLP178 T00330006",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "010\u00b0 @ 4 kt",
+      "altimeter_display": "30.06 inHg",
+      "observation_time": 1794653580
     },
     "KMOB": {
       "raw_metar": "METAR KMOB 141056Z AUTO 35003KT 10SM CLR 01/M01 A3012 RMK AO2 SLP198 T00111006",
@@ -78,6 +89,17 @@
       "wind_display": "350\u00b0 @ 3 kt",
       "altimeter_display": "30.12 inHg",
       "observation_time": 1794653760
+    },
+    "KNDZ": {
+      "raw_metar": "METAR KNDZ 140956Z AUTO 10SM CLR 04/00 A3006 RMK AO2 SLP167 T00390000 PWINO $",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "---",
+      "altimeter_display": "30.06 inHg",
+      "observation_time": 1794650160
     },
     "KNPA": {
       "raw_metar": "METAR KNPA 141056Z AUTO 36005KT 10SM CLR 04/01 A3010 RMK AO2 SLP194 T00440006 $",
@@ -122,28 +144,6 @@
       "wind_display": "360\u00b0 @ 5 kt",
       "altimeter_display": "30.04 inHg",
       "observation_time": 1794653580
-    },
-    "KMAI": {
-      "raw_metar": "METAR KMAI 141053Z AUTO 01004KT 10SM CLR 03/01 A3006 RMK AO1 SLP178 T00330006",
-      "flight_category": "VFR",
-      "visibility_sm": 10.0,
-      "visibility_display": "10+ SM",
-      "ceiling_ft_agl": null,
-      "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "010\u00b0 @ 4 kt",
-      "altimeter_display": "30.06 inHg",
-      "observation_time": 1794653580
-    },
-    "KNDZ": {
-      "raw_metar": "METAR KNDZ 140956Z AUTO 10SM CLR 04/00 A3006 RMK AO2 SLP167 T00390000 PWINO $",
-      "flight_category": "VFR",
-      "visibility_sm": 10.0,
-      "visibility_display": "10+ SM",
-      "ceiling_ft_agl": null,
-      "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "---",
-      "altimeter_display": "30.06 inHg",
-      "observation_time": 1794650160
     }
   },
   "tafs": {
