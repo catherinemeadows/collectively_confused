@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T19:10:17.030836+00:00",
+  "generated_at": "2026-11-17T19:40:23.978986+00:00",
   "departure": "KNDZ",
   "airports": {
     "KBFM": {
@@ -11,17 +11,6 @@
       "ceiling_display": "1,900 ft AGL",
       "wind_display": "050\u00b0 @ 10 kt",
       "altimeter_display": "30.32 inHg",
-      "observation_time": 1794941580
-    },
-    "KCEW": {
-      "raw_metar": "METAR KCEW 171853Z AUTO 00000KT 10SM -RA SCT011 OVC039 13/12 A3033 RMK AO2 SLP270 P0001 T01330122",
-      "flight_category": "VFR",
-      "visibility_sm": 10.0,
-      "visibility_display": "10+ SM",
-      "ceiling_ft_agl": 3900.0,
-      "ceiling_display": "3,900 ft AGL",
-      "wind_display": "Calm",
-      "altimeter_display": "30.33 inHg",
       "observation_time": 1794941580
     },
     "KDHN": {
@@ -91,26 +80,26 @@
       "observation_time": 1794941760
     },
     "KNDZ": {
-      "raw_metar": "METAR KNDZ 171856Z 04011KT 10SM SCT008 BKN013 OVC035 14/13 A3031 RMK AO2 RAE52 SLP252 P0001 T01390128 $",
+      "raw_metar": "SPECI KNDZ 171918Z 05013KT 6SM -RA BR BKN008 BKN014 OVC035 13/13 A3031 RMK AO2 RAB09 P0000 T01330128 $ ",
+      "flight_category": "IFR",
+      "visibility_sm": 6.0,
+      "visibility_display": "6 SM",
+      "ceiling_ft_agl": 800.0,
+      "ceiling_display": "800 ft AGL",
+      "wind_display": "050\u00b0 @ 13 kt",
+      "altimeter_display": "30.31 inHg",
+      "observation_time": 1794943080
+    },
+    "KNPA": {
+      "raw_metar": "SPECI KNPA 171927Z 05019G29KT 10SM BKN015 OVC039 17/12 A3026 RMK AO2 PK WND 06029/1927 T01670122 $ ",
       "flight_category": "MVFR",
       "visibility_sm": 10.0,
       "visibility_display": "10+ SM",
-      "ceiling_ft_agl": 1300.0,
-      "ceiling_display": "1,300 ft AGL",
-      "wind_display": "040\u00b0 @ 11 kt",
-      "altimeter_display": "30.31 inHg",
-      "observation_time": 1794941760
-    },
-    "KNPA": {
-      "raw_metar": "METAR KNPA 171856Z 05015G23KT 10SM SCT015 OVC037 16/12 A3027 RMK AO2 SLP251 T01610122 $",
-      "flight_category": "VFR",
-      "visibility_sm": 10.0,
-      "visibility_display": "10+ SM",
-      "ceiling_ft_agl": 3700.0,
-      "ceiling_display": "3,700 ft AGL",
-      "wind_display": "050\u00b0 @ 15 kt G23",
-      "altimeter_display": "30.27 inHg",
-      "observation_time": 1794941760
+      "ceiling_ft_agl": 1500.0,
+      "ceiling_display": "1,500 ft AGL",
+      "wind_display": "050\u00b0 @ 19 kt G29",
+      "altimeter_display": "30.26 inHg",
+      "observation_time": 1794943620
     },
     "KPNS": {
       "raw_metar": "METAR KPNS 171853Z 04008KT 010V070 10SM OVC011 14/12 A3029 RMK AO2 CIG 009V014 SLP259 T01440122",
@@ -144,11 +133,22 @@
       "wind_display": "040\u00b0 @ 10 kt G17",
       "altimeter_display": "30.31 inHg",
       "observation_time": 1794941580
+    },
+    "KCEW": {
+      "raw_metar": "METAR KCEW 171853Z AUTO 00000KT 10SM -RA SCT011 OVC039 13/12 A3033 RMK AO2 SLP270 P0001 T01330122",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": 3900.0,
+      "ceiling_display": "3,900 ft AGL",
+      "wind_display": "Calm",
+      "altimeter_display": "30.33 inHg",
+      "observation_time": 1794941580
     }
   },
   "tafs": {
     "KNSE": {
-      "raw_taf": "TAF KNSE 1715/1815 06010KT 9999 VCSH SCT015 BKN040 OVC070 510006 QNH3033INS TEMPO 1715/1717 07013G22KT SCT008 BKN020 OVC035 FM171700 07015G25KT 9999 SCT020 BKN040 BKN070 510006 QNH3027INS TEMPO 1717/1722 SCT012 BKN025 OVC035 FM172300 06010G18KT 9999 FEW025 BKN040 BKN070 510006 QNH3026INS FM171100 07012G20KT 9999 SCT030 BKN050 510006 QNH3025INS TX17/1719Z TN11/1811Z FN20071"
+      "raw_taf": "TAF AMD KNSE 171800Z 1718/1815 07015G25KT 9999 VCSH SCT010 BKN030 OVC060 510006 QNH3029INS TEMPO 1718/1722 05012G18KT 6000 -RA BR SCT008 BKN013 OVC035 FM172300 06010G18KT 9999 FEW020 SCT040 BKN070 510006 QNH3028INS FM171100 07012G20KT 9999 SCT030 BKN050 QNH3027INS 510006 TX15/1720Z TN11/1811Z AMD 1829 FN20071 "
     },
     "KNDZ": {
       "raw_taf": "TAF unavailable"
