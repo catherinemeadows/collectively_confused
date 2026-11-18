@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T18:10:15.382587+00:00",
+  "generated_at": "2026-11-18T18:40:15.884691+00:00",
   "departure": "KNDZ",
   "airports": {
     "KBFM": {
@@ -123,17 +123,6 @@
       "altimeter_display": "30.24 inHg",
       "observation_time": 1795024380
     },
-    "KPQL": {
-      "raw_metar": "METAR KPQL 181753Z 07011G19KT 10SM SCT041 SCT110 23/12 A3023 RMK AO2 SLP238 T02280117 10228 20106 58017",
-      "flight_category": "VFR",
-      "visibility_sm": 10.0,
-      "visibility_display": "10+ SM",
-      "ceiling_ft_agl": null,
-      "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "070\u00b0 @ 11 kt G19",
-      "altimeter_display": "30.23 inHg",
-      "observation_time": 1795024380
-    },
     "KTLH": {
       "raw_metar": "METAR KTLH 181753Z 07010KT 10SM SCT043 BKN110 19/13 A3025 RMK AO2 SLP243 6//// T01940128 10200 20133 58012",
       "flight_category": "VFR",
@@ -144,11 +133,22 @@
       "wind_display": "070\u00b0 @ 10 kt",
       "altimeter_display": "30.25 inHg",
       "observation_time": 1795024380
+    },
+    "KPQL": {
+      "raw_metar": "METAR KPQL 181753Z 07011G19KT 10SM SCT041 SCT110 23/12 A3023 RMK AO2 SLP238 T02280117 10228 20106 58017",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "070\u00b0 @ 11 kt G19",
+      "altimeter_display": "30.23 inHg",
+      "observation_time": 1795024380
     }
   },
   "tafs": {
     "KNSE": {
-      "raw_taf": "TAF KNSE 181500Z 1815/1915 05010G16KT 9999 FEW040 SCT070 BKN250 QNH3026INS TEMPO 1815/1818 07014G20KT SCT060 BKN100 FM181800 04010G18KT 9999 SCT070 BKN120 BKN250 QNH3020INS TEMPO 1818/1823 06013G22KT FEW035 BKN060 OVC100 FM190200 05008KT 9999 SCT025 BKN050 OVC120 QNH3019INS FM191000 06010KT 9999 VCSH SCT010 BKN020 OVC050 QNH3018INS TX23/1819Z TN15/1910Z FN20071"
+      "raw_taf": "TAF AMD KNSE 181800Z 1818/1915 05010G16KT 9999 SCT080 BKN120 510006 QNH3021INS TEMPO 1818/1823 06012G20KT SCT035 BKN060 BKN100 FM182300 05010KT 9999 VCSH BKN030 BKN050 OVC100 520006 QNH3022INS FM190800 06012G20KT 9999 VCSH SCT010 BKN020 OVC050 520006 QNH3019INS TX22/1819Z TN15/1910Z AMD 1817 FN20071"
     },
     "KNDZ": {
       "raw_taf": "TAF unavailable"
