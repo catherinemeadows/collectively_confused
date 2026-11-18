@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T07:10:14.844108+00:00",
+  "generated_at": "2026-11-18T07:40:33.005722+00:00",
   "departure": "KNDZ",
   "airports": {
     "KBFM": {
@@ -56,17 +56,6 @@
       "wind_display": "040\u00b0 @ 6 kt",
       "altimeter_display": "30.29 inHg",
       "observation_time": 1794966600
-    },
-    "KJKA": {
-      "raw_metar": "METAR KJKA 180655Z AUTO 06007KT 10SM SCT080 15/11 A3026 RMK AO2",
-      "flight_category": "VFR",
-      "visibility_sm": 10.0,
-      "visibility_display": "10+ SM",
-      "ceiling_ft_agl": null,
-      "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "060\u00b0 @ 7 kt",
-      "altimeter_display": "30.26 inHg",
-      "observation_time": 1794984900
     },
     "KMAI": {
       "raw_metar": "METAR KMAI 180653Z AUTO 06010KT 10SM SCT039 OVC050 15/03 A3032 RMK AO1 SLP264 T01500033",
@@ -144,11 +133,22 @@
       "wind_display": "050\u00b0 @ 8 kt",
       "altimeter_display": "30.31 inHg",
       "observation_time": 1794984780
+    },
+    "KJKA": {
+      "raw_metar": "METAR KJKA 180735Z AUTO 05008KT 10SM OVC085 14/11 A3025 RMK AO2",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": 8500.0,
+      "ceiling_display": "8,500 ft AGL",
+      "wind_display": "050\u00b0 @ 8 kt",
+      "altimeter_display": "30.25 inHg",
+      "observation_time": 1794987300
     }
   },
   "tafs": {
     "KNSE": {
-      "raw_taf": "TAF KNSE 172200Z 1723/1823 05007G14KT 9999 SCT025 BKN050 BKN070 510006 QNH3029INS TEMPO 1723/1803 9000 -RA FEW015 BKN025 FM180400 06008G16KT 9999 BKN025 OVC045 510006 QNH3031INS TEMPO 1806/1812 BKN015 OVC030 FM181300 05008G18KT 9999 SCT025 BKN045 BKN090 510002 QNH3026INS FM181600 07010G20KT 9999 SCT055 BKN080 BKN110 510002 QNH3024INS TEMPO 1817/1822 06012G24KT AUTOMATED SENSOR METWATCH 1805 TIL 1812 TX20/1820Z TN12/1812Z FN20105"
+      "raw_taf": "TAF KNSE 180700Z 1807/1907 04010G23KT 9999 BKN020 QNH3016INS TX20/1818Z TN16/1906Z FN00321"
     },
     "KNDZ": {
       "raw_taf": "TAF unavailable"
