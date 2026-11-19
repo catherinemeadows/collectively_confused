@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T14:10:17.578399+00:00",
+  "generated_at": "2026-11-19T14:40:16.681724+00:00",
   "departure": "KNDZ",
   "airports": {
     "KBFM": {
@@ -33,6 +33,17 @@
       "ceiling_display": "11,000 ft AGL",
       "wind_display": "050\u00b0 @ 8 kt",
       "altimeter_display": "30.32 inHg",
+      "observation_time": 1795096380
+    },
+    "KGPT": {
+      "raw_metar": "METAR KGPT 191353Z 03009G16KT 10SM SCT023 SCT042 18/12 A3023 RMK AO2 SLP235 T01830117",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "030\u00b0 @ 9 kt G16",
+      "altimeter_display": "30.23 inHg",
       "observation_time": 1795096380
     },
     "KHSA": {
@@ -124,31 +135,20 @@
       "observation_time": 1795096380
     },
     "KTLH": {
-      "raw_metar": "METAR KTLH 191353Z 05008KT 10SM SCT015 BKN080 OVC090 16/14 A3023 RMK AO2 RAE01B24E46 SLP234 P0000 T01610144",
-      "flight_category": "VFR",
+      "raw_metar": "SPECI KTLH 191411Z 05009KT 10SM BKN015 OVC070 17/14 A3023 RMK AO2 T01670144",
+      "flight_category": "MVFR",
       "visibility_sm": 10.0,
       "visibility_display": "10+ SM",
-      "ceiling_ft_agl": 8000.0,
-      "ceiling_display": "8,000 ft AGL",
-      "wind_display": "050\u00b0 @ 8 kt",
+      "ceiling_ft_agl": 1500.0,
+      "ceiling_display": "1,500 ft AGL",
+      "wind_display": "050\u00b0 @ 9 kt",
       "altimeter_display": "30.23 inHg",
-      "observation_time": 1795096380
-    },
-    "KGPT": {
-      "raw_metar": "METAR KGPT 191353Z 03009G16KT 10SM SCT023 SCT042 18/12 A3023 RMK AO2 SLP235 T01830117",
-      "flight_category": "VFR",
-      "visibility_sm": 10.0,
-      "visibility_display": "10+ SM",
-      "ceiling_ft_agl": null,
-      "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "030\u00b0 @ 9 kt G16",
-      "altimeter_display": "30.23 inHg",
-      "observation_time": 1795096380
+      "observation_time": 1795097460
     }
   },
   "tafs": {
     "KNSE": {
-      "raw_taf": "TAF KNSE 182258Z 1823/1923 05010KT 9999 VCSH SCT040 BKN100 BKN200 520005 QNH3022INS FM190300 06007KT 9999 BKN035 OVC100 520005 QNH3023INS FM190800 06012G20KT 9999 VCSH BKN020 OVC040 520005 QNH3020INS BECMG 1916/1918 07013G23KT 9999 VCSH BKN025 BKN050 OVC080 520005 QNH3017INS AUTOMATED SENSOR METWATCH 1905 TIL 1912 TX23/1919Z TN15/1912Z FN20029"
+      "raw_taf": "TAF KNSE 1907/2007 06012G20KT 9999 VCSH SCT020 BKN060 QNH3014INS FM191000 07010G20KT 9999 VCSH BKN020 BKN050 OVC080 QNH3012INS TEMPO 1911/1917 8000 RA OVC020 FM191800 04010G20KT 9999 BKN030 BKN050 BKN080 QNH3010INS TEMPO 1920/2002 8000 RA OVC020 FM200300 04008G15KT 9999 BKN030 BKN050 BKN080 QNH3012INS AUTOMATED SENSOR METWATCH 1907 TIL 1912 TX24/1919Z TN15/1912Z FN00319"
     },
     "KNDZ": {
       "raw_taf": "TAF unavailable"
