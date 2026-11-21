@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T00:10:14.545499+00:00",
+  "generated_at": "2026-11-21T00:40:14.589319+00:00",
   "departure": "KNDZ",
   "airports": {
     "KBFM": {
@@ -90,17 +90,6 @@
       "altimeter_display": "30.05 inHg",
       "observation_time": 1795218960
     },
-    "KNDZ": {
-      "raw_metar": "METAR KNDZ 202356Z 05013G21KT 10SM BKN032 OVC055 21/14 A3006 RMK AO2 RAE03 SLP164 P0000 60000 T02060144 10239 20206 53008 $",
-      "flight_category": "VFR",
-      "visibility_sm": 10.0,
-      "visibility_display": "10+ SM",
-      "ceiling_ft_agl": 3200.0,
-      "ceiling_display": "3,200 ft AGL",
-      "wind_display": "050\u00b0 @ 13 kt G21",
-      "altimeter_display": "30.06 inHg",
-      "observation_time": 1795218960
-    },
     "KNPA": {
       "raw_metar": "METAR KNPA 202356Z 05014G22KT 10SM SCT031 OVC043 21/15 A3003 RMK AO2 SLP169 T02110150 10239 20211 53005 $",
       "flight_category": "VFR",
@@ -123,6 +112,17 @@
       "altimeter_display": "30.04 inHg",
       "observation_time": 1795218780
     },
+    "KTLH": {
+      "raw_metar": "METAR KTLH 202353Z 04009G17KT 10SM BKN017 OVC023 19/16 A3000 RMK AO2 SLP158 60000 T01940161 10211 20189 55003",
+      "flight_category": "MVFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": 1700.0,
+      "ceiling_display": "1,700 ft AGL",
+      "wind_display": "040\u00b0 @ 9 kt G17",
+      "altimeter_display": "30.00 inHg",
+      "observation_time": 1795218780
+    },
     "KPQL": {
       "raw_metar": "METAR KPQL 202353Z 05004KT 10SM SCT060 21/16 A3003 RMK AO2 SLP170 T02110161 10250 20211 53002",
       "flight_category": "VFR",
@@ -134,16 +134,16 @@
       "altimeter_display": "30.03 inHg",
       "observation_time": 1795218780
     },
-    "KTLH": {
-      "raw_metar": "METAR KTLH 202353Z 04009G17KT 10SM BKN017 OVC023 19/16 A3000 RMK AO2 SLP158 60000 T01940161 10211 20189 55003",
-      "flight_category": "MVFR",
+    "KNDZ": {
+      "raw_metar": "METAR KNDZ 202356Z 05013G21KT 10SM BKN032 OVC055 21/14 A3006 RMK AO2 RAE03 SLP164 P0000 60000 T02060144 10239 20206 53008 $",
+      "flight_category": "VFR",
       "visibility_sm": 10.0,
       "visibility_display": "10+ SM",
-      "ceiling_ft_agl": 1700.0,
-      "ceiling_display": "1,700 ft AGL",
-      "wind_display": "040\u00b0 @ 9 kt G17",
-      "altimeter_display": "30.00 inHg",
-      "observation_time": 1795218780
+      "ceiling_ft_agl": 3200.0,
+      "ceiling_display": "3,200 ft AGL",
+      "wind_display": "050\u00b0 @ 13 kt G21",
+      "altimeter_display": "30.06 inHg",
+      "observation_time": 1795218960
     }
   },
   "tafs": {
