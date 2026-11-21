@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T21:10:23.938746+00:00",
+  "generated_at": "2026-11-21T21:40:15.399478+00:00",
   "departure": "KNDZ",
   "airports": {
     "KBFM": {
@@ -12,6 +12,17 @@
       "wind_display": "040\u00b0 @ 5 kt",
       "altimeter_display": "29.93 inHg",
       "observation_time": 1795294980
+    },
+    "KCEW": {
+      "raw_metar": "SPECI KCEW 212119Z AUTO VRB04KT 10SM BKN010 OVC026 18/16 A2994 RMK AO2 T01830156",
+      "flight_category": "MVFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": 1000.0,
+      "ceiling_display": "1,000 ft AGL",
+      "wind_display": "VRB @ 4 kt",
+      "altimeter_display": "29.94 inHg",
+      "observation_time": 1795295940
     },
     "KDHN": {
       "raw_metar": "METAR KDHN 212053Z 02008KT 10SM OVC012 16/14 A2996 RMK AO1 SLP141 60000 T01610144 56009",
@@ -58,15 +69,15 @@
       "observation_time": 1795294620
     },
     "KMAI": {
-      "raw_metar": "METAR KMAI 212053Z AUTO 02010KT 3SM BR BKN008 OVC013 16/15 A2991 RMK AO1 CIG 005V010 SLP125 60001 T01610150 55006",
+      "raw_metar": "SPECI KMAI 212126Z AUTO 02007KT 3SM BR BKN008 OVC016 16/15 A2990 RMK AO1 T01610150",
       "flight_category": "IFR",
       "visibility_sm": 3.0,
       "visibility_display": "3 SM",
       "ceiling_ft_agl": 800.0,
       "ceiling_display": "800 ft AGL",
-      "wind_display": "020\u00b0 @ 10 kt",
-      "altimeter_display": "29.91 inHg",
-      "observation_time": 1795294380
+      "wind_display": "020\u00b0 @ 7 kt",
+      "altimeter_display": "29.90 inHg",
+      "observation_time": 1795296360
     },
     "KMOB": {
       "raw_metar": "METAR KMOB 212056Z 03008KT 10SM SCT028 OVC035 22/16 A2993 RMK AO2 SLP131 T02220156 56022",
@@ -102,15 +113,15 @@
       "observation_time": 1795294560
     },
     "KPNS": {
-      "raw_metar": "METAR KPNS 212053Z 01006KT 10SM BKN021 OVC026 21/16 A2990 RMK AO2 RAE1958 SLP128 P0000 60000 T02060161 56026",
-      "flight_category": "MVFR",
+      "raw_metar": "SPECI KPNS 212117Z 02008KT 10SM FEW024 SCT035 21/16 A2990 RMK AO2 T02110161",
+      "flight_category": "VFR",
       "visibility_sm": 10.0,
       "visibility_display": "10+ SM",
-      "ceiling_ft_agl": 2100.0,
-      "ceiling_display": "2,100 ft AGL",
-      "wind_display": "010\u00b0 @ 6 kt",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "020\u00b0 @ 8 kt",
       "altimeter_display": "29.90 inHg",
-      "observation_time": 1795294380
+      "observation_time": 1795295820
     },
     "KPQL": {
       "raw_metar": "METAR KPQL 212053Z 36004KT 10SM SCT038 BKN044 23/15 A2990 RMK AO2 SLP127 T02330150 56024",
@@ -124,26 +135,15 @@
       "observation_time": 1795294380
     },
     "KTLH": {
-      "raw_metar": "METAR KTLH 212053Z 35006KT 9SM OVC010 17/16 A2987 RMK AO2 CIG 006V014 SLP114 60000 T01720156 56010",
-      "flight_category": "MVFR",
-      "visibility_sm": 9.0,
-      "visibility_display": "9 SM",
-      "ceiling_ft_agl": 1000.0,
-      "ceiling_display": "1,000 ft AGL",
+      "raw_metar": "SPECI KTLH 212113Z 35006KT 5SM BR BKN008 OVC013 17/16 A2987 RMK AO2 CIG 005V010 T01670161",
+      "flight_category": "IFR",
+      "visibility_sm": 5.0,
+      "visibility_display": "5 SM",
+      "ceiling_ft_agl": 800.0,
+      "ceiling_display": "800 ft AGL",
       "wind_display": "350\u00b0 @ 6 kt",
       "altimeter_display": "29.87 inHg",
-      "observation_time": 1795294380
-    },
-    "KCEW": {
-      "raw_metar": "METAR KCEW 212053Z AUTO 8SM SCT010 BKN020 OVC028 18/16 A2994 RMK AO2 SLP138 T01830156 56016",
-      "flight_category": "MVFR",
-      "visibility_sm": 8.0,
-      "visibility_display": "8 SM",
-      "ceiling_ft_agl": 2000.0,
-      "ceiling_display": "2,000 ft AGL",
-      "wind_display": "---",
-      "altimeter_display": "29.94 inHg",
-      "observation_time": 1795294380
+      "observation_time": 1795295580
     }
   },
   "tafs": {
