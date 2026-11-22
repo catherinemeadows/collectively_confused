@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T15:10:21.361419+00:00",
+  "generated_at": "2026-11-22T15:40:29.842149+00:00",
   "departure": "KNDZ",
   "airports": {
     "KBFM": {
@@ -25,15 +25,15 @@
       "observation_time": 1795359600
     },
     "KDHN": {
-      "raw_metar": "METAR KDHN 221453Z 35004KT 9SM BKN007 OVC015 16/14 A3004 RMK AO1 SLP168 T01560144 51018",
-      "flight_category": "IFR",
-      "visibility_sm": 9.0,
-      "visibility_display": "9 SM",
-      "ceiling_ft_agl": 700.0,
-      "ceiling_display": "700 ft AGL",
-      "wind_display": "350\u00b0 @ 4 kt",
+      "raw_metar": "SPECI KDHN 221523Z 34005KT 10SM SCT007 OVC017 16/14 A3004 RMK AO1 T01560144",
+      "flight_category": "MVFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": 1700.0,
+      "ceiling_display": "1,700 ft AGL",
+      "wind_display": "340\u00b0 @ 5 kt",
       "altimeter_display": "30.04 inHg",
-      "observation_time": 1795359180
+      "observation_time": 1795360980
     },
     "KGPT": {
       "raw_metar": "METAR KGPT 221453Z 00000KT 10SM CLR 20/16 A3002 RMK AO2 SLP163 T02000156 51016",
@@ -102,15 +102,15 @@
       "observation_time": 1795359360
     },
     "KNPA": {
-      "raw_metar": "METAR KNPA 221456Z AUTO 35004KT 10SM OVC016 17/15 A3002 RMK AO2 SLP168 T01720150 51019 $",
+      "raw_metar": "SPECI KNPA 221537Z AUTO 00000KT 10SM FEW010 OVC015 17/15 A3004 RMK AO2 T01720150 $ ",
       "flight_category": "MVFR",
       "visibility_sm": 10.0,
       "visibility_display": "10+ SM",
-      "ceiling_ft_agl": 1600.0,
-      "ceiling_display": "1,600 ft AGL",
-      "wind_display": "350\u00b0 @ 4 kt",
-      "altimeter_display": "30.02 inHg",
-      "observation_time": 1795359360
+      "ceiling_ft_agl": 1500.0,
+      "ceiling_display": "1,500 ft AGL",
+      "wind_display": "Calm",
+      "altimeter_display": "30.04 inHg",
+      "observation_time": 1795361820
     },
     "KPNS": {
       "raw_metar": "METAR KPNS 221453Z COR 31004KT 10SM OVC009 17/14 A3002 RMK AO2 SLP168 T01670144 51018",
@@ -148,7 +148,7 @@
   },
   "tafs": {
     "KNSE": {
-      "raw_taf": "TAF KNSE 220700Z 2207/2307 VRB06KT 9999 BKN010 QNH2989INS TX22/2218Z TN12/2212Z FN00327"
+      "raw_taf": "TAF KNSE 221500Z 2215/2315 VRB06KT 9999 BKN010 OVC030 QNH2995INS BECMG 2220/2222 VRB06KT 9999 BKN010 QNH2989INS BECMG 2302/2304 VRB06KT 8000 BR OVC033 QNH2997INS TEMPO 2306/2312 0800 FG VV002 FM231200 VRB05KT 0800 FG VV002 QNH3001INS AUTOMATED SENSOR METWATCH 2215 TIL 2310 TX20/2220Z TN13/2212Z FN00282"
     },
     "KNDZ": {
       "raw_taf": "TAF unavailable"
