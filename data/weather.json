@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T02:10:15.729077+00:00",
+  "generated_at": "2026-11-23T02:40:16.717716+00:00",
   "departure": "KNDZ",
   "airports": {
     "KBFM": {
@@ -14,15 +14,15 @@
       "observation_time": 1795398780
     },
     "KCEW": {
-      "raw_metar": "METAR KCEW 230153Z AUTO 00000KT 10SM OVC014 17/14 A3005 RMK AO2 SLP174 T01720144",
-      "flight_category": "MVFR",
+      "raw_metar": "SPECI KCEW 230235Z AUTO 00000KT 10SM SCT014 16/14 A3004 RMK AO2 T01560144",
+      "flight_category": "VFR",
       "visibility_sm": 10.0,
       "visibility_display": "10+ SM",
-      "ceiling_ft_agl": 1400.0,
-      "ceiling_display": "1,400 ft AGL",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
       "wind_display": "Calm",
-      "altimeter_display": "30.05 inHg",
-      "observation_time": 1795398780
+      "altimeter_display": "30.04 inHg",
+      "observation_time": 1795401300
     },
     "KDHN": {
       "raw_metar": "METAR KDHN 230153Z AUTO 29004KT 10SM OVC013 17/14 A3005 RMK AO1 SLP173 T01670144",
@@ -69,15 +69,15 @@
       "observation_time": 1795398900
     },
     "KMAI": {
-      "raw_metar": "METAR KMAI 230153Z AUTO 32007KT 10SM OVC015 17/14 A3001 RMK AO1 SLP161 T01670144",
+      "raw_metar": "SPECI KMAI 230230Z AUTO 30004KT 10SM OVC015 17/14 A3002 RMK AO1 T01670144",
       "flight_category": "MVFR",
       "visibility_sm": 10.0,
       "visibility_display": "10+ SM",
       "ceiling_ft_agl": 1500.0,
       "ceiling_display": "1,500 ft AGL",
-      "wind_display": "320\u00b0 @ 7 kt",
-      "altimeter_display": "30.01 inHg",
-      "observation_time": 1795398780
+      "wind_display": "300\u00b0 @ 4 kt",
+      "altimeter_display": "30.02 inHg",
+      "observation_time": 1795401000
     },
     "KMOB": {
       "raw_metar": "METAR KMOB 230156Z 00000KT 10SM SCT040 BKN060 18/16 A3001 RMK AO2 SLP162 T01780156",
@@ -91,18 +91,18 @@
       "observation_time": 1795398960
     },
     "KNDZ": {
-      "raw_metar": "SPECI KNDZ 230128Z 07003KT 10SM FEW014 FEW250 16/14 A3002 RMK AO2 T01560144 $ ",
+      "raw_metar": "METAR KNDZ 230156Z 20003KT 10SM FEW250 15/14 A3002 RMK AO2 SLP154 T01500144 $",
       "flight_category": "VFR",
       "visibility_sm": 10.0,
       "visibility_display": "10+ SM",
       "ceiling_ft_agl": null,
       "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "070\u00b0 @ 3 kt",
+      "wind_display": "200\u00b0 @ 3 kt",
       "altimeter_display": "30.02 inHg",
-      "observation_time": 1795397280
+      "observation_time": 1795398960
     },
     "KNPA": {
-      "raw_metar": "METAR KNPA 230156Z 00000KT 10SM SCT022 SCT040 14/14 A3002 RMK AO2 SLP166 T01440139 $",
+      "raw_metar": "SPECI KNPA 230230Z 00000KT 10SM FEW020 SCT035 14/14 A3002 RMK AO2 T01390139 $ ",
       "flight_category": "VFR",
       "visibility_sm": 10.0,
       "visibility_display": "10+ SM",
@@ -110,7 +110,7 @@
       "ceiling_display": "No BKN/OVC ceiling reported",
       "wind_display": "Calm",
       "altimeter_display": "30.02 inHg",
-      "observation_time": 1795398960
+      "observation_time": 1795401000
     },
     "KPNS": {
       "raw_metar": "METAR KPNS 230153Z 05003KT 10SM CLR 16/14 A3002 RMK AO2 SLP166 T01560144",
@@ -123,17 +123,6 @@
       "altimeter_display": "30.02 inHg",
       "observation_time": 1795398780
     },
-    "KPQL": {
-      "raw_metar": "METAR KPQL 230153Z AUTO 00000KT 10SM CLR 17/16 A3000 RMK AO2 SLP160 T01670161",
-      "flight_category": "VFR",
-      "visibility_sm": 10.0,
-      "visibility_display": "10+ SM",
-      "ceiling_ft_agl": null,
-      "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "Calm",
-      "altimeter_display": "30.00 inHg",
-      "observation_time": 1795398780
-    },
     "KTLH": {
       "raw_metar": "METAR KTLH 230153Z 33005KT 10SM OVC016 17/14 A3001 RMK AO2 SLP161 T01720144",
       "flight_category": "MVFR",
@@ -143,6 +132,17 @@
       "ceiling_display": "1,600 ft AGL",
       "wind_display": "330\u00b0 @ 5 kt",
       "altimeter_display": "30.01 inHg",
+      "observation_time": 1795398780
+    },
+    "KPQL": {
+      "raw_metar": "METAR KPQL 230153Z AUTO 00000KT 10SM CLR 17/16 A3000 RMK AO2 SLP160 T01670161",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "Calm",
+      "altimeter_display": "30.00 inHg",
       "observation_time": 1795398780
     }
   },
