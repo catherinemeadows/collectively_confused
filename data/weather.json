@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T03:13:58.891349+00:00",
+  "generated_at": "2026-11-27T03:40:15.838717+00:00",
   "departure": "KNDZ",
   "airports": {
     "KBFM": {
@@ -58,15 +58,26 @@
       "observation_time": 1795747800
     },
     "KJKA": {
-      "raw_metar": "METAR KJKA 270155Z 30006KT 10SM CLR 10/00 A3004",
+      "raw_metar": "METAR KJKA 270315Z AUTO 30006G12KT 10SM CLR 10/00 A3006 RMK AO2",
       "flight_category": "VFR",
       "visibility_sm": 10.0,
       "visibility_display": "10+ SM",
       "ceiling_ft_agl": null,
       "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "300\u00b0 @ 6 kt",
-      "altimeter_display": "30.04 inHg",
-      "observation_time": 1795744500
+      "wind_display": "300\u00b0 @ 6 kt G12",
+      "altimeter_display": "30.06 inHg",
+      "observation_time": 1795749300
+    },
+    "KMAI": {
+      "raw_metar": "METAR KMAI 270253Z AUTO 32006KT 10SM CLR 05/04 A3003 RMK AO1 SLP167 T00500039 53025",
+      "flight_category": "VFR",
+      "visibility_sm": 10.0,
+      "visibility_display": "10+ SM",
+      "ceiling_ft_agl": null,
+      "ceiling_display": "No BKN/OVC ceiling reported",
+      "wind_display": "320\u00b0 @ 6 kt",
+      "altimeter_display": "30.03 inHg",
+      "observation_time": 1795747980
     },
     "KMOB": {
       "raw_metar": "METAR KMOB 270256Z 00000KT 10SM CLR 05/M01 A3007 RMK AO2 SLP180 T00501006 51019",
@@ -132,17 +143,6 @@
       "ceiling_display": "No BKN/OVC ceiling reported",
       "wind_display": "300\u00b0 @ 4 kt",
       "altimeter_display": "30.02 inHg",
-      "observation_time": 1795747980
-    },
-    "KMAI": {
-      "raw_metar": "METAR KMAI 270253Z AUTO 32006KT 10SM CLR 05/04 A3003 RMK AO1 SLP167 T00500039 53025",
-      "flight_category": "VFR",
-      "visibility_sm": 10.0,
-      "visibility_display": "10+ SM",
-      "ceiling_ft_agl": null,
-      "ceiling_display": "No BKN/OVC ceiling reported",
-      "wind_display": "320\u00b0 @ 6 kt",
-      "altimeter_display": "30.03 inHg",
       "observation_time": 1795747980
     }
   },
